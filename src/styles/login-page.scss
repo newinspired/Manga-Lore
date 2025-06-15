@@ -22,7 +22,7 @@ body{
         background-color: #f9e3b2;
         padding : 25px;
         border-radius : 50px;
-        gap : 10px;
+        gap : 20px;
         height : 380px;
         width : 480px;
         border : 1px solid black;
@@ -35,32 +35,51 @@ body{
 
         input{
             border : 1px solid black;
-            width : 100%;
+            width : 95%;
             cursor : text;
+            box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
             
             .placeholder{
                 color : white;
             }
         }
+        
+            
         button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: #18d5e8;
-            border-radius: 25px;
-            padding : 0px 25px;
+            
+            width :95%;
             font-size : 25px;
             font-family : $mainfont;
-            margin-top : 10px;
             cursor: pointer;
+            box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
 
             &:disabled {
             background-color: #bfbfbf;
             opacity: 0.6;
             }
         }
+        
+        .button-top{
+            background-color : #1088ba;
+        }
+
+        .button-mid{
+            background-color : #18d3e2;
+        }
+
+        .button-bot{
+            background-color : #3ceef2;
+        }
 
         h2,h3{
             font-family: $mainfont;
             font-size: 22px;
             margin : 0px;
+            
         }
 
 

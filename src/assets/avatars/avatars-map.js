@@ -1,18 +1,19 @@
-import luffy from './luffy-wano.jpg';
 
+import trafalgarLaw from './trafalgar.jpg';
+import blackbeard from './blackbeard.jpg';
+import luffy from './luffy.jpg';
+import shanks from './shanks.jpg';
+import baggy from './baggy.jpg';
 
 
 const avatarMap = {
-    Luffy: luffy,
-    Luffy: luffy,
-    Luffy: luffy,
-    Luffy: luffy,
-    Luffy: luffy,
-    Luffy: luffy,
-    Luffy: luffy,
-    Luffy: luffy,
-    Luffy: luffy,
-    Luffy: luffy,
+    'trafalgarLaw': trafalgarLaw,
+    'BlackBeard': blackbeard,
+    'Luffy': luffy,
+    'Shanks': shanks,
+    'Baggy': baggy,
+
+
 };
 
 export default avatarMap;

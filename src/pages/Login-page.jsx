@@ -1,42 +1,73 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/login-page.scss';
-import { io } from 'socket.io-client';
 import { useState, useEffect } from 'react';
 import socket from '../socket';
+import ModalAvatar from '../components/modal-avatar.jsx';
 
+import trafalgarLaw from '../assets/avatars/trafalgar.jpg';
+import blackbeard from '../assets/avatars/blackbeard.jpg';
+import luffy from '../assets/avatars/luffy.jpg';
+import shanks from '../assets/avatars/shanks.jpg';
+import baggy from '../assets/avatars/baggy.jpg';
 
-import luffy from '../assets/avatars/luffy-wano.jpg';
-import rayleighAvatar from '../assets/avatars/luffy-wano.jpg';
-import trafalgarLaw from '../assets/avatars/luffy-wano.jpg';
-import shanksAvatar from '../assets/avatars/luffy-wano.jpg';
-import hancock from '../assets/avatars/luffy-wano.jpg';
-import sanji from '../assets/avatars/luffy-wano.jpg';
-import mihawk from '../assets/avatars/luffy-wano.jpg';
-import nami from '../assets/avatars/luffy-wano.jpg';
-import zoro from '../assets/avatars/luffy-wano.jpg';
-import robin from '../assets/avatars/luffy-wano.jpg';
+import sanji from '../assets/avatars/sanji.jpg';
+import nami from '../assets/avatars/nami.jpg';
+import mihawk from '../assets/avatars/mihawk.jpg';
+import crocodile from '../assets/avatars/crocodile.jpg'
+import hancock from '../assets/avatars/hancock-manga.jpg';
+
+import doflamingo from '../assets/avatars/doflamingo.jpg';
+import barbeBlanche from '../assets/avatars/barbe-blanche.jpg';
+import roger from '../assets/avatars/roger.jpg';
+import rayleigh from '../assets/avatars/rayleigh.jpg';
+import aokiji from '../assets/avatars/aokiji.jpg';
+
+import kaido from '../assets/avatars/kaido.jpg';
+import robin from '../assets/avatars/robin.jpg';
+import sabo from '../assets/avatars/sabo.jpg';
+
 
 function LoginPage({ setUsername, setRoomCode }) {
   const navigate = useNavigate();
-  
 
   const avatarOptions = [
+    { name: 'Trafalgar', src: trafalgarLaw },
+    { name: 'Barbe noir', src: blackbeard },
     { name: 'Luffy', src: luffy },
-    { name: 'Zoro', src: zoro },
-    { name: 'Nami', src: nami },
-    { name: 'Sanji', src: sanji },
-    { name: 'Robin', src: robin },
-    { name: 'Shanks', src: shanksAvatar },
-    { name: 'Rayleigh', src: rayleighAvatar },
-    { name: 'Trafalgar Law', src: trafalgarLaw },
+    { name: 'Shanks', src: shanks },
+    { name: 'Baggy', src: baggy },
+
+    { name: 'Doflamingo', src: doflamingo },
     { name: 'Hancock', src: hancock },
     { name: 'Mihawk', src: mihawk },
+    { name: 'Crocodile', src: crocodile },
+    { name: 'aokiji', src: aokiji },
+    
+    { name: 'nami', src: nami },
+    { name: 'kaido', src: kaido },
+    { name: 'robin', src: robin },
+    { name: 'Sanji', src: sanji },
+    { name: 'Nami', src: nami },
+
+    { name: 'Barbe Blanche', src: barbeBlanche },
+    { name: 'Roger', src: roger },
+    { name: 'Rayleigh', src: rayleigh },
+    { name: 'Sabo', src: sabo },
+
   ];
 
   const [input, setInput] = useState('');
   const [roomInput, setRoomInput] = useState('');
+  const [showRoomInput, setShowRoomInput] = useState(false);
   const [selectedAvatar, setSelectedAvatar] = useState(avatarOptions[0].name);
+  const [showAvatarModal, setShowAvatarModal] = useState(false);
+
   const isFormValid = input.trim() !== '' && roomInput.trim() !== '';
+
+  const generateRoomCode = () => {
+    const code = Math.random().toString(36).substring(2, 8).toUpperCase();
+    setRoomInput(code);
+  };
 
   const handleSubmit = () => {
     const trimmed = input.trim();
@@ -47,22 +78,18 @@ function LoginPage({ setUsername, setRoomCode }) {
       setUsername(trimmed);
       setRoomCode(trimmedRoom);
 
-      // Sauvegarde dans localStorage
       localStorage.setItem('username', trimmed);
       localStorage.setItem('roomCode', trimmedRoom);
       localStorage.setItem('avatar', selectedAvatar);
 
-      // Envoie les infos au serveur
-      const avatarName = avatarObj.name; // extrait 'Luffy', 'Zoro', etc.
-      socket.emit('joinRoom', trimmedRoom, trimmed, avatarName);
+      socket.emit('joinRoom', trimmedRoom, trimmed, avatarObj.name);
 
-      // Redirection
       navigate(`/salon/${trimmedRoom}`, {
-      state: {
-        username: trimmed,
-        avatar: avatarName,
-      }
-});
+        state: {
+          username: trimmed,
+          avatar: avatarObj.name,
+        },
+      });
     }
   };
 
@@ -83,38 +110,49 @@ function LoginPage({ setUsername, setRoomCode }) {
 
   return (
     <div className="login-page">
-      <div className="modal-login">
-        <h3>MANGA LORE</h3>
+      <div className="login-wrapper">
+        <div className="modal-login">
+          <h3>MANGA | LORE</h3>
 
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Nom"
-          maxLength={10}
-        />
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Nom"
+            maxLength={10}
+          />
+          
+            <button className='button-top' onClick={generateRoomCode}>Créer une partie</button>
 
-        <input
-          type="text"
-          value={roomInput}
-          onChange={(e) => setRoomInput(e.target.value)}
-          placeholder="Code de la partie"
-          maxLength={10}
-        />
+            <button className='button-mid' onClick={() => setShowRoomInput(true)}>Rejoindre une partie</button>
 
-        <div className="avatar-choose">
-          {avatarOptions.map(({ name, src }) => (
-            <img
-              key={name}
-              src={src}
-              alt={name}
-              className={`avatar-thumb ${selectedAvatar === name ? 'selected' : ''}`}
-              onClick={() => setSelectedAvatar(name)}
-            />
-          ))}
-        </div>
+            {showRoomInput && (
+              <input
+                type="text"
+                value={roomInput}
+                onChange={(e) => setRoomInput(e.target.value)}
+                placeholder="Code de la partie"
+                maxLength={10}
+              />
+            )}
 
-        <button onClick={handleSubmit} disabled={!isFormValid}>Rejoindre</button>
+            <button className='button-bot' onClick={() => setShowAvatarModal(true)}>Choisir un avatar</button>
+
+            
+            
+
+            <button onClick={handleSubmit} disabled={!isFormValid}>Prêt</button>
+          
+        </div> 
+
+        {showAvatarModal && (
+              <ModalAvatar
+                avatarOptions={avatarOptions}
+                selectedAvatar={selectedAvatar}
+                onSelect={setSelectedAvatar}
+                onClose={() => setShowAvatarModal(false)}
+              />
+            )}
       </div>
     </div>
   );
