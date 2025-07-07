@@ -43,11 +43,21 @@ const Question = ({ username, avatar }) => {
     socket.on('timer', (time) => setTimeLeft(time));
 
     socket.on('questionEnded', ({ correctAnswer, scores }) => {
-      if (userAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
+      const cleanedUserAnswer = userAnswer.trim().toLowerCase();
+
+      // Gérer les réponses multiples ou uniques
+      const isCorrect = Array.isArray(correctAnswer)
+        ? correctAnswer.map(ans => ans.trim().toLowerCase()).includes(cleanedUserAnswer)
+        : cleanedUserAnswer === correctAnswer.trim().toLowerCase();
+
+      if (isCorrect) {
         setFeedback('✅ Bonne réponse !');
       } else {
-        setFeedback(`❌ Mauvaise réponse. Réponse attendue : ${correctAnswer}`);
+        // Affiche toutes les réponses possibles s’il y en a plusieurs
+        const expected = Array.isArray(correctAnswer) ? correctAnswer.join(', ') : correctAnswer;
+        setFeedback(`❌ Mauvaise réponse. Réponse attendue : ${expected}`);
       }
+
       const player = players.find((p) => p.id === socket.id);
       setScore(scores?.[player?.id] || 0);
     });

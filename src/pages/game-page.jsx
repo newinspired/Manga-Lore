@@ -9,11 +9,11 @@ function GamePage() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    // 🔽 Tu peux récupérer 25 questions depuis le back, ou les charger ici
-    socket.emit('requestQuestions', room); // Optionnel si serveur fournit
+    
+    socket.emit('requestQuestions', room); 
 
     socket.on('questionsList', (questionList) => {
-      setQuestions(questionList.slice(0, 25)); // Limite à 25
+      setQuestions(questionList.slice(0, 25)); 
     });
 
     return () => {

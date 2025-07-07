@@ -1,8 +1,8 @@
-$mainfont : 'cormorant';
+$mainfont : 'Cormorant Garamond';
 
 
 body{
-    background-color: #1ad5e6;
+    background-color: #18d6e6;
     
 }
 
@@ -38,7 +38,7 @@ body{
             width : 95%;
             cursor : text;
             box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
-            
+            font-size : 20px;
             .placeholder{
                 color : white;
             }

@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/login-page.scss';
+import '../styles/modal-avatar.scss'
 import { useState, useEffect } from 'react';
 import socket from '../socket';
 import ModalAvatar from '../components/modal-avatar.jsx';
@@ -7,7 +8,7 @@ import ModalAvatar from '../components/modal-avatar.jsx';
 import trafalgarLaw from '../assets/avatars/trafalgar.jpg';
 import blackbeard from '../assets/avatars/blackbeard.jpg';
 import luffy from '../assets/avatars/luffy.jpg';
-import shanks from '../assets/avatars/shanks.jpg';
+import shanks from '../assets/avatars/shanks2.jpg';
 import baggy from '../assets/avatars/baggy.jpg';
 
 import sanji from '../assets/avatars/sanji.jpg';
@@ -18,42 +19,41 @@ import hancock from '../assets/avatars/hancock-manga.jpg';
 
 import doflamingo from '../assets/avatars/doflamingo.jpg';
 import barbeBlanche from '../assets/avatars/barbe-blanche.jpg';
-import roger from '../assets/avatars/roger.jpg';
+import sabo from '../assets/avatars/sabo.jpg';
 import rayleigh from '../assets/avatars/rayleigh.jpg';
 import aokiji from '../assets/avatars/aokiji.jpg';
 
 import kaido from '../assets/avatars/kaido.jpg';
 import robin from '../assets/avatars/robin.jpg';
-import sabo from '../assets/avatars/sabo.jpg';
+import ace from '../assets/avatars/ace.jpg';
+import zoro from '../assets/avatars/zoro.jpg'
 
 
 function LoginPage({ setUsername, setRoomCode }) {
   const navigate = useNavigate();
 
   const avatarOptions = [
-    { name: 'Trafalgar', src: trafalgarLaw },
-    { name: 'Barbe noir', src: blackbeard },
     { name: 'Luffy', src: luffy },
+    { name: 'zoro', src: zoro },
     { name: 'Shanks', src: shanks },
-    { name: 'Baggy', src: baggy },
-
-    { name: 'Doflamingo', src: doflamingo },
-    { name: 'Hancock', src: hancock },
     { name: 'Mihawk', src: mihawk },
-    { name: 'Crocodile', src: crocodile },
     { name: 'aokiji', src: aokiji },
+
+    { name: 'Barbe noir', src: blackbeard },
+    { name: 'robin', src: robin },
+    { name: 'Doflamingo', src: doflamingo },
+
+    { name: 'Ace', src: ace },
+    { name: 'Hancock', src: hancock },
+
+    
     
     { name: 'nami', src: nami },
+    
+    { name: 'sabo', src: sabo },
     { name: 'kaido', src: kaido },
-    { name: 'robin', src: robin },
     { name: 'Sanji', src: sanji },
-    { name: 'Nami', src: nami },
-
     { name: 'Barbe Blanche', src: barbeBlanche },
-    { name: 'Roger', src: roger },
-    { name: 'Rayleigh', src: rayleigh },
-    { name: 'Sabo', src: sabo },
-
   ];
 
   const [input, setInput] = useState('');
@@ -113,35 +113,35 @@ function LoginPage({ setUsername, setRoomCode }) {
       <div className="login-wrapper">
         <div className="modal-login">
           <h3>MANGA | LORE</h3>
-
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder="Nom"
-            maxLength={10}
-          />
           
-            <button className='button-top' onClick={generateRoomCode}>Créer une partie</button>
-
-            <button className='button-mid' onClick={() => setShowRoomInput(true)}>Rejoindre une partie</button>
-
-            {showRoomInput && (
-              <input
-                type="text"
-                value={roomInput}
-                onChange={(e) => setRoomInput(e.target.value)}
-                placeholder="Code de la partie"
-                maxLength={10}
-              />
-            )}
-
-            <button className='button-bot' onClick={() => setShowAvatarModal(true)}>Choisir un avatar</button>
-
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Nom"
+              maxLength={10}
+            />
             
-            
+              <button className='button-top' onClick={generateRoomCode}>Créer une partie</button>
 
-            <button onClick={handleSubmit} disabled={!isFormValid}>Prêt</button>
+              <button className='button-mid' onClick={() => setShowRoomInput(true)}>Rejoindre une partie</button>
+
+              {showRoomInput && (
+                <input
+                  type="text"
+                  value={roomInput}
+                  onChange={(e) => setRoomInput(e.target.value)}
+                  placeholder="Code de la partie"
+                  maxLength={10}
+                />
+              )}
+
+              <button className='button-bot' onClick={() => setShowAvatarModal(true)}>Choisir un avatar</button>
+
+              
+              
+
+              <button onClick={handleSubmit} disabled={!isFormValid}>Prêt</button>
           
         </div> 
 

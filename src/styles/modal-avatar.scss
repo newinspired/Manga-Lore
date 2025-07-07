@@ -16,7 +16,7 @@
 .modal-avatar-panel {
     display: flex;
     flex-direction: column;
-    background: #f9f9f9;
+    background: #f7ffff;
     border-radius: 50px;
     border : 1px solid black;
     padding: 24px;
@@ -27,12 +27,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom : 10px;
+        margin : 10px 0px 35px 0px;
 
         h4{
             padding :0px;
-            margin: 0px 0px 0px 170px;
-            font-size : 20px;
+            margin: 0px 0px 0px 160px;
+            font-size : 22px;
+            font-family: 'Cormorant Garamond';
         }
 
         .close-btn{
@@ -53,7 +54,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 13px;
 }
 
 .avatar-grid img {
@@ -66,6 +67,6 @@
 
   &.selected {
     border : 3px solid #ffb999;
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 }
