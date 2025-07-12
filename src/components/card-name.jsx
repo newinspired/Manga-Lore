@@ -12,13 +12,18 @@ function CardName({ currentSocketId }) {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-
-    socket.on('playerList', (players) => {
+    console.log('Initialisation écoute playerList');
+    
+    const handler = (players) => {
+      console.log('Données reçues:', players);
       setPlayers(players);
-    });
+    };
+
+    socket.on('playerList', handler);
 
     return () => {
-      socket.off('playerList');
+      console.log('Nettoyage écoute playerList');
+      socket.off('playerList', handler);
     };
   }, []);
 

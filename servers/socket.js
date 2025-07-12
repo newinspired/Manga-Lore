@@ -9,12 +9,12 @@ const {
 
 
 
-function handleSocketEvents(io) {
+function handleSocketEvents(io) { // Initialisation des événements socket.io
   const playersInRooms = {};
   const games = {};
   const createdRooms = new Set();
 
-  io.on('connection', (socket) => {  // CREATION DE SOCKET POUR CHAQUE CONNEXION JOUEUR 
+  io.on('connection', (socket) => { 
     console.log('🔌 Joueur connecté :', socket.id);
 
     // CREATION D UN SALON 
@@ -39,6 +39,7 @@ function handleSocketEvents(io) {
       socket.join(roomId);
 
       // Appel de la logique métier
+      console.log('🧩 Appel handleJoinRoom avec :', data);
       handleJoinRoom(io, socket, data, playersInRooms);
 
       if (typeof callback === 'function') {

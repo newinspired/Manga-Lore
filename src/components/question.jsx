@@ -12,24 +12,25 @@ const Question = ({ username, avatar }) => {
   const [score, setScore] = useState(0);
   const [isHost, setIsHost] = useState(false);
   const [players, setPlayers] = useState([]);
-  const { roomCode } = useParams();
+  const { room } = useParams();
+  const [socketId, setSocketId] = useState('');
 
   useEffect(() => {
     socket.emit('joinRoom', {
-      roomId: roomCode,
+      roomId: room,
       username,
       avatar,
     });
 
     // ✅ Pour les tests : auto-ready
-    socket.emit('playerReady', roomCode, true);
+    socket.emit('playerReady', room, true);
 
     socket.on('hostStatus', (hostStatus) => setIsHost(hostStatus));
     socket.on('playerList', (playersList) => setPlayers(playersList));
 
     socket.on('startGame', () => {
       console.log('✅ Événement startGame reçu (le jeu commence)');
-      // Rien à faire ici si la question suit juste après
+
     });
 
     socket.on('newQuestion', ({ question, timeLeft }) => {
@@ -75,40 +76,45 @@ const Question = ({ username, avatar }) => {
       socket.off('questionEnded');
       socket.off('gameEnded');
     };
-  }, [roomCode, username, avatar, userAnswer, score]);
+  }, [room, username, avatar]);
 
   const handleChange = (e) => {
     setUserAnswer(e.target.value);
-    socket.emit('playerAnswer', roomCode, e.target.value);
+    socket.emit('playerAnswer', room, e.target.value);
   };
 
-  if (!currentQuestion) return <p>Chargement...</p>;
 
   return (
     <div className="container-question-component">
-      {currentQuestion.imageUrl ? (
-        <div className="question-image">
-          <img src={currentQuestion.imageUrl} alt="Illustration de la question" />
-        </div>
+      {currentQuestion ? (
+        <>
+          {currentQuestion.imageUrl ? (
+            <div className="question-image">
+              <img src={currentQuestion.imageUrl} alt="Illustration de la question" />
+            </div>
+          ) : (
+            <div className="question-image empty"></div>
+          )}
+
+          <div className="container-question">
+            <div className="timer">Temps restant : {timeLeft}</div>
+            <p className="question-text">{currentQuestion.question}</p>
+
+            <input
+              type="text"
+              value={userAnswer}
+              onChange={handleChange}
+              placeholder="Tape ta réponse ici"
+              disabled={timeLeft === 0}
+              autoFocus
+            />
+
+            {feedback && <div className="feedback">{feedback}</div>}
+          </div>
+        </>
       ) : (
-        <div className="question-image empty"></div>
+        <p>⏳ En attente de la prochaine question...</p>
       )}
-
-      <div className="container-question">
-        <div className="timer">Temps restant : {timeLeft}</div>
-        <p className="question-text">{currentQuestion.question}</p>
-
-        <input
-          type="text"
-          value={userAnswer}
-          onChange={handleChange}
-          placeholder="Tape ta réponse ici"
-          disabled={timeLeft === 0}
-          autoFocus
-        />
-
-        {feedback && <div className="feedback">{feedback}</div>}
-      </div>
 
       <div className="container-ranking">
         <h4>Joueurs :</h4>
@@ -122,6 +128,6 @@ const Question = ({ username, avatar }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Question;

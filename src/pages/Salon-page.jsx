@@ -7,25 +7,32 @@ import socket from '../socket.js';
 import '../styles/card-name.scss';
 import '../styles/salon-page.scss';
 
+
+
 function SalonPage() {
-  const { room } = useParams();
-  const location = useLocation();
-  const navigate = useNavigate();
+  const { room } = useParams(); // Récupère l'ID de la room depuis l'URL
+  const location = useLocation(); // Utilise useLocation pour accéder à l'état passé par la page précédente
+  const navigate = useNavigate(); // Utilise useNavigate pour naviguer vers d'autres pages
   const { username, avatar } = location.state || {};
 
   const [selectedMode, setSelectedMode] = useState(null);
   const [isHost, setIsHost] = useState(false);
-  const hasJoinedRef = useRef(false); // ✅ Pour éviter double `joinRoom`
+  const hasJoinedRef = useRef(false);
 
-  // ✅ Join room — évite les doublons
   useEffect(() => {
     const handleConnect = () => {
       console.log('📡 Connecté avec socket.id :', socket.id);
       if (username && avatar && !hasJoinedRef.current) {
-        socket.emit('joinRoom', { roomId: room, username, avatar });
-        hasJoinedRef.current = true; // Empêche un second envoi
+        hasJoinedRef.current = true;
         console.log('📨 Envoi unique de joinRoom');
       }
+
+      socket.emit('joinRoom', { roomId: room, username, avatar }, (response) => {
+        if (!response.success) {
+          alert(response.message);
+          navigate('/'); // retourne à la page d'accueil
+        }
+      });
     };
 
     if (socket.connected) {
@@ -39,7 +46,6 @@ function SalonPage() {
     };
   }, [room, username, avatar]);
 
-  // 🔍 Écoute si on est host
   useEffect(() => {
     const handleHostStatus = (isHost) => {
       setIsHost(isHost);
@@ -79,6 +85,7 @@ function SalonPage() {
           selectedMode={selectedMode}
           isHost={isHost} 
         />
+        
       </div>
       <GameMode
         roomCode={room}

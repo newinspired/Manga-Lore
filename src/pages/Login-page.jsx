@@ -4,6 +4,7 @@ import '../styles/modal-avatar.scss'
 import { useState, useEffect } from 'react';
 import socket from '../socket';
 import ModalAvatar from '../components/modal-avatar.jsx';
+import Footer from '../components/footer.jsx';
 
 import trafalgarLaw from '../assets/avatars/trafalgar.jpg';
 import blackbeard from '../assets/avatars/blackbeard.jpg';
@@ -82,7 +83,7 @@ function LoginPage({ setUsername, setRoomCode }) {
       localStorage.setItem('roomCode', trimmedRoom);
       localStorage.setItem('avatar', selectedAvatar);
 
-      socket.emit('joinRoom', trimmedRoom, trimmed, avatarObj.name);
+      socket.emit('createRoom', trimmedRoom, trimmed, selectedAvatar);
 
       navigate(`/salon/${trimmedRoom}`, {
         state: {
@@ -121,27 +122,27 @@ function LoginPage({ setUsername, setRoomCode }) {
               placeholder="Nom"
               maxLength={10}
             />
+
+            <button className='button-top' onClick={() => setShowAvatarModal(true)}>Choisir un avatar</button>
             
-              <button className='button-top' onClick={generateRoomCode}>Créer une partie</button>
+            <button className='button-mid' onClick={generateRoomCode}>Créer une partie</button>
 
-              <button className='button-mid' onClick={() => setShowRoomInput(true)}>Rejoindre une partie</button>
+            <button className='button-bot' onClick={() => setShowRoomInput(true)}>Rejoindre une partie</button>
 
-              {showRoomInput && (
-                <input
-                  type="text"
-                  value={roomInput}
-                  onChange={(e) => setRoomInput(e.target.value)}
-                  placeholder="Code de la partie"
-                  maxLength={10}
-                />
-              )}
-
-              <button className='button-bot' onClick={() => setShowAvatarModal(true)}>Choisir un avatar</button>
+            {showRoomInput && (
+              <input
+                type="text"
+                value={roomInput}
+                onChange={(e) => setRoomInput(e.target.value)}
+                placeholder="Code de la partie"
+                maxLength={10}
+              />
+            )}
 
               
               
 
-              <button onClick={handleSubmit} disabled={!isFormValid}>Prêt</button>
+            <button className="button-ready" onClick={handleSubmit} disabled={!isFormValid}>Prêt</button>
           
         </div> 
 
@@ -154,6 +155,8 @@ function LoginPage({ setUsername, setRoomCode }) {
               />
             )}
       </div>
+
+      <Footer />  
     </div>
   );
 }

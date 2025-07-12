@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header.jsx';
 import LoginPage from './pages/Login-page.jsx';
-import Footer from './components/footer.jsx';
-import SalonPage from './pages/salon-page.jsx';
+import SalonPage from './pages/Salon-page.jsx';
 import React, {useState} from 'react';
 import GamePage from './pages/game-page.jsx';
 
@@ -22,7 +21,6 @@ function App() {
         <Route path="/game/:room" element={<GamePage />} />
 
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
