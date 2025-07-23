@@ -1,0 +1,44 @@
+$mainfont : 'Cormorant Garamond';
+
+footer{
+    width : 60%;
+    .footer{
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        gap : 30px;
+        width : 100%;
+
+        img{
+            height : 230px;
+        }
+
+        h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3ceef2;
+            width : 100%;
+            padding : 10px 0px;
+            font-weight: normal;
+            font-family: $mainfont;
+            font-size: 20px;
+            box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+
+            span{
+                padding-left: 7px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.footer-separate{
+    display: flex;
+    align-items: center;
+    height : 2px;
+    width : 150px;
+    background-color : #1969ae;
+    margin: 0 auto;
+    margin-bottom : 10px;
+}

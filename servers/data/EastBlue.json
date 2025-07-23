@@ -1,0 +1,191 @@
+[
+  {
+    "id": 101,
+    "difficulty": "medium",
+    "question": "Dans quelle ville d’East Blue Gol D. Roger a-t-il été exécuté ?",
+    "answer": "Loguetown"
+  },
+  {
+    "id": 102,
+    "difficulty": "difficult",
+    "question": "Quel est le nom du village attaqué par Kuro et ses pirates sous couverture ?",
+    "answer": "Syrup"
+  },
+  {
+    "id": 103,
+    "difficulty": "medium", 
+    "question": "Comment s'appelle le navire-restaurant dirigé par Zeff dans East Blue ?",
+    "answer": "Baratie"
+  },
+  {
+    "id": 104,
+    "difficulty": "difficult", 
+    "question": "Quel endroit légendaire est connu pour ses forts courants et sert de passage vers Grand Line ?",
+    "answer": "Reverse Mountain"
+  },
+  {
+    "id": 105,
+    "difficulty": "medium", 
+    "question": "Quel est le nom du village où Shanks a laissé son chapeau à Luffy ?",
+    "answer": "Fushia"
+  },
+  {
+    "id": 106,
+    "difficulty": "difficult",
+    "question": "Quelle ville a été attaquée par Baggy le Clown dans East Blue ?",
+    "answer": "Orange Town"
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "id": 151,
+    "difficulty": "medium",
+    "question": "Quel personnage manie un jutte en granite marin et possède le pouvoir du Fruit de la Fumée ?",
+    "answer": "Smoker"
+  },
+  {
+    "id": 152,
+    "difficulty": "medium",
+    "question": "Sous les ordres de quelle pirate Kobby travaillait-il comme mousse lorsqu’il a rencontré Luffy ?",
+    "answer": "Alvida"
+  },
+  {
+    "id": 153,
+    "difficulty": "easy",
+    "question": "Qui s'autoproclame comme étant : \"La voleuse de pirate\" ?",
+    "answer": "Nami"
+  },
+  {
+    "id": 154,
+    "difficulty": "easy",
+    "question": "Qui porte le surnom de \"Chasseur de pirates\"  ?",
+    "answer": "Zoro"
+  },
+  {
+    "id": 155,
+    "difficulty": "easy",
+    "question": "Quel homme-poisson est le chef du gang qui a pris le contrôle du village de Nami ?",
+    "answer": "Arlong"
+  },
+  {
+    "id": 156,
+    "difficulty": "medium",
+    "question": "Qui est la tavernière de Fushia ?",
+    "answer": "Makino"
+  },
+    {
+    "id": 157,
+    "difficulty": "medium",
+    "question": "Qui est surnommé \"OEil de Faucon\" ?",
+    "answer": "Mihawk"
+  },
+  {
+    "id": 158,
+    "difficulty": "medium",
+    "question": "Quel capitaine pirate possède le pouvoir du Fruit du Bara Bara (Fruit de la division) ?",
+    "answer": ["Baggy", "Buggy", "Buggy le Clown"],
+    "answerShow": "Baggy le Clown"
+  },
+  {
+    "id": 159,
+    "difficulty": "medium",
+    "question": "Quel personnage de la Marine est obsédé par la collecte de sabres légendaires ?",
+    "answer": "Tashigi"
+  },
+  {
+    "id": 160,
+    "difficulty": "medium",
+    "question": "Quel personnage prétentieux est le fils du Capitaine Morgan à Shells Town ?",
+    "answer": "Hermep"
+  },
+  {
+    "id": 161,
+    "difficulty": "difficult",
+    "question": "Quel vice-capitaine de la bande à Baggy est surnommé \"le dresseur de fauves\"  ?",
+    "answer": "Morge"
+  },
+  {
+    "id": 162,
+    "difficulty": "difficult",
+    "question": "Comment s'appelle le chien fidèle d'Orange Town ?",
+    "imageUrl": "/images-question/chouchou.jpg",
+    "answer": "Chouchou"
+  },
+  {
+    "id": 163,
+    "difficulty": "easy",
+    "question": "Quel menteur invétéré passait son temps à troubler la tranquillité de son village ?",
+    "answer": "Usopp"
+  },
+  {
+    "id": 164,
+    "difficulty": "medium",
+    "question": "Quel capitaine pirate a attaqué le village de Syrup en secret ?",
+    "answer": "Kuro"
+  },
+  {
+    "id": 165,
+    "difficulty": "medium",
+    "question": "Qui Kuro projetait-il d'assassiner afin de récupérer sa fortune ?",
+    "answer": "Kaya"
+  },
+  {
+    "id": 166,
+    "difficulty": "difficult",
+    "question": "Qui est l’hypnotiseur des pirates du Chat Noir ?",
+    "answer": "Jango"
+  },
+  {
+    "id": 167,
+    "difficulty": "difficult",
+    "question": "Quel pirate a tenté de s’emparer du Baratie pour relancer sa flotte ?",
+    "answer": "Don Krieg"
+  },
+  {
+    "id": 168,
+    "difficulty": "medium",
+    "question": "Quel personnage a perdu son bras en sauvant Luffy de la noyade quand il était enfant ?",
+    "answer": "Shanks"
+  },
+  {
+    "id": 169,
+    "difficulty": "medium",
+    "question": "Quel personnage n'a d'yeux que pour les femmes et la cuisine ?",
+    "answer": "Sanji"
+  },
+  {
+    "id": 170,
+    "difficulty": "difficult",
+    "question": "Qui est la sœur adoptive de Nami ?",
+    "answer": "Nojiko"
+  },
+    {
+    "id": 171,
+    "difficulty": "difficult",
+    "question": "Qui a été tuée par Arlong pour avoir défendu ses filles ?",
+    "answer": "Belmer"
+  },
+  {
+    "id": 172,
+    "difficulty": "medium",
+    "question": "Quel homme-poisson, au service d'Arlong, possède six bras et manie des sabres ?",
+    "answer": "Octy"
+  },
+  {
+    "id": 173,
+    "difficulty": "difficult",
+    "question": "Quel est le shérif du village de Cocoyashi ?",
+    "answer": "Genzo"
+  }
+
+
+]
+

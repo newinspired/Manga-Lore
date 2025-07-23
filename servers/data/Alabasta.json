@@ -1,0 +1,138 @@
+[
+  {
+    "id": 251,
+    "difficulty": "medium",
+    "question": "Comment s'appelle le capitaine de la garde royale du royaume d'Alabasta, anciennement Mr 8 ?",
+    "answer": "Igaram"
+  },
+  {
+    "id": 252,
+    "difficulty": "easy",
+    "question": "Quel personage s'est infiltré dans Baroque Works sous le nom de \"Miss Wednesday\" ?",
+    "answer": ["Vivi" , "Nefertari Vivi"]
+  },
+  {
+    "id": 251,
+    "difficulty": "difficult",
+    "question": "Quel agent de Baroque Works, souvent vu avec une couronne et une batte, formait un duo avec Miss Wednesday ?",
+    "answer": ["Mr 9","Mister 9", "Mister Nine", "Mr. 9"],
+    "answerShow": "Mr. 9"
+  },
+  {
+    "id": 252,
+    "difficulty": "difficult",
+    "question": "Quelle loutre fait partie du duo des Unluckies avec sa partenaire Miss Friday ?",
+    "answer": "Mr. 13"
+  },
+  {
+    "id": 253,
+    "difficulty": "medium",
+    "question": "Quel est le nom du roi d'Alabasta, père de Vivi ?",
+    "answer": ["Nefertari Cobra", "Cobra"]
+  },
+  {
+    "id": 254,
+    "difficulty": "medium",
+    "question": "Quel est le nom de l'organisation criminelle dirigée par Crocodile dans Alabasta ?",
+    "answer": "Baroque Works"
+  },
+  {
+    "id": 255,
+    "difficulty": "difficult",
+    "question": "Quel est la capitale d'Alabasta où s'est déroulé la bataille finale contre Crocodile ?",
+    "answer": "Alubarna"
+  },
+  {
+    "id": 256,
+    "difficulty": "easy",
+    "question": "Quel personnage, anciennement membre de Baroque Works, est connu pour son pouvoir de sable ?",
+    "answer": ["Crocodile", "Sir Crocodile"]
+  },
+  {
+    "id": 257,
+    "difficulty": "medium",
+    "question": "Quel est le nom de l'arme antique que Crocodile cherche à utiliser pour contrôler Alabasta ?",
+    "answer": "Pluton"
+  },
+  {
+    "id": 258,
+    "difficulty": "difficult",
+    "question": "Quel personnage, anciennement membre de Baroque Works, possède le fruit de la cire (Doru Doru no Mi) ?",
+    "answer": ["Mr 3", "Mr. 3", "Mister 3", "Mister Three","Galdino"],
+    "answerShow": "Galdino"
+  },
+  {
+    "id": 259,
+    "difficulty": "difficult",
+    "question": "Quelle agente de Baroque Works était la partenaire de Mr. 3 ?",
+    "answer": ["Miss GoldenWeek", "Marianne"],
+    "answerShow": "Miss Goldenweek"
+  },
+  {
+    "id": 260,
+    "difficulty": "medium",
+    "question": "Qui est le capitaine de L'Équipage des Géants ayant pour rival Dorry ?",
+    "answer": ["Broggy"]
+  },
+  {
+    "id": 261,
+    "difficulty": "medium",
+    "question": "Quel géant s'est battu en duel contre Broggy pendant près d'un siècle sur Little Garden ?",
+    "answer": ["Dorry"]
+  },
+    {
+    "id": 262,
+    "difficulty": "difficult",
+    "question": "Comment s'appelle le canard géant qui a pour maîtresse Vivi ?",
+    "answer": ["Kaloo"]
+  },
+  {
+    "id": 263,
+    "difficulty": "medium",
+    "question": "Comment s'appelle la vieille docteure qui vit au château de Drum avec Chopper ?",
+    "answer": ["Dr kureha ", "Kureha"]
+  },
+  {
+    "id": 264,
+    "difficulty": "medium",
+    "question": "Comment s'appelle l’homme loyal qui s’oppose à Wapol et dirige les habitants après sa chute ?",
+    "answer": ["Dalton"]
+  },
+  {
+    "id": 265,
+    "difficulty": "difficult",
+    "question": "Quel médecin a inspiré Chopper à devenir docteur ?",
+    "answer": ["Dr. Hiluluk", "Dr Hiluluk", "Hiluluk"]
+  },
+  {
+    "id": 266,
+    "difficulty": "easy",
+    "question": "Quel renne au nez bleu a mangé le Hito Hito no Mi ?",
+    "answer": ["Chopper", "Tony Tony Chopper"]
+  },
+  {
+    "id": 267,
+    "difficulty": "medium",
+    "question": "Quel ancien roi tyrannique de Drum a été renversé par Luffy et son équipage ?",
+    "answer": ["Wapol"]
+  },
+  {
+    "id": 268,
+    "difficulty": "difficult",
+    "question": "Quel subordonné de Wapol combat en lançant ses cheveux électrifiés ?",
+    "answer": ["Kuromarimo"]
+  },
+  {
+    "id": 269,
+    "difficulty": "difficult",
+    "question": "Comment se nomme l'officier de Wapol utilisant un arc et des flèches explosives au combat ?",
+    "answer": ["Chess"]
+  }
+
+
+
+
+
+
+    
+]

@@ -1,0 +1,42 @@
+
+
+header{
+  @media screen and (max-width: 675px) {
+      display: none;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px 30px 0px;
+
+  img {
+    border-radius : 50px;
+
+    width :60%;
+    height: 200px;
+    object-fit: cover;
+
+    @media screen and (max-width: 1120px) {
+      width : 600px;
+    
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    position : absolute;
+    color : white;
+  }
+}
+
+.header-separate{
+  display: flex;
+  align-items: center;
+  height : 2px;
+  width : 210px;
+  background-color : #1969ae;
+  margin: 0 auto;
+}

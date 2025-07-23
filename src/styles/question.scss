@@ -1,0 +1,32 @@
+.container-question-component {
+  display: flex;
+  flex-direction: column;
+
+  .container-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #20eeec;
+    height: 400px;
+    padding-top: 150px;
+
+    .question-text {
+      text-align: center;
+      font-size: 35px;
+    }
+
+    input {
+      all: unset;
+      border-bottom: 1px solid black;
+      padding: 5px 100px 10px 0px;
+      font-size: 25px;
+    }
+  }
+
+  .container-ranking {
+    padding: 10px;
+  }
+}
+

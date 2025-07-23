@@ -1,0 +1,81 @@
+$mainfont: 'cormorant';
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.container-ready-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  .waiting-room {
+    background-color: #1088ba;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+    font-family: $mainfont;
+  }
+
+  .arc-selection {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9e3b2;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 50px;
+    border: 1px solid black;
+
+    .choose-arc {
+      display: flex;
+    }
+
+    .arc-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .arc-button {
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid transparent;
+        transition: 0.2s ease;
+
+        &.selected {
+          border-color: black;
+          transform: scale(1.05);
+        }
+
+        &.eastblue {
+          background-color: #b3e5fc;
+        }
+
+        &.alabasta {
+          background-color: #ffe0b2;
+        }
+
+        &.skypiea {
+          background-color: #0277bd;
+        }
+      }
+    }
+  }
+
+  .ready-button {
+    background-color: #1088ba;
+    border-radius: 25px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $mainfont;
+    cursor: pointer;
+  }
+}
