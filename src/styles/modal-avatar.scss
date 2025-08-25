@@ -1,3 +1,7 @@
+$color-modal : #cde0d9;
+$mainfont: 'Cinzel';
+
+
 .login-page {
   display: flex;
   justify-content: center;
@@ -10,7 +14,7 @@
   align-items: center;
   position: relative;
   gap: 50px;
-  padding: 50px 0px 130px 0px;
+  padding: 100px 0px 20px 0px;
 
   @media screen and (max-width: 1120px) {
     flex-direction: column;
@@ -22,24 +26,25 @@
 .modal-avatar-panel {
     display: flex;
     flex-direction: column;
-    background: #f9e3b2;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-modal;
     border-radius: 50px;
-    border : 1px solid black;
     padding: 25px;
     width: 450px;
     height: 360px;
 
     .modal-avatar-header{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin : 20px 0px 20px 0px;
+        justify-content: center;
+
+        margin : 10px 0px 15px 0px;
 
         h4{
             padding :0px;
-            margin: 0px 0px 0px 160px;
-            font-size : 22px;
-            font-family: 'Cormorant Garamond';
+            margin : 0px;
+            font-size : 24px;
+            font-family: $mainfont;
         }
 
         .close-btn{
@@ -59,20 +64,27 @@
 .avatar-grid {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 13px;
+  gap: 20px;
 }
 
 .avatar-grid img {
-  height: 75px;
-  width : 75px;
+  height: 90px;
+  width: 90px;
   border-radius: 15px;
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
-  border : 1px solid white;
+  border: 1px solid white;
+  image-rendering: auto;
+
+  &:hover {
+    transform: scale(1.07);
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  }
 
   &.selected {
-    border : 1px solid #b6de6e;
+    border: 1px solid #b6de6e;
     transform: scale(1.1);
   }
 }

@@ -1,115 +1,236 @@
-$mainfont : 'Cormorant Garamond';
 
 
-body{
-    background-color: #18d6e6;
-    
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Ruthie&display=swap');
+
+$font-header: "Ruthie", cursive;
+$mainfont: 'Cinzel';
+$otherfont: 'Cormorant Garamond', serif;
+
+$colorbackground: #004b81;
+$color-modal : #cde0d9;
+$button-color: #ffd3a5;
+$button-active: #ffaa6e;
+
+html, body {
+  height: 100%;
+  font-family: $mainfont;
 }
 
-.login-page{
+body {
+  background-image: url('../assets/illustration/eastBlue.png');
+  background-size: cover;    
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;
+  
+
+
+  &::before {
+    content: '';
+    position: fixed;
+    background-attachment: fixed;
+    inset: 0;
+    background-color: rgba(0, 75, 129, 0.9);
+    z-index: -1;
+  }
+
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5%;
+  cursor: default;
+
+  .modal-login {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-modal;
+    padding: 25px;
+    border-radius: 50px;
+    gap: 20px;
+    height: 360px;
+    width: 480px;
 
-    margin : 0px 5%;
-    cursor :default;
+    input,
+    button {
+      all: unset;
+      height: 40px;
+      width: 10ch;
+    }
 
-    .modal-login{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #f9e3b2;
-        padding : 25px;
-        border-radius : 50px;
-        gap : 20px;
-        height : 360px;
-        width : 480px;
-        border : 1px solid black;
+    input {
+      width: 95%;
+      cursor: text;
+      box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+      color: black;
+      font-weight: 600;
+      font-family: $otherfont;
+      font-size: 22px;
 
-        input,button {
-            all : unset;
-            height : 40px;
-        
-        }
+      .placeholder {
+        color: $button-color;
+      }
+    }
 
-        .room-input{
-            background-color: #3ceef2 ;
-        }
+    .room-input {
+      background-color: $button-color;
+    }
 
-        input{
-            width : 95%;
-            cursor : text;
-            box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
-            font-size : 20px;
-            
-            .placeholder{
-                color : white;
-            }
-        }
-        
-            
-        button{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #18d5e8;
-            
-            width :95%;
-            font-size : 22px;
-            font-family : inherit;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: $mainfont;
+      background-color: $button-color;
+      box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+
+      &:hover:not(:disabled) {
+        transform: scale(1.02);
+        box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.4);
+      }
+
+      &:disabled {
+        background-color: $button-color;
+        opacity: 0.6;
+        cursor:default;
+      }
+    }
+
+    .button-top {
+      background-color: $button-color;
+    }
+
+    .button-mid {
+      background-color: #bfbfbf;
+      opacity: 0.6;
+
+      &.active {
+        background-color: $button-active;
+        opacity: 1;
+      }
+    }
+
+    .button-bot {
+      background-color: #8ae0db;
+      opacity: 0.6;
+    }
+
+    .button-low.active {
+      background-color: #8ae0db;
+      opacity: 1;
+    }
+
+    .button-ready {
+        background-color: #bfbfbf;
+        opacity: 0.6;
+
+        &.active {
+            background-color: $button-active;
+            opacity: 1;
             cursor: pointer;
-            box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
-
-            &:disabled {
-            background-color: #bfbfbf;
-            opacity: 0.6;
-            }
-        }
-
-        .button-ready{
-            background-color : #b6de6e;
-        }
-        
-        .button-top{
-            background-color : #1088ba;
-        }
-
-        .button-mid{
-            background-color : #18d3e2;
-        }
-
-        .button-bot{
-            background-color : #3ceef2;
-        }
-
-        h2,h3{
-            font-family: $mainfont;
-            font-size: 22px;
-            margin : 0px;
-            
-        }
-
-
-
-        .avatar-choose{
-            display : flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap : 10px;
-
-            img{
-                height : 80px;
-                width :80px;
-                border-radius : 15px;
-                border: 1px solid black;
-                cursor : pointer;
-            }
-            .selected {
-                border: 3px solid #d9a840;
-                transform: scale(1.05); 
-                
-            }
         }
     }
+
+    .button-low {
+        background-color: #bfbfbf;
+        opacity: 0.6;
+
+        &.active {
+            background-color: #ffb76b;
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    .button-bot.active {
+        background-color: $button-color;
+        opacity: 1;
+        cursor: pointer;
+        }
+
+    h2,
+    h3 {
+      font-family: $mainfont;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .avatar-choose {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      img {
+        height: 80px;
+        width: 80px;
+        border-radius: 15px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      .selected {
+        border: 3px solid $button-color;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+
+
+.info-collapses {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 25px 0px;
+
+  .collapse {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    width : 550px;
+
+    .collapse-header {
+      all: unset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $button-color;
+      padding: 10px 0px;
+      cursor: pointer;
+      font-family: $mainfont;
+      font-weight: 700;
+      font-size: 20px;
+      width : 100%;
+
+      &:hover {
+        background-color: $button-active;
+      }
+    }
+
+    .collapse-content {
+      background-color: $color-modal;
+      padding: 5px 20px;
+      font-family: $otherfont;
+      font-size: 16px;
+      color: black;
+      line-height: 1.5;
+
+      p{
+        font-weight: 600;
+        font-family : $otherfont;
+        font-size : 19px;
+      }
+    }
+  }
 }

@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Ruthie&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Love+Light&display=swap');
+
+
+
+$button-color: #fff4df;
+$font-header: 'Love light';
+$color-header: #ffaa6e;
 
 header{
   @media screen and (max-width: 675px) {
@@ -10,26 +18,48 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0px 30px 0px;
+  margin: 30px 0px 30px 0px;
 
-  img {
-    border-radius : 50px;
+ .header-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
 
-    width :60%;
-    height: 200px;
-    object-fit: cover;
+    background: url('../assets/illustration/eastBlue.png');
 
-    @media screen and (max-width: 1120px) {
-      width : 600px;
-    
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width : 700px;
+    height: 100px;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    border : 1px solid #ffd3a5;
+
+      &::before {
+      content: '';
+      border-radius: 50px;
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 75, 129, 0.7);
+      z-index: 0;
     }
-  }
 
-  h1 {
-    font-size: 40px;
-    position : absolute;
-    color : white;
+
+
+    h1{
+      position: relative;
+      font-family: $font-header;
+      font-size: 120px;
+      font-weight: 400;
+      color: $color-header;
+    }
+
   }
+  
+
 }
 
 .header-separate{
@@ -37,6 +67,6 @@ header{
   align-items: center;
   height : 2px;
   width : 210px;
-  background-color : #1969ae;
+  background-color : $button-color;
   margin: 0 auto;
 }

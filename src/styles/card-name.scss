@@ -1,4 +1,4 @@
-
+$card-color: #ffd3a5;;
 
 .container-card-name{
     display: flex;
@@ -33,24 +33,29 @@
     .card-name{
         display: flex;
         align-items :center;
-        justify-content: space-between;
-        background-color : #3ceef2;
-        height : 80px;
-        width : 210px;
+        background-color : $card-color;
+        height : 85px;
+        width : 270px;
         border-radius : 25px;
-        border : 3px solid #3ceef2;
+        border : 3px solid $card-color;
         box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
         
 
         img{
-            height : 80px;
-            border-top-right-radius: 25px;
-            border-bottom-right-radius: 25px;
+            height : 85px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+
         }
 
 
         p{
             margin-left : 10px;
+            font-size: 20px;
+            width: 155px;
+            max-width: 155px;
+            font-family:'Cormorant Garamond', serif;
+            font-weight: 700;
         }
 
         

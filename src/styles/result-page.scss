@@ -1,0 +1,53 @@
+.result-page {
+  text-align: center;
+  padding: 20px;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .result-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: #fff;
+
+    .player-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .avatar-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+      }
+
+      .username {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+
+    .score {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+  }
+}

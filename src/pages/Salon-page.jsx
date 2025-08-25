@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from 'react';
 import CardName from '../components/card-name.jsx';
 import WaitingRoom from '../components/waiting-room.jsx';
 import socket from '../socket.js';
+import Footer from '../components/footer.jsx';
 import '../styles/card-name.scss';
 import '../styles/salon-page.scss';
 
@@ -19,6 +20,15 @@ function SalonPage() {
     { label: 'East Blue', value: 'EastBlue' },
     { label: 'Alabasta', value: 'Alabasta' },
     { label: 'Skypiea', value: 'Skypiea' },
+    { label: 'Water Seven', value: 'WaterSeven' },
+    { label: 'Thriller Bark', value: 'ThrillerBark' },
+    { label: 'MarineFord', value: 'MarineFord' },
+    { label: 'Fish-Man Island', value: 'FishManIsland' },
+
+    { label: 'Dressrosa', value: 'Dressrosa' },
+    { label: 'Whole Cake Island', value: 'WholeCakeIsland' },
+    { label: 'Wano', value: 'Wano' },
+    { label: 'Egg head', value: 'Egg head' },
   ];
 
   const [selectedArcs, setSelectedArcs] = useState([]);
@@ -47,7 +57,7 @@ function SalonPage() {
     };
   }, [room, username, avatar, navigate]);
 
-  // ✅ Mise à jour du statut d’hôte
+
   useEffect(() => {
     const handleHostStatus = (isHost) => {
       setIsHost(isHost);
@@ -58,7 +68,6 @@ function SalonPage() {
     };
   }, []);
 
-  // ✅ Synchronise les arcs sélectionnés (émis par le serveur)
   useEffect(() => {
     const handleArcsUpdate = (updatedArcs) => {
       setSelectedArcs(updatedArcs);
@@ -71,19 +80,22 @@ function SalonPage() {
 
   return (
     <div className="container">
-      <div className="container-waiting">
-        <WaitingRoom
-          roomCode={room}
-          username={username}
-          isHost={isHost}
-          allArcs={allArcs}
-          selectedArcs={selectedArcs}
-          setSelectedArcs={setSelectedArcs}
-        />
+      <div className='container-salon'>
+        <div className="container-waiting">
+          <WaitingRoom
+            roomCode={room}
+            username={username}
+            isHost={isHost}
+            allArcs={allArcs}
+            selectedArcs={selectedArcs}
+            setSelectedArcs={setSelectedArcs}
+          />
+        </div>
+        <div className="container-bonne-chance">
+          <CardName currentSocketId={socket.id} />
+        </div>
       </div>
-      <div className="container-bonne-chance">
-        <CardName currentSocketId={socket.id} />
-      </div>
+      <Footer />
     </div>
   );
 }

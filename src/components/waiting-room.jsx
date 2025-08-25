@@ -39,6 +39,9 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
     sendPlayerReady(roomCode, newReadyState);
   };
 
+  const isButtonDisabled = isHost && selectedArcs.length === 0;
+  const buttonLabel = isReady ? 'Ready' : 'Start Game';
+
   return (
     <div className='container-ready-button'>
       <div className='waiting-room'>
@@ -49,7 +52,7 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
 
       <div className="arc-selection">
         <div className='choose-arc'>
-          <h3>Choisissez les arcs :</h3>
+          <h3>Select arcs you want to be tested on !</h3>
         </div>
         <div className="arc-buttons">
           {allArcs.map(({ label, value }) => (
@@ -70,15 +73,32 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
             </button>
           ))}
         </div>
+        <div className='select-all'>
+          <button
+            className="arc-button all"
+            disabled={!isHost}
+            onClick={() => {
+              if (!isHost) return;
+              if (selectedArcs.length === allArcs.length) {
+                setSelectedArcs([]);
+              } else {
+                setSelectedArcs(allArcs.map(arc => arc.value));
+              }
+            }}
+          >
+            {selectedArcs.length === allArcs.length ? 'Deselect All' : 'Select All'}
+          </button>
+
+        </div>
       </div>
 
       <div className='ready-button'>
         <button
           onClick={handleReadyClick}
-          className={isHost && selectedArcs.length === 0 ? 'disabled-button' : ''}
-          disabled={isHost && selectedArcs.length === 0}
+          disabled={isButtonDisabled}
+          className={isButtonDisabled ? '' : 'active'}
         >
-          {isReady ? 'Ready' : 'Start Game'}
+          {buttonLabel}
         </button>
       </div>
     </div>

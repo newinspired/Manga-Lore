@@ -8,14 +8,14 @@
   {
     "id": 102,
     "difficulty": "difficult",
-    "question": "Quel est le nom du village attaqué par Kuro et ses pirates sous couverture ?",
+    "question": "Quel est le nom du village attaqué par Kuro et ses pirates ?",
     "answer": "Syrup"
   },
   {
     "id": 103,
     "difficulty": "medium", 
     "question": "Comment s'appelle le navire-restaurant dirigé par Zeff dans East Blue ?",
-    "answer": "Baratie"
+    "answer": "Le Baratie"
   },
   {
     "id": 104,
@@ -26,14 +26,44 @@
   {
     "id": 105,
     "difficulty": "medium", 
-    "question": "Quel est le nom du village où Shanks a laissé son chapeau à Luffy ?",
-    "answer": "Fushia"
+    "question": "Quel est le nom du village où Shanks a transmis son chapeau à Luffy ?",
+    "answer": "Le village de Fuchsia"
   },
   {
     "id": 106,
-    "difficulty": "difficult",
+    "difficulty": "medium",
     "question": "Quelle ville a été attaquée par Baggy le Clown dans East Blue ?",
     "answer": "Orange Town"
+  },
+  {
+    "id": 107,
+    "difficulty": "difficult",
+    "question": "Dans quelle ville le Colonel Morgan dirigeait-il une base de la marine ?",
+    "answer": "Shells Town"
+  },
+  {
+    "id": 108,
+    "difficulty": "difficult",
+    "question": "Comment se nomme l'ensemble de deux mers entourant Grand Line ?",
+    "answer": "Calm Belt"
+  },
+  {
+    "id": 109,
+    "difficulty": "easy",
+    "question": "Quelle zone maritime est considérée comme étant la mer la plus faible de cet univers ?",
+    "answer": "East Blue"
+  },
+  {
+    "id": 110,
+    "difficulty": "medium",
+    "question": "Quelle immense chaîne de montagnes entoure le globe du Nord au Sud, perpendiculairement à Grand Line ?",
+    "answer": "Red Line"
+  },
+  {
+    "id": 111,
+    "difficulty": "medium",
+    "question": "Quel est le nom de l’océan qui comprend à la fois le \"Paradis\" et le \"Nouveau Monde\" ?",
+    "answer": "Grand Line"
   },
 
 
@@ -66,7 +96,7 @@
   {
     "id": 154,
     "difficulty": "easy",
-    "question": "Qui porte le surnom de \"Chasseur de pirates\"  ?",
+    "question": "Qui porte le surnom de \"Chasseur de pirates\" au début de l’œuvre ?",
     "answer": "Zoro"
   },
   {
@@ -84,15 +114,14 @@
     {
     "id": 157,
     "difficulty": "medium",
-    "question": "Qui est surnommé \"OEil de Faucon\" ?",
+    "question": "Qui est surnommé \"Œil de Faucon\" ?",
     "answer": "Mihawk"
   },
   {
     "id": 158,
     "difficulty": "medium",
     "question": "Quel capitaine pirate possède le pouvoir du Fruit du Bara Bara (Fruit de la division) ?",
-    "answer": ["Baggy", "Buggy", "Buggy le Clown"],
-    "answerShow": "Baggy le Clown"
+    "answer": "Baggy le Clown"
   },
   {
     "id": 159,
@@ -116,19 +145,18 @@
     "id": 162,
     "difficulty": "difficult",
     "question": "Comment s'appelle le chien fidèle d'Orange Town ?",
-    "imageUrl": "/images-question/chouchou.jpg",
     "answer": "Chouchou"
   },
   {
     "id": 163,
     "difficulty": "easy",
-    "question": "Quel menteur invétéré passait son temps à troubler la tranquillité de son village ?",
+    "question": "Quel personnage passait son temps à troubler la tranquillité de son village avant de rejoindre l'équipage du Chapeau de paille ?",
     "answer": "Usopp"
   },
   {
     "id": 164,
     "difficulty": "medium",
-    "question": "Quel capitaine pirate a attaqué le village de Syrup en secret ?",
+    "question": "Quel capitaine pirate a attaqué le village de Syrup afin d'assassiner Kaya ?",
     "answer": "Kuro"
   },
   {
@@ -140,7 +168,7 @@
   {
     "id": 166,
     "difficulty": "difficult",
-    "question": "Qui est l’hypnotiseur des pirates du Chat Noir ?",
+    "question": "Qui est le second de Kuro et l’hypnotiseur des pirates du Chat Noir ?",
     "answer": "Jango"
   },
   {
@@ -153,12 +181,12 @@
     "id": 168,
     "difficulty": "medium",
     "question": "Quel personnage a perdu son bras en sauvant Luffy de la noyade quand il était enfant ?",
-    "answer": "Shanks"
+    "answer": "Shanks le Roux"
   },
   {
     "id": 169,
-    "difficulty": "medium",
-    "question": "Quel personnage n'a d'yeux que pour les femmes et la cuisine ?",
+    "difficulty": "easy",
+    "question": "Quel personnage a pour objectif de trouver l'océan légendaire \"All blue\" ?",
     "answer": "Sanji"
   },
   {
@@ -169,14 +197,14 @@
   },
     {
     "id": 171,
-    "difficulty": "difficult",
+    "difficulty": "medium",
     "question": "Qui a été tuée par Arlong pour avoir défendu ses filles ?",
     "answer": "Belmer"
   },
   {
     "id": 172,
     "difficulty": "medium",
-    "question": "Quel homme-poisson, au service d'Arlong, possède six bras et manie des sabres ?",
+    "question": "Quel homme-poisson qui fut autrefois au service d'Arlong, possède six bras et manie des sabres ?",
     "answer": "Octy"
   },
   {
@@ -184,8 +212,67 @@
     "difficulty": "difficult",
     "question": "Quel est le shérif du village de Cocoyashi ?",
     "answer": "Genzo"
+  },
+  {
+    "id": 174,
+    "difficulty": "easy",
+    "question": "Quelle organisation militaire internationale est chargée de maintenir la paix à travers le monde ?",
+    "answer": "La Marine"
+  },
+  {
+    "id": 175,
+    "difficulty": "easy",
+    "question": "Qui est surnommé le \"Roi des pirates\" et a laissé derrière lui le plus grand trésor de cet univers ?",
+    "answer": "Gol D. Roger"
+  },
+  {
+    "id": 176,
+    "difficulty": "easy",
+    "question": "Comment s’appelle le petit navire offert à Luffy par Kaya et construit par Merry pour son équipage ?",
+    "answer": "Le Vogue Merry"
+  },
+  {
+    "id": 177,
+    "difficulty": "easy",
+    "question": "Comment appelle-t-on les êtres capables de respirer sous l’eau et dotés d’une force souvent supérieure aux humains ?",
+    "answer": "Les hommes-poissons"
+  },
+  {
+    "id": 178,
+    "difficulty": "easy",
+    "question": "Quel événement a été le point de départ de la grande ère de la piraterie ?",
+    "answer": "L'exécution de Gol D. Roger"
+  },
+  {
+    "id": 179,
+    "difficulty": "medium",
+    "question": "Comment se nomme le fidèle serviteur et majordome de Kaya, qui a conçu le Vogue Merry ?",
+    "answer": "Merry le majordome"
+  },
+  {
+    "id": 180,
+    "difficulty": "medium",
+    "question": "Comment se nomme la baleine à qui Luffy a promis un jour de revenir avec son équipage ?",
+    "answer": "Laboon"
+  },
+  {
+    "id": 181,
+    "difficulty": "medium",
+    "question": "Comment s'appelle l'homme qui a veillé sur Laboon tout en surveillant le Phare du Cap des Jumeaux ?",
+    "answer": "Crocus"
+  },
+    {
+    "id": 182,
+    "difficulty": "medium",
+    "question": "Quel Cap est le point d'entrée de Grand Line, au pied de Reverse Mountain ?",
+    "answer": "Le Cap des Jumeaux"
+  },
+  {
+    "id": 183,
+    "difficulty": "difficult",
+    "question": "Comment se nomme le lion de compagnie de Morge ?",
+    "answer": "Richie"
   }
-
 
 ]
 

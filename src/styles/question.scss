@@ -1,3 +1,5 @@
+$otherfont: 'Cormorant Garamond', serif;
+$color-modal : #cde0d9;
 .container-question-component {
   display: flex;
   flex-direction: column;
@@ -5,28 +7,131 @@
   .container-question {
     display: flex;
     flex-direction: column;
+
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: #20eeec;
-    height: 400px;
-    padding-top: 150px;
+    justify-content: center;
+
+    gap : 30px;
+    margin : 30px 0px;
+    padding: 25px 100px;
+    height: 500px;
+    color : black;
+    background-color:$color-modal;
+    opacity: 0.9;
+
+
+
 
     .question-text {
       text-align: center;
-      font-size: 35px;
+      font-size: 40px;
+      font-family: $otherfont;
+      padding-top: 0px;
+      margin : 0px;
     }
 
     input {
       all: unset;
       border-bottom: 1px solid black;
       padding: 5px 100px 10px 0px;
-      font-size: 25px;
+      font-size: 30px;
+      font-family: $otherfont;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin: 0 15px;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
   }
 
-  .container-ranking {
-    padding: 10px;
+}
+
+button.btn-correct,
+button.btn-wrong,
+button.btn-finish {
+  all: unset;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button.btn-correct {
+  background-color: #4caf50;
+  color: white;
+
+  &:hover {
+    background-color: #45a049;
   }
 }
 
+button.btn-wrong {
+  background-color: #f44336;
+  color: white;
+
+  &:hover {
+    background-color: #d32f2f;
+  }
+}
+
+button.btn-finish {
+  background-color: #2196f3;
+  color: white;
+
+  &:hover {
+    background-color: #1976d2;
+  }
+}
+
+
+.waiting-screen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+
+  img{
+    width: 800px;
+    height: auto;
+  }
+
+  p{
+    font-size: 32px;
+    font-family: $otherfont;
+    margin : 10px 0px;
+  }
+}
+
+.buttons-correction{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+
+  button{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color : #ffaa6e;
+    font-weight: 600 ;
+    border-radius: 20px;
+    width : 70px;
+  }
+}

@@ -1,28 +1,30 @@
 $mainfont : 'Cormorant Garamond';
+$button-color: #cde0d9;
 
 footer{
-    width : 60%;
+    width : 950px;
     .footer{
         display : flex;
         justify-content: center;
         align-items: center;
         gap : 30px;
         width : 100%;
+        margin : 0px 0px 15px 0px;
 
         img{
             height : 230px;
         }
 
         h3{
-            display: flex;
+            display : flex;
             align-items: center;
             justify-content: center;
-            background-color: #3ceef2;
+            background-color: $button-color;
             width : 100%;
             padding : 10px 0px;
-            font-weight: normal;
+            font-weight: 500;
             font-family: $mainfont;
-            font-size: 20px;
+            font-size: 22px;
             box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
 
             span{
@@ -38,7 +40,7 @@ footer{
     align-items: center;
     height : 2px;
     width : 150px;
-    background-color : #1969ae;
+    background-color : $button-color;
     margin: 0 auto;
-    margin-bottom : 10px;
+    margin-bottom : 30px;
 }

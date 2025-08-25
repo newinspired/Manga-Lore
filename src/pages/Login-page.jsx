@@ -1,62 +1,48 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/login-page.scss';
-import '../styles/modal-avatar.scss'
-import { useState, useEffect } from 'react';
+import '../styles/modal-avatar.scss';
+import { useState, useEffect, useRef } from 'react';
 import socket from '../socket';
 import ModalAvatar from '../components/modal-avatar.jsx';
 import Footer from '../components/footer.jsx';
 
-import trafalgarLaw from '../assets/avatars/trafalgar.jpg';
-import blackbeard from '../assets/avatars/blackbeard.jpg';
-import luffy from '../assets/avatars/luffy.jpg';
-import shanks from '../assets/avatars/shanks.jpg';
-import baggy from '../assets/avatars/baggy.jpg';
+import luffy from '../assets/avatars-color/luffy.jpg';
+import zoro from '../assets/avatars-color/zoro.jpg';
+import nami from '../assets/avatars-color/nami.jpg';
+import usopp from '../assets/avatars-color/usopp.jpg';
+import sanji from '../assets/avatars-color/sanji.jpg';
 
-import sanji from '../assets/avatars/sanji.jpg';
-import nami from '../assets/avatars/nami.jpg';
-import mihawk from '../assets/avatars/mihawk.jpg';
-import crocodile from '../assets/avatars/crocodile.jpg'
-import hancock from '../assets/avatars/hancock-manga.jpg';
+import chopper from '../assets/avatars-color/chopper.jpg';
+import robin from '../assets/avatars-color/robin.jpg';
+import franky from '../assets/avatars-color/franky.jpg';
+import brook from '../assets/avatars-color/brook.jpg';
+import jimbei from '../assets/avatars-color/jimbei.jpg';
 
-import doflamingo from '../assets/avatars/doflamingo.jpg';
-import barbeBlanche from '../assets/avatars/barbe-blanche.jpg';
-import sabo from '../assets/avatars/sabo.jpg';
-import akainu from '../assets/avatars/akainu.jpg';
-import aokiji from '../assets/avatars/aokiji.jpg';
-
-import kaido from '../assets/avatars/kaido.jpg';
-import robin from '../assets/avatars/robin.jpg';
-import ace from '../assets/avatars/ace.jpg';
-import zoro from '../assets/avatars/zoro.jpg'
+import shanks from '../assets/avatars-color/shanks.jpg';
+import kobby from '../assets/avatars-color/kobby.jpg';
 
 
 function LoginPage({ setUsername, setRoomCode }) {
   const navigate = useNavigate();
-
+  const modalRef = useRef(null);
   const avatarOptions = [
-
-    { name: 'trafalgarLaw', src: trafalgarLaw },
     { name: 'shanks', src: shanks },
+    { name: 'kobby', src: kobby },
+
     { name: 'luffy', src: luffy },
-    { name: 'doflamingo', src: doflamingo },
-    
-    { name: 'akainu', src: akainu },
-
-    { name: 'Hancock', src: hancock },
-    { name: 'Mihawk', src: mihawk },
-
-    
-    { name: 'Barbe noir', src: blackbeard },
-    { name: 'robin', src: robin },
-    { name: 'Ace', src: ace },
-
-
-  
+    { name: 'zoro', src: zoro },
     { name: 'nami', src: nami },
-    { name: 'sabo', src: sabo },
+    { name: 'usopp', src: usopp },
     { name: 'sanji', src: sanji },
-    { name: 'crocodile', src: crocodile },
-    { name: 'Barbe Blanche', src: barbeBlanche },
+
+    { name: 'chopper', src: chopper },
+    { name: 'robin', src: robin },
+    { name: 'franky', src: franky },
+    { name: 'brook', src: brook },
+    { name: 'jimbei', src: jimbei },
+
+
+
   ];
 
   const [input, setInput] = useState('');
@@ -65,36 +51,74 @@ function LoginPage({ setUsername, setRoomCode }) {
   const [selectedAvatar, setSelectedAvatar] = useState(avatarOptions[0].name);
   const [showAvatarModal, setShowAvatarModal] = useState(false);
 
-  const isFormValid = input.trim() !== '' && roomInput.trim() !== '';
+  const trimmedInput = input.trim();
+  const trimmedRoom = roomInput.trim();
+  const isFormValid = trimmedInput !== '' && trimmedRoom !== '';
 
-  const generateRoomCode = () => {
+  const [showRules, setShowRules] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
+
+
+
+  const handleCreateGame = () => {
+    if (trimmedInput === '') return;
+
     const code = Math.random().toString(36).substring(2, 8).toUpperCase();
     setRoomInput(code);
+
+    const avatarObj = avatarOptions.find(a => a.name === selectedAvatar);
+    setUsername(trimmedInput);
+    setRoomCode(code);
+
+    localStorage.setItem('username', trimmedInput);
+    localStorage.setItem('roomCode', code);
+    localStorage.setItem('avatar', selectedAvatar);
+
+    socket.emit('createRoom', code, trimmedInput, selectedAvatar);
+
+    navigate(`/salon/${code}`, {
+      state: {
+        username: trimmedInput,
+        avatar: avatarObj.name,
+      },
+    });
   };
 
   const handleSubmit = () => {
-    const trimmed = input.trim();
-    const trimmedRoom = roomInput.trim();
+    if (!isFormValid) return;
 
-    if (trimmed && trimmedRoom) {
-      const avatarObj = avatarOptions.find(a => a.name === selectedAvatar);
-      setUsername(trimmed);
-      setRoomCode(trimmedRoom);
+    const avatarObj = avatarOptions.find(a => a.name === selectedAvatar);
+    setUsername(trimmedInput);
+    setRoomCode(trimmedRoom);
 
-      localStorage.setItem('username', trimmed);
-      localStorage.setItem('roomCode', trimmedRoom);
-      localStorage.setItem('avatar', selectedAvatar);
+    localStorage.setItem('username', trimmedInput);
+    localStorage.setItem('roomCode', trimmedRoom);
+    localStorage.setItem('avatar', selectedAvatar);
 
-      socket.emit('createRoom', trimmedRoom, trimmed, selectedAvatar);
+    socket.emit('createRoom', trimmedRoom, trimmedInput, selectedAvatar);
 
-      navigate(`/salon/${trimmedRoom}`, {
-        state: {
-          username: trimmed,
-          avatar: avatarObj.name,
-        },
-      });
-    }
+    navigate(`/salon/${trimmedRoom}`, {
+      state: {
+        username: trimmedInput,
+        avatar: avatarObj.name,
+      },
+    });
   };
+
+  // 👇 Ferme le champ "Join private game" si on clique en dehors de la modal
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setShowRoomInput(false);
+        setRoomInput('');
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   useEffect(() => {
     socket.on('connect', () => {
@@ -114,24 +138,51 @@ function LoginPage({ setUsername, setRoomCode }) {
   return (
     <div className="login-page">
       <div className="login-wrapper">
-        <div className="modal-login">
-          <h3>MANGA | LORE</h3>
-          
-            <input
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Name"
-              maxLength={11}
-            />
+        <div className="modal-login" ref={modalRef}>
+          <h3>ONE PIECE - GAME</h3>
 
-            <button className='button-top' onClick={() => setShowAvatarModal(true)}>Choose an avatar</button>
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => {
+              const val = e.target.value;
+              const formatted = val.charAt(0).toUpperCase() + val.slice(1);
+              if (formatted.length <= 10) setInput(formatted);
+            }}
+            placeholder="Name"
+            maxLength={10}
             
-            <button className='button-mid' onClick={generateRoomCode}>Create private game</button>
+          />
 
-            {!showRoomInput ? (
-              <button className='button-bot' onClick={() => setShowRoomInput(true)}>Join a game</button>
-            ) : (
+          <button
+            className="button-top"
+            onClick={() => setShowAvatarModal((prev) => !prev)}
+          >
+            Choose an avatar
+          </button>
+
+          <button
+            className={`button-mid ${trimmedInput ? 'active' : ''}`}
+            onClick={handleCreateGame}
+            disabled={!trimmedInput}
+          >
+            Create private game
+          </button>
+
+          {!showRoomInput ? (
+            <button
+              className={`button-bot ${trimmedInput ? 'active' : ''}`}
+              onClick={() => {
+                if (trimmedInput) {
+                  setShowRoomInput(true);
+                }
+              }}
+              disabled={!trimmedInput}
+            >
+              Private party code
+            </button>
+          ) : (
+            <>
               <input
                 className="room-input"
                 type="text"
@@ -140,26 +191,71 @@ function LoginPage({ setUsername, setRoomCode }) {
                 placeholder="Game code"
                 maxLength={10}
               />
-            )}
+            </>
+          )}
 
-              
-              
-
-            <button className="button-ready" onClick={handleSubmit} disabled={!isFormValid}>Ready</button>
-          
-        </div> 
+          <button
+            className={`button-ready ${isFormValid ? 'active' : ''}`}
+            onClick={handleSubmit}
+            disabled={!isFormValid}
+          >
+            Join private game
+          </button>
+        </div>
 
         {showAvatarModal && (
-              <ModalAvatar
-                avatarOptions={avatarOptions}
-                selectedAvatar={selectedAvatar}
-                onSelect={setSelectedAvatar}
-                onClose={() => setShowAvatarModal(false)}
-              />
-            )}
+          <ModalAvatar
+            avatarOptions={avatarOptions}
+            selectedAvatar={selectedAvatar}
+            onSelect={setSelectedAvatar}
+            onClose={() => setShowAvatarModal(false)}
+          />
+        )}
+      </div>
+      
+      <div className="info-collapses">
+        <div className="collapse">
+          <button
+            className="collapse-header"
+            onClick={() =>
+              setShowRules((prev) => !prev)
+            }
+          >
+            Game Rules
+          </button>
+          {showRules && (
+            <div className="collapse-content">
+              <p>
+                This is a quiz game about the world of One Piece. Regardless of how far you have read or seen the work, you can select the arcs you want. First, you will be asked a series of 20 questions ranging from easy to difficult, and then you will correct your answers yourself.
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* Collapse pour la description */}
+        <div className="collapse">
+          <button
+            className="collapse-header"
+            onClick={() =>
+              setShowDescription((prev) => !prev)
+            }
+          >
+            Description
+          </button>
+          {showDescription && (
+            <div className="collapse-content">
+              <p>
+                This site was created by a fan who loves Eiichirō Oda and his work. It is, of course, not official. I really hope you will enjoy the game :)
+              </p>
+            </div>
+          )}
+        </div>
       </div>
 
-      <Footer />  
+
+
+
+      <Footer />
     </div>
   );
 }

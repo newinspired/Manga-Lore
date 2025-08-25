@@ -1,5 +1,4 @@
 import '../styles/footer.scss'
-import illustrationFooter from '../assets/header-footer/illustration-chapitre-1023.png'
 
 
 

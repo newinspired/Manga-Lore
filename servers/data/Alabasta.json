@@ -8,27 +8,14 @@
   {
     "id": 252,
     "difficulty": "easy",
-    "question": "Quel personage s'est infiltré dans Baroque Works sous le nom de \"Miss Wednesday\" ?",
-    "answer": ["Vivi" , "Nefertari Vivi"]
-  },
-  {
-    "id": 251,
-    "difficulty": "difficult",
-    "question": "Quel agent de Baroque Works, souvent vu avec une couronne et une batte, formait un duo avec Miss Wednesday ?",
-    "answer": ["Mr 9","Mister 9", "Mister Nine", "Mr. 9"],
-    "answerShow": "Mr. 9"
-  },
-  {
-    "id": 252,
-    "difficulty": "difficult",
-    "question": "Quelle loutre fait partie du duo des Unluckies avec sa partenaire Miss Friday ?",
-    "answer": "Mr. 13"
+    "question": "Quel personnage s'est infiltré dans Baroque Works sous le nom de \"Miss Wednesday\" ?",
+    "answer": "Nefertari Vivi"
   },
   {
     "id": 253,
     "difficulty": "medium",
     "question": "Quel est le nom du roi d'Alabasta, père de Vivi ?",
-    "answer": ["Nefertari Cobra", "Cobra"]
+    "answer": "Nefertari Cobra"
   },
   {
     "id": 254,
@@ -39,95 +26,241 @@
   {
     "id": 255,
     "difficulty": "difficult",
-    "question": "Quel est la capitale d'Alabasta où s'est déroulé la bataille finale contre Crocodile ?",
+    "question": "Quelle est la capitale d'Alabasta où s'est déroulé la bataille finale contre Crocodile ?",
     "answer": "Alubarna"
   },
   {
     "id": 256,
     "difficulty": "easy",
-    "question": "Quel personnage, anciennement membre de Baroque Works, est connu pour son pouvoir de sable ?",
-    "answer": ["Crocodile", "Sir Crocodile"]
+    "question": "Quel personnage, anciennement membre de Baroque Works, était le chef de l'organisation ?",
+    "answer": "Sir Crocodile"
   },
+
   {
     "id": 257,
-    "difficulty": "medium",
-    "question": "Quel est le nom de l'arme antique que Crocodile cherche à utiliser pour contrôler Alabasta ?",
-    "answer": "Pluton"
+    "difficulty": "easy",
+    "question": "Qui est le premier Grand Corsaire officiellement présenté dans le Manga ?",
+    "answer": "Sir Crocodile"
   },
   {
     "id": 258,
-    "difficulty": "difficult",
-    "question": "Quel personnage, anciennement membre de Baroque Works, possède le fruit de la cire (Doru Doru no Mi) ?",
-    "answer": ["Mr 3", "Mr. 3", "Mister 3", "Mister Three","Galdino"],
-    "answerShow": "Galdino"
+    "difficulty": "medium",
+    "question": "Quel est le nom de l'arme antique que Crocodile cherchait à utiliser pour contrôler Alabasta ?",
+    "answer": "Pluton"
   },
   {
     "id": 259,
     "difficulty": "difficult",
-    "question": "Quelle agente de Baroque Works était la partenaire de Mr. 3 ?",
-    "answer": ["Miss GoldenWeek", "Marianne"],
-    "answerShow": "Miss Goldenweek"
+    "question": "Quel personnage, anciennement membre de Baroque Works, possède le fruit de la cire (Doru Doru no Mi) ?",
+    "answer": "Mister 3"
   },
   {
     "id": 260,
-    "difficulty": "medium",
-    "question": "Qui est le capitaine de L'Équipage des Géants ayant pour rival Dorry ?",
-    "answer": ["Broggy"]
+    "difficulty": "difficult",
+    "question": "Quelle agente de Baroque Works était la partenaire de Mr. 3 ?",
+    "answer": "Miss GoldenWeek"
   },
   {
     "id": 261,
     "difficulty": "medium",
-    "question": "Quel géant s'est battu en duel contre Broggy pendant près d'un siècle sur Little Garden ?",
-    "answer": ["Dorry"]
-  },
-    {
-    "id": 262,
-    "difficulty": "difficult",
-    "question": "Comment s'appelle le canard géant qui a pour maîtresse Vivi ?",
-    "answer": ["Kaloo"]
+    "question": "Qui est le capitaine de L'Équipage des Géants ayant pour rival Dorry ?",
+    "answer": "Broggy"
   },
   {
-    "id": 263,
+    "id": 262,
     "difficulty": "medium",
-    "question": "Comment s'appelle la vieille docteure qui vit au château de Drum avec Chopper ?",
-    "answer": ["Dr kureha ", "Kureha"]
+    "question": "Quel géant s'est battu en duel contre Broggy pendant près d'un siècle sur Little Garden ?",
+    "answer": "Dorry"
+  },
+    {
+    "id": 263,
+    "difficulty": "difficult",
+    "question": "Comment s'appelle le canard géant qui a pour maîtresse Vivi ?",
+    "answer": "Kaloo"
   },
   {
     "id": 264,
     "difficulty": "medium",
-    "question": "Comment s'appelle l’homme loyal qui s’oppose à Wapol et dirige les habitants après sa chute ?",
-    "answer": ["Dalton"]
+    "question": "Comment s'appelle la vieille docteure qui vit au château de Drum avec Chopper ?",
+    "answer": "Docteur Kureha"
   },
   {
     "id": 265,
     "difficulty": "difficult",
     "question": "Quel médecin a inspiré Chopper à devenir docteur ?",
-    "answer": ["Dr. Hiluluk", "Dr Hiluluk", "Hiluluk"]
+    "answer": "Docteur Hiluluk"
   },
   {
     "id": 266,
     "difficulty": "easy",
     "question": "Quel renne au nez bleu a mangé le Hito Hito no Mi ?",
-    "answer": ["Chopper", "Tony Tony Chopper"]
+    "answer": "Tony Tony Chopper"
   },
   {
     "id": 267,
     "difficulty": "medium",
     "question": "Quel ancien roi tyrannique de Drum a été renversé par Luffy et son équipage ?",
-    "answer": ["Wapol"]
+    "answer": "Wapol"
   },
   {
     "id": 268,
     "difficulty": "difficult",
     "question": "Quel subordonné de Wapol combat en lançant ses cheveux électrifiés ?",
-    "answer": ["Kuromarimo"]
+    "answer": "Kuromarimo"
   },
   {
     "id": 269,
     "difficulty": "difficult",
     "question": "Comment se nomme l'officier de Wapol utilisant un arc et des flèches explosives au combat ?",
-    "answer": ["Chess"]
+    "answer": "Chess"
+  },
+  {
+    "id": 270,
+    "difficulty": "medium",
+    "question": "Comment s'appelle l’homme loyal qui s’oppose à Wapol et dirige les habitants après sa chute ?",
+    "answer": "Dalton"
+  },
+  { 
+    "id": 271,
+    "difficulty": "difficult",
+    "question": "Quelle est la première île de Grand Line où l'équipage du Chapeau de Paille rencontre de nombreux chasseurs de primes ?",
+    "answer": "Whiskey Peak"
+  },
+  { 
+    "id": 272,
+    "difficulty": "medium",
+    "question": "Quels membres de l'équipage du Chapeau de Paille se sont affrontés après un malentendu temporaire sur Whiskey Peak ?",
+    "answer": "Luffy et Zoro"
+  },
+  { 
+    "id": 273,
+    "difficulty": "medium",
+    "question": "Quelle île préhistorique sur Grand Line est le lieu où deux capitaines géants se sont affrontés ?",
+    "answer": "Little Garden"
+  },
+  { 
+    "id": 274,
+    "difficulty": "medium",
+    "question": "Quel était le nom de code de Nico Robin lorsqu'elle était la vice-présidente de Baroque Works ?",
+    "answer": "Miss AllSunday"
+  },
+  { 
+    "id": 275,
+    "difficulty": "medium",
+    "question": "Quel membre de l'équipage du chapeau de paille s'est fait passer pour Mr. 3 lors d'un appel de Crocodile ?",
+    "answer": "Sanji"
+  },
+  { 
+    "id": 276,
+    "difficulty": "medium",
+    "question": "Quel était l'âge du Dr. Kureha pendant l'arc de l'île de Drum (à 5 années près) ?",
+    "answer" : "139 ans"
+  },
+  { 
+    "id": 277,
+    "difficulty": "medium",
+    "question": "Quels animaux à la fourrure blanche sur l'île de Drum utilisent des avalanches pour neutraliser leurs ennemis ?",
+    "answer" : "Les Lapins des Neiges"
+  },
+  { 
+    "id": 278,
+    "difficulty": "difficult",
+    "question": "Quel est le fruit de type Zoan que Dalton a mangé sur l'île de Drum ?",
+    "answer" : "Inu Inu no Mi, Modèle Bison"
+  },
+  { 
+    "id": 279,
+    "difficulty": "easy",
+    "question": "Comment appelle-t-on les puissants pirates qui ont passé un accord avec le Gouvernement Mondial ?",
+    "answer" : "Les 7 Grands Corsaires"
+  },
+  { 
+    "id": 280,
+    "difficulty": "medium",
+    "question": "Quel ancien membre de Baroque Works peut, grâce à son Fruit du Démon, copier l'apparence des personnes qu'il a touchées ?",
+    "answer" : "Mister 2"
+  },
+  { 
+    "id": 281,
+    "difficulty": "easy",
+    "question": "Quel personnage possédant un Fruit du Démon de type Logia fait son apparition lors de l'arc Alabasta afin de retrouver Luffy ?",
+    "answer" : "Ace"
+  },
+  { 
+    "id": 282,
+    "difficulty": "medium",
+    "question": "Quel membre de Baroque Works possède un Fruit du Démon de type Paramecia lui permettant de transformer son corps en lames d'acier ?",
+    "answer" : "Mister 1"
+  },
+  { 
+    "id": 283,
+    "difficulty": "difficult",
+    "question": "Quelle agente de baroque works était la partenaire de Mister 1 ?",
+    "answer" : "Miss Doublefinger"
+  },
+  { 
+    "id": 284,
+    "difficulty": "medium",
+    "question": "Quel outil mystérieux permet de surveiller la santé d’autres personnages à distance ?",
+    "answer" : "Carte de vie"
+  },
+  { 
+    "id": 285,
+    "difficulty": "medium",
+    "question": "Quel outil permet aux navigateurs de Grand Line de se repérer en s’adaptant au champ magnétique des îles ?",
+    "answer" : "Log pose"
+  },
+  { 
+    "id": 286,
+    "difficulty": "medium",
+    "question": "Quel personnage de One Piece est célèbre pour son attaque appelée \"Poing Ardent\" ?",
+    "answer" : "Ace"
+  }, 
+  { 
+    "id": 287,
+    "difficulty": "medium",
+    "question": "Dans l'arc Alabasta, quel personnage prononce ces paroles :\"Aussi longtemps que je vivrai… jamais je ne pourrai lui pardonner !!\" ?",
+    "answer" : "Nefertari Vivi"
+  }, 
+  { 
+    "id": 288,
+    "difficulty": "difficult",
+    "question": "Quelle ancienne ville-oasis a été ensevelie par une tempête de sable, poussant tous les habitants à la quitter sauf Toto ?",
+    "answer" : "Yuba"
+  }, 
+  { 
+    "id": 289,
+    "difficulty": "difficult",
+    "question": "Quel est le nom du père de Koza, le seul homme à rester vivre dans la ville désertique de Yuba ?",
+    "answer" : "Toto"
+  }, 
+  { 
+    "id": 290,
+    "difficulty": "difficult",
+    "question": "Qui est l'ami d'enfance de Nefertari Vivi et l'ancien chef du mouvement de rébellion à Alabasta ?",
+    "answer" : "Koza"
+  }, 
+  { 
+    "id": 291,
+    "difficulty": "difficult",
+    "question": "Quel type de bâtiment était le 'Rain-Dinners' à Alabasta, où les Mugiwara ont été brièvement enfermés ?",
+    "answer" : "Un Casino"
+  }, 
+  { 
+    "id": 292,
+    "difficulty": "medium",
+    "question": "Quel garde principal du royaume d'Alabasta possède le Fruit du Tori Tori no Mi, modèle Faucon ?",
+    "answer" : "Pell le Faucon"
+  }, 
+  { 
+    "id": 293,
+    "difficulty": "difficult",
+    "question": "Quel garde principal du royaume d'Alabasta possède le Fruit DU Inu Inu no Mi modèle Chacal ?",
+    "answer" : "Chaka le Chacal"
   }
+
+
+
 
 
 

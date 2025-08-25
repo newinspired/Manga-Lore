@@ -1,11 +1,12 @@
 import '../styles/header.scss'
-import backgroundHeader from '../assets/header-footer/ocean-background.jpg'
 
 const Header = () => {
   return (
     <header>
       <div className="header">
-        <img src={backgroundHeader} alt='Illustration du chapitre 1023'></img>
+        <div className='header-banner'>
+          <h1>Manga Lore</h1>
+        </div>
       </div>
       <div className='header-separate'></div>
     </header>
