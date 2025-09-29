@@ -1,4 +1,4 @@
-$color-modal : #cde0d9;
+$color-modal : #f0f0dc;
 $mainfont: 'Cinzel';
 
 
@@ -14,7 +14,7 @@ $mainfont: 'Cinzel';
   align-items: center;
   position: relative;
   gap: 50px;
-  padding: 100px 0px 20px 0px;
+  padding: 120px 0px 20px 0px;
 
   @media screen and (max-width: 1120px) {
     flex-direction: column;
@@ -29,7 +29,7 @@ $mainfont: 'Cinzel';
     justify-content: center;
     align-items: center;
     background-color: $color-modal;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 25px;
     width: 450px;
     height: 360px;
@@ -66,16 +66,16 @@ $mainfont: 'Cinzel';
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 17px;
 }
 
 .avatar-grid img {
-  height: 90px;
-  width: 90px;
-  border-radius: 15px;
+  height: 95px;
+  width: 95px;
+  border-radius: 10px;
   object-fit: contain;
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid #f0d8b6;
   image-rendering: auto;
 
   &:hover {
@@ -84,7 +84,7 @@ $mainfont: 'Cinzel';
   }
 
   &.selected {
-    border: 1px solid #b6de6e;
+    border: 1px solid #b3926f;
     transform: scale(1.1);
   }
 }

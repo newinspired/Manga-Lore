@@ -1,5 +1,5 @@
-$mainfont : 'Cormorant Garamond';
-$button-color: #cde0d9;
+$mainfont : 'Fraunces', serif;
+$background-color: #ffffff;
 
 footer{
     width : 950px;
@@ -19,13 +19,14 @@ footer{
             display : flex;
             align-items: center;
             justify-content: center;
-            background-color: $button-color;
+            background-color: $background-color;
             width : 100%;
             padding : 10px 0px;
             font-weight: 500;
             font-family: $mainfont;
-            font-size: 22px;
+            font-size: 20px;
             box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+            border : 3px solid #b3926f;
 
             span{
                 padding-left: 7px;
@@ -40,7 +41,7 @@ footer{
     align-items: center;
     height : 2px;
     width : 150px;
-    background-color : $button-color;
+    background-color : #b3926f;
     margin: 0 auto;
     margin-bottom : 30px;
 }

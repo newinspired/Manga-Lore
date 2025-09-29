@@ -1,0 +1,423 @@
+[
+    {
+        "id": 501,
+        "difficulty": "medium",
+        "question": "Qui est le commandant de la deuxième flotte de Barbe Blanche ?",
+        "answer": "Portgas D. Ace"
+    },
+    {
+        "id": 502,
+        "difficulty": "medium",
+        "question": "Pour quelle raison Ace part-il à la recherche de Barbe Noire, sur ordre de Barbe Blanche ?",
+        "answer": "Pour le punir d’avoir tué un membre de son équipage"
+    },
+    {
+        "id": 503,
+        "difficulty": "easy",
+        "question": "Quel futur membre de l’équipage du Chapeau de Paille rencontre-t-on sur Thriller Bark, présenté comme un squelette gentleman ?",
+        "answer": "Brook"
+    },
+    {
+        "id": 504,
+        "difficulty": "easy",
+        "question": "Quel est le fruit du démon de Brook ?",
+        "answer": "Le fruit de la résurrection (Yomi Yomi no Mi)"
+    },
+    {
+        "id": 505,
+        "difficulty": "medium",
+        "question": "Pourquoi Brook ne pouvait-il pas s’exposer aux rayons du soleil sur Thriller Bark ?",
+        "answer": "Gecko Moria lui avait volé son ombre"
+    },
+    {
+        "id": 506,
+        "difficulty": "medium",
+        "question": "Qu’est-ce que Thriller Bark en réalité ?",
+        "answer": "Le plus grand navire pirate du monde"
+    },
+    {
+        "id": 507,
+        "difficulty": "medium",
+        "question": "Quel célèbre médecin travaillait aux côtés de Gecko Moria sur Thriller Bark ?",
+        "answer": "Docteur Hogback"
+    },
+    {
+        "id": 508,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon d’Absalom ?",
+        "answer": "Le fruit de l’invisibilité (Suke Suke no Mi)"
+    },
+    {
+        "id": 509,
+        "difficulty": "easy",
+        "question": "À quel ordre de pirate faisait partie Gecko Moria ?",
+        "answer": "Les 7 Grands Corsaires (Shichibukai)"
+    },
+    {
+        "id": 510,
+        "difficulty": "easy",
+        "question": "Quel est l’objectif des Chapeaux de Paille sur Thriller Bark concernant Brook ?",
+        "answer": "Retrouver son ombre"
+    },
+    {
+        "id": 511,
+        "difficulty": "difficult",
+        "question": "Qui est le le commandant des Soldats et des Généraux Zombies de Thriller Bark ?",
+        "answer": "Absalom"
+    },
+    {
+        "id": 512,
+        "difficulty": "medium",
+        "question": "Qui est surnommée la princesse fantôme de Thriller Bark ?",
+        "answer": "Perona"
+    },
+    {
+        "id": 513,
+        "difficulty": "difficult",
+        "question": "Quelle ancienne actrice décédée a été ramenée sous forme de zombie par Hogback et sert de domestique à Moria ?",
+        "answer": "Cindry"
+    },
+    {
+        "id": 514,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon de Gecko Moria ?",
+        "answer": "Le fruit des ombres (Kage Kage no Mi)"
+    },
+    {
+        "id": 515,
+        "difficulty": "medium",
+        "question": "Quel sabreur légendaire, dont le nom faisait trembler le monde, possédait l’ombre de Brook sur Thriller Bark ?",
+        "answer": "Ryuma"
+    },
+    {
+        "id": 516,
+        "difficulty": "easy",
+        "question": "À qui Brook avait-il fait la promesse de revenir la voir à l'entrée de grand line ?",
+        "answer": "Laboon"
+    },
+    {
+        "id": 517,
+        "difficulty": "medium",
+        "question": "Quelle immense créature a été réincarnée grâce à l’ombre de Luffy ?",
+        "answer": "Oz le démon"
+    },
+    {
+        "id": 518,
+        "difficulty": "medium",
+        "question": "Qui utilise l’attaque appelée « Negative Hollow » ?",
+        "answer": "Perona"
+    },
+    {
+        "id": 519,
+        "difficulty": "medium",
+        "question": "Quel fruit du démon Sanji rêvait-il de posséder ?",
+        "answer": "Le fruit de l’invisibilité (Suke Suke no Mi)"
+    },
+    {
+        "id": 520,
+        "difficulty": "medium",
+        "question": "Pour quelle raison Usopp était-il insensible aux attaques de Perona ?",
+        "answer": "Parce qu’il était déjà naturellement négatif et dépressif"
+    },
+    {
+        "id": 521,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon de Perona ?",
+        "answer": "Le fruit des fantômes (Horo Horo no Mi)"
+    },
+    {
+        "id": 522,
+        "difficulty": "easy",
+        "question": "Qui a vaincu Perona en un contre un lors de l’arc Thriller Bark ?",
+        "answer": "Usopp"
+    },
+    {
+        "id": 523,
+        "difficulty": "medium",
+        "question": "Quel Grand Corsaire surnommé \"Le tyran\" fait son apparition sur Thriller Bark ?",
+        "answer": "Bartholomew Kuma"
+    },
+    {
+        "id": 524,
+        "difficulty": "medium",
+        "question": "Quel était l’objectif d’Absalom concernant Nami sur Thriller Bark ?",
+        "answer": "Il voulait l’épouser de force"
+    },
+    {
+        "id": 525,
+        "difficulty": "medium",
+        "question": "Quelle unique forme Luffy prend-il en absorbant cent ombres sur Thriller Bark ?",
+        "answer": "Nightmare Luffy"
+    },
+    {
+        "id": 526,
+        "difficulty": "difficult",
+        "question": "Quel empereur a autrefois massacré Gecko Moria et son armée au Pays des Wa ?",
+        "answer": "Kaido"
+    },
+    {
+        "id": 527,
+        "difficulty": "easy",
+        "question": "Qui est le seul survivant de l’équipage du Rumbar ayant erré pendant 50 ans dans le Triangle de Florian ?",
+        "answer": "Brook"
+    },
+    {
+        "id": 528,
+        "difficulty": "difficult",
+        "question": "Quel souvenir de son ancien équipage Brook cachait-il dans son crâne ?",
+        "answer": "Un Tone Dial contenant la dernière chanson des pirates du Rumbar"
+    },
+    {
+        "id": 529,
+        "difficulty": "medium",
+        "question": "Quelle chanson émouvante Brook interprète-t-il avec les Chapeaux de Paille après leur victoire à Thriller Bark ?",
+        "answer": "Binks no Sake (\"Le bon rhum de binks\")"
+    },
+    {
+        "id": 530,
+        "difficulty": "easy",
+        "question": "Quel personnage supporte héroïquement toute la douleur de Luffy lorsqu’elle lui est transférée par Bartholomew Kuma ?",
+        "answer": "Roronoa Zoro"
+    },
+    {
+        "id": 531,
+        "difficulty": "medium",
+        "question": "Quel fruit du démon Bartholomew Kuma possède-t-il ?",
+        "answer": "Le fruit des coussinets (Nikyu Nikyu no Mi)"
+    },
+    {
+        "id": 532,
+        "difficulty": "medium",
+        "question": "Complète les paroles de cette mythique chanson : \" Je m'en vais (...), livrer le bon rhum de binks !!\"",
+        "answer": "De bon matin" 
+    },
+    {
+        "id": 533,
+        "difficulty": "easy",
+        "question": "Qui prononce ces mots à Thriller Bark : « À partir de ce jour, je te confie ma vie, Capitaine Luffy du Chapeau de Paille » ?",
+        "answer": "Brook" 
+    },
+    {
+        "id": 534,
+        "difficulty": "medium",
+        "question": "Comment Luffy prend-il conscience à distance, depuis Thriller Bark, que la vie d’Ace est en danger ?",
+        "answer": "Grâce à la carte de vie que Ace lui avait transmise à Alabasta"
+    },
+    {
+        "id": 535,
+        "difficulty": "difficult",
+        "question": "Quel est le nom de l'étoile de mer qui tient compagnie à Keimei ?",
+        "answer": "Pappag"
+    },
+    {
+        "id": 536,
+        "difficulty": "difficult",
+        "question": "Quelle sirène est souvent accompagnée d'une étoile de mer nommée Pappag ?",
+        "answer": "Keimi"
+    },
+    {
+        "id": 537,
+        "difficulty": "medium",
+        "question": "Quel continent a atteint l'équipage du chapeau de paille après l’arc de Thriller Bark ?",
+        "answer": "Red Line"
+    },
+
+    {
+        "id": 538,
+        "difficulty": "medium",
+        "question": "Quel homme-poisson, déjà rencontré à Arlong Park, fait son retour à l’arc Sabaody ?",
+        "answer": "Octy"
+    },
+    {
+        "id": 539,
+        "difficulty": "easy",
+        "question": "Comment appelle-t-on les descendants de 19 des 20 rois fondateurs du Gouvernement Mondial ?",
+        "answer": "Les Dragons Célestes"
+    },
+    {
+        "id": 540,
+        "difficulty": "easy",
+        "question": "Comment s’appelle l’archipel où d’immenses mangroves forment une forêt au milieu de l’océan ?",
+        "answer": "Archipel des Sabaody"
+    },
+    {
+        "id": 541,
+        "difficulty": "medium",
+        "question": "Quelle ancienne pirate, aujourd’hui patronne d’un bar à Sabaody, est l’épouse de Rayleigh ?",
+        "answer": "Shakuyaku"
+    },
+    {
+        "id": 542,
+        "difficulty": "medium",
+        "question": "Quel Supernova peut transformer son corps en véritable forteresse grâce à son fruit du démon ?",
+        "answer": "Capone Bege"
+    },
+    {
+        "id": 543,
+        "difficulty": "medium",
+        "question": "Quelle Supernova est célèbre pour sa capacité à manipuler l’âge ?",
+        "answer": "Jewelry Bonney"
+    },
+    {
+        "id": 544,
+        "difficulty": "medium",
+        "question": "Quel Supernova possède un pouvoir de prédiction des catastrophes ?",
+        "answer": "Basil Hawkins"
+    },
+    {
+        "id": 545,
+        "difficulty": "easy",
+        "question": "Quel pirate détient la prime la plus élevée parmi les Supernova présents à Sabaody ?",
+        "answer": "Eustass Kidd"
+    },
+    {
+        "id": 546,
+        "difficulty": "easy",
+        "question": "Quel capitaine pirate est surnommé « Le Chirurgien de la Mort » ?",
+        "answer": "Trafalgar Law"
+    },
+    {
+        "id": 547,
+        "difficulty": "difficult",
+        "question": "Quel Supernova est un ancien Sous-Amiral de la Marine devenu pirate ?",
+        "answer": "X-Drake"
+    },
+    {
+        "id": 548,
+        "difficulty": "medium",
+        "question": "Comment se nomme le bras droit d’Eustass Kidd, surnommé « le Massacreur » ?",
+        "answer": "Killer"
+    },
+    {
+        "id": 549,
+        "difficulty": "easy",
+        "question": "Qui fut le second de Gold D. Roger, surnommé « le Seigneur des Ténèbres » ?",
+        "answer": "Silvers Rayleigh"
+    },
+    {
+        "id": 550,
+        "difficulty": "easy",
+        "question": "Pourquoi Keimi attire-t-elle autant l’attention des Dragons Célestes lors de la vente aux enchères ?",
+        "answer": "Parce qu’elle est une sirène"
+    },
+    {
+        "id": 551,
+        "difficulty": "difficult",
+        "question": "Quel Dragon Céleste tire sur Octy simplement parce qu’il est un homme-poisson ?",
+        "answer": "Saint Charlos"
+    },
+    {
+        "id": 552,
+        "difficulty": "medium",
+        "question": "Comment Luffy réagit-il lorsque Saint Charlos tire sur Octy ?",
+        "answer": "Il le frappe violemment au visage"
+    },
+    {
+        "id": 553,
+        "difficulty": "medium",
+        "question": "Qui prononce ces mots sur l’archipel des Sabaody : « Ce Chapeau de Paille sied à merveille aux hommes de ton envergure ! Monkey D. Luffy » ?",
+        "answer": "Silvers Rayleigh"
+    },
+    {
+        "id": 554,
+        "difficulty": "easy",
+        "question": "Quel puissant Haki utilise Silvers Rayleigh dans la salle de vente pour neutraliser toute l’assistance ?",
+        "answer": "Le Haki des Rois"
+    },
+    {
+        "id": 555,
+        "difficulty": "easy",
+        "question": "Comment appelle-t-on les onze pirates dont la prime dépasse 100 millions et qui apparaissent à Sabaody ?",
+        "answer": "Les Supernova"
+    },
+    {
+        "id": 556,
+        "difficulty": "medium",
+        "question": "Comment la Marine a t elle réussi à mettre la main sur Gol D Roger ?",
+        "answer": "Il s'est rendu de son plein gré"
+    },
+    {
+        "id": 557,
+        "difficulty": "easy",
+        "question": "Quel grand corsaire débarque à Sabaody et fait se téléporter tout l'équipage du chapeau de paille ?",
+        "answer": "Bartholomew Kuma"
+    },
+    {
+        "id": 558,
+        "difficulty": "easy",
+        "question": "Quel amiral au quartier général de la Marine possède le logia de la lumière ?",
+        "answer": "Kizaru (Borsalino)"
+    },
+    {
+        "id": 559,
+        "difficulty": "difficult",
+        "question": "Quel capitaine pirate surnommé le \"Moine fou\" est originaire d'une île céleste ?",
+        "answer": "Urouge"
+    },
+    {
+        "id": 560,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le capitaine de la brigade scientifique et garde du corps de Vegapunk ?",
+        "answer": "Sentomaru"
+    },
+    {
+        "id": 561,
+        "difficulty": "medium",
+        "question": "Quelle île est surnommée \"l’île des femmes\" où vit la tribut Kuja ?",
+        "answer": "Amazon Lily"
+    },
+    {
+        "id": 562,
+        "difficulty": "easy",
+        "question": "Comment se nomme l'impératrice actuelle d'Amazon Lily surnommée la \"Princesse Serpent\" ?",
+        "answer": "Boa Hancock"
+    },
+    {
+        "id": 563,
+        "difficulty": "easy",
+        "question": "A quelle organisation de pirate l'impératrice Boa Hancock appartient-elle ?",
+        "answer": "Les 7 Grands Corsaires (Shichibukai)"
+    },
+    {
+        "id": 564,
+        "difficulty": "medium",
+        "question": "Comment appelle-t-on les fruits du démon qui permettent de se transformer en un élément naturel ?",
+        "answer": "Fruit de type Logia"
+    },
+    {
+        "id": 565,
+        "difficulty": "medium",
+        "question": "Quels fruits du démon, les plus répandu, peuvent affecter le corps ou encore manipuler leur environnement ?",
+        "answer": "Fruit de type Paramecia"
+    },
+    {
+        "id": 566,
+        "difficulty": "medium",
+        "question": "Quelle catégorie de fruits du démon permettent de se transformer en animal ou en une créature ?",
+        "answer": "Fruit de type Zoan"
+    },
+    {
+        "id": 567,
+        "difficulty": "medium",
+        "question": "De quelle étrange maladie Boa Hancock est-elle atteinte peu après l'arrivée de Luffy sur Amazon Lily ?",
+        "answer": "La maladie de l’amour"
+    },
+    {
+        "id": 568,
+        "difficulty": "difficult",
+        "question": "Quelle ancienne impératrice d’Amazon Lily conseillait Boa Hancock ?",
+        "answer": "Gloriosa (Nyon)"
+    },
+    {
+        "id": 569,
+        "difficulty": "easy",
+        "question": "Quel membre de l’équipage de Barbe Blanche fut capturé par Barbe Noire avant d’être promis à l’exécution publique ?",
+        "answer": "Portgas D. Ace"
+    },
+    {
+        "id": 570,
+        "difficulty": "medium",
+        "question": "Qui a capturé Ace au Point d’Argent avant de le livrer à la Marine ?",
+        "answer": "Marshall D. Teach (Barbe Noire)"
+    }
+]

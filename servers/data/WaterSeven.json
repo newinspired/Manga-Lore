@@ -1,0 +1,483 @@
+[
+    {
+        "id": 401,
+        "difficulty": "easy",
+        "question": "Quelle ville porte le surnom de la \"Cité sur l'eau\" ?",
+        "answer": "Water Seven"
+    },
+    {
+        "id": 402,
+        "difficulty": "easy",
+        "question": "Pour quelle profession la ville de Water Seven est-elle réputée ?",
+        "answer": "Charpentier"
+    },
+    {
+        "id": 403,
+        "difficulty": "difficult",
+        "question": "Comment s’appelle la chef de gare de Shift Station, grand-mère de Chimney ?",
+        "answer": "Kokoro"
+    },
+    {
+        "id": 404,
+        "difficulty": "difficult",
+        "question": "Quel animal est réellement Gonbei, le soi-disant chat de Chimney ?",
+        "answer": "Un lapin"
+    },
+    {
+        "id": 405,
+        "difficulty": "difficult",
+        "question": "Quelle est la principale compagnie de charpentiers de Water Seven, réputée dans tout Grand Line ?",
+        "answer": "Galley-La Company"
+    },
+    {
+        "id": 406,
+        "difficulty": "medium",
+        "question": "Qui est le président de la Galley-La Company ?",
+        "answer": "Icebarg"
+    },
+        {
+        "id": 407,
+        "difficulty": "easy",
+        "question": "Combien de grands quais, appelés Docks, composent la ville de Water Seven ?",
+        "answer": "7"
+    },
+    {
+        "id": 408,
+        "difficulty": "easy",
+        "question": "Comment se nomme l'organisation d'agents secrets au service du Gouvernement Mondial, antagoniste de Water Seven ?",
+        "answer": "CP9"
+    },
+    {
+        "id": 409,
+        "difficulty": "difficult",
+        "question": "Quel charpentier de la Galley-La Company, spécialiste des cordages, n’appartient pas au CP9 ?",
+        "answer": "Pauly"
+    },
+    {
+        "id": 410,
+        "difficulty": "medium",
+        "question": "Par quelle ville européenne Water Seven est-elle inspirée ?",
+        "answer": "Venise"
+    },
+    {
+        "id": 411,
+        "difficulty": "easy",
+        "question": "Qui a déclaré \"Je quitte cet équipage !\" avant d’affronter Luffy en duel à Water Seven ?",
+        "answer": "Usopp"
+    },
+    {
+        "id": 412,
+        "difficulty": "difficult",
+        "question": "Quel était le montant de la prime de Nico Robin avant les événements d’Enies Lobby ?",
+        "answer": "79 000 000 Berries"
+    },
+    {
+        "id": 413,
+        "difficulty": "easy",
+        "question": "Comment se nomme le cyborg charpentier qui deviendra plus tard membre de l’équipage du Chapeau de Paille ?",
+        "answer": "Franky"
+    },
+    {
+        "id": 414,
+        "difficulty": "medium",
+        "question": "Comment s’appelle le groupe de démolisseurs dirigé par Cutty Flam à Water Seven ?",
+        "answer": "La Franky Family"
+    },
+    {
+        "id": 415,
+        "difficulty": "easy",
+        "question": "Quelle est la raison du conflit entre Luffy et Usopp, qui finit par les mener à un duel à Water Seven ?",
+        "answer": "Le désaccord sur l’abandon du Vogue Merry"
+    },
+    {
+        "id": 416,
+        "difficulty": "medium",
+        "question": "Pourquoi l’équipage du Chapeau de Paille a-t-il dû se séparer du Vogue Merry ?",
+        "answer": "Le navire était trop endommagé pour être réparé et ne pouvait plus naviguer"
+    },
+    {
+        "id": 417,
+        "difficulty": "medium",
+        "question": "Qui prononce la phrase \"Si tu devais te montrer hésitant, en qui devrions-nous croire ?\" après la victoire de Luffy contre Usopp ?",
+        "answer": "Zoro"
+    },
+    {
+        "id": 418,
+        "difficulty": "difficult",
+        "question": "Comment se nomme l’immense onde de tempête qui s’abat chaque année sur Water Seven ?",
+        "answer": "Aqua Laguna"
+    },
+    {
+        "id": 419,
+        "difficulty": "easy",
+        "question": "Qui déclare : \" J’ai en moi une part de ténèbres dont vous ignorez tout et qui, un jour, risque de vous mener à votre perte \" ?",
+        "answer": "Nico Robin"
+    },
+    {
+        "id": 420,
+        "difficulty": "easy",
+        "question": "Qui est accusée d’avoir tiré sur Icebarg à Water Seven ?",
+        "answer": "Nico Robin"
+    },
+    {
+        "id": 421,
+        "difficulty": "medium",
+        "question": "Que représente l’arme antique Pluton ?",
+        "answer": "Le nom d’un navire de guerre"
+    },
+    {
+        "id": 422,
+        "difficulty": "easy",
+        "question": "Vers quelle ile se dirige l’équipage du Chapeau de Paille après avoir quitté Water Seven ?",
+        "answer": "Enies Lobby"
+    },
+    {
+        "id": 423,
+        "difficulty": "medium",
+        "question": "Quel est le nom de la porte à Enies Lobby, utilisée pour la détention et le passage des prisonniers vers la prison ?",
+        "answer": "La Porte de la Justice"
+    },
+    {
+        "id": 424,
+        "difficulty": "medium",
+        "question": "Qui détenait réellement les plans de l’arme antique Pluton à Water Seven ?",
+        "answer": "Franky (Cutty Flam)"
+    },
+    {
+        "id": 425,
+        "difficulty": "easy",
+        "question": "Quel membre du CP9 possède le Fruit du Démon du félin, modèle léopard ?",
+        "answer": "Rob Lucci"
+    },
+    {
+        "id": 426,
+        "difficulty": "easy",
+        "question": "Quel ancien charpentier, membre du CP9, a mangé le Fruit du Bovin, modèle girafe ?",
+        "answer": "Kaku"
+    },
+    {
+        "id": 427,
+        "difficulty": "difficult",
+        "question": "Quelle secrétaire d’Icebarg se révèle être une agente du CP9 ?",
+        "answer": "Kalifa"
+    },
+    {
+        "id": 428,
+        "difficulty": "difficult",
+        "question": "Quel barman de Water Seven est en réalité un agent du CP9 ayant mangé le Fruit de la Porte ?",
+        "answer": "Blueno"
+    },
+    {
+        "id": 429,
+        "difficulty": "medium",
+        "question": "Quel personnage de Water Seven porte en réalité le nom de Cutty Flam ?",
+        "answer": "Franky"
+    },
+    {
+        "id": 430,
+        "difficulty": "difficult",
+        "question": "Que sont les Klabautermann selon la légende des marins ?",
+        "answer": "Des esprits incarnant l’âme d’un navire"
+    },
+    {
+        "id": 431,
+        "difficulty": "medium",
+        "question": "Quel célèbre charpentier de Water Seven a construit l’Oro Jackson, le navire de Gol D. Roger ?",
+        "answer": "Tom"
+    },
+    {
+        "id": 432,
+        "difficulty": "difficult",
+        "question": "Comment s’appelait l’atelier de charpentiers dirigé par Tom, qui forma Franky et Icebarg ?",
+        "answer": "Tom’s Workers"
+    },
+    {
+        "id": 433,
+        "difficulty": "difficult",
+        "question": "Qui est le chef du CP9, malgré sa faiblesse et sa lâcheté ?",
+        "answer": "Spandam"
+    },
+    {
+        "id": 434,
+        "difficulty": "medium",
+        "question": "Qui prononce la phrase : \"Un homme doit être fier des navires qu’il a construits\" ?",
+        "answer": "Tom"
+    },
+    {
+        "id": 435,
+        "difficulty": "difficult",
+        "question": "Quel est le nom de l’invention de Tom, un moyen de transport maritime circulant sur des rails flottants ?",
+        "answer": "Le Puffing Tom (le train des mers)"
+    },
+    {
+        "id": 436,
+        "difficulty": "easy",
+        "question": "Qui écrit à Nami le message : \"Je monte dans le train de 23 heures après avoir vérifié que Robin y était\" ?",
+        "answer": "Sanji"
+    },
+    {
+        "id": 437,
+        "difficulty": "difficult",
+        "question": "Comment le reste de l’équipage du Chapeau de Paille et les membres de la Franky Family ont-ils poursuivi le premier train où se trouvait Robin ?",
+        "answer": "À bord du Rocketman"
+    },
+    {
+        "id": 438,
+        "difficulty": "easy",
+        "question": "Comment se nomme l’alter ego inventé par Usopp lors des événements d’Enies Lobby ?",
+        "answer": "Sniperking (Sogeking)"
+    },
+    {
+        "id": 439,
+        "difficulty": "medium",
+        "question": "Quelle forme mythique Luffy utilise-t-il pour la première fois lors de son combat contre Blueno à Enies Lobby ?",
+        "answer": "Gear Second"
+    },
+    {
+        "id": 440,
+        "difficulty": "medium",
+        "question": "Quel est le Fruit du Démon que Blueno a mangé ?",
+        "answer": "Le Fruit de la Porte (Doa Doa no Mi)"
+    },
+    {
+        "id": 441,
+        "difficulty": "easy",
+        "question": "Quels sont les deux prisonniers capturés par le CP9 au début de l’arc Enies Lobby ?",
+        "answer": "Franky et Nico Robin"
+    },
+    {
+        "id": 442,
+        "difficulty": "medium",
+        "question": "Quel membre du CP9 est évalué avec un score de 4000 lors du test de force physique de Fukuro ?",
+        "answer": "Rob Lucci"
+    },
+    {
+        "id": 443,
+        "difficulty": "medium",
+        "question": "Quelle est la particularité de l’escargophone doré qu’Aokiji a confié à Spandam ?",
+        "answer": "Il permet de déclencher un Buster Call"
+    },
+    {
+        "id": 444,
+        "difficulty": "medium",
+        "question": "Qui a déclenché un Buster Call par inadvertance lors de l’arc d’Enies Lobby ?",
+        "answer": "Spandam"
+    },
+    {
+        "id": 445,
+        "difficulty": "easy",
+        "question": "Quel membre de l’équipage Sanji appelle-t-il souvent \"Face d’algue\" ?",
+        "answer": "Zoro"
+    },
+    {
+        "id": 446,
+        "difficulty": "medium",
+        "question": "Comment se nomme l’île où est née Nico Robin, détruite par le Gouvernement Mondial ?",
+        "answer": "Ohara"
+    },
+    {
+        "id": 447,
+        "difficulty": "difficult",
+        "question": "Comment s’appelle la gigantesque bibliothèque d’Ohara ?",
+        "answer": "L’Arbre de la Connaissance"
+    },
+    {
+        "id": 448,
+        "difficulty": "difficult",
+        "question": "Quel est le nom du professeur érudit dirigeant l’Arbre de la Connaissance à Ohara ?",
+        "answer": "Le Professeur Clover"
+    },
+    {
+        "id": 449,
+        "difficulty": "medium",
+        "question": "À qui appartient initialement le rire \"Dereshishi\" ?",
+        "answer": "Sauro"
+    },
+    {
+        "id": 450,
+        "difficulty": "difficult",
+        "question": "Quel est le nom de la mère de Nico Robin, archéologue d’Ohara ?",
+        "answer": "Nico Olvia"
+    },
+    {
+        "id": 451,
+        "difficulty": "medium",
+        "question": "Quel géant et ancien Vice-Amiral est apparu tout d'abord comme étant un naufragé sur l'île d'Ohara ?",
+        "answer": "Sauro"
+    },
+    {
+        "id": 452,
+        "difficulty": "medium",
+        "question": "Quel est le véritable nom de l’amiral Aokiji ?",
+        "answer": "Kuzan"
+    },
+    {
+        "id": 453,
+        "difficulty": "easy",
+        "question": "Quelle arme destructrice a été déclenchée par le Gouvernement Mondial sur Ohara ?",
+        "answer": "Le Buster Call"
+    },
+    {
+        "id": 454,
+        "difficulty": "easy",
+        "question": "Qui détruit le drapeau du Gouvernement Mondial sur Enies Lobby ?",
+        "answer": "Sniperking (Sogeking)"
+    },
+    {
+        "id": 455,
+        "difficulty": "medium",
+        "question": "Quelles sont les conséquences d’avoir détruit le drapeau du Gouvernement Mondial à Enies Lobby ?",
+        "answer": "Déclaration de guerre contre le Gouvernement Mondial"
+    },
+    {
+        "id": 456,
+        "difficulty": "easy",
+        "question": "Qui crie la réplique emblématique \"Je veux vivre !!\" à Enies Lobby ?",
+        "answer": "Nico Robin"
+    },
+    {
+        "id": 457,
+        "difficulty": "medium",
+        "question": "Quel est le Fruit du Démon que Kalifa a mangé ?",
+        "answer": "Le Fruit des Bulles (Awa Awa no Mi)"
+    },
+    {
+        "id": 458,
+        "difficulty": "easy",
+        "question": "Quel est le Fruit du Démon que Kaku a mangé ?",
+        "answer": "Le Fruit du Bovin, modèle Girafe (Ushi Ushi no Mi)"
+    },
+    {
+        "id": 459,
+        "difficulty": "easy",
+        "question": "Qui est l’adversaire principal de Kaku durant l’arc d’Enies Lobby ?",
+        "answer": "Zoro"
+    },
+    {
+        "id": 460,
+        "difficulty": "easy",
+        "question": "Quel personnage est incapable d’affronter une femme en combat singulier par principe ?",
+        "answer": "Sanji"
+    },
+    {
+        "id": 461,
+        "difficulty": "medium",
+        "question": "Quelle est la conséquence physique pour Luffy après avoir utilisé le Gear Third contre Rob Lucci à Enies Lobby ?",
+        "answer": "Il rétrécit et devient minuscule pendant un moment"
+    },
+    {
+        "id": 462,
+        "difficulty": "easy",
+        "question": "Quelle est la forme que prend Chopper lorsque son Fruit du Démon échappe à son contrôle ?",
+        "answer": "Monster Point (transformation bestiale et incontrôlable)"
+    },
+    {
+        "id": 463,
+        "difficulty": "easy",
+        "question": "Qui bat Kalifa lors de l’arc Enies Lobby ?",
+        "answer": "Nami"
+    },
+    {
+        "id": 464,
+        "difficulty": "medium",
+        "question": "Kokoro n’est pas simplement une humaine, quelle est sa véritable nature ?",
+        "answer": "Une sirène"
+    },
+    {
+        "id": 465,
+        "difficulty": "easy",
+        "question": "À qui appartient la technique \"Gum Gum Jet Pistol !!\" ?",
+        "answer": "Monkey D. Luffy"
+    },
+    {
+        "id": 466,
+        "difficulty": "easy",
+        "question": "Quel personnage fait son retour inattendu à la fin de l’arc Enies Lobby pour une dernière croisière ?",
+        "answer": "Le Vogue Merry"
+    },
+    {
+        "id": 467,
+        "difficulty": "medium",
+        "question": "Qui dit la réplique : \"J’ai été heureux, merci beaucoup d’avoir pris soin de moi !\" ?",
+        "answer": "Le Vogue Merry"
+    },
+    {
+        "id": 468,
+        "difficulty": "difficult",
+        "question": "Qui a réparé seul le Vogue Merry afin qu’il navigue une dernière fois ?",
+        "answer": "Icebarg"
+    },
+    {
+        "id": 469,
+        "difficulty": "easy",
+        "question": "Qui va construire le futur navire de l’équipage du Chapeau de Paille à Water Seven ?",
+        "answer": "Franky"
+    },
+    {
+        "id": 470,
+        "difficulty": "easy",
+        "question": "Quel membre rejoint officiellement les Mugiwaras durant l’arc de Water Seven ?",
+        "answer": "Franky"
+    },
+    {
+        "id": 471,
+        "difficulty": "easy",
+        "question": "Quel membre de sa famille rend visite à Luffy après les événements d’Enies Lobby, accompagné de Kobby et Hermep ?",
+        "answer": "Monkey D. Garp"
+    },
+    {
+        "id": 472,
+        "difficulty": "easy",
+        "question": "Qui est le grand-père de Luffy, surnommé le \"héros de la Marine\" ?",
+        "answer": "Monkey D. Garp"
+    },
+    {
+        "id": 473,
+        "difficulty": "medium",
+        "question": "Quel est le grade de Monkey D. Garp au sein du Quartier Général de la Marine ?",
+        "answer": "Vice-amiral"
+    },
+    {
+        "id": 474,
+        "difficulty": "easy",
+        "question": "Comment appelle-t-on les quatre plus puissants pirates régnant sur la seconde partie de Grand Line ?",
+        "answer": "Les Quatre Empereurs (Yonkō)"
+    },
+    {
+        "id": 475,
+        "difficulty": "easy",
+        "question": "Quel est le nom du père de Luffy, chef de l’Armée Révolutionnaire et l’homme le plus recherché au monde ?",
+        "answer": "Monkey D. Dragon"
+    },
+    {
+        "id": 476,
+        "difficulty": "easy",
+        "question": "Quel est le nom du navire de l’équipage du Chapeau de Paille après les événements d’Enies Lobby ?",
+        "answer": "Le Thousand Sunny"
+    },
+    {
+        "id": 477,
+        "difficulty": "medium",
+        "question": "Qui est le responsable de la cicatrice infligée à Shanks le roux ?",
+        "answer": "Barbe Noire (Marshall D. Teach)"
+    },
+    {
+        "id": 478,
+        "difficulty": "medium",
+        "question": "Contre quel grand pirate, Shanks le roux a t il scindé les nuages en deux après Enies Lobby ?",                    
+        "answer": "Barbe Blanche (Edward Newgate)"
+    },
+    {
+        "id": 479,
+        "difficulty": "medium",
+        "question": "Quel est le montant de la prime de Monkey D. Luffy après les événements d'Enies Lobby ?",
+        "answer": "300 millions de Berries"
+    },
+    {
+        "id": 480,
+        "difficulty": "medium",
+        "question": "Quel est le montant de la prime de Tony Tony Chopper, considéré comme la mascotte du groupe, après Enies Lobby ?",
+        "answer": "50 Berries"
+    }
+
+]

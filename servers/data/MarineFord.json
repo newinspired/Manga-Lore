@@ -1,0 +1,282 @@
+[
+  {
+    "id": 601,
+    "difficulty": "medium",
+    "question": "Comment se nommait le chef de la garde d’Impel Down, aujourd'hui aux cotés de Barbe Noire ?",
+    "answer": "Shiliew de la pluie"
+  },
+  {
+    "id": 602,
+    "difficulty": "easy",
+    "question": "Pour quelle raison Boa Hancock a-t-elle accepté d’accompagner Luffy jusqu’à Impel Down ?",
+    "answer": "Parce qu’elle était amoureuse de Luffy"
+  },
+  {
+    "id": 603,
+    "difficulty": "easy",
+    "question": "Quelle est la condition pour que Boa Hancock puisse transformer ses ennemis en pierre ?",
+    "answer": "Ils doivent tomber sous son charme"
+  },
+  {
+    "id": 604,
+    "difficulty": "medium",
+    "question": "Avec qui Zoro s’est-il retrouvé après s'être fait téléporter par Kuma sur l'île d'Obscuria ?",
+    "answer": "Perona"
+  },
+  {
+    "id": 605,
+    "difficulty": "medium",
+    "question": "Qui était l’amiral en chef s’opposant à Barbe Blanche lors de la bataille de Marineford ?",
+    "answer": "Sengoku le Bouddha"
+  },
+  {
+    "id": 606,
+    "difficulty": "medium",
+    "question": "Comment se nomme la cité où réside le Gouvernement Mondial et les Dragons Célestes ?",
+    "answer": "La terre sainte de Mary Geoise (Marie-Joie)"
+  },
+  {
+    "id": 607,
+    "difficulty": "easy",
+    "question": "Comment se nommait l’ancien quartier général de la Marine ?",
+    "answer": "Marine Ford"
+  },
+  {
+    "id": 608,
+    "difficulty": "medium",
+    "question": "Bien qu’ils ne soient pas dociles, quels membres d’une organisation ont dû combattre ensemble à Marine Ford ?",
+    "answer": "Les Grands Corsaires"
+  },
+  {
+    "id": 609,
+    "difficulty": "difficult",
+    "question": "Quel est le nom de la mère d'Ace ?",
+    "answer": "Portgas D. Rouge"
+  },
+  {
+    "id": 610,
+    "difficulty": "easy",
+    "question": "Quelle personne Ace considérait-il comme son père ?",
+    "answer": "Barbe Blanche"
+  },
+  {
+    "id": 611,
+    "difficulty": "easy",
+    "question": "A Marine Ford, qui était le personnage central de toute l'affaire ?",
+    "answer": "Portgas D. Ace"
+  },
+  {
+    "id": 612,
+    "difficulty": "difficult",
+    "question": "Comment se nommait le vice-directeur de la prison d’Impel Down lors de l’évasion de Luffy ?",
+    "answer": "Hannyabal"
+  },
+  {
+    "id": 613,
+    "difficulty": "medium",
+    "question": "Qui était le directeur d’Impel Down lors de ce même arc ?",
+    "answer": "Magellan"
+  },
+  {
+    "id": 614,
+    "difficulty": "easy",
+    "question": "Quel personnage, décrit comme ayant le niveau d’amiral, possède le fruit du poison ?",
+    "answer": "Magellan"
+  },
+  {
+    "id": 615,
+    "difficulty": "easy",
+    "question": "Quel ancien Grand Corsaire est surnommé le « Paladin des mers » ?",
+    "answer": "Jinbe"
+  },
+  {
+    "id": 616,
+    "difficulty": "medium",
+    "question": "Qui fut le premier pirate à s’introduire illégalement dans l’histoire de la prison d'Impel Down ?",
+    "answer": "Monkey D. Luffy"
+  },
+  {
+    "id": 617,
+    "difficulty": "easy",
+    "question": "Qui s’exclame à Impel Down : \"Ma petite paille ! Ze suis benu te zauver !! au nom de l’amitié !!\" ?",
+    "answer": "Bon Clay"
+  },
+  {
+    "id": 618,
+    "difficulty": "medium",
+    "question": "Comment se nommait la reine du royaume de Kedétrav à Impel Down ?",
+    "answer": "Emporio Ivankov"
+  },
+  {
+    "id": 619,
+    "difficulty": "medium",
+    "question": "A quel niveau d'Impel Down se situe le \"Paradis des travestis\", dont Ivankov était la reine ?",
+    "answer": "Au niveau 5.5 de la prison"
+  },
+  {
+    "id": 620,
+    "difficulty": "medium",
+    "question": "Quel est le pouvoir du fruit du démon d'Ivankov ?",
+    "answer": "Le fruit des Hormones (Horu Horu no Mi)"
+  },
+  {
+    "id": 621,
+    "difficulty": "easy",
+    "question": "Quels sont les deux pirates ayant obtenu le titre de Grand Corsaire par le passé et libérés par Luffy à Impel Down ?",
+    "answer": "Jinbe \"Le Paladin des Mers\" et Sir Crocodile"
+  },
+
+  {
+    "id": 622,
+    "difficulty": "medium",
+    "question": "Quel était l’objectif de Barbe Noire en s’introduisant à Impel Down ?",
+    "answer": "Recruter de puissants prisonniers pour former son équipage"
+  },
+  {
+    "id": 623,
+    "difficulty": "easy",
+    "question": "Quel personnage a appelé un banc de requins-baleines pour s'échapper de l’emprise de Magellan et s’évader d’Impel Down ?",
+    "answer": "Jinbe"
+  },
+  {
+    "id": 624,
+    "difficulty": "medium",
+    "question": "Quel personnage, en prenant l’apparence de Magellan, a fait ouvrir la Porte de la Justice afin que Luffy et les autres évadés puissent s’échapper ?",
+    "answer": "Bon Clay (Mr. 2)"
+  },
+  {
+    "id": 625,
+    "difficulty": "medium",
+    "question": "Quels étaient les trois amiraux présents à Marineford pour garantir l’exécution publique de Ace ?",
+    "answer": "Akainu, Aokiji et Kizaru"
+  },
+  {
+    "id": 626,
+    "difficulty": "medium",
+    "question": "Comment est morte Portgas D. Rouge, la mère d'Ace ?",
+    "answer": "Des suites de l’accouchement d'Ace"
+  },
+  {
+    "id": 627,
+    "difficulty": "medium",
+    "question": "Qui déclare à Ace : « Tu serais sans doute devenu le pirate le plus puissant de ta génération, voilà pourquoi ton exécution revêt d'une importance capitale » ?",
+    "answer": "Sengoku le Bouddha"
+  },
+  {
+    "id": 628,
+    "difficulty": "easy",
+    "question": "Comment se nomme le navire principal de Barbe Blanche ?",
+    "answer": "Le Moby Dick"
+  },
+
+
+  {
+    "id": 629,
+    "difficulty": "easy",
+    "question": "Quel est le fruit du démon de Barbe Blanche ?",
+    "answer": "Le fruit du tremblement (Gura Gura no Mi)"
+  },
+  {
+    "id": 630,
+    "difficulty": "difficult",
+    "question": "Qui est le commandant de la 3ème flotte de Barbe Blanche ?",
+    "answer": "Joz"
+  },
+  {
+    "id": 631,
+    "difficulty": "easy",
+    "question": "Qui est le commandant de la 1ère flotte de Barbe Blanche ?",
+    "answer": "Marco le Phénix"
+  },
+  {
+    "id": 632,
+    "difficulty": "medium",
+    "question": "Quel type de fruit du démon possède Marco le Phénix ?",
+    "answer": "Un Zoan mythique"
+  },
+  {
+    "id": 633,
+    "difficulty": "difficult",
+    "question": "Comment se nomme le géant qui a combattu aux côtés de l’équipage de Barbe Blanche pour sauver Ace ?",
+    "answer": "Little Oz Jr."
+  },
+  {
+    "id": 634,
+    "difficulty": "medium",
+    "question": "Qui déclare à Marineford : « Les pirates représenteraient le mal ?! Et la Marine la justice ? L’histoire a montré que ces notions étaient pour le moins subjectives » ?",
+    "answer": "Don Quijote Doflamingo"
+  },
+  {
+    "id": 635,
+    "difficulty": "difficult",
+    "question": "Quel vice-amiral de la Marine est surnommée « la Grande Conseillère » ?",
+    "answer": "Tsuru"
+  },
+  {
+    "id": 636,
+    "difficulty": "easy",
+    "question": "Qui tient tête à Barbe Blanche après l’avoir défendu d’une attaque surprise de Crocodile à Marine Ford ?",
+    "answer": "Monkey D. Luffy"
+  },
+  {
+    "id": 637,
+    "difficulty": "easy",
+    "question": "Quel pirate parvient à rallier, malgré lui, une grande quantité de soldats sous ses ordres pendant la guerre de Marineford ?",
+    "answer": "Baggy le Clown"
+  },
+  {
+    "id": 638,
+    "difficulty": "difficult",
+    "question": "Quel sous-amiral de la Marine possède le pouvoir du fruit des chaînes (Ori Ori no Mi) ?",
+    "answer": "Hina"
+  },
+  {
+    "id": 639,
+    "difficulty": "medium",
+    "question": "Quel pirate se rebelle en sauvant Luffy de la jitte en granite marin de Smoker lors des affrontements de Marineford ?",
+    "answer": "Boa Hancock"
+  },
+  {
+    "id": 640,
+    "difficulty": "difficult",
+    "question": "Comment se nomme le commandant de la 5ème division de Barbe Blanche ?",
+    "answer": "Vista"
+  },
+  {
+    "id": 641,
+    "difficulty": "difficult",
+    "question": "Qui déclare au sujet de Luffy : « Ce qui le rend redoutable, ce ne sont ni ses pouvoirs, ni ses techniques, mais plutôt sa capacité à fédérer les gens autour de lui » ?",
+    "answer": "Dracule Mihawk"
+  },
+  {
+    "id": 642,
+    "difficulty": "easy",
+    "question": "Qui proclame à ses hommes : « Ouvrez-lui de nouveau votre cœur, Ace n’est en rien spécial à mes yeux… Vous êtes tous… ma famille ! » après avoir été trahi par un allié ?",
+    "answer": "Barbe Blanche"
+  },
+  {
+    "id": 643,
+    "difficulty": "easy",
+    "question": "Qui affirme à plusieurs reprises n’être qu’un homme, bien qu’il soit l’un des plus grands pirates de tous les temps ?",
+    "answer": "Barbe Blanche"
+  },
+  {
+    "id": 644,
+    "difficulty": "difficult",
+    "question": "Qui a transpercé Barbe Blanche en penssant qu’il les avait trahis ?",
+    "answer": "Squardo"
+  },
+
+  
+  {
+    "id": 645,
+    "difficulty": "difficult",
+    "question": "Qui a transpercé Barbe Blanche en penssant qu’il les avait trahis ?",
+    "answer": "Squardo"
+  }
+
+
+
+
+  
+]

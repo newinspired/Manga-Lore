@@ -1,0 +1,75 @@
+$mainfont: 'Fraunces', serif;
+$description: #b3926f;
+$color-modal: #f0f0dc;
+$font-color: #b3926f;
+
+.register-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .register-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-family: $mainfont;
+      font-size: 35px;
+      font-weight: 400;
+      color: $description;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-modal;
+    padding: 25px;
+    border-radius: 10px;
+    gap: 20px;
+    width: 300px;
+
+    input {
+      all: unset;
+      height: 40px;
+      width: 95%;
+      cursor: text;
+      box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+      color: black;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    button {
+      all: unset;
+      display: inline-block;
+      font-family: $mainfont;
+      font-size: 20px;
+      font-weight: 600;
+      color: $font-color;
+      border: 2px solid $font-color;
+      border-radius: 25px;
+      padding: 8px 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top : 10px;
+
+      &:hover {
+        background-color: $font-color;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+ 

@@ -5,41 +5,41 @@ import { useState, useEffect, useRef } from 'react';
 import socket from '../socket';
 import ModalAvatar from '../components/modal-avatar.jsx';
 import Footer from '../components/footer.jsx';
+import Header from '../components/header.jsx';
 
 import luffy from '../assets/avatars-color/luffy.jpg';
 import zoro from '../assets/avatars-color/zoro.jpg';
-import nami from '../assets/avatars-color/nami.jpg';
-import usopp from '../assets/avatars-color/usopp.jpg';
+import nami from '../assets/avatars-color/nami2.jpg';
+import usopp from '../assets/avatars-color/usopp2.jpg';
 import sanji from '../assets/avatars-color/sanji.jpg';
 
 import chopper from '../assets/avatars-color/chopper.jpg';
-import robin from '../assets/avatars-color/robin.jpg';
-import franky from '../assets/avatars-color/franky.jpg';
+import robin from '../assets/avatars-color/robin2.jpg';
+import franky from '../assets/avatars-color/franky2.jpg';
 import brook from '../assets/avatars-color/brook.jpg';
-import jimbei from '../assets/avatars-color/jimbei.jpg';
+import jimbei from '../assets/avatars-color/jimbei2.jpg';
 
-import shanks from '../assets/avatars-color/shanks.jpg';
-import kobby from '../assets/avatars-color/kobby.jpg';
+
+
 
 
 function LoginPage({ setUsername, setRoomCode }) {
   const navigate = useNavigate();
   const modalRef = useRef(null);
   const avatarOptions = [
-    { name: 'shanks', src: shanks },
-    { name: 'kobby', src: kobby },
-
     { name: 'luffy', src: luffy },
     { name: 'zoro', src: zoro },
     { name: 'nami', src: nami },
     { name: 'usopp', src: usopp },
+    
     { name: 'sanji', src: sanji },
-
     { name: 'chopper', src: chopper },
     { name: 'robin', src: robin },
     { name: 'franky', src: franky },
+    
     { name: 'brook', src: brook },
     { name: 'jimbei', src: jimbei },
+
 
 
 
@@ -137,6 +137,7 @@ function LoginPage({ setUsername, setRoomCode }) {
 
   return (
     <div className="login-page">
+      <Header />
       <div className="login-wrapper">
         <div className="modal-login" ref={modalRef}>
           <h3>ONE PIECE - GAME</h3>
@@ -214,24 +215,6 @@ function LoginPage({ setUsername, setRoomCode }) {
       </div>
       
       <div className="info-collapses">
-        <div className="collapse">
-          <button
-            className="collapse-header"
-            onClick={() =>
-              setShowRules((prev) => !prev)
-            }
-          >
-            Game Rules
-          </button>
-          {showRules && (
-            <div className="collapse-content">
-              <p>
-                This is a quiz game about the world of One Piece. Regardless of how far you have read or seen the work, you can select the arcs you want. First, you will be asked a series of 20 questions ranging from easy to difficult, and then you will correct your answers yourself.
-              </p>
-            </div>
-          )}
-        </div>
-
         {/* Collapse pour la description */}
         <div className="collapse">
           <button
@@ -245,7 +228,24 @@ function LoginPage({ setUsername, setRoomCode }) {
           {showDescription && (
             <div className="collapse-content">
               <p>
-                This site was created by a fan who loves Eiichirō Oda and his work. It is, of course, not official. I really hope you will enjoy the game :)
+                "This interactive quiz was created by a passionate fan of Eiichiro Oda’s universe and lets you choose any arcs you want. It’s not official, but a heartfelt tribute. I hope you enjoy playing it as much as I enjoyed creating it!"
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="collapse">
+          <button
+            className="collapse-header"
+            onClick={() =>
+              setShowRules((prev) => !prev)
+            }
+          >
+            Game Rules
+          </button>
+          {showRules && (
+            <div className="collapse-content">
+              <p>
+                "First, you will be asked a series of 15 questions, ranging from easy to difficult. After answering, you will correct your own responses, and at the end, you’ll see your game results."
               </p>
             </div>
           )}

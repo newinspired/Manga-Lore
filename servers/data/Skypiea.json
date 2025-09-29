@@ -1,1 +1,273 @@
-[]
+[
+    {
+        "id": 301,
+        "difficulty": "difficult",
+        "question": "Quel type spécial de Log Pose conduit toujours vers une seule et même île ?",
+        "answer": "Un Eternal Pose"
+    },
+    {
+        "id": 302,
+        "difficulty": "medium",
+        "question": "Quelle île de Grand Line a vu une partie de son territoire envoyée à Skypiea ?",
+        "answer": "Jaya"
+    }, 
+    {
+        "id": 303,
+        "difficulty": "easy",
+        "question": "Quel pirate appelé \"La hyène\" se moque des rêves de Luffy avant de se faire battre à Mock Town ?",
+        "answer": "Bellamy"
+    },
+    {
+        "id": 304,
+        "difficulty": "difficult",
+        "question": "Comment s’appelle l’explorateur de North Blue qui avait affirmé avoir découvert une cité d’or il y a environ 400 ans ?",
+        "answer": "Montblanc Norland"
+    },
+    {
+        "id": 305,
+        "difficulty": "difficult",
+        "question": "Quel descendant de Montblanc Norland vit à Jaya et recherche la cité d’or perdue ?",
+        "answer": "Montblanc Cricket"
+    },
+    {
+        "id": 306,
+        "difficulty": "easy",
+        "question": "Comment s’appelle le groupe mystérieux de cinq hommes dirigeant secrètement le Gouvernement Mondial ?",
+        "answer": "Les 5 Doyens"
+    },
+    {
+        "id": 307,
+        "difficulty": "easy",
+        "question": "Quel est le véritable nom du pirate connu sous le nom de Barbe Noire, que Luffy rencontre à Jaya ?",
+        "answer": "Marshall D. Teach"
+    },
+    {
+        "id": 308,
+        "difficulty": "easy",
+        "question": "Quel est le nom de l'Amiral en chef de la Marine durant l’arc de Skypiea ?",
+        "answer": "Sengoku le Bouddha"
+    },
+    {
+        "id": 309,
+        "difficulty": "easy",
+        "question": "Quel pirate est dit comme étant \"L'homme le plus fort du monde\" bien qu'il soit vieillissant ?",
+        "answer": "Edward Newgate (Barbe Blanche)"
+    },
+    {
+        "id": 310,
+        "difficulty": "medium",
+        "question": "Quel personnage déclare dans l’arc Jaya : « Jamais les hommes ne renonceront à leurs rêves » ?",
+        "answer": "Marshall D. Teach (Barbe Noire)"
+    }, 
+    {
+        "id": 311,
+        "difficulty": "difficult",
+        "question": "Par quel moyen l’équipage du Chapeau de Paille parvient-il à atteindre l’île céleste de Skypiea ?",
+        "answer": "Grâce au Knock Up Stream, un puissant courant marin ascendant"
+    },
+    {
+        "id": 312,
+        "difficulty": "medium",
+        "question": "Cite trois membres de l’équipage de Barbe Noire rencontrés à Jaya.",
+        "answer": "Barbe Noire, Van Auger, Laffitte, Jesus Burgess et Doc Q"
+    },
+    {
+        "id": 313,
+        "difficulty": "difficult",
+        "question": "Combien de personne tiendront encore debout selon la prédiction de Ener lors de la bataille de Skypeia  ?",
+        "answer": "5"
+    },
+    {
+        "id": 314,
+        "difficulty": "difficult",
+        "question": "Comment s’appelle l’ancien dieu de Skypiea ayant pour titre le \"Chevalier du ciel\" ?",
+        "answer": "Gan Forr"
+    },
+    {
+        "id": 315,
+        "difficulty": "difficult",
+        "question": "Quel Fruit du Démon a mangé le fidèle destrier de Gan Forr, Pierre ?",
+        "answer": "Le Fruit du Cheval (Uma Uma no Mi)"
+    },
+    {
+        "id": 316,
+        "difficulty": "difficult",
+        "question": "Quel est le nom de la jeune habitante de Skypiea qui aide l’équipage du Chapeau de Paille ?",
+        "answer": "Conis"
+    },
+    {
+        "id": 317,
+        "difficulty": "medium",
+        "question": "Comment se nomment les coquillages spéciaux de Skypiea capables de stocker et relâcher diverses énergies ?",
+        "answer": "Les Dials"
+    },
+    {
+        "id": 318,
+        "difficulty": "difficult",
+        "question": "Que sont exactement les îles Nimbus dans l’univers de Skypiea ?",
+        "answer": "Des îles composées entièrement de nuages solides"
+    },
+    {
+        "id": 319,
+        "difficulty": "medium",
+        "question": "Quel mot les skypiéens utilisent-il à tout bout de champ comme formule de politesse ?",
+        "answer": "\"Nombril\""
+    },
+    {
+        "id": 320,
+        "difficulty": "difficult",
+        "question": "Quelle est la monnaie utilisée par les habitants de Skypiea ?",
+        "answer": "Les Extols"
+    },
+    {
+        "id": 321,
+        "difficulty": "difficult",
+        "question": "Comment sont appelées les épreuves mortelles imposées par Ener à Skypiea ?",
+        "answer": "Les Ordalies"        
+    },
+    {
+        "id": 322,
+        "difficulty": "easy",
+        "question": "Comment se nommait le \"dieu\" autoproclamé de Skypiea possédant le pouvoir du Fruit de la Foudre ?",
+        "answer": "Ener"
+    },
+    {
+        "id": 323,
+        "difficulty": "difficult",
+        "question": "Quel est le chef des Guerriers Shandia qui se bat pour reprendre Upper Yard ?",
+        "answer": "Wiper"
+    }, 
+    {
+        "id": 324,
+        "difficulty": "difficult",
+        "question": "Comment s’appelle le peuple de guerrier qui cherche à reprendre ses terres sacrées à Skypiea ?",
+        "answer": "Les Shandia"
+    },
+    {
+        "id": 325,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le territoire sacré de Skypiea, riche en Vearth où se trouve le sanctuaire divin d’Ener ?",
+        "answer": "Upper Yard"
+    },
+    {
+        "id": 326,
+        "difficulty": "difficult",
+        "question": "Quel guerrier Shandia était l'ami proche de Montblanc Norland il y a 400 ans sur Skypiea ?",
+        "answer": "Calgara"
+    },
+    {
+        "id": 327,
+        "difficulty": "easy",
+        "question": "Quelle relique d’or légendaire, symbole de Shandora, peut-on faire sonner pour transmettre un message à travers le ciel ?",
+        "answer": "La Cloche d'Or de Shandora"
+    },
+    {
+        "id": 328,
+        "difficulty": "difficult",
+        "question": "Quelle Shandia courageuse se bat pour protéger sa terre et soutenir Wiper contre Ener ?",
+        "answer": "Laki"
+    }, 
+    {
+        "id": 329,
+        "difficulty": "difficult",
+        "question": "Qui a réussi à terrasser Ener momentanément grâce au granit marin et à son attaque \"Reject\" ?",
+        "answer": "Wiper"
+    },
+    {
+        "id": 330,
+        "difficulty": "difficult",
+        "question": "Que signifie la métaphore « Ranimons la flamme de Shandora !! » prononcée par les Shandias ?",
+        "answer": "Faire sonner la Cloche d'Or de Shandora/raviver l’honneur des Shandias"
+    },
+    {
+        "id": 331,
+        "difficulty": "difficult",
+        "question": "Qui déclare aux habitants de Skypiea : « Ayez au moins le courage d’admettre qu’il n’y a jamais eu aucun dieu dans ce pays » ?",
+        "answer": "Conis"
+    },
+    {
+        "id": 332,
+        "difficulty": "easy",
+        "question": "Pourquoi Luffy est-il considéré comme l’ennemi naturel d’Ener ?",
+        "answer": "Le fruit de Luffy est immunisé à l’électricité d'Ener"
+    },
+    {
+        "id": 333,
+        "difficulty": "medium",
+        "question": "Quel membre de l’équipage du Chapeau de Paille encaisse de plein fouet une attaque d’Ener pour sauver Nami et Usopp sur l'arche ?",
+        "answer": "Sanji"
+    },
+    {
+        "id": 334,
+        "difficulty": "medium",
+        "question": "Comment les habitants des îles célestes appellent-ils le Haki de l’Observation ?",
+        "answer": "Le Mantra"
+    },
+    {
+        "id": 335,
+        "difficulty": "easy",
+        "question": "Qui prononce cette phrase inscrite sur la Cloche d’Or : « Ma route m’a conduit ici et je porterai ce texte jusqu’au bout du monde » ?",
+        "answer": "Gol D. Roger"
+    },
+    {
+        "id": 336,
+        "difficulty": "medium",
+        "question": "Quelle Arme Antique est mentionnée sur le Poneglyphe de Shandora ?",
+        "answer": "Poséidon"
+    },
+    {
+        "id": 337,
+        "difficulty": "easy",
+        "question": "Qui a pu déchiffrer le Poneglyphe de Shandora lors de l'arc Skypiea ?",
+        "answer": "Nico Robin"
+    },
+    {
+        "id": 338,
+        "difficulty": "medium",
+        "question": "Comment s'appelle la « terre » précieuse recherchée et protégée par les habitants du ciel ?",
+        "answer": "La Vearth"
+    },
+    {
+        "id": 339,
+        "difficulty": "medium",
+        "question": "Combien d'Ordalies Éner impose-t-il aux condamnés d'Upper Yard ?",
+        "answer": "Quatre ordalies (Ballons, Fil, Fer et Marais)"
+    },
+    {
+        "id": 340,
+        "difficulty": "medium",
+        "question": "Comment s'appelle le jeu de pirates où des équipages s'affrontent pour voler des membres adverses ?",
+        "answer": "Le Davy Back Fight"
+    },
+    {
+        "id": 341,
+        "difficulty": "medium",
+        "question": "Quel personnage, surnommé le renard argenté, est le capitaine qui affronte Luffy lors du Davy Back Fight ?",
+        "answer": "Foxy"
+    },
+    {
+        "id": 342,
+        "difficulty": "difficult",
+        "question": "Quel animal fidèle, nommé Shelly, a attendu son maître Tonjit pendant 10 années sur Long Ring Long Land ?",
+        "answer": "Jument blanche (cheval)"
+    },
+    {
+        "id": 343,
+        "difficulty": "medium",
+        "question": "Quel Amiral de la Marine fait son apparition juste avant l’arc de Water Seven pour surveiller les agissements de Nico Robin ?",
+        "answer": "Aokiji (Kuzan)"
+    },
+    {
+        "id": 344,
+        "difficulty": "easy",
+        "question": "Sur quelle île céleste l’équipage du Chapeau de Paille affronte-t-il Ener et découvre les Shandias ?",
+        "answer": "Skypiea"
+    },
+    {
+        "id": 345,
+        "difficulty": "easy",
+        "question": "Comment Aokiji parvient-il à voyager d’île en île en traversant les océans ?",
+        "answer": "En gelant la mer avec ses pouvoirs de glace"
+    }
+
+]

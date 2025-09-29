@@ -25,13 +25,13 @@
   },
   {
     "id": 105,
-    "difficulty": "medium", 
+    "difficulty": "difficult", 
     "question": "Quel est le nom du village où Shanks a transmis son chapeau à Luffy ?",
     "answer": "Le village de Fuchsia"
   },
   {
     "id": 106,
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "question": "Quelle ville a été attaquée par Baggy le Clown dans East Blue ?",
     "answer": "Orange Town"
   },
@@ -55,7 +55,7 @@
   },
   {
     "id": 110,
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "question": "Quelle immense chaîne de montagnes entoure le globe du Nord au Sud, perpendiculairement à Grand Line ?",
     "answer": "Red Line"
   },
@@ -65,213 +65,269 @@
     "question": "Quel est le nom de l’océan qui comprend à la fois le \"Paradis\" et le \"Nouveau Monde\" ?",
     "answer": "Grand Line"
   },
-
-
-
-
-
-
-
-
-
-
   {
-    "id": 151,
-    "difficulty": "medium",
-    "question": "Quel personnage manie un jutte en granite marin et possède le pouvoir du Fruit de la Fumée ?",
+    "id": 112,
+    "difficulty": "easy",
+    "question": "Quel personnage manie un jutte en granit marin et possède le pouvoir du Fruit de la Fumée ?",
     "answer": "Smoker"
   },
   {
-    "id": 152,
+    "id": 113,
     "difficulty": "medium",
     "question": "Sous les ordres de quelle pirate Kobby travaillait-il comme mousse lorsqu’il a rencontré Luffy ?",
     "answer": "Alvida"
   },
   {
-    "id": 153,
+    "id": 114,
     "difficulty": "easy",
     "question": "Qui s'autoproclame comme étant : \"La voleuse de pirate\" ?",
     "answer": "Nami"
   },
   {
-    "id": 154,
+    "id": 115,
     "difficulty": "easy",
     "question": "Qui porte le surnom de \"Chasseur de pirates\" au début de l’œuvre ?",
-    "answer": "Zoro"
+    "answer": "Roronoa Zoro"
   },
   {
-    "id": 155,
+    "id": 116,
     "difficulty": "easy",
     "question": "Quel homme-poisson est le chef du gang qui a pris le contrôle du village de Nami ?",
     "answer": "Arlong"
   },
   {
-    "id": 156,
-    "difficulty": "medium",
+    "id": 117,
+    "difficulty": "difficult",
     "question": "Qui est la tavernière de Fushia ?",
     "answer": "Makino"
   },
     {
-    "id": 157,
-    "difficulty": "medium",
+    "id": 118,
+    "difficulty": "easy",
     "question": "Qui est surnommé \"Œil de Faucon\" ?",
     "answer": "Mihawk"
   },
   {
-    "id": 158,
-    "difficulty": "medium",
+    "id": 119,
+    "difficulty": "easy",
     "question": "Quel capitaine pirate possède le pouvoir du Fruit du Bara Bara (Fruit de la division) ?",
     "answer": "Baggy le Clown"
   },
   {
-    "id": 159,
+    "id": 120,
     "difficulty": "medium",
     "question": "Quel personnage de la Marine est obsédé par la collecte de sabres légendaires ?",
     "answer": "Tashigi"
   },
   {
-    "id": 160,
+    "id": 121,
     "difficulty": "medium",
     "question": "Quel personnage prétentieux est le fils du Capitaine Morgan à Shells Town ?",
     "answer": "Hermep"
   },
   {
-    "id": 161,
+    "id": 122,
     "difficulty": "difficult",
     "question": "Quel vice-capitaine de la bande à Baggy est surnommé \"le dresseur de fauves\"  ?",
     "answer": "Morge"
   },
   {
-    "id": 162,
+    "id": 123,
     "difficulty": "difficult",
     "question": "Comment s'appelle le chien fidèle d'Orange Town ?",
     "answer": "Chouchou"
   },
   {
-    "id": 163,
+    "id": 124,
     "difficulty": "easy",
     "question": "Quel personnage passait son temps à troubler la tranquillité de son village avant de rejoindre l'équipage du Chapeau de paille ?",
     "answer": "Usopp"
   },
   {
-    "id": 164,
+    "id": 125,
     "difficulty": "medium",
     "question": "Quel capitaine pirate a attaqué le village de Syrup afin d'assassiner Kaya ?",
     "answer": "Kuro"
   },
   {
-    "id": 165,
+    "id": 126,
     "difficulty": "medium",
     "question": "Qui Kuro projetait-il d'assassiner afin de récupérer sa fortune ?",
     "answer": "Kaya"
   },
   {
-    "id": 166,
+    "id": 127,
     "difficulty": "difficult",
     "question": "Qui est le second de Kuro et l’hypnotiseur des pirates du Chat Noir ?",
     "answer": "Jango"
   },
   {
-    "id": 167,
+    "id": 128,
     "difficulty": "difficult",
     "question": "Quel pirate a tenté de s’emparer du Baratie pour relancer sa flotte ?",
     "answer": "Don Krieg"
   },
   {
-    "id": 168,
-    "difficulty": "medium",
+    "id": 129,
+    "difficulty": "easy",
     "question": "Quel personnage a perdu son bras en sauvant Luffy de la noyade quand il était enfant ?",
     "answer": "Shanks le Roux"
   },
   {
-    "id": 169,
+    "id": 130,
     "difficulty": "easy",
     "question": "Quel personnage a pour objectif de trouver l'océan légendaire \"All blue\" ?",
     "answer": "Sanji"
   },
   {
-    "id": 170,
+    "id": 131,
     "difficulty": "difficult",
     "question": "Qui est la sœur adoptive de Nami ?",
     "answer": "Nojiko"
   },
     {
-    "id": 171,
+    "id": 132,
     "difficulty": "medium",
     "question": "Qui a été tuée par Arlong pour avoir défendu ses filles ?",
-    "answer": "Belmer"
+    "answer": "Bell-mère"
   },
   {
-    "id": 172,
+    "id": 133,
     "difficulty": "medium",
     "question": "Quel homme-poisson qui fut autrefois au service d'Arlong, possède six bras et manie des sabres ?",
     "answer": "Octy"
   },
   {
-    "id": 173,
+    "id": 134,
     "difficulty": "difficult",
     "question": "Quel est le shérif du village de Cocoyashi ?",
     "answer": "Genzo"
   },
   {
-    "id": 174,
+    "id": 135,
     "difficulty": "easy",
     "question": "Quelle organisation militaire internationale est chargée de maintenir la paix à travers le monde ?",
     "answer": "La Marine"
   },
   {
-    "id": 175,
+    "id": 136,
     "difficulty": "easy",
     "question": "Qui est surnommé le \"Roi des pirates\" et a laissé derrière lui le plus grand trésor de cet univers ?",
     "answer": "Gol D. Roger"
   },
   {
-    "id": 176,
+    "id": 137,
     "difficulty": "easy",
     "question": "Comment s’appelle le petit navire offert à Luffy par Kaya et construit par Merry pour son équipage ?",
     "answer": "Le Vogue Merry"
   },
   {
-    "id": 177,
+    "id": 138,
     "difficulty": "easy",
     "question": "Comment appelle-t-on les êtres capables de respirer sous l’eau et dotés d’une force souvent supérieure aux humains ?",
     "answer": "Les hommes-poissons"
   },
   {
-    "id": 178,
+    "id": 139,
     "difficulty": "easy",
     "question": "Quel événement a été le point de départ de la grande ère de la piraterie ?",
     "answer": "L'exécution de Gol D. Roger"
   },
   {
-    "id": 179,
+    "id": 140,
     "difficulty": "medium",
     "question": "Comment se nomme le fidèle serviteur et majordome de Kaya, qui a conçu le Vogue Merry ?",
     "answer": "Merry le majordome"
   },
   {
-    "id": 180,
+    "id": 141,
     "difficulty": "medium",
     "question": "Comment se nomme la baleine à qui Luffy a promis un jour de revenir avec son équipage ?",
     "answer": "Laboon"
   },
   {
-    "id": 181,
+    "id": 142,
     "difficulty": "medium",
     "question": "Comment s'appelle l'homme qui a veillé sur Laboon tout en surveillant le Phare du Cap des Jumeaux ?",
     "answer": "Crocus"
   },
     {
-    "id": 182,
-    "difficulty": "medium",
+    "id": 143,
+    "difficulty": "difficult",
     "question": "Quel Cap est le point d'entrée de Grand Line, au pied de Reverse Mountain ?",
     "answer": "Le Cap des Jumeaux"
   },
   {
-    "id": 183,
+    "id": 144,
     "difficulty": "difficult",
     "question": "Comment se nomme le lion de compagnie de Morge ?",
     "answer": "Richie"
+  },
+  {
+    "id": 145,
+    "difficulty": "easy",
+    "question": "Zoro est animé par un objectif personnel. Lequel ?",
+    "answer": "Devenir le meilleur épéiste du monde"
+  },
+  {
+    "id": 146,
+    "difficulty": "medium",
+    "question": "À Loguetown, qui intervient mystérieusement pour sauver Luffy face à Smoker ?",
+    "answer": "Monkey D. Dragon"
+  },
+  {
+    "id": 147,
+    "difficulty": "easy",
+    "question": "Quel pirate possède un corps élastique grâce à son fruit du démon ?",
+    "answer": "Monkey D. Luffy"
+  },
+  {
+    "id": 148,
+    "difficulty": "easy",
+    "question": "Quel objet Shanks confie à Luffy comme symbole de son rêve de devenir Roi des Pirates ?",
+    "answer": "Le chapeau de paille"
+  },
+  {
+    "id": 149,
+    "difficulty": "medium",
+    "question": "À qui Luffy prête-t-il son chapeau de paille avant l’affrontement contre Arlong ?",
+    "answer": "Nami"
+  },
+  {
+    "id": 150,
+    "difficulty": "medium",
+    "question": "Quel personnage déclare : \" Jusqu'au jour où je te vaincrai, je ne perdrai plus jamais contre personne \" ?",
+    "answer": "Roronoa Zoro"
+  },
+  {
+    "id": 151,
+    "difficulty": "difficult",
+    "question": "Comment se nomme le chef du navire restaurant le Baratie ?",
+    "answer": "Zeff"
+  },
+  {
+    "id": 152,
+    "difficulty": "easy",
+    "question": "Quelle est la monnaie utilisée dans One Piece ?",
+    "answer": "Le Berry"
+  },
+  {
+    "id": 153,
+    "difficulty": "easy",
+    "question": "Quel appareil sert à téléphoner à distance dans One Piece ?",
+    "answer": "Un escargophone"
+  },
+  {
+    "id": 154,
+    "difficulty": "medium",
+    "question": "Quel matériau spécial neutralise les pouvoirs des Fruits du Démon ?",
+    "answer": "Le granit marin"
+  },
+  {
+    "id": 155,
+    "difficulty": "medium",
+    "question": "Comment se nommait le quartier général d'Arlong dans East Blue ?",
+    "answer": "Arlong Park"
   }
 
 ]

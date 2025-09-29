@@ -1,19 +1,19 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
-$font-header: "Ruthie", cursive;
-$mainfont: 'Cinzel';
+$mainfont: 'Fraunces', serif;
 $otherfont: 'Cormorant Garamond', serif;
 
-$colorbackground: #004b81;
-$color-modal : #cde0d9;
-$button-color: #ffd3a5;
-$button-active: #ffaa6e;
+$color-modal : #f0f0dc;
+$button-color: #f0d8b6;
+$button-active: #b3926f;
 
 html, body {
   height: 100%;
   font-family: $mainfont;
+  color : #0a1931;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
     position: fixed;
     background-attachment: fixed;
     inset: 0;
-    background-color: rgba(0, 75, 129, 0.9);
+    background-color: rgba(30, 46, 79, 0.9);
     z-index: -1;
   }
 
@@ -50,7 +50,7 @@ body {
     justify-content: center;
     background-color: $color-modal;
     padding: 25px;
-    border-radius: 50px;
+    border-radius: 10px;
     gap: 20px;
     height: 360px;
     width: 480px;
@@ -68,8 +68,7 @@ body {
       box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
       color: black;
       font-weight: 600;
-      font-family: $otherfont;
-      font-size: 22px;
+      font-size: 20px;
 
       .placeholder {
         color: $button-color;
@@ -162,6 +161,7 @@ body {
       font-size: 24px;
       font-weight: 700;
       margin: 0;
+      color : #0a1931;
     }
 
     .avatar-choose {
@@ -192,7 +192,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin: 25px 0px;
+  margin: 25px 0px 40px 0px;
 
   .collapse {
     border-radius: 5px;
@@ -212,6 +212,7 @@ body {
       font-weight: 700;
       font-size: 20px;
       width : 100%;
+      z-index: 1;
 
       &:hover {
         background-color: $button-active;
@@ -221,15 +222,14 @@ body {
     .collapse-content {
       background-color: $color-modal;
       padding: 5px 20px;
-      font-family: $otherfont;
+      font-family: $mainfont;
       font-size: 16px;
       color: black;
       line-height: 1.5;
 
       p{
-        font-weight: 600;
-        font-family : $otherfont;
-        font-size : 19px;
+        font-weight: 500;
+        font-size : 16px;
       }
     }
   }

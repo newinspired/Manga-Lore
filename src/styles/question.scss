@@ -1,5 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+$mainfont: 'Fraunces', serif;
 $otherfont: 'Cormorant Garamond', serif;
-$color-modal : #cde0d9;
+$color-main : #f7f4f0;
+$button-active: #b3926f;
+
+
 .container-question-component {
   display: flex;
   flex-direction: column;
@@ -7,24 +14,45 @@ $color-modal : #cde0d9;
   .container-question {
     display: flex;
     flex-direction: column;
-
     align-items: center;
-    justify-content: center;
 
-    gap : 30px;
-    margin : 30px 0px;
-    padding: 25px 100px;
-    height: 500px;
-    color : black;
-    background-color:$color-modal;
+    margin : 0px 0px 0px 0px;
+    padding: 0px 15%;
+    height : 550px;
     opacity: 0.9;
+    font-family: $otherfont;
+    color : $color-main;
 
+    @media screen and (max-width: 1120px) {
+      height : 2000px;
+      
+    }
 
+    .timer-circle {
+      margin-top : 50px;
+      color : $button-active ;
+
+      .timer-text{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $mainfont;
+        color :white;
+      }
+    }
+
+    .question-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top : 280px;
+      gap : 50px;
+    }
 
 
     .question-text {
       text-align: center;
-      font-size: 40px;
+      font-size: 45px;
+      font-weight: 500;
       font-family: $otherfont;
       padding-top: 0px;
       margin : 0px;
@@ -32,11 +60,51 @@ $color-modal : #cde0d9;
 
     input {
       all: unset;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid #b3926f;
       padding: 5px 100px 10px 0px;
-      font-size: 30px;
+      font-size: 35px;
       font-family: $otherfont;
+      font-weight: 500;
+      width: 500px;
     }
+
+    .difficulty-question{
+      display: flex;
+      justify-content: flex-start;
+      font-size: 22px;
+      font-weight: 600;
+      margin-top : 170px;
+      font-family: $otherfont;
+      width: 100%;
+
+
+       p {
+        font-size: 30px;
+        padding: 5px 15px;
+        border-radius: 8px;
+        color: white;
+        text-transform: capitalize; 
+        font-family: $mainfont;
+
+        &.easy {
+          color: #f0f0dc;
+        }
+
+        &.medium {
+          color: #f0d8b6;
+        }
+
+        &.difficult {
+          color: #b3926f; 
+        }
+      }
+    }
+
+
+
+
+
+
 
     .button-container {
       display: flex;
@@ -99,6 +167,8 @@ button.btn-finish {
   }
 }
 
+/* WAITING SCREEN */
+
 
 .waiting-screen{
   display: flex;
@@ -119,19 +189,100 @@ button.btn-finish {
   }
 }
 
-.buttons-correction{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding-top: 20px;
 
-  button{
+
+
+
+
+/*   CORRECTION PAGE   */
+
+
+
+
+
+.container-correction{
     display: flex;
-    justify-content: center;
-    padding: 10px 20px;
-    background-color : #ffaa6e;
-    font-weight: 600 ;
-    border-radius: 20px;
-    width : 70px;
-  }
+    flex-direction: column;
+    align-items: center;
+
+    gap : 30px;
+    margin : 50px 0px 0px 0px;
+    padding: 20px 15% 30px 15%;
+    color : $color-main;
+    height : 550px;
+    font-family: $otherfont;
+
+    @media screen and (max-width: 1120px) {
+      height : 600px;
+      
+    }
+
+    .correction{
+      font-family: $mainfont;
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    .main-correction{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap : 30px;
+      margin-top: 280px;
+
+      .question-text {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: $otherfont;
+        padding-top: 0px;
+        margin : 0px;
+      }
+
+      .réponses-correction{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+        gap : 20px;
+
+        .réponse-text {
+          text-align: center;
+          font-size: 35px;
+          font-weight: 400;
+          font-family: $otherfont;
+          margin : 0px;
+
+          strong {
+            font-weight: 600;
+            color : #ffaa6e ;
+          }
+        }
+      }
+    }
+
+    .buttons-correction{
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding-top: 50px;
+      font-size: 20px;
+      font-family: $mainfont;
+      font-weight: 700;
+
+      button{
+        display: flex;
+        justify-content: center;
+        padding: 15px 25px;
+        background-color : $button-active;
+        font-weight: 600 ;
+        border-radius: 20px;
+        width : 70px;
+
+      }
+    }
+
+
+    
+
 }

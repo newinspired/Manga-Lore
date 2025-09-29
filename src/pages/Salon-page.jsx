@@ -4,6 +4,7 @@ import CardName from '../components/card-name.jsx';
 import WaitingRoom from '../components/waiting-room.jsx';
 import socket from '../socket.js';
 import Footer from '../components/footer.jsx';
+import Header from '../components/header.jsx';
 import '../styles/card-name.scss';
 import '../styles/salon-page.scss';
 
@@ -23,8 +24,8 @@ function SalonPage() {
     { label: 'Water Seven', value: 'WaterSeven' },
     { label: 'Thriller Bark', value: 'ThrillerBark' },
     { label: 'MarineFord', value: 'MarineFord' },
-    { label: 'Fish-Man Island', value: 'FishManIsland' },
 
+    { label: 'Fish-Man Island', value: 'FishManIsland' },
     { label: 'Dressrosa', value: 'Dressrosa' },
     { label: 'Whole Cake Island', value: 'WholeCakeIsland' },
     { label: 'Wano', value: 'Wano' },
@@ -80,6 +81,7 @@ function SalonPage() {
 
   return (
     <div className="container">
+      <Header />
       <div className='container-salon'>
         <div className="container-waiting">
           <WaitingRoom

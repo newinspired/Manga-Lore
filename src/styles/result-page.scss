@@ -1,18 +1,39 @@
 .result-page {
   text-align: center;
   padding: 20px;
+  margin-top : 50px;
 
   h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #fff;
+  }
+
+  .player-rank{
+    font-size: 40px;
+    color : #b3926f;
+    margin-right: 30px;
+
+    .placement{
+      font-size: 20px;
+      vertical-align: super;
+      color : #b3926f;
+
+    }
+  }
+
+  .player-score{
+    font-size: 20px;
+    color : white;
+    margin-left: 20px;
   }
 
   .results-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 12px;
-    max-width: 500px;
     margin: 0 auto;
   }
 

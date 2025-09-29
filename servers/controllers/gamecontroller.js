@@ -6,51 +6,50 @@ module.exports = {
   handlePlayerReady,
   handlePlayerAnswer,
   handleDisconnect,
-  handleSelectedArcs
+  handleSelectedArcs,
+  handleCorrectionEvents,
 };
 
 // ---------------- Utils ----------------
 
-function levenshteinDistance(a, b) {
-  const matrix = [];
-  const lenA = a.length;
-  const lenB = b.length;
-  if (lenA === 0) return lenB;
-  if (lenB === 0) return lenA;
-
-  for (let i = 0; i <= lenB; i++) matrix[i] = [i];
-  for (let j = 0; j <= lenA; j++) matrix[0][j] = j;
-
-  for (let i = 1; i <= lenB; i++) {
-    for (let j = 1; j <= lenA; j++) {
-      if (b.charAt(i - 1) === a.charAt(j - 1)) matrix[i][j] = matrix[i-1][j-1];
-      else matrix[i][j] = Math.min(matrix[i-1][j]+1, matrix[i][j-1]+1, matrix[i-1][j-1]+1);
-    }
-  }
-  return matrix[lenB][lenA];
-}
-
-function normalize(str) {
-  return String(str).toLowerCase().replace(/\./g, '').replace(/\s+/g, '').trim();
-}
-
-function isFuzzyMatch(input, expectedAnswers, maxDistance = 1) {
-  const cleanedInput = normalize(input || '');
-  return expectedAnswers.some(expected => {
-    const cleanedExpected = normalize(expected || '');
-    const distance = levenshteinDistance(cleanedInput, cleanedExpected);
-    if (cleanedExpected.length <= 5) return distance === 0;
-    return distance <= maxDistance;
-  });
-}
-
 function shuffleArray(array) {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random()*(i+1));
+    const j = Math.floor(Math.random() * (i + 1));
     [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
   }
   return newArray;
+}
+
+function handleCorrectionEvents(io, socket, playersInRooms) {
+  // ✅ Seul le host peut corriger
+  socket.on("applyCorrection", ({ room, playerId, questionIndex, isCorrect }) => {
+    const players = playersInRooms[room];
+    if (!players) return;
+
+    const host = players.find(p => p.isHost);
+    if (!host || host.id !== socket.id) {
+      console.log("❌ Tentative de correction par un non-host !");
+      return;
+    }
+
+    const player = players.find(p => p.id === playerId);
+    if (player) {
+      if (isCorrect) player.score = (player.score || 0) + 1000;
+    }
+    io.to(room).emit("playerList", players);
+  });
+
+  // ✅ Le host avance la correction, tous les joueurs suivent
+  socket.on("correctionUpdate", ({ room, questionIndex, playerIndex }) => {
+    const players = playersInRooms[room];
+    if (!players) return;
+
+    const host = players.find(p => p.isHost);
+    if (!host || host.id !== socket.id) return;
+
+    io.to(room).emit("correctionUpdate", { questionIndex, playerIndex });
+  });
 }
 
 function loadQuestionsFromArcs(arcs) {
@@ -71,40 +70,23 @@ function clearGameTimer(game) {
   if (game && game.timerInterval) clearInterval(game.timerInterval);
 }
 
-// ---------------- Scoring ----------------
-
-const SCORE_TABLE = { easy: 50_000_000, medium: 100_000_000, difficult: 150_000_000 };
-
-function applyScoresForCurrentQuestion(game) {
-  const q = game.questions[game.currentQuestionIndex];
-  if (!q) return;
-  const expectedAnswers = Array.isArray(q.answer) ? q.answer : [q.answer];
-  const difficulty = (q.difficulty || 'easy').toLowerCase();
-  const points = SCORE_TABLE[difficulty] ?? SCORE_TABLE.easy;
-
-  for (const p of game.players) {
-    const lastAnswer = game.answers[p.id] ?? '';
-    if (!game.scores[p.id]) game.scores[p.id] = 0;
-    if (isFuzzyMatch(String(lastAnswer), expectedAnswers)) game.scores[p.id] += points;
-  }
-}
-
 // ---------------- Handlers ----------------
 
 function handleJoinRoom(io, socket, { roomId, username, avatar }, playersInRooms) {
   if (!playersInRooms[roomId]) playersInRooms[roomId] = [];
-  if (playersInRooms[roomId].some(p=>p.id===socket.id)) return;
+  if (playersInRooms[roomId].some(p => p.id === socket.id)) return;
 
-  const isHost = playersInRooms[roomId].length===0;
-  const player = { id: socket.id, username, avatar, isReady: false, isHost };
+  const isHost = playersInRooms[roomId].length === 0;
+  const player = { id: socket.id, username, avatar, isReady: false, isHost, score: 0 };
   playersInRooms[roomId].push(player);
+
   socket.join(roomId);
   io.to(roomId).emit('playerList', playersInRooms[roomId]);
   socket.emit('hostStatus', isHost);
 }
 
 function handleSelectedArcs(io, roomId, arcs, games) {
-  if (!games[roomId]) games[roomId]={};
+  if (!games[roomId]) games[roomId] = {};
   games[roomId].selectedArcs = arcs;
   io.to(roomId).emit('arcsUpdated', arcs);
 }
@@ -114,6 +96,7 @@ function handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games)
   if (!players) return;
   const player = players.find(p => p.id === socket.id);
   if (!player) return;
+
   player.isReady = isReady;
   io.to(roomCode).emit('playerList', players);
 
@@ -121,7 +104,7 @@ function handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games)
   if (!players.every(p => p.isReady)) return;
 
   const selectedArcs = games[roomCode]?.selectedArcs || ['EastBlue'];
-  const allQuestions = loadQuestionsFromArcs(selectedArcs).slice(0, 21);
+  const allQuestions = loadQuestionsFromArcs(selectedArcs).slice(0, 15);
 
   if (games[roomCode]) clearGameTimer(games[roomCode]);
 
@@ -129,8 +112,8 @@ function handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games)
     players,
     questions: allQuestions,
     currentQuestionIndex: 0,
-    scores: {},
-    answers: {},
+    answers: {}, // { playerId: "réponse" }
+    answersHistory: [], // ✅ pour stocker toutes les réponses question par question
     selectedArcs,
     timerInterval: null,
     inProgress: true
@@ -143,22 +126,27 @@ function handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games)
 function handlePlayerAnswer(socket, roomCode, answer, playersInRooms, games) {
   const game = games[roomCode];
   if (!game || !game.inProgress) return;
-  game.answers[socket.id] = answer;
+
+  const playerId = socket.id;
+  game.answers[playerId] = answer;
 }
 
-function handleDisconnect(io, socket, playersInRooms, games={}) {
+function handleDisconnect(io, socket, playersInRooms, games = {}) {
   for (const roomId in playersInRooms) {
     const players = playersInRooms[roomId];
-    const idx = players.findIndex(p=>p.id===socket.id);
-    if (idx!==-1) {
+    const idx = players.findIndex(p => p.id === socket.id);
+    if (idx !== -1) {
       const wasHost = players[idx].isHost;
-      players.splice(idx,1);
-      if (wasHost && players.length>0) {
+      players.splice(idx, 1);
+
+      if (wasHost && players.length > 0) {
         players[0].isHost = true;
         io.to(players[0].id).emit('hostStatus', true);
       }
+
       io.to(roomId).emit('playerList', players);
-      if (players.length===0 && games[roomId]) {
+
+      if (players.length === 0 && games[roomId]) {
         clearGameTimer(games[roomId]);
         delete games[roomId];
       }
@@ -173,14 +161,24 @@ function sendNextQuestion(io, roomCode, games) {
 
   clearGameTimer(game);
 
+  // 🔹 Sauvegarder les réponses précédentes avant de passer à la suivante
+  if (game.currentQuestionIndex > 0) {
+    const prevQuestion = game.questions[game.currentQuestionIndex - 1];
+    game.answersHistory.push({
+      question: prevQuestion.question,
+      correctAnswer: prevQuestion.answer,
+      answers: { ...game.answers }
+    });
+    game.answers = {}; // reset pour la prochaine question
+  }
+
   if (game.currentQuestionIndex >= game.questions.length) {
     endGame(io, roomCode, games);
     return;
   }
 
   const question = game.questions[game.currentQuestionIndex];
-
-  let timeLeft = game.currentQuestionIndex === 0 ? 3 : 15;
+  let timeLeft = game.currentQuestionIndex === 0 ? 0 : 3;
 
   io.to(roomCode).emit('newQuestion', { question, timeLeft });
 
@@ -190,27 +188,38 @@ function sendNextQuestion(io, roomCode, games) {
 
     if (timeLeft <= 0) {
       clearGameTimer(game);
-
-      applyScoresForCurrentQuestion(game);
-
       game.currentQuestionIndex++;
       sendNextQuestion(io, roomCode, games);
     }
   }, 1000);
 }
 
-function endGame(io, roomCode, games){
+function endGame(io, roomCode, games) {
   const game = games[roomCode];
   if (!game) return;
+
   game.inProgress = false;
   clearGameTimer(game);
 
-  const playersWithScores = game.players.map(p=>({
+  // 🔹 Sauvegarder la dernière question
+  if (game.questions[game.currentQuestionIndex - 1] && Object.keys(game.answers).length > 0) {
+    const prevQuestion = game.questions[game.currentQuestionIndex - 1];
+    game.answersHistory.push({
+      question: prevQuestion.question,
+      correctAnswer: prevQuestion.answer,
+      answers: { ...game.answers }
+    });
+  }
+
+  const playersPayload = game.players.map((p, idx) => ({
     id: p.id,
-    username: p.username,
-    avatar: p.avatar,
-    score: game.scores[p.id]||0
+    username: p.username || `Joueur ${idx + 1}`,
+    avatar: p.avatar || 'luffy',
+    score: typeof p.score === 'number' ? p.score : 0
   }));
 
-  io.to(roomCode).emit('gameEnded', { players: playersWithScores });
+  io.to(roomCode).emit('gameEnded', { 
+    players: playersPayload,
+    answersHistory: game.answersHistory // ✅ on envoie l’historique complet
+  });
 }

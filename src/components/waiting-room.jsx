@@ -41,6 +41,7 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
 
   const isButtonDisabled = isHost && selectedArcs.length === 0;
   const buttonLabel = isReady ? 'Ready' : 'Start Game';
+  const allowedArcs = ["EastBlue", "Alabasta", "Skypiea","WaterSeven","ThrillerBark"];
 
   return (
     <div className='container-ready-button'>
@@ -55,23 +56,29 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
           <h3>Select arcs you want to be tested on !</h3>
         </div>
         <div className="arc-buttons">
-          {allArcs.map(({ label, value }) => (
-            <button
-              key={value}
-              className={`arc-button ${value.toLowerCase()} ${selectedArcs.includes(value) ? 'selected' : ''}`}
-              disabled={!isHost}
-              onClick={() => {
-                if (!isHost) return;
-                setSelectedArcs((prev) =>
-                  prev.includes(value)
-                    ? prev.filter((a) => a !== value)
-                    : [...prev, value]
-                );
-              }}
-            >
-              {label}
-            </button>
-          ))}
+          {allArcs.map(({ label, value }) => {
+            const isSelectable = ["EastBlue", "Alabasta", "Skypiea","WaterSeven","ThrillerBark"].includes(value);
+
+            return (
+              <button
+                key={value}
+                className={`arc-button ${value.toLowerCase()} ${
+                  selectedArcs.includes(value) ? "selected" : ""
+                }`}
+                disabled={!isHost || !isSelectable}  // 🔹 Désactive les arcs non-autorisés
+                onClick={() => {
+                  if (!isHost || !isSelectable) return;
+                  setSelectedArcs((prev) =>
+                    prev.includes(value)
+                      ? prev.filter((a) => a !== value)
+                      : [...prev, value]
+                  );
+                }}
+              >
+                {label}
+              </button>
+            );
+          })}
         </div>
         <div className='select-all'>
           <button
@@ -79,10 +86,10 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
             disabled={!isHost}
             onClick={() => {
               if (!isHost) return;
-              if (selectedArcs.length === allArcs.length) {
+              if (selectedArcs.length === allowedArcs.length) {
                 setSelectedArcs([]);
               } else {
-                setSelectedArcs(allArcs.map(arc => arc.value));
+                setSelectedArcs(allArcs.filter(arc => allowedArcs.includes(arc.value)).map(arc => arc.value));
               }
             }}
           >

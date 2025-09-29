@@ -1,13 +1,13 @@
 import luffy from './luffy.jpg';
 import zoro from './zoro.jpg';
-import nami from './nami.jpg';
-import usopp from './usopp.jpg';
+import nami from './nami2.jpg';
+import usopp from './usopp2.jpg';
 import sanji from './sanji.jpg';
 import chopper from './chopper.jpg';
-import robin from './robin.jpg';
-import franky from './franky.jpg';
+import robin from './robin2.jpg';
+import franky from './franky2.jpg';
 import brook from './brook.jpg';
-import jimbei from './jimbei.jpg';
+import jimbei from './jimbei2.jpg';
 import shanks from './shanks.jpg';
 import kobby from './kobby.jpg';
 
@@ -23,8 +23,6 @@ const avatarMap = {
   franky: franky,
   brook: brook,
   jimbei: jimbei,
-  shanks: shanks,
-  kobby: kobby,
 };
 
 export default avatarMap;

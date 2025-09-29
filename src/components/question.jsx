@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import socket from '../socket';
+import '../styles/question.scss';
 
 const Question = ({ username, avatar }) => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -11,7 +12,6 @@ const Question = ({ username, avatar }) => {
   const navigate = useNavigate();
 
   const currentAnswerRef = useRef('');
-  const answersHistoryRef = useRef([]);
   const currentQuestionRef = useRef(null);
 
   useEffect(() => {
@@ -22,15 +22,6 @@ const Question = ({ username, avatar }) => {
 
   useEffect(() => {
     const onNewQuestion = ({ question, timeLeft }) => {
-      if (currentQuestionRef.current) {
-        answersHistoryRef.current.push({
-          question: currentQuestionRef.current.question,
-          correctAnswer: currentQuestionRef.current.answer,
-          playerAnswer: currentAnswerRef.current || '',
-          difficulty: currentQuestionRef.current.difficulty,
-        });
-      }
-
       currentAnswerRef.current = '';
       setUserAnswer('');
       setCurrentQuestion(question);
@@ -42,27 +33,13 @@ const Question = ({ username, avatar }) => {
     const onTimer = (time) => setTimeLeft(time);
 
     const onGameEnded = (payload) => {
-      if (
-        currentQuestionRef.current &&
-        !answersHistoryRef.current.find(
-          (q) => q.question === currentQuestionRef.current.question
-        )
-      ) {
-        answersHistoryRef.current.push({
-          question: currentQuestionRef.current.question,
-          correctAnswer: currentQuestionRef.current.answer,
-          playerAnswer: currentAnswerRef.current || '',
-          difficulty: currentQuestionRef.current.difficulty,
-        });
-      }
-
-      console.log('Payload reçu gameEnded:', payload.players);
-
-      navigate(`/result/${room}`, {
+      // ⚡ On récupère directement l'historique envoyé par le serveur
+      navigate(`/correction/${room}`, {
         state: {
-          answersHistory: answersHistoryRef.current,
-          username,
+          answersHistory: payload?.answersHistory || [],
           players: payload?.players || [],
+          room,
+          currentSocketId: socket.id, // permet de savoir si je suis le host
         },
       });
     };
@@ -76,7 +53,7 @@ const Question = ({ username, avatar }) => {
       socket.off('timer', onTimer);
       socket.off('gameEnded', onGameEnded);
     };
-  }, [navigate, room, username, avatar]);
+  }, [navigate, room]);
 
   const handleChange = (e) => {
     const val = e.target.value;
@@ -99,24 +76,16 @@ const Question = ({ username, avatar }) => {
 
   const radius = 40;
   const circumference = 2 * Math.PI * radius;
-  const progress =
-    maxTime > 0 ? (timeLeft / maxTime) * circumference : circumference;
+  const progress = maxTime > 0 ? (timeLeft / maxTime) * circumference : circumference;
 
   return (
     <div className="container-question-component">
       <div className="container-question">
         <div className="timer-circle">
           <svg width="100" height="100">
+            <circle stroke="#ddd" fill="transparent" strokeWidth="6" r={radius} cx="50" cy="50" />
             <circle
-              stroke="#ddd"
-              fill="transparent"
-              strokeWidth="6"
-              r={radius}
-              cx="50"
-              cy="50"
-            />
-            <circle
-              stroke="#ff5252"
+              stroke="#b3926f"
               fill="transparent"
               strokeWidth="6"
               r={radius}
@@ -133,33 +102,29 @@ const Question = ({ username, avatar }) => {
           </svg>
           <div className="timer-text">{timeLeft}</div>
         </div>
-
-        <p className="question-text">{currentQuestion.question}</p>
-        <input
-          type="text"
-          value={userAnswer}
-          onChange={handleChange}
-          placeholder="Ta réponse"
-          disabled={timeLeft === 0}
-          autoFocus
-        />
+        <div className="question-section">
+          <p className="question-text">{currentQuestion.question}</p>
+          <input
+            type="text"
+            value={userAnswer}
+            onChange={handleChange}
+            placeholder="Type your answer here"
+            disabled={timeLeft === 0}
+            autoFocus
+          />
+        </div>
+        <div className="difficulty-question">
+          {currentQuestion && (
+            <p className={`difficulty ${currentQuestion.difficulty}`}>
+              {currentQuestion.difficulty.charAt(0).toUpperCase() + currentQuestion.difficulty.slice(1)}
+            </p>
+          )}
+        </div>
       </div>
 
       <style>{`
-        .timer-circle {
-          position: relative;
-          width: 100px;
-          height: 100px;
-        }
-        .timer-text {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 20px;
-          font-weight: bold;
-          color: #ff5252;
-        }
+        .timer-circle { position: relative; width: 100px; height: 100px; }
+        .timer-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 20px; font-weight: bold; color: #f0d8b6; }
       `}</style>
     </div>
   );

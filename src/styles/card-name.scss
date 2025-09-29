@@ -1,4 +1,6 @@
-$card-color: #ffd3a5;;
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+$card-color: #f0d8b6;
 
 .container-card-name{
     display: flex;
@@ -36,15 +38,15 @@ $card-color: #ffd3a5;;
         background-color : $card-color;
         height : 85px;
         width : 270px;
-        border-radius : 25px;
+        border-radius : 15px;
         border : 3px solid $card-color;
         box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
         
 
         img{
             height : 85px;
-            border-top-left-radius: 25px;
-            border-bottom-left-radius: 25px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
 
         }
 
@@ -55,7 +57,7 @@ $card-color: #ffd3a5;;
             width: 155px;
             max-width: 155px;
             font-family:'Cormorant Garamond', serif;
-            font-weight: 700;
+            font-weight: 800;
         }
 
         
@@ -63,15 +65,4 @@ $card-color: #ffd3a5;;
 
 }
 
-.container-bonne-chance{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width : 400px;
-    height : 600px; 
-    
 
-    .nom-couleur{
-        color : blue;
-    }
-}
