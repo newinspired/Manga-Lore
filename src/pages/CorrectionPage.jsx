@@ -14,15 +14,8 @@ function CorrectionPage() {
   const [isHost, setIsHost] = useState(false);
 
   useEffect(() => {
-    // Vérifier si moi = host
     const me = players.find(p => p.id === currentSocketId);
     if (me?.isHost) setIsHost(true);
-
-    // Mettre à jour en temps réel
-    socket.on("playerList", (updatedPlayers) => {
-      const meUpdated = updatedPlayers.find(p => p.id === currentSocketId);
-      if (meUpdated?.isHost) setIsHost(true);
-    });
 
     socket.on("correctionUpdate", ({ questionIndex, playerIndex }) => {
       setQuestionIndex(questionIndex);
@@ -30,10 +23,7 @@ function CorrectionPage() {
       setCurrentPlayer(players[playerIndex]);
     });
 
-    return () => {
-      socket.off("playerList");
-      socket.off("correctionUpdate");
-    };
+    return () => socket.off("correctionUpdate");
   }, [players, currentSocketId]);
 
   const handleCorrection = (isCorrect) => {
@@ -67,6 +57,7 @@ function CorrectionPage() {
           playerIndex: 0
         });
       } else {
+        // ✅ on va vers la page des résultats sans passer players en state
         navigate(`/result/${room}`);
       }
     }

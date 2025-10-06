@@ -33,7 +33,7 @@
     "id": 606,
     "difficulty": "medium",
     "question": "Comment se nomme la cité où réside le Gouvernement Mondial et les Dragons Célestes ?",
-    "answer": "La terre sainte de Mary Geoise (Marie-Joie)"
+    "answer": "La terre sainte de Marie Joie"
   },
   {
     "id": 607,
@@ -56,7 +56,7 @@
   {
     "id": 610,
     "difficulty": "easy",
-    "question": "Quelle personne Ace considérait-il comme son père ?",
+    "question": "Quel pirate Ace considérait-il comme son père ?",
     "answer": "Barbe Blanche"
   },
   {
@@ -267,12 +267,53 @@
     "answer": "Squardo"
   },
 
-  
+
+
   {
     "id": 645,
+    "difficulty": "medium",
+    "question": "Quel pirate imprévisible a attaqué à la fois Barbe Blanche, Doflamingo, Mihawk et même la Marine durant la bataille de Marineford ?",
+    "answer": "Crocodile"
+  },
+  {
+    "id": 646,
+    "difficulty": "medium",
+    "question": "Quel pouvoir Luffy a-t-il libéré inconsciemment lorsqu'Ace était sur le point d’être exécuté ?",
+    "answer": "Le Haki des Rois (fluide royal)"
+  },
+
+
+
+
+  {
+    "id": 647,
+    "difficulty": "medium",
+    "question": "Qui déclare à Marineford : « Écoutez-moi tous !! Protégez Chapeau de paille de toutes vos forces !! » ?",
+    "answer": "Barbe Blanche"
+  },
+  {
+    "id": 648,
     "difficulty": "difficult",
-    "question": "Qui a transpercé Barbe Blanche en penssant qu’il les avait trahis ?",
-    "answer": "Squardo"
+    "question": "Quel révolutionnaire, allié d’Ivankov, possède le pouvoir de créer des lames à partir de ses propres mains et aide Luffy à Marineford ?",
+    "answer": "Inazuma"
+  },
+  {
+    "id": 649,
+    "difficulty": "medium",
+    "question": "Quel personnage devait, durant Marineford, choisir entre sa famille et la Marine ?",
+    "answer": "Monkey D. Garp"
+  },
+  {
+    "id": 650,
+    "difficulty": "easy", 
+    "question": "Qui Akainu a-t-il tué de son poing fait de magma lors de la guerre de Marineford ?",
+    "answer": "Portgas D. Ace"
+  },
+  {
+    "id": 650,
+    "difficulty": "easy", 
+    "question": "Quel est le vrai nom de Barbe Blanche ?",
+    "answer": "Edward Newgate"
   }
 
 

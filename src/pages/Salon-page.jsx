@@ -79,6 +79,21 @@ function SalonPage() {
     };
   }, []);
 
+  useEffect(() => {
+    const storedUsername = localStorage.getItem("username");
+    const storedAvatar = localStorage.getItem("avatar");
+    const storedRoomCode = localStorage.getItem("roomCode");
+
+    if (storedUsername && storedAvatar && storedRoomCode) {
+      socket.emit("rejoinRoom", {
+        roomCode: storedRoomCode,
+        username: storedUsername,
+        avatar: storedAvatar,
+      });
+    }
+  }, []);
+
+
   return (
     <div className="container">
       <Header />

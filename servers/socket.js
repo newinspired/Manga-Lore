@@ -1,11 +1,10 @@
-// LA LOGIQUE METIER (serveur)
-
 const {
   handleJoinRoom,
   handlePlayerReady,
   handlePlayerAnswer,
   handleDisconnect,
-  handleSelectedArcs
+  handleSelectedArcs,
+  handleCorrectionEvents,
 } = require('./controllers/gamecontroller');
 
 function handleSocketEvents(io) {
@@ -27,22 +26,18 @@ function handleSocketEvents(io) {
 
       if (!createdRooms.has(roomId)) {
         if (typeof callback === 'function') {
-          callback({ success: false, message: 'Ce salon n\'existe pas.' });
+          callback({ success: false, message: 'Ce salon n’existe pas.' });
         }
         return;
       }
 
-      // ⚠️ Ne pas double-joindre — handleJoinRoom fera le join.
-      // socket.join(roomId);
-
-      console.log('🧩 Appel handleJoinRoom avec :', data);
-      handleJoinRoom(io, socket, data, playersInRooms);
+      handleJoinRoom(io, socket, data, playersInRooms, games);
 
       if (typeof callback === 'function') {
         callback({ success: true });
       }
 
-      console.log(`👤 ${username} a rejoint la room ${roomId}`);
+      console.log(`👤 ${username || 'Joueur inconnu'} a rejoint la room ${roomId}`);
     });
 
     socket.on('playerReady', (roomCode, isReady) => {
@@ -56,6 +51,12 @@ function handleSocketEvents(io) {
     socket.on('playerAnswer', (roomCode, answer) => {
       handlePlayerAnswer(socket, roomCode, answer, playersInRooms, games);
     });
+
+    socket.on('applyCorrection', (data) => {
+      // Délégué au gamecontroller
+    });
+
+    handleCorrectionEvents(io, socket, playersInRooms, games);
 
     socket.on('disconnect', () => {
       handleDisconnect(io, socket, playersInRooms, games);

@@ -10,14 +10,13 @@ import Header from '../components/header.jsx';
 import luffy from '../assets/avatars-color/luffy.jpg';
 import zoro from '../assets/avatars-color/zoro.jpg';
 import nami from '../assets/avatars-color/nami2.jpg';
+
 import usopp from '../assets/avatars-color/usopp2.jpg';
 import sanji from '../assets/avatars-color/sanji.jpg';
+import chopper from '../assets/avatars-color/chopper2.jpg';
 
-import chopper from '../assets/avatars-color/chopper.jpg';
-import robin from '../assets/avatars-color/robin2.jpg';
-import franky from '../assets/avatars-color/franky2.jpg';
-import brook from '../assets/avatars-color/brook.jpg';
-import jimbei from '../assets/avatars-color/jimbei2.jpg';
+import shanks from '../assets/avatars-color/shanks.jpg';
+import hancock from '../assets/avatars-color/hancock.jpg';
 
 
 
@@ -29,20 +28,15 @@ function LoginPage({ setUsername, setRoomCode }) {
   const avatarOptions = [
     { name: 'luffy', src: luffy },
     { name: 'zoro', src: zoro },
+    { name: 'shanks', src: shanks },
+    { name: 'hancock', src: hancock },
+
     { name: 'nami', src: nami },
-    { name: 'usopp', src: usopp },
-    
     { name: 'sanji', src: sanji },
-    { name: 'chopper', src: chopper },
-    { name: 'robin', src: robin },
-    { name: 'franky', src: franky },
+
     
-    { name: 'brook', src: brook },
-    { name: 'jimbei', src: jimbei },
-
-
-
-
+    { name: 'usopp', src: usopp },
+    { name: 'chopper', src: chopper },
   ];
 
   const [input, setInput] = useState('');
@@ -57,8 +51,6 @@ function LoginPage({ setUsername, setRoomCode }) {
 
   const [showRules, setShowRules] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
-
-
 
   const handleCreateGame = () => {
     if (trimmedInput === '') return;
@@ -202,6 +194,7 @@ function LoginPage({ setUsername, setRoomCode }) {
           >
             Join private game
           </button>
+          
         </div>
 
         {showAvatarModal && (

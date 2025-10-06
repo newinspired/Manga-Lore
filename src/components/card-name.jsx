@@ -10,14 +10,21 @@ function CardName({ currentSocketId, players: externalPlayers, showResults = fal
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    if (externalPlayers) {
+    // ✅ Priorité : si on reçoit des joueurs via props (ResultPage les trie)
+    if (externalPlayers && externalPlayers.length > 0) {
       setPlayers(externalPlayers);
       return;
     }
 
+    // ✅ Sinon on écoute le serveur directement
     const handler = (players) => setPlayers(players);
     socket.on('playerList', handler);
-    return () => socket.off('playerList', handler);
+    socket.on('gameEnded', ({ players }) => setPlayers(players));
+
+    return () => {
+      socket.off('playerList', handler);
+      socket.off('gameEnded');
+    };
   }, [externalPlayers]);
 
   return (

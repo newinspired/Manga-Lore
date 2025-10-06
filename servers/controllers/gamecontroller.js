@@ -8,6 +8,7 @@ module.exports = {
   handleDisconnect,
   handleSelectedArcs,
   handleCorrectionEvents,
+  endGame,
 };
 
 // ---------------- Utils ----------------
@@ -21,26 +22,48 @@ function shuffleArray(array) {
   return newArray;
 }
 
-function handleCorrectionEvents(io, socket, playersInRooms) {
-  // ✅ Seul le host peut corriger
+// ---------------- Handlers ----------------
+
+function handleCorrectionEvents(io, socket, playersInRooms, games) {
   socket.on("applyCorrection", ({ room, playerId, questionIndex, isCorrect }) => {
     const players = playersInRooms[room];
-    if (!players) return;
+    const game = games[room];
+    if (!players || !game) return;
 
     const host = players.find(p => p.isHost);
-    if (!host || host.id !== socket.id) {
-      console.log("❌ Tentative de correction par un non-host !");
-      return;
-    }
+    if (!host || host.id !== socket.id) return;
 
     const player = players.find(p => p.id === playerId);
-    if (player) {
-      if (isCorrect) player.score = (player.score || 0) + 1000;
+    if (player && isCorrect) {
+      const currentQuestion = game.questions[questionIndex];
+      let points = 0;
+
+      switch(currentQuestion.difficulty) {
+        case 'easy': points = 100000000; break;
+        case 'medium': points = 200000000; break;
+        case 'hard': points = 250000000; break;
+        default: points = 1000;
+      }
+
+      player.score = (player.score || 0) + points;
+
+      // Mise à jour game.players pour le résultat final
+      const gamePlayer = game.players.find(p => p.id === playerId);
+      if (gamePlayer) gamePlayer.score = player.score;
+
+      // 🔹 Mise à jour finalPlayers après chaque correction
+      game.finalPlayers = game.players.map(p => ({
+        id: p.id,
+        username: p.username,
+        avatar: p.avatar,
+        score: p.score,
+        isHost: !!p.isHost
+      }));
+
+      io.to(room).emit("playerList", players);
     }
-    io.to(room).emit("playerList", players);
   });
 
-  // ✅ Le host avance la correction, tous les joueurs suivent
   socket.on("correctionUpdate", ({ room, questionIndex, playerIndex }) => {
     const players = playersInRooms[room];
     if (!players) return;
@@ -70,19 +93,30 @@ function clearGameTimer(game) {
   if (game && game.timerInterval) clearInterval(game.timerInterval);
 }
 
-// ---------------- Handlers ----------------
-
-function handleJoinRoom(io, socket, { roomId, username, avatar }, playersInRooms) {
+function handleJoinRoom(io, socket, { roomId, username, avatar }, playersInRooms, games) {
   if (!playersInRooms[roomId]) playersInRooms[roomId] = [];
   if (playersInRooms[roomId].some(p => p.id === socket.id)) return;
 
   const isHost = playersInRooms[roomId].length === 0;
-  const player = { id: socket.id, username, avatar, isReady: false, isHost, score: 0 };
+  const player = { 
+    id: socket.id, 
+    username: username || `Joueur ${playersInRooms[roomId].length + 1}`, 
+    avatar: avatar || 'luffy', 
+    isReady: false, 
+    isHost, 
+    score: 0 
+  };
   playersInRooms[roomId].push(player);
 
   socket.join(roomId);
   io.to(roomId).emit('playerList', playersInRooms[roomId]);
   socket.emit('hostStatus', isHost);
+
+  // Handler getFinalPlayers
+  socket.on("getFinalPlayers", () => {
+    if (!games[roomId]) return;
+    socket.emit("finalPlayers", games[roomId].finalPlayers || []);
+  });
 }
 
 function handleSelectedArcs(io, roomId, arcs, games) {
@@ -112,8 +146,8 @@ function handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games)
     players,
     questions: allQuestions,
     currentQuestionIndex: 0,
-    answers: {}, // { playerId: "réponse" }
-    answersHistory: [], // ✅ pour stocker toutes les réponses question par question
+    answers: {},
+    answersHistory: [],
     selectedArcs,
     timerInterval: null,
     inProgress: true
@@ -161,7 +195,6 @@ function sendNextQuestion(io, roomCode, games) {
 
   clearGameTimer(game);
 
-  // 🔹 Sauvegarder les réponses précédentes avant de passer à la suivante
   if (game.currentQuestionIndex > 0) {
     const prevQuestion = game.questions[game.currentQuestionIndex - 1];
     game.answersHistory.push({
@@ -169,7 +202,7 @@ function sendNextQuestion(io, roomCode, games) {
       correctAnswer: prevQuestion.answer,
       answers: { ...game.answers }
     });
-    game.answers = {}; // reset pour la prochaine question
+    game.answers = {};
   }
 
   if (game.currentQuestionIndex >= game.questions.length) {
@@ -195,13 +228,13 @@ function sendNextQuestion(io, roomCode, games) {
 }
 
 function endGame(io, roomCode, games) {
+  console.log("Appel de endGame pour la room:", roomCode);
   const game = games[roomCode];
   if (!game) return;
 
   game.inProgress = false;
   clearGameTimer(game);
 
-  // 🔹 Sauvegarder la dernière question
   if (game.questions[game.currentQuestionIndex - 1] && Object.keys(game.answers).length > 0) {
     const prevQuestion = game.questions[game.currentQuestionIndex - 1];
     game.answersHistory.push({
@@ -211,15 +244,20 @@ function endGame(io, roomCode, games) {
     });
   }
 
+  // 🔹 Utiliser les scores actuels pour finalPlayers
   const playersPayload = game.players.map((p, idx) => ({
     id: p.id,
     username: p.username || `Joueur ${idx + 1}`,
     avatar: p.avatar || 'luffy',
-    score: typeof p.score === 'number' ? p.score : 0
+    score: typeof p.score === 'number' ? p.score : 0,
+    isHost: !!p.isHost
   }));
 
+  game.finalPlayers = playersPayload;
+
+  io.to(roomCode).emit('finalPlayers', playersPayload);
   io.to(roomCode).emit('gameEnded', { 
     players: playersPayload,
-    answersHistory: game.answersHistory // ✅ on envoie l’historique complet
+    answersHistory: game.answersHistory
   });
 }

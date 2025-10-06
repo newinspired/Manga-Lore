@@ -1,21 +1,31 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import socket from '../socket';
 import '../styles/question.scss';
 
-const Question = ({ username, avatar }) => {
+const Question = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [timeLeft, setTimeLeft] = useState(0);
   const [maxTime, setMaxTime] = useState(0);
   const [userAnswer, setUserAnswer] = useState('');
   const { room } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
+
+  const username = location.state?.username;
+  const avatar = location.state?.avatar;
 
   const currentAnswerRef = useRef('');
   const currentQuestionRef = useRef(null);
 
+  // ⚡ Evite double join
+  const hasJoinedRef = useRef(false);
+
   useEffect(() => {
-    if (!room) return;
+    if (!room || !username || !avatar || hasJoinedRef.current) return;
+
+    hasJoinedRef.current = true;
+
     socket.emit('joinRoom', { roomId: room, username, avatar });
     socket.emit('playerReady', room, true);
   }, [room, username, avatar]);
@@ -33,13 +43,12 @@ const Question = ({ username, avatar }) => {
     const onTimer = (time) => setTimeLeft(time);
 
     const onGameEnded = (payload) => {
-      // ⚡ On récupère directement l'historique envoyé par le serveur
       navigate(`/correction/${room}`, {
         state: {
           answersHistory: payload?.answersHistory || [],
           players: payload?.players || [],
           room,
-          currentSocketId: socket.id, // permet de savoir si je suis le host
+          currentSocketId: socket.id,
         },
       });
     };
@@ -77,7 +86,7 @@ const Question = ({ username, avatar }) => {
   const radius = 40;
   const circumference = 2 * Math.PI * radius;
   const progress = maxTime > 0 ? (timeLeft / maxTime) * circumference : circumference;
-
+  
   return (
     <div className="container-question-component">
       <div className="container-question">
