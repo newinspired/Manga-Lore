@@ -9,7 +9,7 @@
     "id": 602,
     "difficulty": "easy",
     "question": "Pour quelle raison Boa Hancock a-t-elle accepté d’accompagner Luffy jusqu’à Impel Down ?",
-    "answer": "Parce qu’elle était amoureuse de Luffy"
+    "answer": "Parce qu’elle tombe amoureuse de Luffy"
   },
   {
     "id": 603,
@@ -38,7 +38,7 @@
   {
     "id": 607,
     "difficulty": "easy",
-    "question": "Comment se nommait l’ancien quartier général de la Marine ?",
+    "question": "Comment se nommait le quartier général de la Marine avant l'élipse ?",
     "answer": "Marine Ford"
   },
   {
@@ -59,10 +59,11 @@
     "question": "Quel pirate Ace considérait-il comme son père ?",
     "answer": "Barbe Blanche"
   },
+
   {
     "id": 611,
     "difficulty": "easy",
-    "question": "A Marine Ford, qui était le personnage central de toute l'affaire ?",
+    "question": "À Marineford, quel personnage était condamné à être exécuté publiquement ?",
     "answer": "Portgas D. Ace"
   },
   {
@@ -79,7 +80,7 @@
   },
   {
     "id": 614,
-    "difficulty": "easy",
+    "difficulty": "medium",
     "question": "Quel personnage, décrit comme ayant le niveau d’amiral, possède le fruit du poison ?",
     "answer": "Magellan"
   },
@@ -99,7 +100,7 @@
     "id": 617,
     "difficulty": "easy",
     "question": "Qui s’exclame à Impel Down : \"Ma petite paille ! Ze suis benu te zauver !! au nom de l’amitié !!\" ?",
-    "answer": "Bon Clay"
+    "answer": "Bon Clay (Mr. 2)"
   },
   {
     "id": 618,
@@ -119,13 +120,13 @@
     "question": "Quel est le pouvoir du fruit du démon d'Ivankov ?",
     "answer": "Le fruit des Hormones (Horu Horu no Mi)"
   },
+
   {
     "id": 621,
     "difficulty": "easy",
     "question": "Quels sont les deux pirates ayant obtenu le titre de Grand Corsaire par le passé et libérés par Luffy à Impel Down ?",
     "answer": "Jinbe \"Le Paladin des Mers\" et Sir Crocodile"
   },
-
   {
     "id": 622,
     "difficulty": "medium",
@@ -146,13 +147,13 @@
   },
   {
     "id": 625,
-    "difficulty": "medium",
-    "question": "Quels étaient les trois amiraux présents à Marineford pour garantir l’exécution publique de Ace ?",
+    "difficulty": "easy",
+    "question": "Quels étaient les trois amiraux présents à Marineford pour garantir l’exécution publique d'Ace ?",
     "answer": "Akainu, Aokiji et Kizaru"
   },
   {
     "id": 626,
-    "difficulty": "medium",
+    "difficulty": "difficult",
     "question": "Comment est morte Portgas D. Rouge, la mère d'Ace ?",
     "answer": "Des suites de l’accouchement d'Ace"
   },
@@ -164,12 +165,10 @@
   },
   {
     "id": 628,
-    "difficulty": "easy",
+    "difficulty": "difficult",
     "question": "Comment se nomme le navire principal de Barbe Blanche ?",
     "answer": "Le Moby Dick"
   },
-
-
   {
     "id": 629,
     "difficulty": "easy",
@@ -182,6 +181,7 @@
     "question": "Qui est le commandant de la 3ème flotte de Barbe Blanche ?",
     "answer": "Joz"
   },
+
   {
     "id": 631,
     "difficulty": "easy",
@@ -214,7 +214,7 @@
   },
   {
     "id": 636,
-    "difficulty": "easy",
+    "difficulty": "medium",
     "question": "Qui tient tête à Barbe Blanche après l’avoir défendu d’une attaque surprise de Crocodile à Marine Ford ?",
     "answer": "Monkey D. Luffy"
   },
@@ -233,9 +233,10 @@
   {
     "id": 639,
     "difficulty": "medium",
-    "question": "Quel pirate se rebelle en sauvant Luffy de la jitte en granite marin de Smoker lors des affrontements de Marineford ?",
+    "question": "Quelle pirate se rebelle en sauvant Luffy de la jitte en granite marin de Smoker lors des affrontements de Marineford ?",
     "answer": "Boa Hancock"
   },
+
   {
     "id": 640,
     "difficulty": "difficult",
@@ -245,13 +246,13 @@
   {
     "id": 641,
     "difficulty": "difficult",
-    "question": "Qui déclare au sujet de Luffy : « Ce qui le rend redoutable, ce ne sont ni ses pouvoirs, ni ses techniques, mais plutôt sa capacité à fédérer les gens autour de lui » ?",
+    "question": "Qui déclare au sujet de Luffy :\" Ce qui le rend redoutable, ce ne sont ni ses pouvoirs, ni ses techniques, mais plutôt sa capacité à fédérer les gens autour de lui\" ?",
     "answer": "Dracule Mihawk"
   },
   {
     "id": 642,
     "difficulty": "easy",
-    "question": "Qui proclame à ses hommes : « Ouvrez-lui de nouveau votre cœur, Ace n’est en rien spécial à mes yeux… Vous êtes tous… ma famille ! » après avoir été trahi par un allié ?",
+    "question": "Qui proclame à ses hommes : \" Ouvrez-lui de nouveau votre cœur, Ace n’est en rien spécial à mes yeux… Vous êtes tous… ma famille !\" ?",
     "answer": "Barbe Blanche"
   },
   {
@@ -263,12 +264,9 @@
   {
     "id": 644,
     "difficulty": "difficult",
-    "question": "Qui a transpercé Barbe Blanche en penssant qu’il les avait trahis ?",
+    "question": "Qui a transpercé Barbe Blanche en pensant qu’il les avait trahis ?",
     "answer": "Squardo"
   },
-
-
-
   {
     "id": 645,
     "difficulty": "medium",
@@ -281,10 +279,6 @@
     "question": "Quel pouvoir Luffy a-t-il libéré inconsciemment lorsqu'Ace était sur le point d’être exécuté ?",
     "answer": "Le Haki des Rois (fluide royal)"
   },
-
-
-
-
   {
     "id": 647,
     "difficulty": "medium",
@@ -294,15 +288,16 @@
   {
     "id": 648,
     "difficulty": "difficult",
-    "question": "Quel révolutionnaire, allié d’Ivankov, possède le pouvoir de créer des lames à partir de ses propres mains et aide Luffy à Marineford ?",
+    "question": "Comment se nomme le second d'Emporio Ivankov qui peut transformer n'importe quelle partie de son corps en ciseaux ?",
     "answer": "Inazuma"
   },
   {
     "id": 649,
     "difficulty": "medium",
-    "question": "Quel personnage devait, durant Marineford, choisir entre sa famille et la Marine ?",
+    "question": "Quel personnage a dû faire face à un dilemme entre sa famille et son devoir envers la Marine ?",
     "answer": "Monkey D. Garp"
   },
+
   {
     "id": 650,
     "difficulty": "easy", 
@@ -310,14 +305,186 @@
     "answer": "Portgas D. Ace"
   },
   {
-    "id": 650,
-    "difficulty": "easy", 
+    "id": 651,
+    "difficulty": "medium", 
     "question": "Quel est le vrai nom de Barbe Blanche ?",
     "answer": "Edward Newgate"
+  },
+  {
+    "id": 652,
+    "difficulty": "medium",
+    "question": "Quel grand corsaire a été pris pour cible d’un assassinat ordonné par le Gouvernement Mondial et confié à Doflamingo ?",
+    "answer": "Gecko Moria"
+  },
+  {
+    "id": 653,
+    "difficulty": "medium",
+    "question": "Quel ancien agent de Baroque Works reste fidèle à Crocodile et participe aux événements de Marineford ?",
+    "answer": "Mr. 1 (Das Bones)"
+  },
+  {
+    "id": 654,
+    "difficulty": "difficult",
+    "question": "Quel membre de Baroque Works prendre la place d'un des bourreaux d'Ace durant l'arc de Marineford ?",
+    "answer": "Galdino (Mr. 3)"
+  },
+  {
+    "id": 655,
+    "difficulty": "difficult",
+    "question": "Quel est le nom du frère adoptif de Sabo qui deviendra plus tard roi du royaume de Goa ?",
+    "answer": "Stelly"
+  },
+  {
+    "id": 656,
+    "difficulty": "easy",
+    "question": "Quel geste symbolique Ace, Sabo et Luffy ont-ils accompli pour sceller leur fraternité ?",
+    "answer": "Partager une coupe de sake"
+  },
+  {
+    "id": 657,
+    "difficulty": "easy",
+    "question": "Quel pirate prononce ces mots : « Merci… de m’avoir aimé !! » ?",
+    "answer": "Portgas D. Ace"
+  },
+  {
+    "id": 658,
+    "difficulty": "easy",
+    "question": "Quel capitaine pirate meurt durant la grande bataille de Marineford, restant parfaitement droit même après sa mort ?",
+    "answer": "Edward Newgate"
+  },
+  {
+    "id": 659,
+    "difficulty": "easy",
+    "question": "Quel grand équipage met fin à la bataille de Marineford en sauvant Luffy et les survivants ?",
+    "answer": "L’équipage de Shanks le Roux"
+  },
+
+  {
+    "id": 660,
+    "difficulty": "medium",
+    "question": "Quel pirate met Kizaru sous pression en pointant son fusil vers lui durant MarineFord ?",
+    "answer": "Ben Beckman"
+  },
+  {
+    "id": 661,
+    "difficulty": "easy",
+    "question": "Sur quelle île Luffy se réfugie-t-il après la grande bataille de Marineford ?",
+    "answer": "Amazon Lily"
+  },
+  {
+    "id": 662,
+    "difficulty": "easy",
+    "question": "Quel pirate annonce le début de sa propre ère lors des événements de Marineford ?",
+    "answer": "Barbe Noire"
+  },
+  {
+    "id": 663,
+    "difficulty": "difficult",
+    "question": "Comment se nomme l'ours polaire de l'équipage de Trafalgar Law ?",
+    "answer": "Bepo"
+  },
+  {
+    "id": 664,
+    "difficulty": "medium",
+    "question": "Quel pirate a été chargé d’assassiner Gecko Moria pendant l’arc de Marineford ?",
+    "answer": "Don Quijote Doflamingo"
+  },
+  {
+    "id": 665,
+    "difficulty": "medium",
+    "question": "D’où provenait l’ordre donné à Doflamingo d’éliminer Gecko Moria ?",
+    "answer": "Les cinq Doyens (Gorōsei)"
+  },
+  {
+    "id": 666,
+    "difficulty": "easy",
+    "question": "Quel pirate récupère Luffy blessé et s’échappe de Marineford avec son équipage et son sous-marin ?",
+    "answer": "Trafalgar Law"
+  },
+  {
+    "id": 667,
+    "difficulty": "difficult",
+    "question": "Comment se nomme la mère adoptive de Luffy et Ace ?",
+    "answer": "Curly Dadan"
+  },
+  {
+    "id": 668,
+    "difficulty": "easy",
+    "question": "Qui est le troisième frère d’Ace et de Luffy ?",
+    "answer": "Sabo"
+  },
+  {
+    "id": 669,
+    "difficulty": "difficult",
+    "question": "Dans quel royaume Luffy, Ace et Sabo ont-ils passé leur enfance ?",
+    "answer": "Royaume de Goa"
+  },
+
+  {
+    "id": 670,
+    "difficulty": "medium",
+    "question": "Comment Sabo a-t-il disparu lorsqu’il était enfant ?",
+    "answer": "Un Dragon Céleste a tiré sur son bateau"
+  },
+  {
+    "id": 671,
+    "difficulty": "difficult",
+    "question": "Quel est le nom de la gigantesque décharge où vivaient Luffy, Ace et Sabo durant leur enfance ?",
+    "answer": "Grey Terminal"
+  },
+  {
+    "id": 672,
+    "difficulty": "medium",
+    "question": "Quel vieil homme a traversé les mers à la nage pour rejoindre Amazon Lily après la bataille de Marineford ?",
+    "answer": "Silvers Rayleigh"
+  },
+  {
+    "id": 673,
+    "difficulty": "difficult",
+    "question": "Quelle ancienne pirate avait prédit que Boa Hancock tomberait amoureuse de Luffy et l’aiderait à se rendre jusqu’à Impel Down ?",
+    "answer": "Shakuyaku (Shakky)"
+  },
+  {
+    "id": 674,
+    "difficulty": "medium",
+    "question": "Qui déclare sur l’archipel des Sabaody : \"J’ai mes raisons d’aider cet équipage à s’enfuir... mais les minutes me sont comptées...\" ?",
+    "answer": "Bartholomew Kuma"
+  },
+  {
+    "id": 675,
+    "difficulty": "easy",
+    "question": "Quel est le seul pirate connu encore en vie ayant consommé deux fruits du démon ?",
+    "answer": "Marshall D. Teach (Barbe Noire)"
+  },
+  {
+    "id": 676,
+    "difficulty": "difficult",
+    "question": "Comment se nomme le Commandant des Forces Armées du Gouvernement Mondial et ancien amiral en chef de la Marine ?",
+    "answer": "Kong"
+  },
+  {
+    "id": 677,
+    "difficulty": "easy",
+    "question": "De quel grand épéiste Zoro a-t-il été le disciple pendant deux ans ?",
+    "answer": "Dracule Mihawk"
+  },
+  {
+    "id": 678,
+    "difficulty": "easy",
+    "question": "Qui fut le disciple de Silvers Rayleigh durant l'élipse de deux ans ?",
+    "answer": "Monkey D. Luffy"
+  },
+  {
+    "id": 679,
+    "difficulty": "medium",
+    "question": "Quels soldats mécaniques du Gouvernement Mondial ont l'apparence de Bartholomew Kuma ?",
+    "answer": "Les Pacifistas"
+  },
+  {
+    "id": 680,
+    "difficulty": "easy",
+    "question": "Combien de temps dure l’élipse après la bataille de Marineford ?",
+    "answer": "2 ans"
   }
 
-
-
-
-  
 ]

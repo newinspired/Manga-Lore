@@ -55,6 +55,10 @@ body {
     height: 360px;
     width: 480px;
 
+    @media screen and (max-width: 1380px) {
+      order: 1;
+    }
+
     input,
     button {
       all: unset;
@@ -188,6 +192,83 @@ body {
   }
 }
 
+/* DESCRIPTION CONTENU GRATUIT ET PAYANT*/
+
+.free-content{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width : 250px;
+  padding : 25px;
+  border-radius: 10px;
+  background-color: $color-modal;
+  border : 3px solid $button-active;
+
+  h3{
+    display: flex;
+    justify-content: center;
+  }
+
+  p{
+    font-family: $mainfont;
+    font-size : 16px;
+    font-weight : 500;
+    margin : 10px 0px 0px 0px;
+
+  }
+}
+
+.paying-container {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width : 250px;
+  padding : 25px;
+  border-radius: 10px;
+  background-color: $color-modal;
+  border : 3px solid $button-active;
+
+  .button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+      .button-premium {
+        display: flex;
+        justify-content: center;
+        background-color: $button-active;
+        border-radius: 15px;
+        padding : 10px 20px;
+        font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  h3{
+    color : $button-active;
+    display: flex;
+    justify-content: center;
+    font-size : 24px;
+    font-weight: 600;
+    margin-bottom : 30px;
+  }
+
+  p{
+    font-family: $mainfont;
+    font-size : 16px;
+    font-weight : 500;
+    margin-top : 15px;
+  }
+
+}
 
 
 .info-collapses {
@@ -215,6 +296,7 @@ body {
       font-size: 20px;
       width : 100%;
       z-index: 1;
+      height : 40px;
 
       &:hover {
         background-color: $button-active;

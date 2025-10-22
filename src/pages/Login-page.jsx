@@ -28,8 +28,6 @@ function LoginPage({ setUsername, setRoomCode }) {
   const avatarOptions = [
     { name: 'luffy', src: luffy },
     { name: 'zoro', src: zoro },
-    { name: 'shanks', src: shanks },
-    { name: 'hancock', src: hancock },
 
     { name: 'nami', src: nami },
     { name: 'sanji', src: sanji },
@@ -131,6 +129,21 @@ function LoginPage({ setUsername, setRoomCode }) {
     <div className="login-page">
       <Header />
       <div className="login-wrapper">
+        <div className='paying-container'>
+          <div className='content-description'>
+            <div className='paying-content'>
+              <h3>GO PRENIUM !</h3>
+              <div>
+                <p>- Unlock all arcs — from East Blue to the very latest chapters !</p>
+                <p>- 800 extra questions</p>
+                <p>- Support the project and help us keep expanding the adventure !</p>
+              </div>
+              <div className='button-container'>
+                <button className='button-premium'> BUY IT </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="modal-login" ref={modalRef}>
           <h3>ONE PIECE - GAME</h3>
 
@@ -197,35 +210,28 @@ function LoginPage({ setUsername, setRoomCode }) {
           
         </div>
 
-        {showAvatarModal && (
+        {showAvatarModal ? (
           <ModalAvatar
             avatarOptions={avatarOptions}
             selectedAvatar={selectedAvatar}
             onSelect={setSelectedAvatar}
             onClose={() => setShowAvatarModal(false)}
           />
+        ) : (
+          <div className='content-description'>
+            <div className="free-content">
+              <h3>Play for free !</h3>
+                <p>- Test your knowledge of the One Piece world — solo or with your friends !</p>
+                <p>- Not up to date ? No problem ! Choose the arcs you want to be quizzed on.</p>
+                <p>- 400 questions covering the journey from East Blue to Marineford !</p>
+            </div>
+          </div>
         )}
       </div>
       
       <div className="info-collapses">
-        {/* Collapse pour la description */}
-        <div className="collapse">
-          <button
-            className="collapse-header"
-            onClick={() =>
-              setShowDescription((prev) => !prev)
-            }
-          >
-            Description
-          </button>
-          {showDescription && (
-            <div className="collapse-content">
-              <p>
-                "This interactive quiz was created by a passionate fan of Eiichiro Oda’s universe and lets you choose any arcs you want. It’s not official, but a heartfelt tribute. I hope you enjoy playing it as much as I enjoyed creating it!"
-              </p>
-            </div>
-          )}
-        </div>
+        
+        {/* Collapse pour les règles du jeu */}
         <div className="collapse">
           <button
             className="collapse-header"
@@ -238,7 +244,7 @@ function LoginPage({ setUsername, setRoomCode }) {
           {showRules && (
             <div className="collapse-content">
               <p>
-                "First, you will be asked a series of 15 questions, ranging from easy to difficult. After answering, you will correct your own responses, and at the end, you’ll see your game results."
+                The game consists of 15 questions, increasing in difficulty. Once you’ve completed them, you’ll correct your own answers and discover your final score at the end.
               </p>
             </div>
           )}

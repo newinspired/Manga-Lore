@@ -1,0 +1,368 @@
+[
+    {
+        "id": 801,
+        "difficulty": "easy",
+        "question": "Quelle est la première île du Nouveau Monde sur laquelle l’équipage du Chapeau de Paille accoste ?",
+        "answer": "Punk Hazard"
+    },
+    {
+        "id": 802,
+        "difficulty": "easy",
+        "question": "Quel vice-amiral de la Marine est surnommé le \"Chasseur Blanc\" ?",
+        "answer": "Smoker"
+    },
+    {
+        "id": 803,
+        "difficulty": "difficult",
+        "question": "Quel type d'Escargophone est utilisé comme appareil d'écoute et de surveillance ?",
+        "answer": "L'Escargophone noir"
+    },
+    {
+        "id": 804,
+        "difficulty": "easy",
+        "question": "De quel pays proviennent les puissants guerriers appelés \"samouraïs\" ?",
+        "answer": "Le Pays des Wa"
+    },
+    {
+        "id": 805,
+        "difficulty": "medium",
+        "question": "Comment l'équipage du chapeau de paille a t-il été conduit sur l'île de Punk Hazard ?",
+        "answer": "L'île n'était pas indiqué sur le logo pose, ils l'ont atteint par hasard"
+    },
+    {
+        "id": 806,
+        "difficulty": "easy",
+        "question": "Pourquoi l’île de Punk Hazard est-elle composée à la fois de terres brûlantes et de montagnes de glace ?",
+        "answer": "À cause du combat entre Akainu et Aokiji pour le poste d’amiral en chef"
+    },
+    {
+        "id": 807,
+        "difficulty": "easy",
+        "question": "Pourquoi la partie ouest de l’île de Punk Hazard est-elle surnommée \"les terres de glace\" ?",
+        "answer": "Aokiji a modifié l'environnement en utilisant son fruit du démon"
+    },
+    {
+        "id": 808,
+        "difficulty": "medium",
+        "question": "Quelle créature artificielle Luffy et Zoro affrontent-ils en premier sur l’île de Punk Hazard ?",
+        "answer": "Un dragon"
+    },
+    {
+        "id": 809,
+        "difficulty": "medium",
+        "question": "Quelle particularité physique présentent les enfants que les Mugiwaras découvrent sur l’île de Punk Hazard ?",
+        "answer": "Ils sont anormalement grands à cause des expériences menées sur eux"
+    },
+    {
+        "id": 810,
+        "difficulty": "easy",
+        "question": "Quel membre de l’équipage du Chapeau de Paille utilise la technique \"Jambe à la Diable\" ?",
+        "answer": "Sanji"
+    },
+
+    {
+        "id": 811,
+        "difficulty": "easy",
+        "question": "Quel pirate propose à Luffy sur Punk Hazard, de former une alliance pour renverser l’un des Quatre Empereurs ?",
+        "answer": "Trafalgar Law"
+    },
+
+    {
+        "id": 812,
+        "difficulty": "medium",
+        "question": "Quel grand scientifique du Gouvernement Mondial s’était installé sur Punk Hazard quatre ans avant l’arrivée des Mugiwaras ?",
+        "answer": "Vegapunk"
+    },
+    {
+        "id": 813,
+        "difficulty": "easy",
+        "question": "Quel pirate récemment devenu membre des Sept Grands Corsaires se trouve sur Punk Hazard ?",
+        "answer": "Trafalgar Law"
+    },
+    {
+        "id": 814,
+        "difficulty": "easy",
+        "question": "Quelle organisation Trafalgar Law a-t-il rejoint pour être en bons termes avec la Marine ?",
+        "answer": "L’ordre des Sept Grands Corsaires"
+    },
+    {
+        "id": 815,
+        "difficulty": "easy",
+        "question": "Comment se nomme le samouraï dont le corps a été découpé en trois parties par Trafalgar Law sur Punk Hazard ?",
+        "answer": "Kinemon \"Le Renard à la Flamme\""
+    },
+    {
+        "id": 816,
+        "difficulty": "easy",
+        "question": "Quel personnage utilise la capacité « Room » pour créer une zone semblable à une salle d’opération ?",
+        "answer": "Trafalgar Law"
+    },
+    {
+        "id": 817,
+        "difficulty": "medium",
+        "question": "Quel pirate a échangé les apparences de Smoker et de Tashigi ainsi que celles de certains Mugiwaras ?",
+        "answer": "Trafalgar Law"
+    },
+    {
+        "id": 818,
+        "difficulty": "medium",
+        "question": "Quel est le nom du fruit du démon de Trafalgar Law ?",
+        "answer": "Le fruit du Bistouri (Ope Ope no Mi)"
+    },
+    {
+        "id": 819,
+        "difficulty": "easy",
+        "question": "Quel est le fruit du démon de César Clown ?",
+        "answer": "Le fruit du Gaz (Gasu Gasu no Mi)"
+    },
+    {
+        "id": 820,
+        "difficulty": "easy",
+        "question": "Quel ancien scientifique du Gouvernement Mondial dirigeait les expériences de Punk Hazard à l’arrivée des Mugiwaras ?",
+        "answer": "César Clown"
+    },
+    {
+        "id": 821,
+        "difficulty": "easy",
+        "question": "Quel ancien capitaine d'équipage est devenu le leader de la Patrouille Centaure sur Punk Hazard ?",
+        "answer": "Barbe Brune"
+    },
+    {
+        "id": 822,
+        "difficulty": "medium",
+        "question": "Les enfants de Punk Hazard mangent des bonbons chaque jour, mais que contiennent-ils réellement ?",
+        "answer": "Ces bonbons sont une drogue addictive"
+    },
+    {
+        "id": 823,
+        "difficulty": "medium",
+        "question": "Dans quelle zone de Punk Hazard les \"Yéti cool brothers\", Scotch et Rock, opèrent-ils ?",
+        "answer": "Dans les Monts enneigés/terres de glace"
+    }, 
+    {
+        "id": 824,
+        "difficulty": "easy",
+        "question": "À quel personnage appartient ce rire : \"Sho ho ho ho ho !\" ?",
+        "answer": "César Clown"
+    },
+    {
+        "id": 825,
+        "difficulty": "medium",
+        "question": "Comment se nomme l’équipage dirigé par Trafalgar Law ?",
+        "answer": "L’équipage du Heart"
+    },
+    {
+        "id": 826,
+        "difficulty": "medium",
+        "question": "Quel gigantesque organisme vivant, composé de gaz toxiques, erre sur l’île de Punk Hazard ?",
+        "answer": "Le Slime"
+    },
+    {
+        "id": 827,
+        "difficulty": "easy",
+        "question": "Dans quel corps Sanji s’est-il retrouvé sur Punk Hazard à cause du pouvoir de Trafalgar Law ?",
+        "answer": "Dans le corps de Nami"
+    },
+    {
+        "id": 828,
+        "difficulty": "medium",
+        "question": "Dans quel corps Nami s’est-elle retrouvée sur Punk Hazard à cause du pouvoir de Trafalgar Law ?",
+        "answer": "Dans le corps de Franky"
+    },
+    {
+        "id": 829,
+        "difficulty": "difficult",
+        "question": "Quel est le nom de la femme harpie alliée à César Clown sur Punk Hazard ?",
+        "answer": "Monet la Harpie"
+    },
+
+    {
+        "id": 830,
+        "difficulty": "difficult",
+        "question": "Comment se nomme l’arme chimique créée par César Clown sur Punk Hazard, capable de pétrifier tout ce qu’elle touche ?",
+        "answer": "Morte-Terre"
+    },
+
+    {
+        "id": 831,
+        "difficulty": "medium",
+        "question": "Quel membre de l’équipage du Chapeau de Paille sur Punk Hazard, a plongé dans un lac glacé sous la pressions du gaz pour récupérer une partie du corps de Kinemon ?",
+        "answer": "Sanji (dans le corps de Nami)"
+    },
+    {
+        "id": 832,
+        "difficulty": "medium",
+        "question": "Quel personnage prétendait être le père de Momonosuke sur l’île de Punk Hazard ?",
+        "answer": "Kinemon"
+    },
+    {
+        "id": 833,
+        "difficulty": "medium",
+        "question": "Quel vice-amiral de la Marine qui fait son apparition à Punk Hazard est en réalité un subordonné infiltré travaillant pour Doflamingo ?",
+        "answer": "Vergo"
+    },
+    {
+        "id": 834,
+        "difficulty": "easy",
+        "question": "Qui se cache derrière le pseudonyme de « Joker » utilisé dans le Nouveau Monde ?",
+        "answer": "Don Quijote Doflamingo"
+    },
+    {
+        "id": 835,
+        "difficulty": "difficult",
+        "question": "Avec qui Trafalgar Law a-t-il échangé son cœur, sur ordre de César Clown pour cohabiter avec lui sur Punk Hazard ?",
+        "answer": "Monet la Harpie"
+    },
+    {
+        "id": 836,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon mangé par Monet la Harpie ?",
+        "answer": "Le fruit de la Neige (Yuki Yuki no Mi)"
+    },
+    {
+        "id": 837,
+        "difficulty": "medium",
+        "question": "Citez au moins trois des six prisonniers retenus par César Clown dans son laboratoire sur Punk Hazard.",
+        "answer": "Luffy, Trafalgar Law, Smoker, Robin, Franky et Tashigi"
+    },
+    {
+        "id": 838,
+        "difficulty": "medium",
+        "question": "En tombant dans la décharge souterraine de Punk Hazard, quel personnage Luffy rencontre-t-il ?",
+        "answer": "Momonosuke"
+    },
+    {
+        "id": 839,
+        "difficulty": "medium",
+        "question": "Quels sont les deux puissants combattants qui affrontent Vergo à la fin de l’arc de Punk Hazard ?",
+        "answer": "Trafalgar Law et Smoker"
+    },
+    {
+        "id": 840,
+        "difficulty": "difficult",
+        "question": "Comment se nomme la fillette géante piégée sur Punk Hazard qui a mangé tous les bonbons drogués pour sauver les autres enfants ?",
+        "answer": "Mochia"
+    },
+    {
+        "id": 841,
+        "difficulty": "medium",
+        "question": "Quels sont les deux épéistes qui ont vaincu Monet la Harpie sur Punk Hazard ?",
+        "answer": "Roronoa Zoro et Tashigi"
+    },
+    {
+        "id": 842,
+        "difficulty": "difficult",
+        "question": "Que sont les fruits du démon appelés « SMILE » créés sur Punk Hazard ?",
+        "answer": "Des fruits artificiels de type Zoan conçus par César Clown"
+    },
+    {
+        "id": 843,
+        "difficulty": "medium",
+        "question": "Qui est le créateur des fruits du démon artificiels appelés « SMILE » ?",
+        "answer": "César Clown"
+    },
+    {
+        "id": 844,
+        "difficulty": "medium",
+        "question": "Quel type de fruit du démon Momonosuke a-t-il mangé sur Punk Hazard ?",
+        "answer": "Un fruit du démon artificiel de type Zoan"
+    },
+    {
+        "id": 845,
+        "difficulty": "difficult",
+        "question": "Quelle substance produite sur Punk Hazard Trafalgar Law voulait-il détruire pour empêcher la création de l’armée d’un empereur ?",
+        "answer": "Le SAD"
+    },
+    {
+        "id": 846,
+        "difficulty": "medium",
+        "question": "Quel subordonné de Doflamingo Trafalgar Law a-t-il tranché en plusieurs morceaux sur Punk Hazard, sous les yeux de Smoker ?",
+        "answer": "Vergo"
+    },
+    {
+        "id": 847,
+        "difficulty": "medium",
+        "question": "Quels sont les trois capitaines pirates membres des Supernovas qui  se sont alliés dans le Nouveau Monde ?",
+        "answer": "Eustass Kidd, Basil Hawkins et Scratchmen Apoo"
+    },
+    {
+        "id": 848,
+        "difficulty": "difficult",
+        "question": "Quelle membre de l’équipage de Doflamingo possède un corps entièrement composé d’armes ?",
+        "answer": "Baby 5"
+    },
+    {
+        "id": 849,
+        "difficulty": "easy",
+        "question": "Quel capitaine pirate a vaincu César Clown à la fin de l’arc de Punk Hazard ?",
+        "answer": "Monkey D. Luffy"
+    },
+
+    {
+        "id": 850,
+        "difficulty": "medium",
+        "question": "Quel Empereur était la cible initiale de l’alliance entre Trafalgar Law et Monkey D. Luffy ?",
+        "answer": "Kaido aux Cent Bêtes"
+    },
+    {
+        "id": 851,
+        "difficulty": "medium",
+        "question": "Avant de quitter Punk Hazard, quelles conditions Trafalgar Law impose-t-il à Doflamingo en échange de lui rendre César Clown ?",
+        "answer": "Qu’il démissionne de son poste de Grand Corsaire"
+    },
+    {
+        "id": 852,
+        "difficulty": "medium",
+        "question": "Quel personnage les équipages du Heart et du Chapeau de Paille ont-ils capturé pour faire pression sur Doflamingo ?",
+        "answer": "César Clown"
+    },
+    {
+        "id": 853,
+        "difficulty": "medium",
+        "question": "Quel personnage intervient juste avant que Doflamingo ne tue Smoker à la fin de l’arc Punk Hazard ?",
+        "answer": "Aokiji"
+    },
+    {
+        "id": 854,
+        "difficulty": "difficult",
+        "question": "Comment se nomme la lame que Zoro a obtenue après avoir vaincu Ryuma \"le samouraï\" sur Thriller Bark ?",
+        "answer": "Shusui"
+    },
+    {
+        "id": 855,
+        "difficulty": "medium",
+        "question": "Quel Grand Corsaire était surnommé \" le Démon Céleste \" ?",
+        "answer": "Don Quijote Doflamingo"
+    },
+    {
+        "id": 856,
+        "difficulty": "easy",
+        "question": "Quel Grand Corsaire était surnommé \" le Clown aux Mille Pièces \" ?",
+        "answer": "Baggy"
+    },
+    {
+        "id": 857,
+        "difficulty": "medium",
+        "question": "Quel pays est surnommé \" Le pays de l’amour et de la passion \" ?",
+        "answer": "Dressrosa"
+    },
+    {
+        "id": 858,
+        "difficulty": "easy",
+        "question": "Quel amiral de la Marine a été envoyé sur Dressrosa afin de surveiller les agissements de l’équipage du Chapeau de Paille et de Trafalgar Law ?",
+        "answer": "Fujitora"
+    },
+    {
+        "id": 859,
+        "difficulty": "difficult",
+        "question": "Comment se nomme l’île située au nord de Dressrosa où Trafalgar Law prévoyait de remettre César Clown à Doflamingo ?",
+        "answer": "Green Bit"
+    },
+    {
+        "id": 860,
+        "difficulty": "medium",
+        "question": "Comment Doflamingo parvient-il à se déplacer d’une île à l’autre dans les airs ?",
+        "answer": "En utilisant ses fils pour s’accrocher aux nuages"
+    }
+
+]

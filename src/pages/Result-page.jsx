@@ -9,25 +9,48 @@ const ResultPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const storedPlayers = localStorage.getItem("finalPlayers");
+    if (storedPlayers) {
+      setPlayers(JSON.parse(storedPlayers));
+    }
+
     socket.emit("getFinalPlayers");
 
-    socket.on("finalPlayers", (finalPlayers) => {
+    const handleFinalPlayers = (finalPlayers) => {
       setPlayers(finalPlayers);
-    });
+      localStorage.setItem("finalPlayers", JSON.stringify(finalPlayers));
 
-    socket.on("gameEnded", ({ players }) => {
+      // 🔹 Sauvegarde aussi pseudo/avatar du joueur actuel
+      const me = finalPlayers.find(p => p.id === socket.id);
+      if (me) {
+        localStorage.setItem("username", me.username);
+        localStorage.setItem("avatar", me.avatar);
+      }
+    };
+
+    const handleGameEnded = ({ players }) => {
       setPlayers(players);
-    });
+      localStorage.setItem("finalPlayers", JSON.stringify(players));
+
+      const me = players.find(p => p.id === socket.id);
+      if (me) {
+        localStorage.setItem("username", me.username);
+        localStorage.setItem("avatar", me.avatar);
+      }
+    };
+
+    socket.on("finalPlayers", handleFinalPlayers);
+    socket.on("gameEnded", handleGameEnded);
 
     return () => {
-      socket.off("finalPlayers");
-      socket.off("gameEnded");
+      socket.off("finalPlayers", handleFinalPlayers);
+      socket.off("gameEnded", handleGameEnded);
     };
   }, []);
 
   const sortedPlayers = [...players].sort((a, b) => (b.score || 0) - (a.score || 0));
 
-  // 🔹 Fonction pour revenir dans le salon de la même room
+  // 🔹 Revenir au salon (même room)
   const handleReturnToSalon = () => {
     const roomCode = localStorage.getItem("roomCode");
     if (roomCode) {

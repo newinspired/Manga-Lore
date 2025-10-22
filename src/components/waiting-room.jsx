@@ -60,11 +60,7 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
     "Skypiea",
     "WaterSeven",
     "ThrillerBark",
-    "Marineford",
-    "FishmanIsland",
-    "Dressrosa",
-    "WholeCakeIsland",
-    "Wano"
+    "MarineFord",
   ];
 
   return (

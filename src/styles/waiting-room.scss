@@ -66,6 +66,12 @@ h2,h3{
           height : 40px;
           background-color: $button-color;
           font-weight: 700;
+
+          &:hover{
+            background-color: $button-active;
+            box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+            transform: scale(1.02);
+          }
         }
       }
 

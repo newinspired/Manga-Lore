@@ -14,13 +14,19 @@ $mainfont: 'Cinzel';
   align-items: center;
   position: relative;
   gap: 50px;
-  padding: 120px 0px 20px 0px;
+  padding: 80px 0px 20px 0px;
 
-  @media screen and (max-width: 1120px) {
-    flex-direction: column;
+  @media screen and (max-width: 1380px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .modal-login {
+      order: 1;
+    }
     
   }
 }
+
 
 
 .modal-avatar-panel {
@@ -31,8 +37,9 @@ $mainfont: 'Cinzel';
     background-color: $color-modal;
     border-radius: 10px;
     padding: 25px;
-    width: 450px;
-    height: 360px;
+    width: 280px;
+    height: 300px;
+    border : 3px solid #b3926f;
 
     .modal-avatar-header{
         display: flex;

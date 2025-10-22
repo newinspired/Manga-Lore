@@ -43,6 +43,9 @@ const Question = () => {
     const onTimer = (time) => setTimeLeft(time);
 
     const onGameEnded = (payload) => {
+      console.log("Payload reçu à la fin du jeu :", payload);
+      console.log("Joueurs stockés :", payload.players); 
+      localStorage.setItem("finalPlayers", JSON.stringify(payload.players));
       navigate(`/correction/${room}`, {
         state: {
           answersHistory: payload?.answersHistory || [],

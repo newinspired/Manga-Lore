@@ -4,7 +4,7 @@
 $mainfont: 'Fraunces', serif;
 
 $font-color: #b3926f;
-$background-header: #ffffff;
+$background-header: #d1e2f3;
 
 .header {
   display: flex;
@@ -46,13 +46,13 @@ $background-header: #ffffff;
 
   .header-banner {
       display: flex;
-      justify-content: flex-start;
+      align-items: center;
       justify-content: center;
       flex-direction: column;
       border-radius: 50px;
       background-color: #d1e2f3;
 
-      background-image: url(../assets/illustration/yamato2.jpg);
+      background-color : $background-header;
       background-size: cover;   
       background-position: center;
       background-repeat: no-repeat;
@@ -78,14 +78,14 @@ $background-header: #ffffff;
         font-size: 25px;
         font-weight: 600;
         color: $font-color;
-        margin : 0px 0px 0px 30px;
+        margin : 0px;
         padding: 0px;
       }
 
       h2{
         font-size : 18px;
         font-weight : 500;
-        margin : 0px 0px 0px 30px;
+        margin : 0px;
         padding : 0px;
       }
 
