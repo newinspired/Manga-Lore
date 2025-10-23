@@ -33,7 +33,7 @@ function SalonPage() {
     { label: 'Egg head', value: 'Egg head' },
   ];
 
-  // 🔹 Quand la page charge, rejoins ou reviens dans la room
+  // 🔹 Rejoint la room au chargement ou après reconnexion socket
   useEffect(() => {
     const storedUsername = localStorage.getItem("username") || locationUsername;
     const storedAvatar = localStorage.getItem("avatar") || locationAvatar;
@@ -43,17 +43,21 @@ function SalonPage() {
       if (storedUsername && storedAvatar && !hasJoinedRef.current) {
         hasJoinedRef.current = true;
 
-        socket.emit("joinRoom", { roomId: storedRoomCode, username: storedUsername, avatar: storedAvatar }, (response) => {
-          if (!response.success) {
-            alert(response.message);
-            navigate('/');
-          } else {
-            // ✅ Stockage local pour reconnexion rapide
-            localStorage.setItem("username", storedUsername);
-            localStorage.setItem("avatar", storedAvatar);
-            localStorage.setItem("roomCode", storedRoomCode);
+        socket.emit(
+          "joinRoom",
+          { roomId: storedRoomCode, username: storedUsername, avatar: storedAvatar },
+          (response) => {
+            if (!response.success) {
+              alert(response.message);
+              navigate('/');
+            } else {
+              // ✅ Stockage local pour reconnexion rapide
+              localStorage.setItem("username", storedUsername);
+              localStorage.setItem("avatar", storedAvatar);
+              localStorage.setItem("roomCode", storedRoomCode);
+            }
           }
-        });
+        );
       }
     };
 
@@ -63,7 +67,38 @@ function SalonPage() {
     return () => socket.off("connect", handleJoin);
   }, [room, locationUsername, locationAvatar, navigate]);
 
-  // 🔹 Mise à jour du statut host
+  // 🔹 Gère la reconnexion + affiche immédiatement la CardName locale
+  useEffect(() => {
+    const storedUsername = localStorage.getItem("username") || locationUsername;
+    const storedAvatar = localStorage.getItem("avatar") || locationAvatar;
+    const storedRoomCode = localStorage.getItem("roomCode") || room;
+
+    if (storedUsername && storedAvatar && storedRoomCode) {
+      // 🟢 Si aucun joueur n'est encore affiché, on affiche localement le joueur
+      if (players.length === 0) {
+        setPlayers([
+          {
+            id: "local-player",
+            username: storedUsername,
+            avatar: storedAvatar,
+            score: 0, // reset du score
+          },
+        ]);
+      }
+
+      // 🟢 En parallèle, on notifie le serveur pour rejoinRoom
+      if (!hasJoinedRef.current) {
+        hasJoinedRef.current = true;
+        socket.emit("rejoinRoom", {
+          roomCode: storedRoomCode,
+          username: storedUsername,
+          avatar: storedAvatar,
+        });
+      }
+    }
+  }, [players, locationUsername, locationAvatar, room]);
+
+  // 🔹 Mise à jour du statut d’hôte
   useEffect(() => {
     const handleHostStatus = (isHost) => setIsHost(isHost);
     socket.on("hostStatus", handleHostStatus);
@@ -77,33 +112,17 @@ function SalonPage() {
     return () => socket.off("arcsUpdated", handleArcsUpdate);
   }, []);
 
-  // 🔹 Mise à jour de la liste des joueurs
+  // 🔹 Mise à jour de la liste des joueurs depuis le serveur
   useEffect(() => {
     const handlePlayerList = (updatedPlayers) => setPlayers(updatedPlayers);
     socket.on("playerList", handlePlayerList);
     return () => socket.off("playerList", handlePlayerList);
   }, []);
 
-  // 🔹 Rejoint automatiquement la room si retour depuis ResultPage
-  useEffect(() => {
-    const storedUsername = localStorage.getItem("username");
-    const storedAvatar = localStorage.getItem("avatar");
-    const storedRoomCode = localStorage.getItem("roomCode");
-
-    if (storedUsername && storedAvatar && storedRoomCode && !hasJoinedRef.current) {
-      hasJoinedRef.current = true;
-      socket.emit("rejoinRoom", {
-        roomCode: storedRoomCode,
-        username: storedUsername,
-        avatar: storedAvatar,
-      });
-    }
-  }, []);
-
   return (
     <div className="container">
       <Header />
-      <div className='container-salon'>
+      <div className="container-salon">
         <div className="container-waiting">
           <WaitingRoom
             roomCode={room}
@@ -116,11 +135,8 @@ function SalonPage() {
         </div>
 
         <div className="container-bonne-chance">
-          {/* 🔹 On repasse la liste des joueurs au composant CardName */}
-          <CardName
-            players={players}
-            currentSocketId={socket.id}
-          />
+          {/* 🔹 Affiche la liste des joueurs, y compris celui restauré localement */}
+          <CardName players={players} currentSocketId={socket.id} />
         </div>
       </div>
       <Footer />

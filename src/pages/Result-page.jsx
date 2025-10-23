@@ -7,6 +7,8 @@ import socket from '../socket';
 const ResultPage = () => {
   const [players, setPlayers] = useState([]);
   const navigate = useNavigate();
+  const roomCode = localStorage.getItem("roomCode");
+
 
   useEffect(() => {
     const storedPlayers = localStorage.getItem("finalPlayers");
@@ -59,6 +61,18 @@ const ResultPage = () => {
       navigate("/salon");
     }
   };
+
+  // 🔹 Réenvoi des infos pour forcer la réapparition de la carte joueur
+  const storedUsername = localStorage.getItem("username");
+  const storedAvatar = localStorage.getItem("avatar");
+  if (roomCode && storedUsername && storedAvatar) {
+    socket.emit("rejoinRoom", {
+      roomCode,
+      username: storedUsername,
+      avatar: storedAvatar,
+    });
+  }
+
 
   return (
     <div className="result-page">

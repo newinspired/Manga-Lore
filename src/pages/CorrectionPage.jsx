@@ -23,8 +23,16 @@ function CorrectionPage() {
       setCurrentPlayer(players[playerIndex]);
     });
 
-    return () => socket.off("correctionUpdate");
-  }, [players, currentSocketId]);
+    // 🔹 Tous les joueurs passent automatiquement à la ResultPage
+    socket.on("gameEnded", () => {
+      navigate(`/result/${room}`, { state: { players, answersHistory, room, currentSocketId } });
+    });
+
+    return () => {
+      socket.off("correctionUpdate");
+      socket.off("gameEnded");
+    };
+  }, [players, currentSocketId, navigate, room, answersHistory]);
 
   const handleCorrection = (isCorrect) => {
     const currentQuestion = answersHistory[questionIndex];
@@ -57,8 +65,9 @@ function CorrectionPage() {
           playerIndex: 0
         });
       } else {
-        // ✅ on va vers la page des résultats sans passer players en state
-        navigate(`/result/${room}`);
+        // 🔹 Chef émet l'événement pour tous les joueurs
+        socket.emit("correctionFinished", { room });
+        navigate(`/result/${room}`, { state: { players, answersHistory, room, currentSocketId } });
       }
     }
   };
