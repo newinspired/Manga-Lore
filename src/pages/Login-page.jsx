@@ -20,8 +20,6 @@ import hancock from '../assets/avatars-color/hancock.jpg';
 
 
 
-
-
 function LoginPage({ setUsername, setRoomCode }) {
   const navigate = useNavigate();
   const modalRef = useRef(null);

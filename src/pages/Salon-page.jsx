@@ -27,10 +27,11 @@ function SalonPage() {
     { label: 'Thriller Bark', value: 'ThrillerBark' },
     { label: 'MarineFord', value: 'MarineFord' },
     { label: 'Fish-Man Island', value: 'FishManIsland' },
-    { label: 'Dressrosa', value: 'Dressrosa' },
+    { label: 'Punk Hazard/Dressrosa', value: 'Dressrosa' },
     { label: 'Whole Cake Island', value: 'WholeCakeIsland' },
     { label: 'Wano', value: 'Wano' },
     { label: 'Egg head', value: 'Egg head' },
+    { label: 'Erbaf', value: 'Erbaf' },
   ];
 
   // 🔹 Rejoint la room au chargement ou après reconnexion socket

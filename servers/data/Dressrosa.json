@@ -26,7 +26,7 @@
     {
         "id": 805,
         "difficulty": "medium",
-        "question": "Comment l'équipage du chapeau de paille a t-il été conduit sur l'île de Punk Hazard ?",
+        "question": "Comment l’équipage du Chapeau de Paille a-t-il été conduit sur l’île de Punk Hazard ?",
         "answer": "L'île n'était pas indiqué sur le logo pose, ils l'ont atteint par hasard"
     },
     {
@@ -137,7 +137,7 @@
         "id": 823,
         "difficulty": "medium",
         "question": "Dans quelle zone de Punk Hazard les \"Yéti cool brothers\", Scotch et Rock, opèrent-ils ?",
-        "answer": "Dans les Monts enneigés/terres de glace"
+        "answer": "Dans les monts enneigés, aussi appelés terres de glace"
     }, 
     {
         "id": 824,
@@ -173,7 +173,7 @@
         "id": 829,
         "difficulty": "difficult",
         "question": "Quel est le nom de la femme harpie alliée à César Clown sur Punk Hazard ?",
-        "answer": "Monet la Harpie"
+        "answer": "Monet la harpie"
     },
 
     {
@@ -198,7 +198,7 @@
     {
         "id": 833,
         "difficulty": "medium",
-        "question": "Quel vice-amiral de la Marine qui fait son apparition à Punk Hazard est en réalité un subordonné infiltré travaillant pour Doflamingo ?",
+        "question": "Quel vice-amiral de la Marine, apparu sur Punk Hazard, s’avère être un subordonné infiltré travaillant pour Doflamingo ?",
         "answer": "Vergo"
     },
     {
@@ -210,13 +210,13 @@
     {
         "id": 835,
         "difficulty": "difficult",
-        "question": "Avec qui Trafalgar Law a-t-il échangé son cœur, sur ordre de César Clown pour cohabiter avec lui sur Punk Hazard ?",
-        "answer": "Monet la Harpie"
+        "question": "Avec qui Trafalgar Law a-t-il échangé son cœur, sur ordre de César Clown, afin de cohabiter avec lui sur Punk Hazard ?",
+        "answer": "Monet la harpie"
     },
     {
         "id": 836,
         "difficulty": "medium",
-        "question": "Quel est le fruit du démon mangé par Monet la Harpie ?",
+        "question": "Quel est le fruit du démon mangé par Monet la harpie ?",
         "answer": "Le fruit de la Neige (Yuki Yuki no Mi)"
     },
     {
@@ -246,7 +246,7 @@
     {
         "id": 841,
         "difficulty": "medium",
-        "question": "Quels sont les deux épéistes qui ont vaincu Monet la Harpie sur Punk Hazard ?",
+        "question": "Quels sont les deux épéistes qui ont vaincu Monet la harpie sur Punk Hazard ?",
         "answer": "Roronoa Zoro et Tashigi"
     },
     {
@@ -363,6 +363,329 @@
         "difficulty": "medium",
         "question": "Comment Doflamingo parvient-il à se déplacer d’une île à l’autre dans les airs ?",
         "answer": "En utilisant ses fils pour s’accrocher aux nuages"
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+        "id": 861,
+        "difficulty": "easy",
+        "question": "Avant l'arrivée de l'équipage du Chapeau de Paille sur Dressrosa, quels objets vivants coexistaient avec les humains ?",
+        "answer": "Des jouets vivants"
+    },
+    {
+        "id": 862,
+        "difficulty": "medium",
+        "question": "Que permet de faire le fruit du démon de l'amiral Fujitora ?",
+        "answer": "Il permet de contrôler la gravité et d'invoquer des météorites (Zushi Zushi no Mi)"
+    },
+    {
+        "id": 863,
+        "difficulty": "easy",
+        "question": "À qui appartenait récemment le fruit du démon donné en récompense au vainqueur des jeux du Corrida Colosseum à Dressrosa ?",
+        "answer": "Portgas D. Ace"
+    },
+    {
+        "id": 864,
+        "difficulty": "easy",
+        "question": "Dans quel prestigieux bâtiment a eu lieu le tournoi visant à remporter le 'Pyro-fruit' que possédait Ace ?",
+        "answer": "Le Colisée de Dressrosa (Corrida Colosseum)"
+    },
+    {
+        "id": 865,
+        "difficulty": "medium",
+        "question": "Qui était le 'Héros du Colisée' désigné par Doflamingo lors de l'arc Dressrosa ?",
+        "answer": "Mister Diamante"
+    },
+    {
+        "id": 866,
+        "difficulty": "medium",
+        "question": "Comment se nommait la danseuse de flamenco membre de la famille Riku, qui faisait partie de l'équipage de Don Quijote Doflamingo ?",
+        "answer": "Violette (Riku Viola)"
+    },
+    {
+        "id": 867,
+        "difficulty": "easy",
+        "question": "Quel membre de l'équipage du Chapeau de Paille participe aux jeux du Colisée afin de remporter le Pyro-fruit mis en jeu ?",
+        "answer": "Monkey D. Luffy"
+    },
+    {
+        "id": 868,
+        "difficulty": "easy",
+        "question": "Quel nom Luffy s'était-il inventé pour participer aux jeux du Colisée sans éveiller de soupçons ?",
+        "answer": "Lucy"
+    },
+    {
+        "id": 869,
+        "difficulty": "difficult",
+        "question": "À quel gang originaire du pays des fleurs Sai et Chinjao appartiennent-ils ?",
+        "answer": "La Chinjao Family"
+    },
+    {
+        "id": 870,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le souverain du royaume de Prodence, dont la technique phare est le \"King Punch\" ?",
+        "answer": "Elizabello II"
+    },
+    {
+        "id": 871,
+        "difficulty": "medium",
+        "question": "Qui est le capitaine de l'équipage des Jolis pirates, surnommé le \"pirate au cheval blanc\" ?",
+        "answer": "Cavendish"
+    },
+    {
+        "id": 872,
+        "difficulty": "medium",
+        "question": "Quelle gladiatrice a participé au tournoi du Colisée de Dressrosa dans l'objectif de tuer Doflamingo ?",
+        "answer": "Rebecca"
+    },
+    {
+        "id": 873,
+        "difficulty": "medium",
+        "question": "Comment se nomme le plus grand gladiateur de l'histoire du Corrida Colosseum, qui possède sa propre statue dans la salle de préparation aux combats ?",
+        "answer": "Kyros"
+    },
+    {
+        "id": 874,
+        "difficulty": "easy",
+        "question": "Quel commandant de l'équipage de Barbe Noire a participé aux jeux du Colisée à Dressrosa ?",
+        "answer": "Jesus Burgess"
+    },
+    {
+        "id": 875,
+        "difficulty": "easy",
+        "question": "Quel pirate, surnommé « le Cannibale », a mangé le Fruit du Démon de « l’Homme-Barrière » ?",
+        "answer": "Bartolomeo"
+    },
+    {
+        "id": 876,
+        "difficulty": "easy",
+        "question": "Quel pirate était l'antagoniste principal de l'arc Jaya et qui est devenu par la suite membre de l'équipage de Don Quijote Doflamingo ?",
+        "answer": "Bellamy \"La Hyène\""
+    },
+    {
+        "id": 877,
+        "difficulty": "difficult",
+        "question": "Quel pirate participant aux jeux du Colisée à Dressrosa a failli mourir en affrontant Monkey D. Garp par le passé, et voue désormais une haine envers toute sa famille ?",
+        "answer": "Don Chinjao"
+    },
+    {
+        "id": 878,
+        "difficulty": "medium",
+        "question": "Comment se nomme le royaume souterrain peuplé de nains qui se trouve sur l'île de Green Bit, proche de Dressrosa ?",
+        "answer": "Le royaume de Tontatta"
+    },
+    {
+        "id": 879,
+        "difficulty": "medium",
+        "question": "Quels êtres découverts durant l'arc de Dressrosa sont dotés d'une grande force physique, et souvent confondus avec des fées ?",
+        "answer": "Les nains"
+    },
+    {
+        "id": 880,
+        "difficulty": "medium",
+        "question": "Comment Doflamingo a-t-il pu faire publier dans les journaux qu'il avait quitté son poste de Grand Corsaire alors que c'était faux ?",
+        "answer": "Il possède des liens avec les Dragons Célestes et le Gouvernement Mondial"
+    },
+    {
+        "id": 881,
+        "difficulty": "difficult",
+        "question": "Quels sont les trois puissants personnages qui se sont affrontés sur l'île de Green Bit durant l'arc de Dressrosa ?",
+        "answer": "Fujitora, Trafalgar Law et Don Quijote Doflamingo"
+    },
+    {
+        "id": 882,
+        "difficulty": "difficult",
+        "question": "Quel géant originaire d'Erbaf, fils du défunt roi Harald, a participé aux jeux du Colisée de Dressrosa ?",
+        "answer": "Hajrudin"
+    },
+    {
+        "id": 883,
+        "difficulty": "difficult",
+        "question": "Sous quelle forme Kyros a-t-il continué de veiller sur Rebecca, bien qu'elle ne sache pas que c'est son père ?",
+        "answer": "En soldat unijambiste (jouet vivant)"
+    },
+    {
+        "id": 884,
+        "difficulty": "easy",
+        "question": "Comment appelle-t-on aujourd'hui les descendants des 19 rois qui se sont installés en Terre Sainte de Mary Geoise ?",
+        "answer": "Les Dragons Célestes"
+    },
+    {
+        "id": 885,
+        "difficulty": "difficult",
+        "question": "Quelle dynastie d'un royaume d'East Blue a refusé, 800 ans avant le début du récit, de s'installer en Terre Sainte de Mary Geoise ?",
+        "answer": "La dynastie des Nefertari"
+    },
+    {
+        "id": 886,
+        "difficulty": "medium",
+        "question": "De quelle dynastie est issu Doflamingo ?",
+        "answer": "La dynastie des Don Quijote"
+    },
+    {
+        "id": 887,
+        "difficulty": "difficult",
+        "question": "Quel membre de l'équipage de Doflamingo a affronté une partie des Mugiwara sur le Thousand Sunny en les transformant en œuvres d'art durant l'arc Dressrosa ?",
+        "answer": "Jora"
+    },
+    {
+        "id": 888,
+        "difficulty": "difficult",
+        "question": "Qui est l'ancien roi de Dressrosa, déchu de son trône par Doflamingo ?",
+        "answer": "Riku Doldo III (Roi Riku)"
+    },
+    {
+        "id": 889,
+        "difficulty": "medium",
+        "question": "Comment se nomme le capitaine de l'armée des Tontatta qui, grâce à son fruit du démon, peut coudre ses ennemis ?",
+        "answer": "Léo"
+    },
+    {
+        "id": 890,
+        "difficulty": "difficult",
+        "question": "Quel est le pouvoir du fruit du démon de Léo, le capitaine de l'armée des Tontatta ?",
+        "answer": "Il permet de coudre toutes choses, notamment ses ennemis"
+    },
+    {
+        "id": 891,
+        "difficulty": "easy",
+        "question": "Quel surnom les Tontatta ont-ils donné à Usopp  ?",
+        "answer": "Usoland"
+    },
+    {
+        "id": 892,
+        "difficulty": "medium",
+        "question": "Quelle était la récompense promise par Doflamingo à Bellamy s'il parvenait à tuer Monkey D. Luffy ?",
+        "answer": "Être promu au rang de leader de la Don Quijote Family"
+    },
+    {
+        "id": 893,
+        "difficulty": "difficult",
+        "question": "Quel vice-amiral de la Marine, portant un masque de métal et deux cornes, était présent sur Dressrosa afin de surveiller les agissements des Mugiwara ?",
+        "answer": "Bastille"
+    },
+    {
+        "id": 894,
+        "difficulty": "medium",
+        "question": "Quelle humaine, membre de l'armée révolutionnaire aux côtés de Sabo, manie le karaté des Hommes-Poissons ?",
+        "answer": "Koala"
+    },
+    {
+        "id": 895,
+        "difficulty": "easy",
+        "question": "Qui est le chef d’état-major de l’Armée Révolutionnaire ?",
+        "answer": "Sabo"
+    },
+    {
+        "id": 896,
+        "difficulty": "medium",
+        "question": "Quel membre de la Don Quijote Family est le chef de l'unité des Pouvoirs Spéciaux ?",
+        "answer": "Trébol"
+    },
+    {
+        "id": 897,
+        "difficulty": "difficult",
+        "question": "Quel membre de la Don Quijote Family est le leader de l'unité commando de l'équipage, représentée par le symbole du pique ?",
+        "answer": "Pica"
+    },
+    {
+        "id": 898,
+        "difficulty": "difficult",
+        "question": "Comment se nomme la seconde personnalité que prend Cavendish après s'être endormi ?",
+        "answer": "Hakuba"
+    },
+    {
+        "id": 899,
+        "difficulty": "medium",
+        "question": "Quel membre des Mugiwara a affronté Señor Pink sur Dressrosa ?",
+        "answer": "Franky"
+    },
+    {
+        "id": 900,
+        "difficulty": "medium",
+        "question": "Quel est l'objectif de l'amiral Fujitora concernant l'ordre des Sept Grands Corsaires ?",
+        "answer": "Il veut supprimer l'ordre des Sept Grands Corsaires"
+    },
+    {
+        "id": 901,
+        "difficulty": "difficult",
+        "question": "Cite trois des cinq finalistes des Jeux du Colisée de Dressrosa.",
+        "answer": "Bartolomeo, Jesus Burgess, Diamante, Sabo et Rebecca"
+    },
+    {
+        "id": 902,
+        "difficulty": "easy",
+        "question": "Qui s'est emparé du Pyro-Fruit aux jeux du Colisée de Dressrosa ?",
+        "answer": "Sabo"
+    },
+    {
+        "id": 903,
+        "difficulty": "easy",
+        "question": "Qui a pris l'apparence de Luffy, afin de participer à la finale du Colisée de Dressrosa à sa place ?",
+        "answer": "Sabo"
+    },
+    {
+        "id": 904,
+        "difficulty": "difficult",
+        "question": "Quel membre de l'équipage de Doflamingo, ayant l'apparence d'une enfant, peut transformer en jouet tout ce qu'elle touche grâce à son pouvoir ?",
+        "answer": "Sugar"
+    },
+    {
+        "id": 905,
+        "difficulty": "difficult",
+        "question": "Quel homme-poisson, grand ami de Jinbe et membre de l'Armée Révolutionnaire, a participé aux jeux du Colisée de Dressrosa ?",
+        "answer": "Hack"
+    },
+    {
+        "id": 906,
+        "difficulty": "difficult",
+        "question": "Comment se nomme la technique de Doflamingo qui lui permet d'emprisonner toute l'île de Dressrosa à l'aide de ses fils ?",
+        "answer": "La Cage à Oiseaux"
+    },
+    {
+        "id": 907,
+        "difficulty": "difficult",
+        "question": "Quelle est la capacité ultime du fruit du Bistouri (Ope Ope no Mi), appelée la Chirurgie de Jouvence ?",
+        "answer": "Elle permet d’offrir la vie éternelle au prix de la vie de celui qui réalise l’opération."
+    },
+    {
+        "id": 908,
+        "difficulty": "difficult",
+        "question": "Quel membre de l'équipage de Don Quijote Doflamingo porte une tenue de bébé avec une tétine à la bouche ?",
+        "answer": "Señor Pink"
+    },
+    {
+        "id": 909,
+        "difficulty": "medium",
+        "question": "Comment se nomme le frère biologique de Don Quijote Doflamingo, officier infiltré de la Marine au sein de la Don Quijote Family ?",
+        "answer": "Don Quijote Rossinante"
+    },
+    {
+        "id": 910,
+        "difficulty": "medium",
+        "question": "Comment tous les habitants de Dressrosa et les combattants transformés en jouets ont-ils retrouvé leur apparence humaine à Dressrosa ?",
+        "answer": "Sugar a perdu connaissance, annulant ainsi son pouvoir de transformation"
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ]

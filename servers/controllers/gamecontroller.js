@@ -207,7 +207,7 @@ function sendNextQuestion(io, roomCode, games) {
   }
 
   const question = game.questions[game.currentQuestionIndex];
-  let timeLeft = game.currentQuestionIndex === 0 ? 0 : 3;
+  let timeLeft = game.currentQuestionIndex === 0 ? 0 : 20;
 
   io.to(roomCode).emit('newQuestion', { question, timeLeft });
 
