@@ -1,10 +1,7 @@
+// src/components/waiting-room.jsx
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import socket, {
-  sendPlayerReady,
-  onPlayerListUpdate,
-  offPlayerListUpdate
-} from '../socket.js';
+import socket, { sendPlayerReady, onPlayerListUpdate, offPlayerListUpdate, sendSelectedArcs } from '../socket';
 import '../styles/waiting-room.scss';
 
 function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs }) {
@@ -28,7 +25,7 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
     };
   }, [navigate, roomCode]);
 
-  // ✅ Écouter les choix d’arcs en temps réel (pour les non-hosts)
+  // Écouter les choix d’arcs en temps réel (pour les non-hosts)
   useEffect(() => {
     const handleArcsUpdate = (updatedArcs) => {
       setSelectedArcs(updatedArcs);
@@ -46,11 +43,34 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
     setIsReady(newReadyState);
 
     if (isHost) {
-      socket.emit('selectedArcs', roomCode, selectedArcs);
+      // envoie via helper
+      sendSelectedArcs(roomCode, selectedArcs);
     }
 
     sendPlayerReady(roomCode, newReadyState);
   };
+
+  useEffect(() => {
+    onPlayerListUpdate((updatedPlayers) => {
+      setPlayers(updatedPlayers);
+
+      console.log("---- LISTE DES JOUEURS (WaitingRoom) ----");
+      updatedPlayers.forEach(p => {
+        console.log(`"${p.username}" : ${p.isHost ? "host" : "not host"}`);
+      });
+      console.log("-------------------------------------------");
+    });
+
+    socket.on('startGame', () => {
+      navigate(`/game/${roomCode}`);
+    });
+
+    return () => {
+      offPlayerListUpdate();
+      socket.off('startGame');
+    };
+  }, [navigate, roomCode]);
+
 
   const isButtonDisabled = isHost && selectedArcs.length === 0;
   const buttonLabel = isReady ? 'Ready' : 'Start Game';
@@ -81,26 +101,20 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
         </div>
         <div className="arc-buttons">
           {allArcs.map(({ label, value }) => {
-            const isSelectable = ["EastBlue", "Alabasta", "Skypiea", "WaterSeven", "ThrillerBark", "MarineFord"].includes(value);
-
             return (
               <button
                 key={value}
-                className={`arc-button ${value.toLowerCase()} ${
-                  selectedArcs.includes(value) ? "selected" : ""
-                }`}
-                disabled={!isHost || !isSelectable}
+                className={`arc-button ${value.toLowerCase()} ${selectedArcs.includes(value) ? "selected" : ""}`}
+                disabled={!isHost}
                 onClick={() => {
-                  if (!isHost || !isSelectable) return;
+                  if (!isHost) return;
 
                   const newSelection = selectedArcs.includes(value)
                     ? selectedArcs.filter((a) => a !== value)
                     : [...selectedArcs, value];
 
                   setSelectedArcs(newSelection);
-
-                  // ✅ Envoi correct de la nouvelle sélection au serveur
-                  socket.emit('selectedArcs', roomCode, newSelection);
+                  sendSelectedArcs(roomCode, newSelection);
                 }}
               >
                 {label}
@@ -108,6 +122,7 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
             );
           })}
         </div>
+
         <div className='select-all'>
           <button
             className="arc-button all"
@@ -116,13 +131,13 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
               if (!isHost) return;
               if (selectedArcs.length === allowedArcs.length) {
                 setSelectedArcs([]);
-                socket.emit('selectedArcs', roomCode, []);
+                sendSelectedArcs(roomCode, []);
               } else {
                 const newSelection = allArcs
                   .filter(arc => allowedArcs.includes(arc.value))
                   .map(arc => arc.value);
                 setSelectedArcs(newSelection);
-                socket.emit('selectedArcs', roomCode, newSelection);
+                sendSelectedArcs(roomCode, newSelection);
               }
             }}
           >

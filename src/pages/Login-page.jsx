@@ -7,16 +7,13 @@ import ModalAvatar from '../components/modal-avatar.jsx';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
 
-import luffy from '../assets/avatars-color/luffy.jpg';
-import zoro from '../assets/avatars-color/zoro.jpg';
-import nami from '../assets/avatars-color/nami2.jpg';
+import luffy from '../assets/avatars-color/luffy5.jpg';
+import sanji from '../assets/avatars-color/sanji5.jpg';
+import nami from '../assets/avatars-color/nami5.jpg';
 
-import usopp from '../assets/avatars-color/usopp2.jpg';
-import sanji from '../assets/avatars-color/sanji.jpg';
-import chopper from '../assets/avatars-color/chopper2.jpg';
-
-import shanks from '../assets/avatars-color/shanks.jpg';
-import hancock from '../assets/avatars-color/hancock.jpg';
+import ace from '../assets/avatars-color/ace5.jpg';
+import sabo from '../assets/avatars-color/sabo5.jpg';
+import law from '../assets/avatars-color/law5.jpg';
 
 
 
@@ -25,14 +22,12 @@ function LoginPage({ setUsername, setRoomCode }) {
   const modalRef = useRef(null);
   const avatarOptions = [
     { name: 'luffy', src: luffy },
-    { name: 'zoro', src: zoro },
-
-    { name: 'nami', src: nami },
+    { name: 'ace', src: ace },
     { name: 'sanji', src: sanji },
-
-    
-    { name: 'usopp', src: usopp },
-    { name: 'chopper', src: chopper },
+    { name: 'nami', src: nami },
+    { name: 'sabo', src: sabo },
+    { name: 'law', src: law },
+  
   ];
 
   const [input, setInput] = useState('');
@@ -133,7 +128,7 @@ function LoginPage({ setUsername, setRoomCode }) {
               <h3>GO PRENIUM !</h3>
               <div>
                 <p>- Unlock all arcs — from East Blue to the very latest chapters !</p>
-                <p>- 800 extra questions</p>
+                <p>- 800 additional high-quality questions</p>
                 <p>- Support the project and help us keep expanding the adventure !</p>
               </div>
               <div className='button-container'>
@@ -143,69 +138,97 @@ function LoginPage({ setUsername, setRoomCode }) {
           </div>
         </div>
         <div className="modal-login" ref={modalRef}>
-          <h3>ONE PIECE - GAME</h3>
+          <div className='section-one-piece-game-title'>
+            <h3>ONE PIECE - GAME</h3>
+          </div>
 
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => {
-              const val = e.target.value;
-              const formatted = val.charAt(0).toUpperCase() + val.slice(1);
-              if (formatted.length <= 10) setInput(formatted);
-            }}
-            placeholder="Name"
-            maxLength={10}
-            
-          />
-
-          <button
-            className="button-top"
-            onClick={() => setShowAvatarModal((prev) => !prev)}
-          >
-            Choose an avatar
-          </button>
-
-          <button
-            className={`button-mid ${trimmedInput ? 'active' : ''}`}
-            onClick={handleCreateGame}
-            disabled={!trimmedInput}
-          >
-            Create private game
-          </button>
-
-          {!showRoomInput ? (
-            <button
-              className={`button-bot ${trimmedInput ? 'active' : ''}`}
-              onClick={() => {
-                if (trimmedInput) {
-                  setShowRoomInput(true);
-                }
+          <div className='information-player'>
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => {
+                const val = e.target.value;
+                const formatted = val.charAt(0).toUpperCase() + val.slice(1);
+                if (formatted.length <= 10) setInput(formatted);
               }}
+              placeholder="Name"
+              maxLength={10}
+              
+            />
+
+            <button
+              className="button-choose-avatar"
+              onClick={() => setShowAvatarModal((prev) => !prev)}
+            >
+              Choose an avatar
+            </button>
+          </div>
+
+          <div className='room-section'>
+            <button
+              className={`button-create ${trimmedInput ? 'active' : ''}`}
+              onClick={handleCreateGame}
               disabled={!trimmedInput}
             >
-              Private party code
+              Create private game
             </button>
-          ) : (
-            <>
-              <input
-                className="room-input"
-                type="text"
-                value={roomInput}
-                onChange={(e) => setRoomInput(e.target.value)}
-                placeholder="Game code"
-                maxLength={10}
-              />
-            </>
-          )}
+            <div className="join-game-section">
+              {!showRoomInput ? (
+                <button
+                  className={`button-private-party ${trimmedInput ? 'active' : ''}`}
+                  onClick={() => {
+                    if (trimmedInput) {
+                      setShowRoomInput(true);
+                    }
+                  }}
+                  disabled={!trimmedInput}
+                >
+                  Private party code
+                </button>
+              ) : (
+                <>
+                <div className="join-row">
+                  <input
+                    className="room-input"
+                    type="text"
+                    value={roomInput}
+                    onChange={(e) => setRoomInput(e.target.value)}
+                    placeholder="Game code"
+                    maxLength={10}
+                  />
+                  <button
+                    className={`button-join-game ${isFormValid ? 'active' : ''}`}
+                    onClick={handleSubmit}
+                    disabled={!isFormValid}
+                  >
+                    Join
+                  </button>
+                </div>
+                </>
+              )}
+            </div>
+          </div>
 
-          <button
-            className={`button-ready ${isFormValid ? 'active' : ''}`}
-            onClick={handleSubmit}
-            disabled={!isFormValid}
-          >
-            Join private game
-          </button>
-          
+          <div className="info-collapses">
+            {/* Collapse pour les règles du jeu */}
+            <div className="collapse">
+              <button
+                className="collapse-header"
+                onClick={() =>
+                  setShowRules((prev) => !prev)
+                }
+              >
+                Game Rules
+              </button>
+              {showRules && (
+                <div className="collapse-content">
+                  <p>
+                    The game consists of 15 questions, increasing in difficulty. Once you’ve completed them, you’ll correct your own answers and discover your final score at the end.
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
 
         {showAvatarModal ? (
@@ -227,31 +250,6 @@ function LoginPage({ setUsername, setRoomCode }) {
         )}
       </div>
       
-      <div className="info-collapses">
-        
-        {/* Collapse pour les règles du jeu */}
-        <div className="collapse">
-          <button
-            className="collapse-header"
-            onClick={() =>
-              setShowRules((prev) => !prev)
-            }
-          >
-            Game Rules
-          </button>
-          {showRules && (
-            <div className="collapse-content">
-              <p>
-                The game consists of 15 questions, increasing in difficulty. Once you’ve completed them, you’ll correct your own answers and discover your final score at the end.
-              </p>
-            </div>
-          )}
-        </div>
-      </div>
-
-
-
-
       <Footer />
     </div>
   );

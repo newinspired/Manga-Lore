@@ -1,21 +1,18 @@
-import luffy from './luffy.jpg';
-import zoro from './zoro.jpg';
-import nami from './nami2.jpg';
-import usopp from './usopp2.jpg';
-import sanji from './sanji.jpg';
-import chopper from './chopper2.jpg';
-
-import shanks from './shanks.jpg';
-import kobby from './kobby.jpg';
+import luffy from './luffy5.jpg';
+import ace from './ace5.jpg';
+import sanji from './sanji5.jpg';
+import nami from './nami5.jpg';
+import sabo from './sabo5.jpg';
+import law from './law5.jpg';
 
 
 const avatarMap = {
   luffy: luffy,
-  zoro: zoro,
-  nami: nami,
-  usopp: usopp,
+  ace: ace,
   sanji: sanji,
-  chopper: chopper,
+  nami: nami,
+  sabo: sabo,
+  law: law,
 };
 
 export default avatarMap;

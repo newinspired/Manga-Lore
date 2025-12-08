@@ -2,99 +2,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 $mainfont: 'Fraunces', serif;
+$maincolorfont: #e3c494;
 
-$font-color: #b3926f;
 $background-header: #d1e2f3;
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0px;
-  gap: 15px;
+header{
+  position: relative;
+  width : 100%;
+  background : rgba(27, 48, 83, 0.5);
+  font-family: $mainfont;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
-  .login-header {
+
+  .header {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0px;
+    width : 100%;
+    gap: 15px;
 
-    a {
-      text-decoration: none;
-    }
-
-    button {
-      all: unset;
-      font-family: $mainfont;
-      font-size: 20px;
-      font-weight: 600;
-      color: $font-color;
-      border: 2px solid $font-color;
-      border-radius: 25px;
-      padding: 8px 20px;
-      transition: all 0.3s ease;
-
-      cursor: pointer;
-      text-decoration: none;
-
-      &:hover {
-        background-color: $font-color;
-        color: white;
-      }
-    }
-  }
-
-  .header-banner {
+    .header-link {
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      border-radius: 50px;
-      background-color: #d1e2f3;
-
-      background-color : $background-header;
-      background-size: cover;   
-      background-position: center;
-      background-repeat: no-repeat;
-
-      width : 500px;
-      height: 120px;
-      border : 3px solid #b3926f;
-
-        &::before {
-        content: '';
-          pointer-events: none;
-          border-radius: 50px;
-          position: absolute;
-          inset: 0;
-          z-index: 0;
-      }
-
-
-
-      h1{
-        position: relative;
-        font-family: $mainfont;
-        font-size: 25px;
-        font-weight: 600;
-        color: $font-color;
-        margin : 0px;
-        padding: 0px;
-      }
 
       h2{
-        font-size : 18px;
-        font-weight : 500;
+        position: relative;
+        font-family: $mainfont;
+        font-size: 18px;
+        font-weight: 500;
         margin : 0px;
-        padding : 0px;
+        padding: 0px;
+        color : $maincolorfont;
       }
     }
-}
 
-.header-separate{
-  display: flex;
-  align-items: center;
-  height : 2px;
-  width : 210px;
-  background-color : #b3926f;
-  margin: 0 auto;
+    .header-banner {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+          position: relative;
+          font-family: $mainfont;
+          font-size: 35px;
+          font-weight: 400;
+          margin : 0px;
+          padding: 0px;
+          color : $maincolorfont;
+        }
+    }
+
+    .login-header {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+
+      a{
+        font-weight: 600;
+        font-size : 18px;
+        text-decoration: none;
+        color : $maincolorfont;
+      }
+
+      button {
+        &:hover {
+          cursor: pointer;
+          color : #b3926f;
+        }
+      }
+    
+    }
+  }
+
+  .header-separate{
+    display: flex;
+    align-items: center;
+    height : 2px;
+    width : 210px;
+    background-color : #b3926f;
+    margin: 0 auto;
+  }
 }

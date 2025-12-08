@@ -8,7 +8,7 @@ return (
         <div className='footer-separate'></div>
         <div className='footer'>
             <h3>
-                made by<span>newinspired</span>
+                This game is not official but simply created by a fan of Eiichiro Oda's work for fans.
             </h3>
 
         </div>

@@ -6,127 +6,124 @@ $otherfont: 'Cormorant Garamond', serif;
 $color-main : #f7f4f0;
 $button-active: #b3926f;
 
-
-.container-question-component {
-  display: flex;
-  flex-direction: column;
-
-  .container-question {
+  .container-question-component {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    height : 100dvh;
 
-    margin : 0px 0px 0px 0px;
-    padding: 0px 15%;
-    height : 550px;
-    opacity: 0.9;
-    font-family: $otherfont;
-    color : $color-main;
-
-    @media screen and (max-width: 1120px) {
-      height : 2000px;
-      
-    }
-
-    .timer-circle {
-      margin-top : 50px;
-      color : $button-active ;
-
-      .timer-text{
-        font-size: 20px;
-        font-weight: 600;
-        font-family: $mainfont;
-        color :white;
-      }
-    }
-
-    .question-section{
+    .container-question {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top : 280px;
-      gap : 50px;
-    }
+      justify-content: space-around;
 
 
-    .question-text {
-      text-align: center;
-      font-size: 45px;
-      font-weight: 500;
+      margin : 0px 0px 0px 0px;
+      padding: 0px 15%;
+      opacity: 0.9;
       font-family: $otherfont;
-      padding-top: 0px;
-      margin : 0px;
-    }
+      color : $color-main;
+      height : 100dvh;
 
-    input {
-      all: unset;
-      border-bottom: 1px solid #b3926f;
-      padding: 5px 100px 10px 0px;
-      font-size: 35px;
-      font-family: $otherfont;
-      font-weight: 500;
-      width: 500px;
-    }
+      .timer-circle {
+        color : $button-active;
+        margin-top : 40px;
 
-    .difficulty-question{
-      display: flex;
-      justify-content: flex-start;
-      font-size: 22px;
-      font-weight: 600;
-      margin-top : 170px;
-      font-family: $otherfont;
-      width: 100%;
-
-
-       p {
-        font-size: 30px;
-        padding: 5px 15px;
-        border-radius: 8px;
-        color: white;
-        text-transform: capitalize; 
-        font-family: $mainfont;
-
-        &.easy {
-          color: #f0f0dc;
+        .timer-text{
+          font-size: 20px;
+          font-weight: 600;
+          font-family: $mainfont;
+          color :white;
         }
+      }
 
-        &.medium {
-          color: #f0d8b6;
+      .question-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 50px;
+      }
+
+
+      .question-text {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 500;
+        font-family: $otherfont;
+        padding-top: 0px;
+        margin : 0px;
+      }
+
+      input {
+        all: unset;
+        border-bottom: 1px solid #b3926f;
+        padding: 5px 100px 10px 0px;
+        font-size: 35px;
+        font-family: $otherfont;
+        font-weight: 500;
+        width: 500px;
+      }
+
+      .difficulty-question{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: $otherfont;
+        width: 100%;
+
+
+        p {
+          font-size: 30px;
+          padding: 5px 15px;
+          border-radius: 8px;
+          color: white;
+          text-transform: capitalize; 
+          font-family: $mainfont;
+
+          &.easy {
+            color: #f0f0dc;
+          }
+
+          &.medium {
+            color: #f0d8b6;
+          }
+
+          &.difficult {
+            color: #b3926f; 
+          }
         }
+      }
 
-        &.difficult {
-          color: #b3926f; 
+
+
+
+
+
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+
+        button {
+          margin: 0 15px;
+          padding: 12px 20px;
+          border-radius: 10px;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
 
-
-
-
-
-
-
-    .button-container {
-      display: flex;
-      justify-content: center;
-
-      button {
-        margin: 0 15px;
-        padding: 12px 20px;
-        border-radius: 10px;
-        font-size: 18px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.2s ease;
-
-        &:hover {
-          opacity: 0.8;
-        }
-      }
-    }
   }
 
-}
 
 button.btn-correct,
 button.btn-wrong,
@@ -172,20 +169,16 @@ button.btn-finish {
 
 .waiting-screen{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 50px;
-
-  img{
-    width: 800px;
-    height: auto;
-  }
+  height : 100dvh;
 
   p{
-    font-size: 32px;
+    font-size: 40px;
     font-family: $otherfont;
     margin : 10px 0px;
+    color : $color-main;
   }
 }
 
@@ -203,13 +196,12 @@ button.btn-finish {
 .container-correction{
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: center;  
+    justify-content: space-around;
+    height : 100dvh;
     gap : 30px;
-    margin : 50px 0px 0px 0px;
     padding: 20px 15% 30px 15%;
     color : $color-main;
-    height : 550px;
     font-family: $otherfont;
 
     @media screen and (max-width: 1120px) {
@@ -221,6 +213,7 @@ button.btn-finish {
       font-family: $mainfont;
       font-size: 30px;
       font-weight: 400;
+      margin-top : 40px;
     }
 
     .main-correction{
@@ -228,7 +221,6 @@ button.btn-finish {
       flex-direction: column;
       align-items: center;
       gap : 30px;
-      margin-top: 280px;
 
       .question-text {
         text-align: center;
@@ -239,14 +231,13 @@ button.btn-finish {
         margin : 0px;
       }
 
-      .réponses-correction{
+      .reponses-correction{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-top: 30px;
-        gap : 20px;
+        gap : 50px;
 
-        .réponse-text {
+        .reponse-text {
           text-align: center;
           font-size: 35px;
           font-weight: 400;
@@ -257,6 +248,15 @@ button.btn-finish {
             font-weight: 600;
             color : #ffaa6e ;
           }
+        }
+
+        .reponse-right{
+          text-align: center;
+          font-size: 40px;
+          font-weight: 400;
+          font-family: $otherfont;
+          margin : 0px;
+          color : $button-active ;
         }
       }
     }

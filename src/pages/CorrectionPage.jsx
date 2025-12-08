@@ -2,6 +2,7 @@ import '../styles/question.scss';
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import socket from '../socket';
+import { playerId } from "../socket";
 
 function CorrectionPage() {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ function CorrectionPage() {
   const [isHost, setIsHost] = useState(false);
 
   useEffect(() => {
-    const me = players.find(p => p.id === currentSocketId);
+    const me = players.find(p => p.id === playerId);
     if (me?.isHost) setIsHost(true);
 
     socket.on("correctionUpdate", ({ questionIndex, playerIndex }) => {
@@ -78,26 +79,26 @@ function CorrectionPage() {
     <div className="container-question-component">
       <div className="container-correction">
         <div className="correction">
-          Correction Question {questionIndex + 1} / {answersHistory.length}
+          Correction Question : {questionIndex + 1} / {answersHistory.length}
         </div>
 
         <div className="main-correction">
-          <p className="question-text">Question : {currentQuestion.question}</p>
-          <div className="réponses-correction">
-            <p className="réponse-text">
-              Réponse de {currentPlayer?.username || "Joueur"} :{" "}
-              <strong>{currentQuestion.answers?.[currentPlayer?.id] || "(no response)"}</strong>
+          <p className="question-text">{currentQuestion.question}</p>
+          <div className="reponses-correction">
+            <p className="reponse-right">
+              <strong>{currentQuestion.correctAnswer}</strong>
             </p>
-            <p className="réponse-text">
-              Bonne réponse : <strong>{currentQuestion.correctAnswer}</strong>
+            <p className="reponse-text">
+              {currentPlayer?.username || "Joueur"} :{" "}
+              <strong>{currentQuestion.answers?.[currentPlayer?.id] || "(no response)"}</strong>
             </p>
           </div>
         </div>
 
         {isHost ? (
           <div className="buttons-correction">
-            <button onClick={() => handleCorrection(false)}>Faux</button>
             <button onClick={() => handleCorrection(true)}>Correct</button>
+            <button onClick={() => handleCorrection(false)}>Faux</button>
           </div>
         ) : (
           <p>Le chef est en train de corriger...</p>

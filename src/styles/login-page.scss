@@ -4,16 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
 $mainfont: 'Fraunces', serif;
+$maincolorfont: #e3c494;
 $otherfont: 'Cormorant Garamond', serif;
 
-$color-modal : #f0f0dc;
+$color-modal : rgba(254, 247, 229, 1);
+
 $button-color: #f0d8b6;
 $button-active: #b3926f;
+$button-writting-color: #0a1931;
 
 html, body {
-  height: 100%;
   font-family: $mainfont;
-  color : #0a1931;
+}
+
+input {
+  all: unset;
 }
 
 body {
@@ -23,8 +28,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   
-
-
   &::before {
     content: '';
     position: fixed;
@@ -40,185 +43,186 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 5%;
+  justify-content: space-between;
   cursor: default;
+  height: 100dvh; /* dynamic viewport height, plus précis et standardisé que vh (viewport height) */
 
   .modal-login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $color-modal;
-    padding: 25px;
-    border-radius: 10px;
-    gap: 20px;
-    height: 360px;
-    width: 480px;
+    gap : 5dvh;
+    color : $button-writting-color;
 
-    @media screen and (max-width: 1380px) {
-      order: 1;
-    }
+    .section-one-piece-game-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $button-color;
+      padding: 10px 0px;
+      font-family: $mainfont;
+      width : 400px;
+      border-radius: 5px;
+      z-index: 1;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 
-    input,
-    button {
-      all: unset;
-      height: 40px;
-      width: 10ch;
-    }
-
-    input {
-      width: 95%;
-      cursor: text;
-      box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
-      color: black;
-      font-weight: 600;
-      font-size: 20px;
-
-      .placeholder {
-        color: $button-color;
+      h3{
+        font-family: $mainfont;
+        font-weight: 600;
+        font-size: 24px;
       }
     }
+
+    .information-player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 400px;
+      text-align: center;
+      gap : 5px;
+      border-radius: 5px;
+      padding : 10px 0px;
+      background-color: $color-modal;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      font-weight: 500;
+
+      input {
+        padding : 10px 20px;
+        width : 60%;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: $button-color;
+        border-radius : 0px;
+
+        &::placeholder {
+          color : #7a5e3c;
+          font-weight: 500;
+        }
+      }
+
+      input, button {
+        padding : 10px 20px;
+        width : 60%;
+        font-size: 18px;
+        background-color : $button-color;
+
+        &:hover {
+          cursor: pointer;
+          background-color : $button-active;
+          transform: scale(1.03);
+        }
+      }
+    }
+
+    .room-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width : 400px;
+      padding : 10px 0px;
+      border-radius: 5px;
+      gap : 10px;
+      background-color: $color-modal;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      font-weight: 500;
+
+      button:disabled {
+        opacity: 0.4;
+        cursor: default!important;
+        filter: grayscale(100%);
+        transform: none!important;
+        pointer-events: none !important; 
+        user-select: none !important;
+      }
+
+      .join-row{
+        display: flex;
+        justify-content: center;
+        width : 70%;
+      }
+
+      .join-game-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+
+        background-color: $color-modal;
+        width : 100%;
+      }
+
+      button {
+        padding : 10px 0px;
+        width : 70%;
+        font-size: 18px;
+        background-color : $button-color;
+
+        &:hover {
+          cursor: pointer;
+          background-color : $button-active;
+          transform: scale(1.03);
+        }
+      }
+    }
+
+
 
     .room-input {
       background-color: $button-color;
       text-align: center;
-    }
-
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 95%;
-      font-size: 20px;
-      font-weight: 500;
-      font-family: $mainfont;
-      background-color: $button-color;
-      box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
-
-      &:hover:not(:disabled) {
-        transform: scale(1.02);
-        box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.4);
-      }
-
-      &:disabled {
-        background-color: $button-color;
-        opacity: 0.6;
-        cursor:default;
-      }
-    }
-
-    .button-top {
-      background-color: #d1e2f3;
-    }
-
-    .button-mid {
-      background-color: #bfbfbf;
-      opacity: 0.6;
-
-      &.active {
-        background-color: $button-active;
-        opacity: 1;
-      }
-    }
-
-    .button-bot {
-      background-color: #8ae0db;
-      opacity: 0.6;
-    }
-
-    .button-low.active {
-      background-color: #8ae0db;
-      opacity: 1;
-    }
-
-    .button-ready {
-        background-color: #bfbfbf;
-        opacity: 0.6;
-
-        &.active {
-            background-color: $button-active;
-            opacity: 1;
-            cursor: pointer;
-        }
-    }
-
-    .button-low {
-        background-color: #bfbfbf;
-        opacity: 0.6;
-
-        &.active {
-            background-color: #ffb76b;
-            opacity: 1;
-            cursor: pointer;
-        }
-    }
-
-    .button-bot.active {
-        background-color: $button-color;
-        opacity: 1;
-        cursor: pointer;
-        text-align: center;
-      }
-
-    h2,
-    h3 {
-      font-family: $mainfont;
-      font-size: 24px;
-      font-weight: 700;
-      margin: 0;
-      color : #0a1931;
-    }
-
-    .avatar-choose {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-
-      img {
-        height: 80px;
-        width: 80px;
-        border-radius: 15px;
-        border: 1px solid black;
-        cursor: pointer;
-      }
-
-      .selected {
-        border: 3px solid $button-color;
-        transform: scale(1.05);
-      }
+      width : 70%;
+      cursor : pointer;
     }
   }
 }
 
-/* DESCRIPTION CONTENU GRATUIT ET PAYANT*/
+
+
+
+
+
+
+
+/* DESCRIPTION CONTENU GRATUIT */
 
 .free-content{
   display: flex;
   flex-direction: column ;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 300px;
-  width : 250px;
-  padding : 25px;
-  border-radius: 10px;
-  background-color: $color-modal;
-  border : 3px solid $button-active;
+  width : 200px;
+  padding : 20px;
+  border-radius: 5px;
+  background : rgba(27, 48, 83, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border : 3px solid rgba(44, 62, 92, 1);
+  color : $button-color;
+
 
   h3{
     display: flex;
     justify-content: center;
+    color : #b3926f;
+    font-size : 22px;
+    font-weight: 600;
   }
 
   p{
     font-family: $mainfont;
     font-size : 16px;
     font-weight : 500;
-    margin : 10px 0px 0px 0px;
-
+    margin : 10px 0px;
   }
 }
+
+/* DESCRIPTION CONTENU PAYANT*/
 
 .paying-container {
   display: flex;
@@ -226,28 +230,43 @@ body {
   align-items: center;
   justify-content: center;
   height: 300px;
-  width : 250px;
-  padding : 25px;
-  border-radius: 10px;
-  background-color: $color-modal;
-  border : 3px solid $button-active;
+  width : 200px;
+  padding : 20px;
+  border-radius: 5px;
+  background : rgba(27, 48, 83, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border : 3px solid rgba(44, 62, 92, 1);
 
-  .button-container{
+  .content-description{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    color : $button-color;
+  }
 
-      .button-premium {
-        display: flex;
-        justify-content: center;
-        background-color: $button-active;
-        border-radius: 15px;
-        padding : 10px 20px;
-        font-weight: 600;
+  .paying-content{
+    display: flex;
+    flex-direction: column;
 
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.05);
+    .button-container{
+      display: flex;
+      justify-content: center;
+      margin-top : 10px;
+
+        .button-premium {
+          display: flex;
+          justify-content: center;
+          background-color: $button-active;
+          color : $button-writting-color;
+          border-radius: 15px;
+          padding : 10px 20px;
+          font-weight: 700;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -258,45 +277,45 @@ body {
     justify-content: center;
     font-size : 24px;
     font-weight: 600;
-    margin-bottom : 30px;
   }
 
   p{
     font-family: $mainfont;
     font-size : 16px;
     font-weight : 500;
-    margin-top : 15px;
+    margin : 15px 0px;
   }
 
 }
 
+/* Collapses */
 
 .info-collapses {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin: 25px 0px 40px 0px;
 
   .collapse {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
-    width : 550px;
+    width : 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    color : $button-writting-color;
 
     .collapse-header {
       all: unset;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $button-color;
       padding: 10px 0px;
       cursor: pointer;
       font-family: $mainfont;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 20px;
       width : 100%;
       z-index: 1;
-      height : 40px;
+      background : $button-color;
 
       &:hover {
         background-color: $button-active;
@@ -304,7 +323,7 @@ body {
     }
 
     .collapse-content {
-      background-color: $color-modal;
+      background : $color-modal;
       padding: 5px 20px;
       font-family: $mainfont;
       font-size: 16px;
@@ -314,6 +333,7 @@ body {
       p{
         font-weight: 500;
         font-size : 16px;
+        color : $button-writting-color;
       }
     }
   }

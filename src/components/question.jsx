@@ -78,10 +78,6 @@ const Question = () => {
     return (
       <div className="waiting-screen">
         <p>Chargement de la partie...</p>
-        <img
-          src="/illustration-chapitre-1023.png"
-          alt="Illustration du chapitre 1023 de One Piece"
-        />
       </div>
     );
   }

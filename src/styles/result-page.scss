@@ -2,14 +2,27 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  
-  padding: 20px;
-  margin-top : 50px;
+  align-items: center;
+  height: 100dvh; /* dynamic viewport height, plus précis et standardisé que vh (viewport height) */
+  justify-content: space-between;
 
   h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 40px;
     color: #fff;
+  }
+
+  .return-salon-container {
+    
+    button {
+      color : #f0d8b6;
+      font-size : 22px;
+
+      &:hover {
+        color : #b3926f;
+      }
+    }
   }
 
   .player-rank{

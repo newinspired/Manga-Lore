@@ -185,7 +185,7 @@
 
     {
         "id": 831,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel membre de l’équipage du Chapeau de Paille sur Punk Hazard, a plongé dans un lac glacé sous la pressions du gaz pour récupérer une partie du corps de Kinemon ?",
         "answer": "Sanji (dans le corps de Nami)"
     },
@@ -282,7 +282,7 @@
     {
         "id": 847,
         "difficulty": "medium",
-        "question": "Quels sont les trois capitaines pirates membres des Supernovas qui  se sont alliés dans le Nouveau Monde ?",
+        "question": "Quels sont les trois capitaines pirates membres des Supernovas qui  se sont alliés dans le Nouveau Monde afin de vaincre Shanks le Roux ?",
         "answer": "Eustass Kidd, Basil Hawkins et Scratchmen Apoo"
     },
     {
@@ -473,8 +473,8 @@
     {
         "id": 877,
         "difficulty": "difficult",
-        "question": "Quel pirate participant aux jeux du Colisée à Dressrosa a failli mourir en affrontant Monkey D. Garp par le passé, et voue désormais une haine envers toute sa famille ?",
-        "answer": "Don Chinjao"
+        "question": "Quel pirate participant aux jeux du Colisée à Dressrosa a failli mourir en affrontant Monkey D. Garp par le passé, et vouait une haine envers toute sa famille ?",
+        "answer": "Don Chinjao" 
     },
     {
         "id": 878,
@@ -670,10 +670,143 @@
     },
     {
         "id": 910,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Comment tous les habitants de Dressrosa et les combattants transformés en jouets ont-ils retrouvé leur apparence humaine à Dressrosa ?",
         "answer": "Sugar a perdu connaissance, annulant ainsi son pouvoir de transformation"
+    },
+    {
+        "id": 911,
+        "difficulty": "easy",
+        "question": "Quel membre de l’équipage du Chapeau de Paille utilise la technique « Gigantesco Mano » au combat ?",
+        "answer": "Nico Robin"
+    },
+    {
+        "id": 912,
+        "difficulty": "difficult",
+        "question": "Quel samouraï du Pays de Wano, capable de donner vie à des formes qu’il dessinait excessivement mal, a été capturé par l’équipage de Don Quichotte Doflamingo ?",
+        "answer": "Kanjuro l’Orageux"
+    }, 
+    {
+        "id": 913,
+        "difficulty": "easy",
+        "question": "Quel épéiste est célèbre pour son style unique utilisant trois sabres ?",
+        "answer": "Roronoa Zoro"
+    },
+    {
+        "id": 914,
+        "difficulty": "medium",
+        "question": "Quel est le véritable nom complet du capitaine pirate de l’équipage du Heart ?",
+        "answer": "Trafalgar D. Water Law"
+    },
+    {
+        "id": 915,
+        "difficulty": "medium",
+        "question": "Quel est le pouvoir du Fruit du Démon mangé par Don Quijote Rosinante ?",
+        "answer": "Permet de créer des espaces insonorisés invisibles (Nagi Nagi no Mi)"
+    },
+    {
+        "id": 916,
+        "difficulty": "medium",
+        "question": "Comment se nomme la princesse du royaume Tontatta, et par quel comportement remarque-t-on qu’elle éprouve des sentiments pour Léo ?",
+        "answer": "La Princesse Manshelly"
+    },
+    {
+        "id": 917,
+        "difficulty": "difficult",
+        "question": "Comment appelle-t-on la seconde personnalité de Cavendish qui prend parfois le contrôle de son corps ?",
+        "answer": " Hakuba"
+    },
+    {
+        "id": 918,
+        "difficulty": "medium",
+        "question": "Quelle est la capacité des larmes de Manshelly, la princesse des Tontattas ?",
+        "answer": "Elles peuvent guérir les blessures."
+    },
+    {
+        "id": 919,
+        "difficulty": "medium",
+        "question": "Quel membre de l’équipage des Mugiwara a vaincu Señor Pink lors du combat de l’usine de Smile à Dressrosa ?",
+        "answer": "Franky"
+    },
+    {
+        "id": 920,
+        "difficulty": "medium",
+        "question": "Qui a vaincu Diamante dans le champ de tournesols sur Dressrosa ?",
+        "answer": "Kyros"
+    },
+    {
+        "id": 921,
+        "difficulty": "medium",
+        "question": "Qui a protégé Rebecca durant l’affrontement entre Kyros et Diamante afin de ne pas gêner son père ?",
+        "answer": "Nico Robin"
+    },
+    {
+        "id": 922,
+        "difficulty": "medium",
+        "question": "Quel épéiste a vaincu Pica sur Dressrosa en le tranchant en deux malgré la taille gigantesque de son corps de pierre ?",
+        "answer": "Roronoa Zoro"
+    },
+    {
+        "id": 923,
+        "difficulty": "medium",
+        "question": "Quel sabreur affirme que n’importe quelle lame peut devenir une lame noire si son utilisateur la maîtrise parfaitement ?",
+        "answer": "Dracule Mihawk"
+    },
+    {
+        "id": 924,
+        "difficulty": "medium",
+        "question": "Quels sont les deux détenteurs du fluide royal dont les haki se sont entrechoqué lors de leur affrontement au Palais-Royal de Dressrosa ?",
+        "answer": "Monkey D. Luffy et Don Quichotte Doflamingo"
+    },
+
+
+
+
+
+
+    {
+        "id": 925,
+        "difficulty": "easy",
+        "question": "Comment se nomme la forme que Luffy utilise pour la première fois contre Doflamingo à Dressrosa, lui donnant une structure musculaire impressionnante ?",
+        "answer": "Le Gear Fourth"
+    },
+    {
+        "id": 926,
+        "difficulty": "easy",
+        "question": "Doflamingo nous apprend à Dressrosa que \"les pouvoirs des démons peuvent atteindre un stade supérieur\", à quoi fait-il référence ?",
+        "answer": "L'Éveil des Fruits du Démon"
+    },
+    {
+        "id": 927,
+        "difficulty": "easy",
+        "question": "Quelle était la seule manière d'arrêter la progression de la \"Cage à oiseaux\" à l'arc de Dressrosa ?",
+        "answer": "Vaincre Don Quijote Doflamingo"
+    },
+    {
+        "id": 928,
+        "difficulty": "medium",
+        "question": "A la fin de l'arc de Dressrosa, quel personnage présente ses excuses au peuple au nom du gouvernement mondial pour toutes les souffrances causées par Doflamingo ?",
+        "answer": "Fujitora"
+    },
+    {
+        "id": 929,
+        "difficulty": "medium",
+        "question": "Sur quel continent, la terre sainte de Marie Joie se situe-t-elle ?",
+        "answer": "Red Line"
+    },
+    {
+        "id": 930,
+        "difficulty": "medium",
+        "question": "Qui est décrit comme étant : \"La créature la puissante qui existe\" ?",
+        "answer": "Kaido aux Cent Bêtes"
+    },
+    {
+        "id": 931,
+        "difficulty": "medium",
+        "question": "Quel pirate fait sa première apparition en sautant volontairement dans le vide depuis une île céleste sans réussir à mourir ?",
+        "answer": "Kaido aux Cent Bêtes"
     }
+       
 
 
 
@@ -681,7 +814,7 @@
 
 
 
-
+ 
 
 
 

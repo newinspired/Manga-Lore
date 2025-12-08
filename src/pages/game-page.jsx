@@ -8,7 +8,7 @@ function GamePage() {
   const { username, avatar } = location.state || {};
 
   return (
-    <div>
+    <div className='container-game-page'>
       <Question username={username} avatar={avatar} roomCode={room} />
     </div>
   );
