@@ -796,29 +796,71 @@
     },
     {
         "id": 930,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Qui est décrit comme étant : \"La créature la puissante qui existe\" ?",
         "answer": "Kaido aux Cent Bêtes"
     },
     {
         "id": 931,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quel pirate fait sa première apparition en sautant volontairement dans le vide depuis une île céleste sans réussir à mourir ?",
         "answer": "Kaido aux Cent Bêtes"
+    }, 
+
+
+    {
+        "id": 932,
+        "difficulty": "difficult",
+        "question": "Comment se nomme la vice-amirale de la Marine surnommée la Grande Conseillère ?",
+        "answer": "Tsuru"
+    },
+    {
+        "id": 933,
+        "difficulty": "easy",
+        "question": "Qui est le petit frère biologique de Don Quichotte Doflamingo ?",
+        "answer": "Don Quichotte Rosinante - Corazon"
+    },
+    {
+        "id": 934,
+        "difficulty": "difficult",
+        "question": "Qui devient princesse héritière du royaume de Dressrosa après la chute de Don Quichotte Doflamingo ?",
+        "answer": "Violette - Riku Viola"
+    },
+    {
+        "id": 935,
+        "difficulty": "medium",
+        "question": "Pourquoi Rebecca demande-t-elle à Viola de devenir princesse de Dressrosa à sa place ?",
+        "answer": "Parce qu’elle veut simplement vivre avec son père Kyros."
+    },
+    {
+        "id": 936,
+        "difficulty": "medium",
+        "question": "Pourquoi l’amiral Fujitora laisse-t-il Luffy s’échapper de Dressrosa alors qu’il devait capturer sa tête ?",
+        "answer": "Parce qu’il est impressionné par la droiture de Luffy" 
+    },
+    {
+        "id": 937,
+        "difficulty": "medium",
+        "question": "Quel pirate, fervent admirateur de l’équipage du Chapeau de Paille, leur prête allégeance après les événements de Dressrosa ?",
+        "answer": "Bartolomeo"
+    },
+    {
+        "id": 938,
+        "difficulty": "medium",
+        "question": "Quel pirate, capitaine de l’équipage des géants, prête allégeance à l’équipage du Chapeau de Paille après les événements de Dressrosa ?",
+        "answer": "Hajrudin"
+    },
+    {
+        "id": 939,
+        "difficulty": "difficult",
+        "question": "Quel capitaine pirate, membre de l’Ordre des Sept Grands Corsaires, affirme être le fils biologique de Barbe Blanche ?",
+        "answer": "Edward Weeble"
+    },
+    {
+        "id": 940,
+        "difficulty": "easy",
+        "question": "Dans quelle prison Doflamingo a-t-il été incarcéré après avoir été renversé du trône de Dressrosa ?",
+        "answer": "Impel Down"
     }
-       
-
-
-
-
-
-
-
- 
-
-
-
-
-
 
 ]

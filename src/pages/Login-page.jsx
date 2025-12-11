@@ -125,7 +125,7 @@ function LoginPage({ setUsername, setRoomCode }) {
         <div className='paying-container'>
           <div className='content-description'>
             <div className='paying-content'>
-              <h3>GO PRENIUM !</h3>
+              <h3>GO PREMIUM !</h3>
               <div>
                 <p>- Unlock all arcs — from East Blue to the very latest chapters !</p>
                 <p>- 800 additional high-quality questions</p>
