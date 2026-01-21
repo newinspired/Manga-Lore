@@ -7,13 +7,13 @@ import ModalAvatar from '../components/modal-avatar.jsx';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
 
-import luffy from '../assets/avatars-color/luffy5.jpg';
-import sanji from '../assets/avatars-color/sanji5.jpg';
-import nami from '../assets/avatars-color/nami5.jpg';
+import luffy from '../assets/avatars-color/luffy6.jpg';
+import zoro from '../assets/avatars-color/zoro.jpg';
+import sanji from '../assets/avatars-color/sanji2.jpg';
 
-import ace from '../assets/avatars-color/ace5.jpg';
-import sabo from '../assets/avatars-color/sabo5.jpg';
-import law from '../assets/avatars-color/law5.jpg';
+import chopper from '../assets/avatars-color/chopper2.jpg';
+import nami from '../assets/avatars-color/nami2.jpg';
+import robin from '../assets/avatars-color/robin3.jpg';
 
 
 
@@ -22,11 +22,11 @@ function LoginPage({ setUsername, setRoomCode }) {
   const modalRef = useRef(null);
   const avatarOptions = [
     { name: 'luffy', src: luffy },
-    { name: 'ace', src: ace },
+    { name: 'zoro', src: zoro },
     { name: 'sanji', src: sanji },
     { name: 'nami', src: nami },
-    { name: 'sabo', src: sabo },
-    { name: 'law', src: law },
+    { name: 'chopper', src: chopper },
+    { name: 'robin', src: robin },
   
   ];
 
