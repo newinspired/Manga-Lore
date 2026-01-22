@@ -18,20 +18,23 @@ function SalonPage() {
   const [players, setPlayers] = useState([]);
   const [selectedArcs, setSelectedArcs] = useState([]);
   const hasJoinedRef = useRef(false);
+  const isPremiumUser = false;
+
 
   const allArcs = [
-    { label: 'East Blue', value: 'EastBlue' },
-    { label: 'Alabasta', value: 'Alabasta' },
-    { label: 'Skypiea', value: 'Skypiea' },
-    { label: 'Water Seven', value: 'WaterSeven' },
-    { label: 'Thriller Bark', value: 'ThrillerBark' },
-    { label: 'MarineFord', value: 'MarineFord' },
-    { label: 'Fish-Man Island', value: 'FishManIsland' },
-    { label: 'Punk Hazard/Dressrosa', value: 'Dressrosa' },
-    { label: 'Whole Cake Island', value: 'WholeCakeIsland' },
-    { label: 'Wano', value: 'Wano' },
-    { label: 'Egg head', value: 'Egg head' },
-    { label: 'Erbaf', value: 'Erbaf' },
+    { label: 'East Blue', value: 'EastBlue', isPremium: false},
+    { label: 'Alabasta', value: 'Alabasta', isPremium: false },
+    { label: 'Skypiea', value: 'Skypiea', isPremium: false },
+    { label: 'Water Seven', value: 'WaterSeven', isPremium: false },
+    { label: 'Thriller Bark', value: 'ThrillerBark', isPremium: false },
+    { label: 'MarineFord', value: 'MarineFord', isPremium: false },
+
+    { label: 'Fish-Man Island', value: 'FishManIsland', isPremium: true },
+    { label: 'Punk Hazard/Dressrosa', value: 'Dressrosa', isPremium: true },
+    { label: 'Whole Cake Island', value: 'WholeCakeIsland' , isPremium: true},
+    { label: 'Wano', value: 'Wano', isPremium: true },
+    { label: 'Egg head', value: 'Egg head', isPremium: true},
+    { label: 'Erbaf', value: 'Erbaf', isPremium: true },
   ];
 
   // Rejoint la room au chargement ou après reconnexion socket

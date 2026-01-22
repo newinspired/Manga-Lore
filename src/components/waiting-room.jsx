@@ -9,6 +9,7 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
   const [isReady, setIsReady] = useState(false);
   const navigate = useNavigate();
   const { room } = useParams();
+  const isPremiumUser = false;
 
   useEffect(() => {
     onPlayerListUpdate((updatedPlayers) => {
@@ -100,12 +101,13 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
           </h3>
         </div>
         <div className="arc-buttons">
-          {allArcs.map(({ label, value }) => {
+          {allArcs.map(({ label, value, isPremium }) => {
+            const isLocked = isPremium && !isPremiumUser;
             return (
               <button
                 key={value}
                 className={`arc-button ${value.toLowerCase()} ${selectedArcs.includes(value) ? "selected" : ""}`}
-                disabled={!isHost}
+                disabled={!isHost || isLocked}
                 onClick={() => {
                   if (!isHost) return;
 

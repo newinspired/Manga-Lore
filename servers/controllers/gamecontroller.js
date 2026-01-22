@@ -324,7 +324,7 @@ function sendNextQuestion(io, roomCode, games) {
     return;
   }
 
-  const QUESTION_TIME_SECONDS = 3;
+  const QUESTION_TIME_SECONDS = 15;
   let timeLeft = QUESTION_TIME_SECONDS;
 
   io.to(roomCode).emit('newQuestion', { question, timeLeft });

@@ -13,11 +13,11 @@ const Header = () => {
           <h1>MANGA LORE</h1>
         </div>
         <div className="login-header">
-          <Link to="/login">
-            <button>Login</button>
-          </Link>
           <Link to="/register">
             <button>Signup</button>
+          </Link>
+          <Link to="/login">
+            <button>Login</button>
           </Link>
         </div>
       </div>

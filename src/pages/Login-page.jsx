@@ -17,7 +17,7 @@ import robin from '../assets/avatars-color/robin3.jpg';
 
 
 
-function LoginPage({ setUsername, setRoomCode }) {
+function LoginPage() {
   const navigate = useNavigate();
   const modalRef = useRef(null);
   const avatarOptions = [
@@ -50,8 +50,6 @@ function LoginPage({ setUsername, setRoomCode }) {
     setRoomInput(code);
 
     const avatarObj = avatarOptions.find(a => a.name === selectedAvatar);
-    setUsername(trimmedInput);
-    setRoomCode(code);
 
     localStorage.setItem('username', trimmedInput);
     localStorage.setItem('roomCode', code);
@@ -71,8 +69,6 @@ function LoginPage({ setUsername, setRoomCode }) {
     if (!isFormValid) return;
 
     const avatarObj = avatarOptions.find(a => a.name === selectedAvatar);
-    setUsername(trimmedInput);
-    setRoomCode(trimmedRoom);
 
     localStorage.setItem('username', trimmedInput);
     localStorage.setItem('roomCode', trimmedRoom);
@@ -88,7 +84,6 @@ function LoginPage({ setUsername, setRoomCode }) {
     });
   };
 
-  // 👇 Ferme le champ "Join private game" si on clique en dehors de la modal
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {

@@ -1,4 +1,5 @@
 import { io } from "socket.io-client";
+import { getAuth } from "firebase/auth";
 
 
 const socket = io("http://localhost:3001", {
@@ -64,6 +65,32 @@ export function onStartGame(callback) {
 
 export function sendSelectedArcs(roomCode, arcs) {
   socket.emit("selectedArcs", roomCode, arcs);
+}
+
+export async function authenticateSocketIfNeeded() {
+  const auth = getAuth();
+  const user = auth.currentUser;
+
+  if (!user) {
+    console.log("👻 Joueur invité");
+    return;
+  }
+
+  const token = await user.getIdToken();
+
+  socket.emit("authenticate", {
+    token,
+    username: user.displayName,
+    avatar: user.photoURL,
+  });
+}
+
+export function onAuthenticated(callback) {
+  socket.on("authenticated", callback);
+}
+
+export function onAuthError(callback) {
+  socket.on("authError", callback);
 }
 
 
