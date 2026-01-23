@@ -8,7 +8,7 @@ import Header from '../components/header.jsx';
 import '../styles/card-name.scss';
 import '../styles/salon-page.scss';
 
-function SalonPage() {
+function SalonPage({ userData }) {
   const { room } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
@@ -18,7 +18,8 @@ function SalonPage() {
   const [players, setPlayers] = useState([]);
   const [selectedArcs, setSelectedArcs] = useState([]);
   const hasJoinedRef = useRef(false);
-  const isPremiumUser = false;
+
+  const isPremiumUser = userData?.isPremium;
 
 
   const allArcs = [
@@ -132,7 +133,7 @@ function SalonPage() {
 
   return (
     <div className="container">
-      <Header />
+      <Header userData={userData} />
       <div className="container-salon">
         <div className="container-waiting">
           <WaitingRoom
@@ -142,6 +143,7 @@ function SalonPage() {
             allArcs={allArcs}
             selectedArcs={selectedArcs}
             setSelectedArcs={setSelectedArcs}
+            isPremiumUser={isPremiumUser}
           />
         </div>
 

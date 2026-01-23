@@ -17,7 +17,7 @@ import robin from '../assets/avatars-color/robin3.jpg';
 
 
 
-function LoginPage() {
+function LoginPage({ userData }) {
   const navigate = useNavigate();
   const modalRef = useRef(null);
   const avatarOptions = [
@@ -115,7 +115,7 @@ function LoginPage() {
 
   return (
     <div className="login-page">
-      <Header />
+      <Header userData={userData} />
       <div className="login-wrapper">
         <div className='paying-container'>
           <div className='content-description'>

@@ -4,12 +4,11 @@ import { useParams, useNavigate } from 'react-router-dom';
 import socket, { sendPlayerReady, onPlayerListUpdate, offPlayerListUpdate, sendSelectedArcs } from '../socket';
 import '../styles/waiting-room.scss';
 
-function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs }) {
+function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs, isPremiumUser }) {
   const [players, setPlayers] = useState([]);
   const [isReady, setIsReady] = useState(false);
   const navigate = useNavigate();
   const { room } = useParams();
-  const isPremiumUser = false;
 
   useEffect(() => {
     onPlayerListUpdate((updatedPlayers) => {
