@@ -106,7 +106,7 @@ body {
       input, button {
         padding : 10px 20px;
         width : 60%;
-        font-size: 18px;
+        font-size: clamp(16px, 2vw, 20px);
         background-color : $button-color;
 
         &:hover {
@@ -160,7 +160,7 @@ body {
       button {
         padding : 10px 0px;
         width : 70%;
-        font-size: 18px;
+        font-size: clamp(16px, 2vw, 20px);
         background-color : $button-color;
 
         &:hover {
@@ -219,6 +219,7 @@ body {
     font-size : 16px;
     font-weight : 500;
     margin : 10px 0px;
+    color: $button-color;
   }
 }
 
@@ -248,6 +249,10 @@ body {
   .paying-content{
     display: flex;
     flex-direction: column;
+
+    p{
+      color : $button-color;
+    }
 
     .button-container{
       display: flex;

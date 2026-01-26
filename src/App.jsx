@@ -8,8 +8,8 @@ import SalonPage from "./pages/Salon-page";
 import GamePage from "./pages/game-page";
 import ResultPage from "./pages/Result-page";
 import CorrectionPage from "./pages/CorrectionPage";
-import Login from "./components/login";
-import RegisterPage from "./components/register";
+import RegisterPage from "./pages/Register";
+import Checkout from "./pages/Checkout";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -27,7 +27,7 @@ function App() {
       if (currentUser) {
         setUserData({
           isLoggedIn: true,
-          username: currentUser.email,
+          username: currentUser.displayName,
           isPremium: false,
         });
       } else {
@@ -46,8 +46,8 @@ function App() {
   return (
     <Routes>
 
-      <Route path="/login" element={<Login />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/checkout" element={<Checkout />} />
 
       <Route path="/" element={<LoginPage userData={userData} />} />
       <Route path="/salon/:room" element={<SalonPage userData={userData} />} />

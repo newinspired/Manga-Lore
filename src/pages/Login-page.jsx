@@ -43,6 +43,15 @@ function LoginPage({ userData }) {
   const [showRules, setShowRules] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
 
+  const handleBuyPremium = () => {
+    if (!userData?.isLoggedIn) {
+      localStorage.setItem("redirectAfterLogin", "/checkout");
+      navigate("/register");
+    } else {
+      navigate("/checkout");
+    }
+  };
+
   const handleCreateGame = () => {
     if (trimmedInput === '') return;
 
@@ -117,21 +126,24 @@ function LoginPage({ userData }) {
     <div className="login-page">
       <Header userData={userData} />
       <div className="login-wrapper">
-        <div className='paying-container'>
+        {showAvatarModal ? (
+          <ModalAvatar
+            avatarOptions={avatarOptions}
+            selectedAvatar={selectedAvatar}
+            onSelect={setSelectedAvatar}
+            onClose={() => setShowAvatarModal(false)}
+          />
+        ) : (
           <div className='content-description'>
-            <div className='paying-content'>
-              <h3>GO PREMIUM !</h3>
-              <div>
-                <p>- Unlock all arcs — from East Blue to the very latest chapters !</p>
-                <p>- 800 additional high-quality questions</p>
-                <p>- Support the project and help us keep expanding the adventure !</p>
-              </div>
-              <div className='button-container'>
-                <button className='button-premium'> BUY IT </button>
-              </div>
+            <div className="free-content">
+              <h3>Play for free !</h3>
+                <p>- Test your knowledge of the One Piece world — solo or with your friends !</p>
+                <p>- Not up to date ? No problem ! Choose the arcs you want to be quizzed on.</p>
+                <p>- 400 questions covering the journey from East Blue to Marineford !</p>
             </div>
           </div>
-        </div>
+        )}
+  
         <div className="modal-login" ref={modalRef}>
           <div className='section-one-piece-game-title'>
             <h3>ONE PIECE - GAME</h3>
@@ -226,23 +238,26 @@ function LoginPage({ userData }) {
           </div>
         </div>
 
-        {showAvatarModal ? (
-          <ModalAvatar
-            avatarOptions={avatarOptions}
-            selectedAvatar={selectedAvatar}
-            onSelect={setSelectedAvatar}
-            onClose={() => setShowAvatarModal(false)}
-          />
-        ) : (
+        <div className='paying-container'>
           <div className='content-description'>
-            <div className="free-content">
-              <h3>Play for free !</h3>
-                <p>- Test your knowledge of the One Piece world — solo or with your friends !</p>
-                <p>- Not up to date ? No problem ! Choose the arcs you want to be quizzed on.</p>
-                <p>- 400 questions covering the journey from East Blue to Marineford !</p>
+            <div className='paying-content'>
+              <h3>GO PREMIUM !</h3>
+              <div>
+                <p>- Unlock all arcs — from East Blue to the very latest chapters !</p>
+                <p>- 800 additional high-quality questions</p>
+                <p>- Support the project and help us keep expanding the adventure !</p>
+              </div>
+              <div className='button-container'>
+                <button
+                  className="button-premium"
+                  onClick={handleBuyPremium}
+                >
+                  BUY IT
+                </button>
+              </div>
             </div>
           </div>
-        )}
+        </div>
       </div>
       
       <Footer />

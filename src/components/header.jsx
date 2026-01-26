@@ -18,17 +18,16 @@ const Header = ({ userData }) => {
         </div>
 
         <div className='header-banner'>
-          <h1>MANGA LORE</h1>
+          <h1>
+            <span className="logo-j">J</span>OURNEY LORE
+          </h1>
         </div>
 
         <div className="login-header">
           {!userData?.isLoggedIn ? (
             <>
               <Link to="/register">
-                <button>Signup</button>
-              </Link>
-              <Link to="/login">
-                <button>Login</button>
+                <button>Sign up/Log in</button>
               </Link>
             </>
           ) : (
@@ -38,7 +37,7 @@ const Header = ({ userData }) => {
               </span>
 
               <span className={`status ${userData.isPremium ? "premium" : "free"}`}>
-                {userData.isPremium ? "Premium" : "Free"}
+                {userData.isPremium ? "Premium" : "Free content"}
               </span>
 
               <button onClick={handleLogout}>

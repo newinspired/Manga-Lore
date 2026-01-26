@@ -3,8 +3,19 @@
 
 $mainfont: 'Fraunces', serif;
 $maincolorfont: #e3c494;
+$otherfont: 'Cormorant Garamond', serif;
 
 $background-header: #d1e2f3;
+
+.logo-j {
+  position: relative;
+  font-family: serif;
+  font-size: 37px;
+  font-weight: 400;
+  margin : 0px;
+  padding: 0px;
+  color : $maincolorfont;
+}
 
 header{
   position: relative;
@@ -63,6 +74,13 @@ header{
       display: flex;
       justify-content: center;
       gap: 40px;
+
+      .user-info{
+        display: flex;
+        gap : 2vw;
+        color : $maincolorfont;
+        font-size: clamp(18px, 2vw, 19px);
+      }
 
       a{
         font-weight: 600;
