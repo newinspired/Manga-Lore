@@ -35,7 +35,7 @@ function SalonPage({ userData }) {
     { label: 'Whole Cake Island', value: 'WholeCakeIsland' , isPremium: true},
     { label: 'Wano', value: 'Wano', isPremium: true },
     { label: 'Egg head', value: 'Egg head', isPremium: true},
-    { label: 'Erbaf', value: 'Erbaf', isPremium: true },
+    { label: 'Erbaf', value: 'Elbaf', isPremium: true },
   ];
 
   // Rejoint la room au chargement ou après reconnexion socket

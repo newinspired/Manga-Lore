@@ -3,7 +3,7 @@
         "id": 1001,
         "difficulty": "medium",
         "question": "Quelle est la signification de l'île de \"Zo\" ?",
-        "answer": "En japonais, « Zo » signifie éléphant"
+        "answer": "En japonais, \"Zo\" signifie \"éléphant\""
     },
     {
         "id": 1002,
@@ -64,12 +64,721 @@
         "difficulty": "easy",
         "question": "Quelle fille de Big Mom est la promise de Vinsmoke Sanji ?",
         "answer": "Charlotte Pudding"
+    },
+    {
+        "id": 1012,
+        "difficulty": "medium",
+        "question": "Quel personnage Jack la Sécheresse cherchait-il à capturer lorsqu’il a envahi et ravagé le pays de Zo ?",
+        "answer": "Raizo"
+    },
+    {
+        "id": 1013,
+        "difficulty": "medium",
+        "question": "Comment se nomme le dirigeant diurne du pays de Zo, membre de la tribu des Minks, ayant l’apparence d’un chien ?",
+        "answer": "Duc Caborage"
+    },
+    {
+        "id": 1014,
+        "difficulty": "difficult",
+        "question": "Par quel scientifique le gaz toxique ayant ravagé le pays de Zo lors de l’invasion de Jack la Sécheresse a-t-il été développé ?",
+        "answer": "Caesar Clown"
+    },
+    {
+        "id": 1015,
+        "difficulty": "medium",
+        "question": "Comment se nomme le dirigeant nocturne du pays de Zo, membre de la tribu des Minks, ayant l’apparence d’un félin ?",
+        "answer": "Maître Chavipère"
+    },
+    {
+        "id": 1016,
+        "difficulty": "difficult",
+        "question": "Pour quelle raison Jack la Sécheresse a-t-il quitté le pays de Zo après six jours de massacre sans achever l’extermination de la population ?",
+        "answer": "Donquixote Doflamingo a été déchu du trône de Dressrosa"
+    },
+    {
+        "id": 1017,
+        "difficulty": "medium",
+        "question": "Qui est le capitaine de l’équipage du Fire Tank, qui possédait une prime de 300 millions de berrys lors des événements de l’arc Zo ?",
+        "answer": "Capone \"Gang\" Bege"
+    },
+    {
+        "id": 1018,
+        "difficulty": "easy",
+        "question": "Qui est l’antagoniste principal de l’arc Zo, membre de l’équipage aux Cent Bêtes ?",
+        "answer": "Jack la Sécheresse"
+    },
+    {
+        "id": 1019,
+        "difficulty": "difficult",
+        "question": "Quel membre de l’équipage du Fire Tank est surnommé « la gâchette monstrueuse » ?",
+        "answer": "Vito"
+    },
+    {
+        "id": 1020,
+        "difficulty": "easy",
+        "question": "À quel pirate étaient principalement destinés les fruits artificiels SMILE produits par Donquixote Doflamingo ?",
+        "answer": "Kaido"
+    },
+    {
+        "id": 1021,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le Mink félin ayant le statut de chef des Guardians sur Zo ?",
+        "answer": "Pedro le Perché"
+    },
+    {
+        "id": 1022,
+        "difficulty": "difficult",
+        "question": "À quel équipage Maître Chavipère et Duc Caborage appartenaient-ils par le passé ?",
+        "answer": "L’équipage des pirates de Roger"
+    },
+    {
+        "id": 1023,
+        "difficulty": "easy",
+        "question": "Bien que le peuple des Minks ait failli être anéanti, quel samouraï ont-ils protégé au péril de leur vie ?",
+        "answer": "Raizo"
+    },
+    {
+        "id": 1024,
+        "difficulty": "easy",
+        "question": "À quel clan de samouraïs la tribu des Minks est-elle liée depuis des temps immémoriaux ?",
+        "answer": "Le clan Kozuki"
+    },
+    {
+        "id": 1025,
+        "difficulty": "easy",
+        "question": "Qui est le véritable père de Kozuki Momonosuke ?",
+        "answer": "Kozuki Oden"
+    },
+    {
+        "id": 1026,
+        "difficulty": "medium",
+        "question": "Quel type de ponéglyphe sert d’indicateur pour guider les plus grands pirates jusqu’à Laugh Tale ?",
+        "answer": "Les Road Ponéglyphes"
+    },
+    {
+        "id": 1027,
+        "difficulty": "medium",
+        "question": "Quelle précieuse pierre est cachée dans la forêt de la Baleine sur l’île de Zo ?",
+        "answer": "Un Road Ponéglyphe"
+    },
+    {
+        "id": 1028,
+        "difficulty": "medium",
+        "question": "Combien existe-t-il de Road Ponéglyphes à travers le monde ?",
+        "answer": "Quatre"
+    },
+    {
+        "id": 1029,
+        "difficulty": "medium",
+        "question": "Comment se nomme la dernière île de Grand Line ?",
+        "answer": "Laugh Tale"
+    },
+    {
+        "id": 1030,
+        "difficulty": "medium",
+        "question": "Quel clan a jadis fabriqué l’ensemble des ponéglyphes dispersés à travers le monde ?",
+        "answer": "Le clan Kozuki"
+    },
+    {
+        "id": 1031,
+        "difficulty": "easy",
+        "question": "Sur quel pays l’équipage aux Cent Bêtes de l’empereur Kaido règne-t-il ?",
+        "answer": "Le pays de Wano"
+    },
+    {
+        "id": 1032,
+        "difficulty": "medium",
+        "question": "Contre quel empereur l’alliance des ninjas, pirates, Minks et samouraïs a-t-elle été formée ?",
+        "answer": "Kaido aux Cent Bêtes"
+    },
+    {
+        "id": 1033,
+        "difficulty": "difficult",
+        "question": "Quel fruit du démon possède Jack la Sécheresse, membre de l’équipage aux Cent Bêtes ?",
+        "answer": "Un Zoan antique, modèle Mammouth (Zo Zo no Mi)"
+    },
+    {
+        "id": 1034,
+        "difficulty": "difficult",
+        "question": "Quels équipages pirates se sont affrontés lors de la guerre de Représailles ?",
+        "answer": "L’équipage de Barbe Noire contre l’équipage de Barbe Blanche dirigés par Marco"
+    },
+    {
+        "id": 1035,
+        "difficulty": "medium",
+        "question": "Quels sont les deux personnages capables d’entendre les paroles de Zunesha durant l'arc de Zo ?",
+        "answer": "Kozuki Momonosuke et Monkey D. Luffy"
+    },
+    {
+        "id": 1036,
+        "difficulty": "difficult",
+        "question": "Quel personnage, durant l’arc Zo, a donné l’ordre à Zunesha de détruire les navires de Jack la Sécheresse ?",
+        "answer": "Kozuki Momonosuke"
+    },
+    {
+        "id": 1037,
+        "difficulty": "easy",
+        "question": "Quelle réunion rassemblant les chefs d’État et têtes couronnées de cinquante pays a lieu tous les quatre ans ?",
+        "answer": "La Rêverie"
+    },
+    {
+        "id": 1038,
+        "difficulty": "medium",
+        "question": "Comment se nomme l’éléphant gigantesque qui porte l’île de Zo sur son dos ?",
+        "answer": "Zunesha"
+    },
+    {
+        "id": 1039,
+        "difficulty": "difficult",
+        "question": "Quel membre de l’équipage de Big Mom est originaire de la tribu des Longues-Jambes ?",
+        "answer": "Baron Deloeuf"
+    },
+    {
+        "id": 1040,
+        "difficulty": "medium",
+        "question": "Quel membre de l’équipage de Big Mom est un lion Mink apparu notamment sur l’île des Hommes-Poissons ?",
+        "answer": "Pekoms"
+    },
+    {
+        "id": 1041,
+        "difficulty": "difficult",
+        "question": "Quel personnage a fait remplacer la mention « Dead or Alive » sur l’avis de recherche de Sanji ?",
+        "answer": "Vinsmoke Judge"
+    },
+    {
+        "id": 1042,
+        "difficulty": "medium",
+        "question": "Comment se nomme l’archipel sous le contrôle de l’empereur Big Mom qui s’étend autour de Whole Cake Island ?",
+        "answer": "Totto Land"
+    },
+    {
+        "id": 1043,
+        "difficulty": "easy",
+        "question": "Quelle île du Nouveau Monde est sous le contrôle de Big Mom et se situe au centre de l’archipel Totto Land ?",
+        "answer": "Whole Cake Island (Île Tougato)"
+    },
+    {
+        "id": 1044,
+        "difficulty": "easy",
+        "question": "Comment se nomme la fille aînée de la famille Vinsmoke ?",
+        "answer": "Reiju Vinsmoke"
+    },
+    {
+        "id": 1045,
+        "difficulty": "easy",
+        "question": "Comment se nomme le quatrième fils de la famille Vinsmoke ?",
+        "answer": "Yonji Vinsmoke"
+    },
+    {
+        "id": 1046,
+        "difficulty": "medium",
+        "question": "À une dizaine d’enfants près, combien d’enfants Big Mom a-t-elle ?",
+        "answer": "85"
+    },
+    {
+        "id": 1047,
+        "difficulty": "medium",
+        "question": "Quel est le nom de l'organisation paramilitaire dirigé par la famille Vinsmoke ?",
+        "answer": "Germa 66"
+    },
+    {
+        "id": 1048,
+        "difficulty": "medium",
+        "question": "Quelle mer le Germa 66 a-t-il conquis par le passé ?",
+        "answer": "North Blue"
+    },
+    {
+        "id": 1049,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon mangé par Charlotte Brûlée ?",
+        "answer": "Le fruit du Miroir (Mira Mira no Mi)"
+    },
+    {
+        "id": 1050,
+        "difficulty": "medium",
+        "question": "Comment se nomment les objets ou créatures animés par le fruit du démon de Charlotte Linlin ?",
+        "answer": "Les Homies"
+    },
+    {
+        "id": 1051,
+        "difficulty": "medium",
+        "question": "Quel membre des Trois Généraux Sucrés de l’équipage de Big Mom est surnommé « aux mille bras » ?",
+        "answer": "Charlotte Cracker"
+    },
+    {
+        "id": 1052,
+        "difficulty": "medium",
+        "question": "Quelle fille de Big Mom a mangé le fruit du Miroir ?",
+        "answer": "Charlotte Brûlée"
+    },
+    {
+        "id": 1053,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon de Charlotte Cracker, affronté par Luffy dans la forêt de la Tentation ?",
+        "answer": "Le fruit du Biscuit (Bisu Bisu no Mi)"
+    },
+    {
+        "id": 1054,
+        "difficulty": "medium",
+        "question": "Qui est à la fois le dirigeant du Germa 66 et le roi du royaume de Germa ?",
+        "answer": "Vinsmoke Judge"
+    },
+    {
+        "id": 1055,
+        "difficulty": "medium",
+        "question": "À qui appartenait la carte de vie utilisée par Nami pour repousser les Homies dans la forêt de la Tentation ?",
+        "answer": "Une carte de vie de Big Mom"
+    },
+    {
+        "id": 1056,
+        "difficulty": "medium",
+        "question": "Quel membre des Trois Généraux Sucrés de l’équipage de Big Mom est issu de la tribu des Longues-Jambes ?",
+        "answer": "Charlotte Smoothie"
+    },
+    {
+        "id": 1057,
+        "difficulty": "medium",
+        "question": "Qui est le fils aîné de la famille Charlotte et le détenteur du fruit du démon du Bonbon ?",
+        "answer": "Charlotte Slurp"
+    },
+    {
+        "id": 1058,
+        "difficulty": "easy",
+        "question": "Quel membre de l’équipage du Chapeau de Paille est connu sous le surnom de « Soul King » ?",
+        "answer": "Brook"
+    },
+    {
+        "id": 1059,
+        "difficulty": "medium",
+        "question": "Comment se nomme la vaste zone maritime de Grand Line, située dans le Paradis, où régnait Gecko Moria à bord du Thriller Bark ?",
+        "answer": "Le Triangle de Florian"
+    },
+    {
+        "id": 1060,
+        "difficulty": "easy",
+        "question": "Durant l’arc Whole Cake Island, quel ancien membre des Grands Corsaires annonce solennellement son départ de l’équipage de Big Mom ?",
+        "answer": "Jinbe"
+    },
+    {
+        "id": 1061,
+        "difficulty": "easy",
+        "question": "À quel équipage Jinbe a-t-il promis de se joindre après avoir quitté celui de Big Mom ?",
+        "answer": "L’équipage du Chapeau de Paille"
+    }, 
+    {
+        "id": 1062,
+        "difficulty": "easy",
+        "question": "Quel empereur pirate surprend Brook alors qu’il s’apprête à copier le contenu du Road Ponéglyphe sur Whole Cake Island ?",
+        "answer": "Big Mom"
+    },
+    {
+        "id": 1063,
+        "difficulty": "medium",
+        "question": "Quelle découverte Sanji fait-il en écoutant discrètement une conversation entre Charlotte Pudding et sa sœur ?",
+        "answer": "Le troisième œil de Charlotte Pudding et ses réelles intentions"
+    },
+    {
+        "id": 1064,
+        "difficulty": "medium",
+        "question": "Quel était le véritable objectif de Big Mom lors du mariage arrangé entre Sanji et Charlotte Pudding ?",
+        "answer": "L’extermination de la famille Vinsmoke"
+    },
+    {
+        "id": 1065,
+        "difficulty": "medium",
+        "question": "De quelle tribu Charlotte Pudding est-elle issue ?",
+        "answer": "La tribu des Trois Yeux"
+    },
+    {
+        "id": 1066,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon mangé par Charlotte Pudding ?",
+        "answer": "Le fruit des Souvenirs (Memo Memo no Mi)"
+    },
+    {
+        "id": 1067,
+        "difficulty": "medium",
+        "question": "Quel pirate libère Nami et Luffy de la bibliothèque des prisonniers sur Whole Cake Island ?",
+        "answer": "Jinbe"
+    },
+    {
+        "id": 1068,
+        "difficulty": "medium",
+        "question": "Comment se nomme le chapeau de Big Mom, doté d’une conscience et orné d’une tête de mort et de deux épées croisées ?",
+        "answer": "Napoléon"
+    },
+    {
+        "id": 1069,
+        "difficulty": "easy",
+        "question": "Comment se nomme le nuage orageux contenant une partie de l’âme de Big Mom ?",
+        "answer": "Zeus"
+    },
+    {
+        "id": 1070,
+        "difficulty": "difficult",
+        "question": "Quel Homie possédant un fragment de l’âme de Big Mom porte le nom d’un titan de la mythologie grecque ?",
+        "answer": "Prométhée"
+    },
+    {
+        "id": 1071,
+        "difficulty": "medium",
+        "question": "À qui Luffy déclare-t-il, sur Whole Cake Island, que c’est dans sa nature d’aider les autres ?",
+        "answer": "Sanji"  
+    },
+    {
+        "id": 1072,
+        "difficulty": "easy",
+        "question": "Avec quel équipage, l’équipage du Chapeau de Paille s’allie-t-il temporairement durant l’arc Whole Cake Island ?",
+        "answer": "L’équipage du Fire Tank de Capone Bege"
+    },
+    {
+        "id": 1073,
+        "difficulty": "medium",
+        "question": "Comment se nomme le président du World Economy News Paper, détenteur du fruit du démon Tory Tory no Mi, modèle Albatros ?",
+        "answer": "Morgans"
+    },
+    {
+        "id": 1074,
+        "difficulty": "medium",
+        "question": "Quel agent du CP0, surnommée la « reine des quartiers de plaisir », apparaît durant l’arc Whole Cake Island ?",
+        "answer": "Stussy"
+    },
+    {
+        "id": 1075,
+        "difficulty": "difficult",
+        "question": "Pour le portrait de quelle femme Big Mom éprouve-t-elle une profonde affection, celle-ci l’ayant partiellement élevée durant son enfance ?",
+        "answer": "Mère Carmel"
+    },
+    {
+        "id": 1076,
+        "difficulty": "difficult",
+        "question": "Quel coffre appartenant autrefois à la famille royale Ryugu est ensuite entré en possession de Big Mom ?",
+        "answer": "Le coffre Tamate"
+    },
+    {
+        "id": 1077,
+        "difficulty": "medium",
+        "question": "À qui Charlotte Pudding a-t-elle initialement révélé ses véritables intentions concernant son mariage avant d’effacer sa mémoire ?",
+        "answer": "Reiju Vinsmoke"
+    },
+    {
+        "id": 1078,
+        "difficulty": "difficult",
+        "question": "Quel membre de l’équipage du Chapeau de Paille détruit le portrait de Mère Carmel durant la Tea Party de Whole Cake Island ?",
+        "answer": "Brook"
+    },
+    {
+        "id": 1079,
+        "difficulty": "medium",
+        "question": "Quel membre de l’équipage du Chapeau de Paille défie Big Mom sur Whole Cake Island ne craignant pas son pouvoir « Stay or Life » ?",
+        "answer": "Jinbe"
+    },
+    {
+        "id": 1080,
+        "difficulty": "easy",
+        "question": "Quel membre de l’équipage de Big Mom possède un Haki de l’Observation si avancé qu’il peut voir quelques instants dans le futur ?",
+        "answer": "Charlotte Katakuri"
+    },
+    {
+        "id": 1081,
+        "difficulty": "easy",
+        "question": "Quelles étaient les véritables intentions de l’équipage de Big Mom lors de la Tea Party concernant la famille Vinsmoke ?",
+        "answer": "Exterminer la famille Vinsmoke"
+    },
+    {
+        "id": 1082,
+        "difficulty": "medium",
+        "question": "Quel pirate parvient à récupérer le portrait brisé de Mère Carmel et à le présenter à Big Mom sous la pression de Katakuri ?",
+        "answer": "Monkey D. Luffy"
+    },
+    {
+        "id": 1083,
+        "difficulty": "medium",
+        "question": "Quel est le véritable prénom de Big Mom ?",
+        "answer": "Charlotte Linlin"
+    },
+    {
+        "id": 1084,
+        "difficulty": "easy",
+        "question": "Quelle impératrice pirate du Nouveau Monde est connue pour sa faiblesse envers les pâtisseries ?",
+        "answer": "Big Mom"
+    },
+    {
+        "id": 1085,
+        "difficulty": "medium",
+        "question": "Sur quelle île du Nouveau Monde Charlotte Linlin a-t-elle été abandonnée par ses parents à l’âge de cinq ans ?",
+        "answer": "Erbaf"
+    },
+    {
+        "id": 1086,
+        "difficulty": "easy",
+        "question": "Quel membre des Onze Supernovas est capable d’invoquer un gigantesque château armé de canons ?",
+        "answer": "Capone Bege"
+    },
+    {
+        "id": 1087,
+        "difficulty": "medium",
+        "question": "Quel membre de l’équipage du Chapeau de Paille libère la famille Vinsmoke, emprisonnée par les pouvoirs de Charlotte Slurp ?",
+        "answer": "Vinsmoke Sanji"
+    },
+    {
+        "id": 1088,
+        "difficulty": "difficult",
+        "question": "Quel est le pouvoir du fruit du démon de Charlotte Smoothie ?",
+        "answer": "Il lui permet d’essorer les êtres vivants et d’en extraire tous les liquides corporels"
+    },
+    {
+        "id": 1089,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le chef cuisinier de l’équipage de Big Mom, capable de transformer n’importe quelle chose en nourriture grâce à son fruit du démon ?",
+        "answer": "Streusen"
+    },
+    {
+        "id": 1090,
+        "difficulty": "easy",
+        "question": "Quel membre de la famille Vinsmoke possède cette capacité : \"Poison Pink\" ?",
+        "answer": "Reiju Vinsmoke"
+    },
+    {
+        "id": 1091,
+        "difficulty": "easy",
+        "question": "Quel membre des Onze Supernovas trahit l’équipage de Big Mom lors de la Tea Party de l’arc Whole Cake Island ?",
+        "answer": "Capone Bege"
+    },
+    {
+        "id": 1092,
+        "difficulty": "difficult",
+        "question": "Quel membre de la famille Charlotte possède le fruit du démon de l’Homme-Lampe, lui permettant d’invoquer un génie ?",
+        "answer": "Charlotte Daifuku"
+    },
+    {
+        "id": 1093,
+        "difficulty": "difficult",
+        "question": "Quel membre de l’équipage de Big Mom possède un fruit du démon de type Paramecia lui permettant d’atteindre des températures extrêmement élevées ?",
+        "answer": "Charlotte Oven"
+    },
+    {
+        "id": 1094,
+        "difficulty": "difficult",
+        "question": "Quelle est l’origine de l’explosion ayant provoqué l’effondrement du château de Whole Cake Island durant l’arc du même nom ?",
+        "answer": "L’explosion du coffre Tamate"
+    },
+    {
+        "id": 1095,
+        "difficulty": "difficult",
+        "question": "Quel personnage parvient à transformer le château de Whole Cake Island en gâteau à la dernière seconde afin de sauver l’équipage de Big Mom et les habitants de l’île ?",
+        "answer": "Streusen"
+    },
+    {
+        "id": 1096,
+        "difficulty": "difficult",
+        "question": "Comment se nomme la forêt de l’île de Zo, protégée par les Gardiens, qui dissimule un Road Ponéglyphe ?",
+        "answer": "La forêt de la Baleine"
+    },
+    {
+        "id": 1097,
+        "difficulty": "medium",
+        "question": "Comment se nomme la forêt située dans la partie sud-ouest de Whole Cake Island, célèbre pour ses illusions et ses dangers ?",
+        "answer": "La forêt de la Tentation"
+    },
+    {
+        "id": 1098,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le monarque de la forêt de la Tentation, prenant la forme d’un arbre gigantesque ?",
+        "answer": "King Baum"
+    },
+    {
+        "id": 1099,
+        "difficulty": "difficult",
+        "question": "Comment se nomment les petits nuages orageux dont Zeus raffole et que Nami lui offre pour le satisfaire ?",
+        "answer": "Les Black Balls"
+    },
+    {
+        "id": 1100,
+        "difficulty": "difficult",
+        "question": "Comment se nomme l’épouse de Capone Bege, membre de la famille Charlotte ?",
+        "answer": "Charlotte Chiffon"
+    },
+    {
+        "id": 1101,
+        "difficulty": "difficult",
+        "question": "Quel membre de la famille Charlotte est la sœur jumelle de Charlotte Chiffon ?",
+        "answer": "Charlotte Laura"
+    },
+    {
+        "id": 1102,
+        "difficulty": "medium",
+        "question": "Quelle entité aide Nami à déclencher un éclair dévastateur qui frappe de plein fouet Big Mom durant l’arc Whole Cake Island ?",
+        "answer": "Zeus"
+    },
+    {
+        "id": 1103,
+        "difficulty": "medium",
+        "question": "Quel personnage perd la vie sur Whole Cake Island en se sacrifiant lors d’une puissante explosion afin de permettre à l’équipage du Chapeau de Paille de s’échapper ?",
+        "answer": "Pedro"
+    },
+    {
+        "id": 1104,
+        "difficulty": "difficult",
+        "question": "Dans quel monde Monkey D. Luffy et Charlotte Katakuri s’affrontent-ils lors de leur combat sur Whole Cake Island ?",
+        "answer": "Le monde des miroirs"
+    },
+    {
+        "id": 1105,
+        "difficulty": "medium",
+        "question": "À cent millions de berrys près, quel est le montant de la prime de Charlotte Katakuri durant les événements de l’arc Whole Cake Island ?",
+        "answer": "1 milliard 57 millions de berrys"
+    },
+    {
+        "id": 1106,
+        "difficulty": "medium",
+        "question": "Quel est le montant de la prime de l’empereur Big Mom ?",
+        "answer": "4 milliards 380 millions de berrys"
+    },
+    {
+        "id": 1107,
+        "difficulty": "difficult",
+        "question": "Quelle partie du corps Charlotte Slurp a-t-il perdue lors du sacrifice de Pedro sur Whole Cake Island ?",
+        "answer": "Sa main droite"
+    },
+    {
+        "id": 1108,
+        "difficulty": "easy",
+        "question": "Quel membre de l’équipage du Chapeau de Paille occupe le poste de timonier ?",
+        "answer": "Jinbe"
+    },
+    {
+        "id": 1109,
+        "difficulty": "medium",
+        "question": "Quels sont les pouvoirs du fruit du démon de Charlotte Katakuri ?",
+        "answer": "Permet de créer et de manipuler du riz gluant (Mochi Mochi no Mi)"
+    },
+    {
+        "id": 1110,
+        "difficulty": "easy",
+        "question": "Pourquoi Charlotte Katakuri refuse-t-il d’être observé lorsqu’il mange ?",
+        "answer": "Parce qu’il ne veut pas révéler son véritable visage"
+    },
+    {
+        "id": 1111,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le vice-capitaine de l’équipage des Pirates du Soleil durant l'arc de Whole Cake Island ?",
+        "answer": "Aladin"
+    },
+    {
+        "id": 1112,
+        "difficulty": "difficult",
+        "question": "Comment se nomme l’épouse d’Aladin, vice-capitaine des Pirates du Soleil, et fille de la famille Charlotte ?",
+        "answer": "Charlotte Praliné"
+    },
+    {
+        "id": 1113,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le vingt-cinquième époux de Charlotte Linlin, père de Charlotte Chiffon et de Charlotte Lola ?",
+        "answer": "Pound"
+    },
+    {
+        "id": 1114,
+        "difficulty": "easy",
+        "question": "Comment se nomme la transformation que les Minks peuvent atteindre lors des nuits de pleine lune ?",
+        "answer": "Sulong"
+    },
+    {
+        "id": 1115,
+        "difficulty": "medium",
+        "question": "Pourquoi Charlotte Katakuri se plante-t-il volontairement sa lance dans l’abdomen lors de son combat contre Monkey D. Luffy ?",
+        "answer": "Parce qu’il souhaite combattre Monkey D. Luffy à la loyale"
+    },
+    {
+        "id": 1116,
+        "difficulty": "difficult",
+        "question": "Quel membre de la famille Charlotte interfère dans le combat entre Monkey D. Luffy et Katakuri, provoquant la colère de ce dernier qui voulait se battre loyalement ?",
+        "answer": "Charlotte Flampée"
+    },
+    {
+        "id": 1117,
+        "difficulty": "easy",
+        "question": "Qui remporte le combat opposant Monkey D. Luffy à Charlotte Katakuri ?",
+        "answer": "Monkey D. Luffy"
+    },
+    {
+        "id": 1118,
+        "difficulty": "easy",
+        "question": "Quel membre de la famille Charlotte est régulièrement pris en otage durant les événements liés à l’arc de Wano ?",
+        "answer": "Charlotte Brûlée"
+    },
+    {
+        "id": 1119,
+        "difficulty": "medium",
+        "question": "Après le combat contre Katakuri, alors que Luffy est coincé dans le Monde des Miroirs et doit s’échapper, quel personnage détourne volontairement l’attention de l’équipage de Big Mom pour lui permettre de fuir ?",
+        "answer": "Pekoms"
+    },
+    {
+        "id": 1120,
+        "difficulty": "easy",
+        "question": "Comment se nomme l’équipage pirate majoritairement composé d’hommes-poissons et fondé par Fisher Tiger ?",
+        "answer": "L’équipage des Pirates du Soleil"
+    },
+    {
+        "id": 1121,
+        "difficulty": "easy",
+        "question": "Quel pirate possède le pouvoir de retirer une partie de l’espérance de vie des personnes ?",
+        "answer": "Charlotte Linlin"
+    },
+    {
+        "id": 1122,
+        "difficulty": "easy",
+        "question": "Avec l’aide de quel cuisinier Charlotte Pudding et Charlotte Chiffon réalisent-elles le second gâteau qui apaise Big Mom à la fin de l’arc Whole Cake Island ?",
+        "answer": "Sanji"
+    },
+    {
+        "id": 1123,
+        "difficulty": "medium",
+        "question": "Quel est le dernier service que Charlotte Pudding demande à Sanji à la fin de l’arc Whole Cake Island, juste avant de lui effacer la mémoire de ce moment ?",
+        "answer": "De partager un baiser avec lui"
+    },
+    {
+        "id": 1124,
+        "difficulty": "easy",
+        "question": "Comment appelle-t-on les grands événements organisés par Big Mom afin de célébrer des occasions importantes ?",
+        "answer": "Les Tea Parties"
+    },
+    {
+        "id": 1125,
+        "difficulty": "medium",
+        "question": "Les Trois Grands Pouvoirs sont composés des Sept Grands Corsaires, des Quatre Empereurs et de quelle autre organisation majeure ?",
+        "answer": "Le Quartier Général de la Marine"
+    },
+    {
+        "id": 1126,
+        "difficulty": "medium",
+        "question": "Comment appelle-t-on l’équilibre mondial formé par les Sept Grands Corsaires, la Marine et les Quatre Empereurs ?",
+        "answer": "Les Trois Grands Pouvoirs"
+    },
+    {
+        "id": 1127,
+        "difficulty": "easy",
+        "question": "Comment se nomme la seconde moitié de Grand Line, située au-delà de Red Line et bordant notamment North Blue et West Blue ?",
+        "answer": "Le Nouveau Monde"
+    },
+    {
+        "id": 1128,
+        "difficulty": "easy",
+        "question": "De quel océan est originaire Vinsmoke Sanji ?",
+        "answer": "North Blue"
+    },
+    {
+        "id": 1129,
+        "difficulty": "medium",
+        "question": "À quel allié des Minks, ayant partagé la route de Monkey D. Luffy, Big Mom a-t-elle retiré cinquante années d’espérance de vie ?",
+        "answer": "Pedro"
+    },
+    {
+        "id": 1130,
+        "difficulty": "difficult",
+        "question": "Sur Whole Cake Island et dans l’archipel de Totto Land, Big Mom souhaite réunir toutes les races du monde, mais quelles sont les deux races connues qui n’y sont pas représentées ?",
+        "answer": "Les Géants et les Lunarias"
     }
-
-    
-
-
-
 
 ]
 

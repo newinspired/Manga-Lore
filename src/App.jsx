@@ -8,8 +8,9 @@ import SalonPage from "./pages/Salon-page";
 import GamePage from "./pages/game-page";
 import ResultPage from "./pages/Result-page";
 import CorrectionPage from "./pages/CorrectionPage";
-import RegisterPage from "./pages/Register";
 import Checkout from "./pages/Checkout";
+import Register from "./pages/register";
+import Success from "./pages/Success";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -17,7 +18,7 @@ function App() {
   const [userData, setUserData] = useState({
     isLoggedIn: false,
     username: null,
-    isPremium: false,
+    isPremium: true,
   });
 
   useEffect(() => {
@@ -46,8 +47,9 @@ function App() {
   return (
     <Routes>
 
-      <Route path="/register" element={<RegisterPage />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/checkout" element={<Checkout />} />
+      <Route path="/success" element={<Success />} />
 
       <Route path="/" element={<LoginPage userData={userData} />} />
       <Route path="/salon/:room" element={<SalonPage userData={userData} />} />

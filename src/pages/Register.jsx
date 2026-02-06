@@ -8,7 +8,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import "../styles/register-login.scss";
 
-function RegisterPage() {
+function Register() {
   // 👉 Création de compte par défaut
   const [isRegister, setIsRegister] = useState(true);
 
@@ -117,4 +117,4 @@ function RegisterPage() {
   );
 }
 
-export default RegisterPage;
+export default Register;
