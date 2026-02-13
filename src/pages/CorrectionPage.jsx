@@ -86,7 +86,7 @@ function CorrectionPage() {
           <p className="question-text">{currentQuestion.question}</p>
           <div className="reponses-correction">
             <p className="reponse-right">
-              <strong>{currentQuestion.correctAnswer}</strong>
+              {currentQuestion.correctAnswer}
             </p>
             <p className="reponse-text">
               {currentPlayer?.username || "Joueur"} :{" "}

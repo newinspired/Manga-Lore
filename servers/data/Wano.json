@@ -1,14 +1,14 @@
 [
     {
         "id": 1201,
-        "difficulty": "easy",
-        "question": "Qui est annoncé comme le « cinquième Empereur des mers » après les événements de Whole Cake Island ?",
-        "answer": "Monkey D. Luffy"
-    }, 
+        "difficulty": "medium",
+        "question": "Combien de lames appelées \"Meilleurs sabres\" ou également \"Seijo Owazamono\", ont été forgés ?",
+        "answer": "Il en a été forgé 12"
+    },
     {
         "id": 1202,
         "difficulty": "easy",
-        "question": "Qui est annoncé comme le « cinquième Empereur des mers » après les événements de Whole Cake Island ?",
+        "question": "Qui est annoncé comme le \"cinquième Empereur des mers\" après les événements de Whole Cake Island ?",
         "answer": "Monkey D. Luffy"
     },
     {
@@ -21,17 +21,17 @@
         "id": 1204,
         "difficulty": "easy",
         "question": "Vers quelle île se dirige l’équipage du Chapeau de paille après les événements de Whole Cake Island ?",
-        "answer": "Le pays de Wano"
+        "answer": "Le pays des Wa"
     },
     {
         "id": 1205,
-        "difficulty": "medium",
-        "question": "Quelle île de Grand Line est surnommée « l’île rose » et devient le nouveau quartier général de l’Armée révolutionnaire ?",
+        "difficulty": "difficult",
+        "question": "Quelle île de Grand Line est surnommée \"l’île rose\" et devient le nouveau quartier général de l’Armée révolutionnaire ?",
         "answer": "Kedétrav"
     },
     {
         "id": 1206,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "question": "Qui est le chef d’état-major de l’Armée révolutionnaire ?",
         "answer": "Sabo"
     },
@@ -61,7 +61,7 @@
     },
     {
         "id": 1211,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Une forteresse encore plus solide a été reconstruite après les événements de MarineFord. Comment s’appelle cette nouvelle base de la Marine ?",
         "answer": "Le New Marine Ford"
     },
@@ -91,19 +91,19 @@
     },
     {
         "id": 1216,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Qui est le roi du royaume maléfique de Black Drum ?",
         "answer": "Wapol"
     },
     {
         "id": 1217,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Comment se nomme le souverain du royaume des cerisiers ?",
         "answer": "Dalton"
     },
     {
         "id": 1218,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Comment se nomme la célèbre médecin du royaume des cerisiers ?",
         "answer": "Docteur Kureha"
     },
@@ -115,14 +115,14 @@
     },
     {
         "id": 1220,
-        "difficulty": "medium",
-        "question": "Comment se nomme l’immense château situé sur la Terre Sainte de Mariejoie ?",
-        "answer": "Le château Pangée"
+        "difficulty": "difficult",
+        "question": "Comment se nomme l’immense château situé sur la Terre Sainte de Marie Joie ?",
+        "answer": "Le château de Pangée"
     },
     {
         "id": 1221,
-        "difficulty": "easy",
-        "question": "Comment se nomme le trône du château de Pangée à Mariejoie ?",
+        "difficulty": "medium",
+        "question": "Comment se nomme le trône du château de Pangée à Marie Joie ?",
         "answer": "Le trône vide"
     },
     {
@@ -133,14 +133,14 @@
     },
     {
         "id": 1223,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel Dragon Céleste semble être devenu bon grâce aux conseils de la reine Otohime ?",
         "answer": "Saint Myosgard"
     },
     {
         "id": 1224,
-        "difficulty": "medium",
-        "question": "Comment se nomme le père de Don Flamingo et Rosennanté, ancien Dragon Céleste ayant renoncé à son statut ?",
+        "difficulty": "difficult",
+        "question": "Comment se nomme le père de Doflamingo et Rossinante, ancien Dragon Céleste ayant renoncé à son statut ?",
         "answer": "Donquixote Homing"
     },
     {
@@ -157,25 +157,25 @@
     },
     {
         "id": 1227,
-        "difficulty": "medium",
-        "question": "Comment appelle-t-on les gardiens de la forêt de la baleine sur l’île de Zou ?",
+        "difficulty": "difficult",
+        "question": "Comment appelle-t-on les gardiens de la forêt de la baleine sur l’île de Zo ?",
         "answer": "Les guardians"
     },
     {
         "id": 1228,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Quel pirate se proclame comme étant le fils d’Edward Newgate ?",
         "answer": "Edward Weevil"
     },
     {
         "id": 1229,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Comment se nomme l’amante d’Edward Newgate ainsi que la mère de l’ancien grand corsaire Edward Weevil ?",
         "answer": "Miss Buckingham Stussy"
     },   
     {
         "id": 1230,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "question": "Lors de leur infiltration au pays des Wa, quel métier exerçait Fransuké afin d’être le plus discret possible ?",
         "answer": "Charpentier"
     },
@@ -183,31 +183,696 @@
         "id": 1231,
         "difficulty": "medium",
         "question": "Afin de mener sa mission en toute discrétion au pays des Wa, sous quel nom Usopp se faisait-il appeler ?",
-        "answer": "Usoppachi"
+        "answer": "Uso-hachi"
     },
     {
         "id": 1232,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quelle activité traditionnelle japonaise Robin exerce-t-elle afin de s’infiltrer au pays des Wa ?",
         "answer": "Geisha"
     },
     {
         "id": 1233,
-        "difficulty": "medium",
-        "question": "Quel vagabond du pays des Wa a coupé un temple en deux avec une lame lors d’un seppuku ?",
+        "difficulty": "easy",
+        "question": "Quel vagabond du pays des Wa a coupé un temple en deux avec une lame pour seppuku ?",
         "answer": "Roronoa Zoro"
     },
     {
         "id": 1234,
         "difficulty": "medium",
-        "question": "Quel pays n’avait pas été représenté depuis deux cents ans à une Rêverie ?",
+        "question": "Quel royaume n’avait pas été représenté depuis deux cents ans à la Rêverie ?",
         "answer": "Le royaume Ryugu"
     },
     {
         "id": 1235,
-        "difficulty": "easy",
-        "question": "Qui était responsable d’escorter la princesse Shirahoshi jusqu’à la Terre Sainte de Mary Geoise lors de la Rêverie ?",
+        "difficulty": "medium",
+        "question": "Qui était responsable d’escorter la princesse Shirahoshi jusqu’à la Terre Sainte de Mary Joie lors de la Rêverie ?",
         "answer": "Monkey D. Garp"
+    },
+    {
+        "id": 1236,
+        "difficulty": "easy",
+        "question": "Quelle petite fille rencontrée au pays des Wa peut, grâce à son fruit du démon, apprivoiser des animaux ?",
+        "answer": "O-Tama"
+    },
+    {
+        "id": 1237,
+        "difficulty": "medium",
+        "question": "Quel est le pouvoir du fruit du démon d'O-Tama, l’élève de Tenguyama Hitetsu ?",
+        "answer": "Elle peut apprivoiser des animaux"
+    },
+    {
+        "id": 1238,
+        "difficulty": "medium",
+        "question": "Quelle supernova, \"Vedette\" de l’équipage des Cent Bêtes est sous les ordres de Kaido ?",
+        "answer": "Basil Hawkins"
+    },
+    {
+        "id": 1239,
+        "difficulty": "difficult",
+        "question": "Quel est le véritable nom du forgeron du pays des Wa se cachant sous l’identité de Hitetsu Tetsuyama ?",
+        "answer": "Kozuki Sukiyaki (le père d’Oden Kozuki)"
+    },
+    {
+        "id": 1240,
+        "difficulty": "medium",
+        "question": "Quel pirate, aujourd’hui décédé, O-Tama attendait-elle en vain au pays des Wa ?",
+        "answer": "Portgas D. Ace"
+    },
+    {
+        "id": 1241,
+        "difficulty": "medium",
+        "question": "Combien existe-t-il de sabres de qualité supérieure, appelés également \"ryowazamono\" ?",
+        "answer": "Il en a été forgé 50"
+    },
+    {
+        "id": 1242,
+        "difficulty": "difficult",
+        "question": "Combien existe-t-il de grands sabres, également appelés \"owazamono\" ?",
+        "answer": "Il en a été forgé 21"
+    },
+    {
+        "id": 1243,
+        "difficulty": "medium",
+        "question": "Quel type de fruit du démon Basil Hawkins a-t-il mangé ?",
+        "answer": "Un Paramécia"
+    },
+    {
+        "id": 1244,
+        "difficulty": "difficult",
+        "question": "Quelle femme, propriétaire d’une maison de thé dans la région de Kuri, a soigné O Tama du poison présent dans son corps ?",
+        "answer": "O-Tsuru"
+    },
+    {
+        "id": 1245,
+        "difficulty": "difficult",
+        "question": "Quelle calamité de l’équipage de Kaido dirigeait la province de Kuri au pays des Wa ?",
+        "answer": "Jack la Sécheresse"
+    },
+    {
+        "id": 1246,
+        "difficulty": "easy",
+        "question": "À quelle race appartient Jack la Sécheresse ?",
+        "answer": "Un homme-poisson"
+    },
+    {
+        "id": 1247,
+        "difficulty": "medium",
+        "question": "Quel membre de la famille Kurozumi était l’ancien shogun du pays des Wa et un allié important de Kaido ?",
+        "answer": "Kurozumi Orochi"
+    },
+    {
+        "id": 1248,
+        "difficulty": "difficult",
+        "question": "Quel samouraï, membre des Neuf Fourreaux rouges, jouait un double jeu en étant également chef yakuza au service du shogun Orochi ?",
+        "answer": "Denjiro (\"Kyoshiro le Somnolent\")"
+    },
+    {
+        "id": 1249,
+        "difficulty": "easy",
+        "question": "Quel vassal du clan Kozuki est surnommé \"le renard à la flammes\" ?",
+        "answer": "Kinemon"
+    },
+    {
+        "id": 1250,
+        "difficulty": "difficult",
+        "question": "Comment se nomme l’épouse d’Oden Kozuki, décédée il y a 20 ans ?",
+        "answer": "Kōzuki Toki (Amatsuki Toki)"
+    },
+    {
+        "id": 1251,
+        "difficulty": "difficult",
+        "question": "Quel lieu emblématique du pays des Wa a été choisi comme quartier général de l’alliance Ninjas-Pirates-Minks-Samouraïs ?",
+        "answer": "Les ruines du château d’Oden"
+    },
+    {
+        "id": 1252,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon d’Amatsuki Toki ?",
+        "answer": "Le fruit du temps (Toki Toki no Mi)"
+    },
+    {
+        "id": 1253,
+        "difficulty": "easy",
+        "question": "De combien d’années dans le futur Amatsuki Toki a-t-elle envoyé certains membres des Fourreaux rouges ?",
+        "answer": "Ils ont fait un bond de 20 ans dans le futur"
+    },
+    {
+        "id": 1254,
+        "difficulty": "easy",
+        "question": "Sur quelle île a eu lieu la bataille finale opposant les équipages de Kaido et de Big Mom à l’alliance Ninjas-Pirates-Minks-Samouraïs ?",
+        "answer": "L’île d’Onigashima"
+    },
+    {
+        "id": 1255,
+        "difficulty": "medium",
+        "question": "Quelle femme ninja alliée du clan Kozuki peut, grâce à son fruit du démon, faire mûrir ou pourrir tous les éléments qui l’entourent ?",
+        "answer": "Shinobu"
+    },
+    {
+        "id": 1256,
+        "difficulty": "medium",
+        "question": "Quel ancien criminel de la région de Kuri est devenu l’un des Neuf Fourreaux rouges, disciples d’Oden ?",
+        "answer": "Ashura Doji"
+    },
+    {
+        "id": 1257,
+        "difficulty": "difficult",
+        "question": "Quel membre de l’équipage des Cent Bêtes est une centaure apprivoisée grâce aux pouvoirs de Tama ?",
+        "answer": "Speed"
+    },
+    {
+        "id": 1258,
+        "difficulty": "medium",
+        "question": "Dans quel état se trouvait Kaido lors de sa première véritable apparition dans l’arc du pays des Wa ?",
+        "answer": "Il était complètement saoul"
+    },
+    {
+        "id": 1259,
+        "difficulty": "easy",
+        "question": "Quels sont les deux capitaines pirates, membres des Supernovas, emprisonnés dans la carrière des prisonniers de la région d’Udon, au pays des Wa ?",
+        "answer": "Eustass Kid et Monkey D. Luffy"
+    },
+    {
+        "id": 1260,
+        "difficulty": "medium",
+        "question": "Quelle région du pays des Wa est dirigée par Queen la Pandémie ?",
+        "answer": "Udon"
+    },
+    {
+        "id": 1261,
+        "difficulty": "easy",
+        "question": "Quelle calamité, membre de l’équipage de Kaido, dirige la région d’Udon ?",
+        "answer": "Queen la Pandémie"
+    },
+    {
+        "id": 1262,
+        "difficulty": "easy",
+        "question": "Avec quel grand pirate Perona a-t-elle passé la majeure partie de son temps après l’ellipse, tout en s’inquiétant pour son maître Gecko Moria ?",
+        "answer": "Dracule Mihawk"
+    },
+    {
+        "id": 1263,
+        "difficulty": "easy",
+        "question": "Qui est le capitaine de l’équipage de Thriller Bark ?",
+        "answer": "Gecko Moria"
+    },
+    {
+        "id": 1264,
+        "difficulty": "easy",
+        "question": "Quelle île du Nouveau Monde est surnommée l’île des pirates ?",
+        "answer": "L’île de la Ruche"
+    },
+    {
+        "id": 1265,
+        "difficulty": "easy",
+        "question": "Quelle île du Nouveau Monde est occupée par l’empereur Marshall D. Teach ?",
+        "answer": "L’île de la Ruche"
+    },
+    {
+        "id": 1266,
+        "difficulty": "difficult",
+        "question": "Qui est le commandant de la quatrième flotte de l’équipage de Barbe Noire ?",
+        "answer": "Avalo Pizarro"
+    },
+    {
+        "id": 1267,
+        "difficulty": "medium",
+        "question": "Qui est le commandant de la deuxième flotte de l’équipage de Barbe Noire ?",
+        "answer": "Shilieu de la Pluie"
+    },
+    {
+        "id": 1268,
+        "difficulty": "difficult",
+        "question": "Qui est la commandante de la sixième flotte de l’équipage de Barbe Noire ?",
+        "answer": "Katarina Devon"
+    },
+    {
+        "id": 1269,
+        "difficulty": "medium",
+        "question": "Qui est réellement Kamazo, le tueur à la faucille ?",
+        "answer": "Killer"
+    },
+    {
+        "id": 1270,
+        "difficulty": "medium",
+        "question": "Quelle petite fille apprentie courtisane au service de l’Oiran Komurasaki ne cessait de rigoler pour une raison mystérieuse ?",
+        "answer": "O-Toko"
+    },
+    {
+        "id": 1271,
+        "difficulty": "medium",
+        "question": "Qui était la courtisane numéro un du pays des Wa sous le règne du seigneur Orochi ?",
+        "answer": "Komurasaki"
+    },
+    {
+        "id": 1272,
+        "difficulty": "easy",
+        "question": "Quel membre de l’équipage de Kaido possède un fruit du démon de type Zoan antique, modèle ptéranodon ?",
+        "answer": "King"
+    },
+    {
+        "id": 1273,
+        "difficulty": "medium",
+        "question": "Quelle calamité de l’équipage de Kaido a réussi à faire chavirer à lui seul le navire de l’équipage de Big Mom afin de l’empêcher d’entrer au pays des Wa ?",
+        "answer": "King"
+    },
+    {
+        "id": 1274,
+        "difficulty": "medium",
+        "question": "Sous quel nom Sanji, le marchand de soba, est-il connu par les habitants du pays des Wa ?",
+        "answer": "San-goro"
+    },
+    {
+        "id": 1275,
+        "difficulty": "difficult",
+        "question": "Comment se nommait le commandant des espions d'Orochi au pays des Wa ?",
+        "answer": "Fukurokuju"
+    },
+    {
+        "id": 1276,
+        "difficulty": "difficult",
+        "question": "À quelle grande organisation appartenait Hanafuda, le roi des lézards ?",
+        "answer": "Les Sept Grands Corsaires"
+    },
+    {
+        "id": 1277,
+        "difficulty": "difficult",
+        "question": "Par qui Anafuda, le roi des lézards et ancien Grand Corsaire, a-t-il été vaincu ?",
+        "answer": "Portgas D. Ace"
+    },
+    {
+        "id": 1278,
+        "difficulty": "medium",
+        "question": "Quel membre des Tobi Roppo a mangé un fruit du démon de type Zoan antique, modèle spinosaure ?",
+        "answer": "Page One"
+    },
+    {
+        "id": 1279,
+        "difficulty": "difficult",
+        "question": "Quel est le fruit du démon du seigneur Orochi ?",
+        "answer": "Le fruit du reptile de type Zoan mythique, modèle dragon à huit têtes"
+    },
+    {
+        "id": 1280,
+        "difficulty": "medium",
+        "question": "Qui est en réalité l’Oiran Komurasaki, considérée comme la plus belle femme du pays des Wa ?",
+        "answer": "Kozuki Hiyori"
+    },
+    {
+        "id": 1281,
+        "difficulty": "difficult",
+        "question": "Qui était le plus célèbre et le plus puissant yakuza du pays des Wa, vingt ans avant notre ère, longtemps emprisonné à Udon ?",
+        "answer": "Hyogoro de la Fleur (grand-père Hyo)"
+    },
+    {
+        "id": 1282,
+        "difficulty": "easy",
+        "question": "Quel membre des Supernovas est un ancien sous-amiral de la Marine devenu pirate par la suite ?",
+        "answer": "X. Drake"
+    },
+    {
+        "id": 1283,
+        "difficulty": "difficult",
+        "question": "Quel moine soldat et bandit sévit au pont des Détrousseurs dans la région de Ringo ?",
+        "answer": "Gyukimaru (Onimaru)"
+    },
+    {
+        "id": 1284,
+        "difficulty": "medium",
+        "question": "Quel adversaire Zorojuro a-t-il affronté près du pont des Détrousseurs, dans la région de Ringo au pays des Wa ?",
+        "answer": "Kamazo le tueur à la faucille"
+    },
+    {
+        "id": 1285,
+        "difficulty": "medium",
+        "question": "Comment se nomme la sœur de Momonosuke Kozuki ?",
+        "answer": "Hiyori Kozuki"
+    },
+    {
+        "id": 1286,
+        "difficulty": "medium",
+        "question": "Dans quel lieu Monkey D. Luffy et Eustass Kid ont-ils été emprisonnés au pays des Wa ?",
+        "answer": "La carrière des prisonniers (régoin d'Udon)"
+    },
+    {
+        "id": 1287,
+        "difficulty": "difficult",
+        "question": "Quel homme au service du clan Kozuki a été exécuté dans la capitale des Fleurs sous le regard impuissant de sa fille ?",
+        "answer": "Shimotsuki Yasuie (Tonoyasu)"
+    },
+    {
+        "id": 1288,
+        "difficulty": "easy",
+        "question": "Pourquoi les habitants du village d’Ebisu rient-ils en permanence et ont-ils oublié toute autre expression ?",
+        "answer": "À cause des SMILE"
+    },
+    {
+        "id": 1289,
+        "difficulty": "easy",
+        "question": "Quelle grande pirate s’est échouée inconsciente au pays des Wa, ayant perdu la mémoire et ne sachant plus qui elle est ?",
+        "answer": "Charlotte Linlin (Big Mom)"
+    },
+    {
+        "id": 1290,
+        "difficulty": "easy",
+        "question": "Quel pirate, ayant totalement perdu la mémoire, cherchait désespérément du shiruriko en terrorisant la prison d’Udon au pays des Wa ?",
+        "answer": "Big Mom"
+    },
+    {
+        "id": 1291,
+        "difficulty": "difficult",
+        "question": "Quel vassal du clan Kozuki et membre des Neuf Fourreaux rouges a été emprisonné pendant 13 ans dans la prison d’Udon, au pays des Wa ?",
+        "answer": "Kawamatsu, le Kappa"
+    },
+    {
+        "id": 1292,
+        "difficulty": "difficult",
+        "question": "Qui est le directeur de la mine des prisonniers dans la région d’Udon, au pays des Wa ?",
+        "answer": "Pouilleux (Babanuki)"
+    },
+    {
+        "id": 1293,
+        "difficulty": "easy",
+        "question": "Quelle île du pays des Wa était la résidence de l’empereur Kaido aux Cent Bêtes ?",
+        "answer": "Onigashima"
+    },
+    {
+        "id": 1294,
+        "difficulty": "easy",
+        "question": "Qui est le principal artisan de la prise de la région d’Udon, ayant rallié tous les prisonniers de la carrière à sa cause ?",
+        "answer": "Monkey D. Luffy"
+    },
+    {
+        "id": 1295,
+        "difficulty": "easy",
+        "question": "Quelle lame noire était l’épée de renom du légendaire samouraï Ryuma ?",
+        "answer": "Shusui"
+    },
+    {
+        "id": 1296,
+        "difficulty": "easy",
+        "question": "De quel katana Hyori Kozuki a-t-elle hérité de son père Oden Kozuki ?",
+        "answer": "Enma"
+    },
+    {
+        "id": 1297,
+        "difficulty": "medium",
+        "question": "Quel membre du clan Kozuki a transmis à Zoro le légendaire katana Enma ?",
+        "answer": "Hyori Kozuki"
+    },
+    {
+        "id": 1298,
+        "difficulty": "easy",
+        "question": "Quelle lame est dite comme étant la seule à avoir jamais blessé Kaido avant l’arc du pays des Wa ?",
+        "answer": "Enma"
+    },
+    {
+        "id": 1299,
+        "difficulty": "difficult",
+        "question": "Comment se nomme le \"renard\" qui a collecté de nombreuses armes afin de préparer la bataille finale contre l’équipage de Kaido aux Cent Bêtes ?",
+        "answer": "Onimaru"
+    },
+    {
+        "id": 1300,
+        "difficulty": "difficult",
+        "question": "De quel sabre Momonosuke Kozuki a-t-il hérité de son père, Oden ?",
+        "answer": "Ame no Habakiri"
+    },
+    {
+        "id": 1301,
+        "difficulty": "easy",
+        "question": "Quelques jours avant la bataille finale d’Onigashima, quels puissants équipages pirates s'allient contre toute attente ?",
+        "answer": "L'équipage de Kaido et Big Mom"
+    },
+    {
+        "id": 1302,
+        "difficulty": "medium",
+        "question": "Lequel des trois Supernovas initialement alliés pour vaincre Kaido a trahi les deux autres en ayant déjà prêté allégeance à l’empereur ?",
+        "answer": "Scratchmen Apoo"
+    },
+    {
+        "id": 1303,
+        "difficulty": "easy",
+        "question": "Peu de temps après la Rêverie, quelle grande organisation mondiale a été dissoute à la surprise générale ?",
+        "answer": "Les Sept Grands Corsaires"
+    },
+    {
+        "id": 1304,
+        "difficulty": "easy",
+        "question": "Quel agent double est en réalité commandant du SWORD au quartier général de la Marine ?",
+        "answer": "X-Drake"
+    },
+    {
+        "id": 1305,
+        "difficulty": "easy",
+        "question": "Au moment de l’arc d’Onigashima, quel colonel du quartier général de la Marine est également membre du SWORD ?",
+        "answer": "Kobby"
+    },
+    {
+        "id": 1306,
+        "difficulty": "easy",
+        "question": "Quel grand équipage déchu comptait parmi ses membres Barbe Blanche, Big Mom et Kaido ?",
+        "answer": "L’équipage des Rocks"
+    },
+    {
+        "id": 1307,
+        "difficulty": "easy",
+        "question": "Lors de quel grand événement le vice-amiral Garp est-il devenu \"le héros de la Marine\" aux yeux du monde ?",
+        "answer": "God Valley"
+    },
+    {
+        "id": 1308,
+        "difficulty": "medium",
+        "question": "Quel est le montant de la prime de Shanks le Roux lorsqu’il est empereur, à 100 millions de berrys près ?",
+        "answer": "4 048 900 000 berrys"
+    },
+    {
+        "id": 1309,
+        "difficulty": "medium",
+        "question": "Quel est le montant de la prime de l’empereur Kaido aux Cent Bêtes, à 100 millions de berrys près ?",
+        "answer": "4 611 100 000 berrys"
+    },
+    {
+        "id": 1310,
+        "difficulty": "easy",
+        "question": "Quel pirate détient la prime la plus élevée jamais connue dans l’histoire de One Piece ?",
+        "answer": "Gol D. Roger"
+    },
+    {
+        "id": 1311,
+        "difficulty": "medium",
+        "question": "Quel était le montant de la prime de Barbe Blanche lorsqu’il était encore en vie, à 100 millions de berrys près ?",
+        "answer": "5 046 000 000 berrys"
+    },
+    {
+        "id": 1312,
+        "difficulty": "easy",
+        "question": "Quel est le premier équipage à avoir accueilli Oden Kozuki à son bord ?",
+        "answer": "L’équipage de Barbe Blanche"
+    },
+    {
+        "id": 1313,
+        "difficulty": "medium",
+        "question": "À quel clan, autrefois au service des Kozuki, Orochi appartenait-il ?",
+        "answer": "Le clan Kurozumi"
+    },
+    {
+        "id": 1314,
+        "difficulty": "medium",
+        "question": "Qui était, 28 ans avant notre ère, le commandant de la deuxième flotte de Barbe Blanche ?",
+        "answer": "Oden Kozuki"
+    },
+    {
+        "id": 1315,
+        "difficulty": "medium",
+        "question": "Lors de sa première rencontre avec Oden Kozuki, quelle puissante attaque Gol D. Roger a-t-il utilisée ?",
+        "answer": "Trépas Divin (Divine Departure)"
+    },
+    {
+        "id": 1316,
+        "difficulty": "medium",
+        "question": "Quelle faculté exceptionnelle possède Oden Kozuki, raison pour laquelle Gol D. Roger souhaitait absolument l’avoir dans son équipage ?",
+        "answer": "Savoir lire les Ponéglyphes"
+    },
+    {
+        "id": 1317,
+        "difficulty": "easy",
+        "question": "Comment se nomme l’homme qui a construit le navire de Gol D. Roger ?",
+        "answer": "Tom"
+    },
+    {
+        "id": 1318,
+        "difficulty": "easy",
+        "question": "Quelle a été la réaction de Gol D. Roger et de son équipage lorsqu’ils ont découvert l’immense trésor sur Laugh Tale ?",
+        "answer": "Ils ont ri aux éclats"
+    },
+    {
+        "id": 1319,
+        "difficulty": "easy",
+        "question": "Après avoir atteint quelle île, Gol D. Roger a-t-il reçu le titre de \"Roi des Pirates\" ?",
+        "answer": "Laugh Tale"
+    },
+    {
+        "id": 1320,
+        "difficulty": "medium",
+        "question": "Quel était le fruit du démon de Kurozumi Higurashi, surnommée \"la vieille peau\", grande alliée d’Orochi ?",
+        "answer": "Le fruit du travesti (Mane Mane no Mi)"
+    },
+    {
+        "id": 1321,
+        "difficulty": "easy",
+        "question": "Quel grand pirate régnant sur le pays des Wa, a vaincu Oden Kozuki au retour de sa grande aventure ?",
+        "answer": "Kaido aux Cent Bêtes"
+    },
+    {
+        "id": 1322,
+        "difficulty": "easy",
+        "question": "Comment Oden Kozuki a-t-il été exécuté après avoir été vaincu par Kaido ?",
+        "answer": "Il a été exécuté en bouillant tel un \"Oden\""
+    },
+    {
+        "id": 1323,
+        "difficulty": "medium",
+        "question": "Qui est devenu le digne remplaçant de Hyogoro en tant que grand yakuza ?",
+        "answer": "Kyoshiro le Samouraï"
+    },
+    {
+        "id": 1324,
+        "difficulty": "easy",
+        "question": "Qui était le traître caché parmi les membres des Fourreaux Rouges ?",
+        "answer": "Kanjuro Kurozumi"
+    },
+    {
+        "id": 1325,
+        "difficulty": "easy",
+        "question": "Quel grand pirate membre des Supernovas Luffy appelle-t-il \"Coupe à la brosse\" ?",
+        "answer": "Eustass Kid"
+    },
+
+
+
+
+
+
+    {
+        "id": 1326,
+        "difficulty": "easy",
+        "question": "En quel bois très précieux et extrêmement résistant a été construit le Thousand Sunny ?",
+        "answer": "En bois d’Adam"
+    },
+    {
+        "id": 1327,
+        "difficulty": "easy",
+        "question": "Quel membre des Mugiwaras fait son grand retour peu de temps avant l’attaque d’Onigashima ?",
+        "answer": "Jinbe"
+    },
+    {
+        "id": 1328,
+        "difficulty": "easy",
+        "question": "Comment se nomment les combattants au service de Kaido encore en attente d’un SMILE ?",
+        "answer": "Les Waiters"
+    },
+    {
+        "id": 1329,
+        "difficulty": "easy",
+        "question": "Comment se nomment les combattants ayant mangé un SMILE défectueux ?",
+        "answer": "Les Pleasures"
+    },
+    {
+        "id": 1330,
+        "difficulty": "easy",
+        "question": "Comment se nomment les combattants ayant acquis les pouvoirs d’un SMILE ?",
+        "answer": "Les Gifters"
+    },
+    {
+        "id": 1331,
+        "difficulty": "medium",
+        "question": "Quel membre des Tobi Roppo est la sœur aînée de Page One et la fille d’Anafuda ?",
+        "answer": "Ulti"
+    },
+    {
+        "id": 1332,
+        "difficulty": "medium",
+        "question": "Quel membre des Tobi Roppo dirige le quartier des plaisirs de l’île d’Onigashima ?",
+        "answer": "Black Maria"
+    },
+    {
+        "id": 1333,
+        "difficulty": "medium",
+        "question": "Quel type de Zoan possèdent les Tobi Roppo de l’équipage aux Cent Bêtes ?",
+        "answer": "Des Zoan antiques"
+    },
+    {
+        "id": 1334,
+        "difficulty": "easy",
+        "question": "À quel domaine est lié le fruit du démon de Scratchmen Apoo ?",
+        "answer": "La musique"
+    },
+    {
+        "id": 1335,
+        "difficulty": "medium",
+        "question": "Quel ancien commandant de division de Barbe Blanche possède un fruit du démon de type mythologique et prend part à la grande bataille finale d’Onigashima ?",
+        "answer": "Marco le Phénix"
+    },
+    {
+        "id": 1336,
+        "difficulty": "easy",
+        "question": "Comment se nomme la fille biologique de Kaido aux Cent Bêtes ?",
+        "answer": "Yamato"
+    },
+    {
+        "id": 1337,
+        "difficulty": "easy",
+        "question": "Pour quelle personne Yamato voue-t-elle un culte si profond qu’elle rêve de devenir cette personne ?",
+        "answer": "Oden Kozuki"
+    },
+    {
+        "id": 1338,
+        "difficulty": "medium",
+        "question": "Quel ancien commandant de division de Barbe Blanche, né au pays des Wano, prend part à la grande bataille finale d’Onigashima ?",
+        "answer": "Izo"
+    },
+    {
+        "id": 1339,
+        "difficulty": "easy",
+        "question": "Qui est le frère de Kiku et ancien commandant de division de Barbe Blanche ?",
+        "answer": "Izo"
+    },
+    {
+        "id": 1340,
+        "difficulty": "easy",
+        "question": "Sur quelle île Yamato était-elle séquestrée depuis son enfance ?",
+        "answer": "Onigashima"
+    },
+    {
+        "id": 1341,
+        "difficulty": "easy",
+        "question": "Quel puissant pirate a assassiné Orochi en lui tranchant le cou sur Onigashima ?",
+        "answer": "Kaido"
+    },
+    {
+        "id": 1342,
+        "difficulty": "medium",
+        "question": "Quel membre du clan Kozuki porte un prénom signifiant « invincibilité » ?",
+        "answer": "Momonosuke Kozuki"
+    },
+    {
+        "id": 1343,
+        "difficulty": "medium",
+        "question": "Quel mink lion est le capitaine de l’escouade des mousquetaires d’Inuarashi ?",
+        "answer": "Sicilion"
+    },
+    {
+        "id": 1344,
+        "difficulty": "easy",
+        "question": "Quel membre des Mugiwaras a percuté Big Mom en pleine course avec sa moto sur Onigashima ?",
+        "answer": "Franky"
     }
+
+
+
+
+
     
-]
+]  
