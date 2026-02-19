@@ -5,6 +5,7 @@ import WaitingRoom from '../components/waiting-room.jsx';
 import socket, { playerId, joinRoom, rejoinRoom, onPlayerListUpdate } from '../socket';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
+
 import '../styles/card-name.scss';
 import '../styles/salon-page.scss';
 
@@ -20,6 +21,8 @@ function SalonPage({ userData }) {
   const hasJoinedRef = useRef(false);
 
   const isPremiumUser = userData?.isPremium;
+
+  const [selectedMode, setSelectedMode] = useState(null);
 
 
   const allArcs = [
@@ -136,15 +139,47 @@ function SalonPage({ userData }) {
       <Header userData={userData} />
       <div className="container-salon">
         <div className="container-waiting">
-          <WaitingRoom
-            roomCode={room}
-            username={locationUsername}
-            isHost={isHost}
-            allArcs={allArcs}
-            selectedArcs={selectedArcs}
-            setSelectedArcs={setSelectedArcs}
-            isPremiumUser={isPremiumUser}
-          />
+          {!selectedMode && (
+            <div className="mode-selection">
+              <h2>Select a Game Mode</h2>
+
+              <button
+                className="mode-button"
+                onClick={() => setSelectedMode("classic")}
+              >
+                Classic question
+              </button>
+
+              <button
+                className="mode-button"
+                onClick={() => setSelectedMode("mode2")}
+              >
+                Find them all
+              </button>
+
+              <div className="separate">
+              </div>
+
+              <button
+                className="mode-button"
+                onClick={() => setSelectedMode("mode3")}
+              >
+                Ranked
+              </button>
+            </div>
+          )}
+
+          {selectedMode === "classic" && (
+            <WaitingRoom
+              roomCode={room}
+              username={locationUsername}
+              isHost={isHost}
+              allArcs={allArcs}
+              selectedArcs={selectedArcs}
+              setSelectedArcs={setSelectedArcs}
+              isPremiumUser={isPremiumUser}
+            />
+          )}
         </div>
 
         <div className="container-bonne-chance">

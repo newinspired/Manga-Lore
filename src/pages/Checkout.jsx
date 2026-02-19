@@ -14,11 +14,17 @@ function Checkout() {
 
   const handlePayment = async () => {
   const res = await fetch(
-        "http://localhost:5001/manga-lore/us-central1/createCheckoutSession"
-    );
+    "http://127.0.0.1:5001/manga-lore/us-central1/createCheckoutSession",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
 
-        const data = await res.json();
-        window.location.href = data.url;
+    const data = await res.json();
+      window.location.href = data.url;
     };
 
   return (

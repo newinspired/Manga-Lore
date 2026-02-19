@@ -130,15 +130,19 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
             disabled={!isHost}
             onClick={() => {
               if (!isHost) return;
-              if (selectedArcs.length === allowedArcs.length) {
+
+              const selectableArcs = isPremiumUser
+                ? allArcs.map(arc => arc.value) // 🔥 tous les arcs
+                : allArcs
+                    .filter(arc => !arc.isPremium) // seulement gratuits
+                    .map(arc => arc.value);
+
+              if (selectedArcs.length === selectableArcs.length) {
                 setSelectedArcs([]);
                 sendSelectedArcs(roomCode, []);
               } else {
-                const newSelection = allArcs
-                  .filter(arc => allowedArcs.includes(arc.value))
-                  .map(arc => arc.value);
-                setSelectedArcs(newSelection);
-                sendSelectedArcs(roomCode, newSelection);
+                setSelectedArcs(selectableArcs);
+                sendSelectedArcs(roomCode, selectableArcs);
               }
             }}
           >
@@ -154,6 +158,11 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
           className={isButtonDisabled ? '' : 'active'}
         >
           {buttonLabel}
+        </button>
+        <button className='back-to-mode'
+            onClick={() => window.location.href = `/salon/${roomCode}`}
+          >
+            Back to mode selection
         </button>
       </div>
     </div>

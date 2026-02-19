@@ -208,6 +208,10 @@ function handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games)
     clearGameTimer(games[roomCode]);
   }
 
+  players.forEach(player => {
+    player.score = 0;
+  });
+
   games[roomCode] = {
     players,                       // reference to playersInRooms[roomCode]
     questions: allQuestions,

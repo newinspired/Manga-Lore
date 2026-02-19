@@ -489,7 +489,7 @@
         "id": 1282,
         "difficulty": "easy",
         "question": "Quel membre des Supernovas est un ancien sous-amiral de la Marine devenu pirate par la suite ?",
-        "answer": "X. Drake"
+        "answer": "X-Drake"
     },
     {
         "id": 1283,
@@ -812,7 +812,7 @@
     {
         "id": 1335,
         "difficulty": "medium",
-        "question": "Quel ancien commandant de division de Barbe Blanche possède un fruit du démon de type mythologique et prend part à la grande bataille finale d’Onigashima ?",
+        "question": "Quel ancien commandant de flotte de Barbe Blanche possède un fruit du démon de type mythologique et prend part à la grande bataille finale d’Onigashima ?",
         "answer": "Marco le Phénix"
     },
     {
@@ -866,11 +866,69 @@
     {
         "id": 1344,
         "difficulty": "easy",
-        "question": "Quel membre des Mugiwaras a percuté Big Mom en pleine course avec sa moto sur Onigashima ?",
+        "question": "Quel membre des Mugiwaras a percuté Big Mom de plein fouet avec sa moto sur Onigashima ?",
         "answer": "Franky"
+    },  
+    {
+        "id": 1345,
+        "difficulty": "medium",
+        "question": "Quel amiral du quartier général de la Marine est un ancien policier du royaume de Taïya ?",
+        "answer": "Ryōkūgyū"
+    },
+    {
+        "id": 1346,
+        "difficulty": "easy",
+        "question": "Contre qui les Neuf Fourreaux rouges se sont-ils battus au sommet du crâne d’Onigashima ?",
+        "answer": "Kaido aux Cent Bêtes"
+    },
+    {
+        "id": 1347,
+        "difficulty": "medium",
+        "question": "Comment se nomme la forme que les minks prennent lors des nuits de pleine lune ?",
+        "answer": "La forme Sulong"
+    },
+    {
+        "id": 1348,
+        "difficulty": "medium",
+        "question": "Quel type de combattants est réputé pour sa grande résilience, même le ventre vide ou grièvement blessé ?",
+        "answer": "Les samouraïs"
+    },
+    {
+        "id": 1349,
+        "difficulty": "easy",
+        "question": "Au nom de quel clan Yamato se bat-elle ?",
+        "answer": "Le clan Kozuki"
+    },
+    {
+        "id": 1350,
+        "difficulty": "medium",
+        "question": "Quel membre de l’équipage de Big Mom a combattu Carrot et Wanda sur Onigashima ?",
+        "answer": "Charlotte Perospero"
+    },
+    {
+        "id": 1351,
+        "difficulty": "easy",
+        "question": "Quel fan de One Piece apparaît très régulièrement dans le courrier des lecteurs en posant des questions déplacées à Oda ?",
+        "answer": "Sanadacchi"
+    },
+    {
+        "id": 1352,
+        "difficulty": "medium",
+        "question": "Quel clan est considéré comme étant \"l’ennemi juré des dieux\" ?",
+        "answer": "Le clan du D."
+    },
+    {
+        "id": 1353,
+        "difficulty": "easy",
+        "question": "Quel matériau Eustass Kid peut-il manipuler à sa guise, lui permettant notamment de créer une gigantesque extension de son bras ?",
+        "answer": "Le métal"
+    },
+    {
+        "id": 1354,
+        "difficulty": "medium",
+        "question": "Quel pirate faisait léviter Onigashima et comptait déplacer l’île jusqu’à la capitale des Fleurs ?",
+        "answer": "Kaido aux Cent Bêtes"
     }
-
-
 
 
 

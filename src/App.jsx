@@ -11,6 +11,7 @@ import CorrectionPage from "./pages/CorrectionPage";
 import Checkout from "./pages/Checkout";
 import Register from "./pages/register";
 import Success from "./pages/Success";
+import FindThemAll from "./pages/Find-them-all";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -56,6 +57,9 @@ function App() {
       <Route path="/game/:room" element={<GamePage user={user} />} />
       <Route path="/correction/:room" element={<CorrectionPage user={user} />} />
       <Route path="/result/:room" element={<ResultPage user={user} />} />
+
+      <Route path="/findthemAll/:room" element={<FindThemAll user={user} />} />
+
     </Routes>
   );
 }

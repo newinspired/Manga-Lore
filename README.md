@@ -17,3 +17,6 @@ If you are developing a production application, we recommend using TypeScript wi
 PS C:\Users\aurélien\Desktop\manga-lore\servers> node index.js
 
 PS C:\Users\aurélien\Desktop\manga-lore> npm run dev
+
+PS C:\Users\aurélien\Desktop\Manga-Lore-main> cd .\servers\     
+PS C:\Users\aurélien\Desktop\Manga-Lore-main\servers> firebase emulators:start
