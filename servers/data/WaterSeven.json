@@ -478,6 +478,12 @@
         "difficulty": "medium",
         "question": "Quel est le montant de la prime de Tony Tony Chopper, considéré comme la mascotte du groupe, après Enies Lobby ?",
         "answer": "50 Berries"
+    },
+    {
+        "id": 481,
+        "difficulty": "easy",
+        "question": "Quelle est la signification du sigle \"CP9\" ?",
+        "answer": "Cipher Pol. 9"
     }
 
 ]

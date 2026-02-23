@@ -757,7 +757,7 @@
 
     {
         "id": 1326,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "En quel bois très précieux et extrêmement résistant a été construit le Thousand Sunny ?",
         "answer": "En bois d’Adam"
     },
@@ -769,25 +769,25 @@
     },
     {
         "id": 1328,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Comment se nomment les combattants au service de Kaido encore en attente d’un SMILE ?",
         "answer": "Les Waiters"
     },
     {
         "id": 1329,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Comment se nomment les combattants ayant mangé un SMILE défectueux ?",
         "answer": "Les Pleasures"
     },
     {
         "id": 1330,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Comment se nomment les combattants ayant acquis les pouvoirs d’un SMILE ?",
         "answer": "Les Gifters"
     },
     {
         "id": 1331,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quel membre des Tobi Roppo est la sœur aînée de Page One et la fille d’Anafuda ?",
         "answer": "Ulti"
     },
@@ -811,7 +811,7 @@
     },
     {
         "id": 1335,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quel ancien commandant de flotte de Barbe Blanche possède un fruit du démon de type mythologique et prend part à la grande bataille finale d’Onigashima ?",
         "answer": "Marco le Phénix"
     },
@@ -829,13 +829,13 @@
     },
     {
         "id": 1338,
-        "difficulty": "medium",
-        "question": "Quel ancien commandant de division de Barbe Blanche, né au pays des Wano, prend part à la grande bataille finale d’Onigashima ?",
+        "difficulty": "difficult",
+        "question": "Quel ancien commandant de division de Barbe Blanche, né au pays des Wa, prend part à la grande bataille finale d’Onigashima ?",
         "answer": "Izo"
     },
     {
         "id": 1339,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Qui est le frère de Kiku et ancien commandant de division de Barbe Blanche ?",
         "answer": "Izo"
     },
@@ -848,13 +848,13 @@
     {
         "id": 1341,
         "difficulty": "easy",
-        "question": "Quel puissant pirate a assassiné Orochi en lui tranchant le cou sur Onigashima ?",
+        "question": "Quel Empereur des Mers a décapité Orochi en lui tranchant le cou sur Onigashima ?",
         "answer": "Kaido"
     },
     {
         "id": 1342,
-        "difficulty": "medium",
-        "question": "Quel membre du clan Kozuki porte un prénom signifiant « invincibilité » ?",
+        "difficulty": "difficult",
+        "question": "Quel membre du clan Kozuki porte un prénom signifiant \"invincibilité\" ?",
         "answer": "Momonosuke Kozuki"
     },
     {
@@ -873,12 +873,12 @@
         "id": 1345,
         "difficulty": "medium",
         "question": "Quel amiral du quartier général de la Marine est un ancien policier du royaume de Taïya ?",
-        "answer": "Ryōkūgyū"
+        "answer": "Ryokugyû"
     },
     {
         "id": 1346,
         "difficulty": "easy",
-        "question": "Contre qui les Neuf Fourreaux rouges se sont-ils battus au sommet du crâne d’Onigashima ?",
+        "question": "Contre quel puissant pirate, les Neuf Fourreaux rouges se sont-ils battus au sommet du crâne d’Onigashima ?",
         "answer": "Kaido aux Cent Bêtes"
     },
     {
@@ -889,7 +889,7 @@
     },
     {
         "id": 1348,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quel type de combattants est réputé pour sa grande résilience, même le ventre vide ou grièvement blessé ?",
         "answer": "Les samouraïs"
     },
@@ -901,13 +901,13 @@
     },
     {
         "id": 1350,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel membre de l’équipage de Big Mom a combattu Carrot et Wanda sur Onigashima ?",
-        "answer": "Charlotte Perospero"
+        "answer": "Charlotte Slurp"
     },
     {
         "id": 1351,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Quel fan de One Piece apparaît très régulièrement dans le courrier des lecteurs en posant des questions déplacées à Oda ?",
         "answer": "Sanadacchi"
     },
@@ -925,12 +925,428 @@
     },
     {
         "id": 1354,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quel pirate faisait léviter Onigashima et comptait déplacer l’île jusqu’à la capitale des Fleurs ?",
         "answer": "Kaido aux Cent Bêtes"
-    }
+    },
+    {
+        "id": 1355,
+        "difficulty": "easy",
+        "question": "Quel pirate a rencontré Yamato au pays des Wa quelques années auparavant, lui annonçant que son petit frère deviendrait quelqu’un d’important ?",
+        "answer": "Portgas D. Ace"
+    },
+    {
+        "id": 1356,
+        "difficulty": "easy",
+        "question": "Qui a précédé Portgas D. Ace au poste de commandant de la deuxième flotte de l’équipage de Barbe Blanche ?",
+        "answer": "Oden Kozuki"
+    },
+    {
+        "id": 1357,
+        "difficulty": "easy",
+        "question": "Qui a succédé à Oden Kozuki au poste de commandant de la deuxième flotte de l’équipage de Barbe Blanche ?",
+        "answer": "Portgas D. Ace"
+    },
+    {
+        "id": 1358,
+        "difficulty": "easy",
+        "question": "Contre quels empereurs les cinq Supernovas se sont-ils battus sur le dôme en forme de crâne à Onigashima ?",
+        "answer": "Big Mom et Kaido"
+    },
+    {
+        "id": 1359,
+        "difficulty": "easy",
+        "question": "À quel pirate appartient le rire \"WO LO LO LO\" ?",
+        "answer": "Kaido aux Cent Bêtes"
+    },
+    {
+        "id": 1360,
+        "difficulty": "difficult",
+        "question": "Quel pirate a pour technique de combat le \"Punk Rotten\" ?",
+        "answer": "Eustass Kid"
+    },
+    {
+        "id": 1361,
+        "difficulty": "medium",
+        "question": "Quel sabreur est connu pour son emblématique technique à trois sabres \"Demon Slash du Purgatoire\" ?",
+        "answer": "Roronoa Zoro"
+    },
+    {
+        "id": 1362,
+        "difficulty": "medium",
+        "question": "Quel ancien Grand Corsaire utilise la technique de combat \"Gamma Knife\" ?",
+        "answer": "Trafalgar D. Law"
+    },
+    {
+        "id": 1363,
+        "difficulty": "easy",
+        "question": "Quels sont les trois capitaines pirates membres des Supernovas ayant combattu Kaido et Big Mom à Onigashima ?",
+        "answer": "Monkey D. Luffy, Trafalgar D. Water Law et Eustass Kid"
+    },
+    {
+        "id": 1364,
+        "difficulty": "easy",
+        "question": "Quels sont les deux seconds d’équipage ayant combattu sur le dôme d’Onigashima contre Kaido et Big Mom ?",
+        "answer": "Roronoa Zoro et Killer"
+    },
+    {
+        "id": 1365,
+        "difficulty": "medium",
+        "question": "Quel pirate a pour technique de combat \"Souffle ardent\" ?",
+        "answer": "Kaido aux Cent Bêtes"
+    },
+    {
+        "id": 1366,
+        "difficulty": "easy",
+        "question": "Qui était l’adversaire principale de Nico Robin lors de l’arc d’Onigashima ?",
+        "answer": "Black Maria"
+    },
+    {
+        "id": 1367,
+        "difficulty": "easy",
+        "question": "Lorsque Black Maria retenait Sanji prisonnier dans ses toiles, quelle membre de l’équipage a-t-il appelée à l’aide pour l’affronter à sa place ?",
+        "answer": "Nico Robin"
+    },
+    {
+        "id": 1368,
+        "difficulty": "easy",
+        "question": "Quel ancien bras droit d’un empereur des mers a affronté King et Queen en un contre deux à Onigashima ?",
+        "answer": "Marco le Phénix"
+    },
+    {
+        "id": 1369,
+        "difficulty": "easy",
+        "question": "Quel pirate a mis au point un antidote plus efficace que le virus créé par Queen afin de sauver les Pleasures et Waiters ?",
+        "answer": "Tony Tony Chopper"
+    },
+    {
+        "id": 1370,
+        "difficulty": "easy",
+        "question": "Quel type de Haki Roronoa Zoro a-t-il éveillé lors de ses affrontements à Onigashima ?",
+        "answer": "Le fluide royal"
+    },
+    {
+        "id": 1371,
+        "difficulty": "medium",
+        "question": "Qui a tué Kanjuro de son sabre à Onigashima ?",
+        "answer": "Kinemon"
+    },
+    {
+        "id": 1372,
+        "difficulty": "easy",
+        "question": "Quel pirate utilise la technique emblématique \"Jambe à la Diable\" ?",
+        "answer": "Sanji"
+    },
+    {
+        "id": 1373,
+        "difficulty": "difficult",
+        "question": "Quel personnage a porté le coup final sur Orochi durant l’arc du pays des wa ?",
+        "answer": "Denjiro"
+    },
+    {
+        "id": 1374,
+        "difficulty": "medium",
+        "question": "Combien de fois Kaido a-t-il vaincu Luffy au sommet du dôme d’Onigashima ?",
+        "answer": "Trois fois"
+    },
+    {
+        "id": 1375,
+        "difficulty": "medium",
+        "question": "Quel pirate a vaincu Page One d’un seul et surpuissant coup de poing ?",
+        "answer": "Big Mom"
+    },
+    {
+        "id": 1376,
+        "difficulty": "medium",
+        "question": "Quel membre des Mugiwaras a vaincu Ulti à l’aide de son arme sur Onigashima ?",
+        "answer": "Nami"
+    },
+    {
+        "id": 1377,
+        "difficulty": "medium",
+        "question": "Quel personnage a réussi à rallier des troupes ennemies appartenant à Kaido grâce à ses Kibi Dango ?",
+        "answer": "O Tama"
+    },
+    {
+        "id": 1378,
+        "difficulty": "difficult",
+        "question": "Quel membre des Tobi Roppo Jinbe a-t-il vaincu sur Onigashima ?",
+        "answer": "Who's Who"
+    },
+    {
+        "id": 1379,
+        "difficulty": "difficult",
+        "question": "Quel membre des Tobi Roppo Franky a-t-il vaincu sur Onigashima ?",
+        "answer": "Sasaki"
+    },
+    {
+        "id": 1380,
+        "difficulty": "medium",
+        "question": "Quel membre des Tobi Roppo Nico Robin a-t-elle combattu sur Onigashima ?",
+        "answer": "Black Maria"
+    },
+    {
+        "id": 1381,
+        "difficulty": "medium",
+        "question": "Quel pirate a la volonté de devenir le seigneur des enfers ?",
+        "answer": "Roronoa Zoro"
+    },
+    {
+        "id": 1382,
+        "difficulty": "easy",
+        "question": "En quelle créature légendaire Momonosuke peut-il se transformer après avoir mangé un fruit du démon artificiel ?",
+        "answer": "Un dragon"
+    },
+    {
+        "id": 1383,
+        "difficulty": "medium",
+        "question": "À quelle race appartient King, dont il est le dernier représentant connu ?",
+        "answer": "Les Lunaria"
+    },
+    {
+        "id": 1384,
+        "difficulty": "difficult",
+        "question": "Sur quel territoire vivaient les Lunaria par le passé ?",
+        "answer": "Au-dessus de Red Line"
+    },
+    {
+        "id": 1385,
+        "difficulty": "medium",
+        "question": "Qui a permis à Momonosuke de se transformer en adulte grâce aux pouvoirs de son fruit du démon ?",
+        "answer": "Shinobu"
+    },
+    {
+        "id": 1386,
+        "difficulty": "difficult",
+        "question": "Quel membre de la famille Shimotsuki, aux cheveux bleus, ressemblait comme deux gouttes d’eau à Roronoa Zoro ?",
+        "answer": "Shimotsuki Ushimaru"
+    },
+    {
+        "id": 1387,
+        "difficulty": "easy",
+        "question": "Quel ancêtre lointain de Roronoa Zoro était un samouraï légendaire surnommé le \"Dieu des lames\" ?",
+        "answer": "Shimotsuki Ryuma"
+    },
+    {
+        "id": 1388,
+        "difficulty": "medium",
+        "question": "Quel enfant Shimotsuki Ushimaru a-t-il sauvé d’une grotte lorsqu’elle était encore enfant ?",
+        "answer": "Yamato"
+    },
+    {
+        "id": 1389,
+        "difficulty": "easy",
+        "question": "À quel pirate appartient la technique du \"Grondement de tonnerre divin\" ?",
+        "answer": "Kaido aux Cent Bêtes mais également Yamato"      
+    },
+    {
+        "id": 1390,
+        "difficulty": "medium",
+        "question": "Qui a vaincu Charlotte Slurp lors des événements d’Onigashima ?",
+        "answer": "Maître Chavipère"
+    },
+    {
+        "id": 1391,
+        "difficulty": "medium",
+        "question": "Quel mink a vengé les siens en vainquant Jack la Sécheresse à Onigashima ?",
+        "answer": "Duc Caborage"
+    },
+    {
+        "id": 1392,
+        "difficulty": "medium",
+        "question": "Qui a vaincu Basil Hawkins à la fin de l’arc d’Onigashima ?",
+        "answer": "Killer"
+    },
+    {
+        "id": 1393,
+        "difficulty": "difficult",
+        "question": "Quel est le véritable prénom de King, la superstar de l’équipage aux Cent Bêtes ?",
+        "answer": "Alber"
+    },
+    {
+        "id": 1394,
+        "difficulty": "difficult",
+        "question": "Comment se nomme l’amie d’enfance défunte de Roronoa Zoro ?",
+        "answer": "Kuina"
+    },
+    {
+        "id": 1395,
+        "difficulty": "easy",
+        "question": "Qui a vaincu Queen la Pandémie sur Onigashima ?",
+        "answer": "Sanji"
+    },
+
+
+
+
+
+
+
+
+
+
 
 
 
     
+
+
+
+    {
+        "id": 1396,
+        "difficulty": "medium",
+        "question": "Comment se nomme la plus importante organisation de renseignement au monde, antagoniste mineure lors des événements d’Onigashima ?",
+        "answer": "CP-0 (Aigis Zero)"
+    },
+    {
+        "id": 1397,
+        "difficulty": "medium",
+        "question": "À qui Trafalgar D. Water Law doit-il sa technique « Silent », permettant de créer une zone où aucun son ne se propage ?",
+        "answer": "Corazon"
+    },
+    {
+        "id": 1398,
+        "difficulty": "medium",
+        "question": "Par quels pirates l’impératrice Big Mom a-t-elle été vaincue dans l’espace de concert d’Onigashima ?",
+        "answer": "Eustass Kid et Trafalgar D. Law"
+    },
+    {
+        "id": 1399,
+        "difficulty": "medium",
+        "question": "Qui est le premier à avoir ressenti que Luffy était bel et bien Joy Boy ?",
+        "answer": "Zunesha"
+    },
+    {
+        "id": 1400,
+        "difficulty": "medium",
+        "question": "Quel guerrier légendaire donne son nom au véritable fruit du démon de Monkey D. Luffy ?",
+        "answer": "Nika"
+    },
+    {
+        "id": 1401,
+        "difficulty": "medium",
+        "question": "À quelle divinité fait référence le véritable fruit du démon de Luffy, le Hito Hito no Mi, modèle Nika ?",
+        "answer": "Le dieu du soleil"
+    },
+    {
+        "id": 1402,
+        "difficulty": "easy",
+        "question": "Quelle nouvelle forme Monkey D. Luffy révèle-t-il pour la première fois durant la guerre d’Onigashima ?",
+        "answer": "Gear Five"
+    },
+    {
+        "id": 1403,
+        "difficulty": "medium",
+        "question": "Comment se nomme la forme éveillée du véritable fruit du démon de Monkey D. Luffy ?",
+        "answer": "Gear Five"
+    },
+    {
+        "id": 1404,
+        "difficulty": "medium",
+        "question": "À quel type d’éveil de fruit du démon le Gear 5 de Luffy est-il comparable dans son fonctionnement ?",
+        "answer": "À l’éveil des Paramécia"
+    },
+    {
+        "id": 1405,
+        "difficulty": "medium",
+        "question": "Après la défaite de Big Mom et Kaido à Onigashima, quel événement a provoqué une violente éruption volcanique et un puissant séisme ?",
+        "answer": "La chute de Kaido et Big Mom dans le magma"
+    },
+    {
+        "id": 1406,
+        "difficulty": "easy",
+        "question": "Qui est devenu le nouveau shogun du pays des Wa après les événements d’Onigashima ?",
+        "answer": "Momonosuke Kozuki"
+    },
+    {
+        "id": 1407,
+        "difficulty": "easy",
+        "question": "Dans quelle région du pays des Wa le shogun réside-t-il ?",
+        "answer": "La capitale des Fleurs"
+    },
+    {
+        "id": 1408,
+        "difficulty": "medium",
+        "question": "Quel ancien commandant de division de Barbe Blanche a perdu la vie lors de l’assaut d’Onigashima ?",
+        "answer": "Izo"
+    },
+    {
+        "id": 1409,
+        "difficulty": "medium",
+        "question": "Quel membre des Neuf Fourreaux Rouges a combattu aux côtés de l’Alliance Ninja-Pirate-Mink-Samouraï et a tragiquement perdu la vie ?",
+        "answer": "Ashura Doji"
+    },
+    {
+        "id": 1410,
+        "difficulty": "medium",
+        "question": "Après les événements d’Onigashima, quelles sommes ont atteint les primes des trois capitaines pirates Monkey D. Luffy, Eustass Kid et Trafalgar D. Law ?",
+        "answer": "3 milliards de berrys"
+    },
+    {
+        "id": 1411,
+        "difficulty": "medium",
+        "question": "Dans quel pays se trouve l’arme antique Pluton ?",
+        "answer": "Le pays des Wa"
+    },
+    {
+        "id": 1412,
+        "difficulty": "medium",
+        "question": "Quels sont les deux nouveaux pirates ayant remplacé Kaido et Big Mom au poste d’empereur des mers ?",
+        "answer": "Monkey D. Luffy et Buggy"
+    },
+    {
+        "id": 1413,
+        "difficulty": "medium",
+        "question": "Quel amiral du quartier général de la Marine a capturé King et Queen après les événements d’Onigashima ?",
+        "answer": "Ryokugyu"
+    },
+    {
+        "id": 1414,
+        "difficulty": "medium",
+        "question": "Quel est le fruit du démon de Ryokugyu, l’amiral du quartier général de la Marine ?",
+        "answer": "Le fruit de la forêt (Mori Mori no Mi)"
+    },
+    {
+        "id": 1415,
+        "difficulty": "easy",
+        "question": "Qui est le second de Shanks le Roux ?",
+        "answer": "Ben Beckman"
+    },
+    {
+        "id": 1416,
+        "difficulty": "medium",
+        "question": "Quel membre de l’Armée révolutionnaire possède une popularité et une influence dépassant même celles de Dragon dans le monde ?",
+        "answer": "Sabo"
+    },
+    {
+        "id": 1417,
+        "difficulty": "easy",
+        "question": "Quel personnage porte l’épithète « Empereur des Flammes » ?",
+        "answer": "Sabo"
+    },
+    {
+        "id": 1418,
+        "difficulty": "medium",
+        "question": "Quel type de ponéglyphe Kozuki Sukiyaki a-t-il présenté à Nico Robin et Trafalgar D. Law après les événements d’Onigashima ?",
+        "answer": "Un Road Ponéglyphe"
+    },
+    {
+        "id": 1419,
+        "difficulty": "medium",
+        "question": "Combien de Road Ponéglyphes l’équipage du Chapeau de paille possède-t-il après les événements de Wano ?",
+        "answer": "3 sur 4"
+    },
+    {
+        "id": 1420,
+        "difficulty": "medium",
+        "question": "À qui Shanks le Roux s’adresse-t-il lorsqu’il déclare que la nouvelle ère est en train d’arriver ?",
+        "answer": "Ryokugyu"
+    },
+    {
+        "id": 1421,
+        "difficulty": "difficult",
+        "question": "À qui appartenait le puissant Haki des Rois ayant stoppé l’attaque de Ryokugyu au pays des Wa ?",
+        "answer": "Shanks le Roux"
+    }
+
 ]  
