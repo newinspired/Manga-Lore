@@ -2,6 +2,7 @@ import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 import CardName from '../components/card-name.jsx';
 import WaitingRoom from '../components/waiting-room.jsx';
+import WaitingRoomGuess from '../components/waiting-room-guess.jsx';
 import socket, { playerId, joinRoom, rejoinRoom, onPlayerListUpdate } from '../socket';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
@@ -152,7 +153,7 @@ function SalonPage({ userData }) {
 
               <button
                 className="mode-button"
-                onClick={() => setSelectedMode("mode2")}
+                onClick={() => setSelectedMode("guess")}
               >
                 Find them all
               </button>
@@ -180,6 +181,17 @@ function SalonPage({ userData }) {
               isPremiumUser={isPremiumUser}
             />
           )}
+
+          {selectedMode === "guess" && (
+            <WaitingRoomGuess
+                roomCode={room}
+                username={locationUsername}
+                isHost={isHost}
+                selectedArcs={selectedArcs}
+                setSelectedArcs={setSelectedArcs}
+                isPremiumUser={isPremiumUser}
+            />
+            )}
         </div>
 
         <div className="container-bonne-chance">

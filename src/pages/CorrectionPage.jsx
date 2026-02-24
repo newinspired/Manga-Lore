@@ -7,7 +7,8 @@ import { playerId } from "../socket";
 function CorrectionPage() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { answersHistory = [], players = [], room, currentSocketId } = location.state || {};
+
+  const { answersHistory = [], players = [], room } = location.state || {};
 
   const [questionIndex, setQuestionIndex] = useState(0);
   const [playerIndex, setPlayerIndex] = useState(0);
@@ -15,6 +16,8 @@ function CorrectionPage() {
   const [isHost, setIsHost] = useState(false);
 
   useEffect(() => {
+    if (!room) return;
+
     const me = players.find(p => p.id === playerId);
     if (me?.isHost) setIsHost(true);
 
@@ -24,19 +27,24 @@ function CorrectionPage() {
       setCurrentPlayer(players[playerIndex]);
     });
 
-    // 🔹 Tous les joueurs passent automatiquement à la ResultPage
-    socket.on("gameEnded", () => {
-      navigate(`/result/${room}`, { state: { players, answersHistory, room, currentSocketId } });
+    socket.on("gameEnded", ({ players, answersHistory }) => {
+      navigate(`/result/${room}`, {
+        state: {
+          players,
+          answersHistory,
+          room
+        }
+      });
     });
 
     return () => {
       socket.off("correctionUpdate");
       socket.off("gameEnded");
     };
-  }, [players, currentSocketId, navigate, room, answersHistory]);
+  }, [players, navigate, room]);
 
   const handleCorrection = (isCorrect) => {
-    const currentQuestion = answersHistory[questionIndex];
+    if (!currentPlayer) return;
 
     socket.emit("applyCorrection", {
       room,
@@ -46,51 +54,70 @@ function CorrectionPage() {
     });
 
     if (playerIndex + 1 < players.length) {
-      setPlayerIndex(playerIndex + 1);
-      setCurrentPlayer(players[playerIndex + 1]);
+      const nextPlayerIndex = playerIndex + 1;
+
+      setPlayerIndex(nextPlayerIndex);
+      setCurrentPlayer(players[nextPlayerIndex]);
 
       socket.emit("correctionUpdate", {
         room,
         questionIndex,
-        playerIndex: playerIndex + 1
+        playerIndex: nextPlayerIndex
       });
-    } else {
-      if (questionIndex + 1 < answersHistory.length) {
-        setQuestionIndex(questionIndex + 1);
-        setPlayerIndex(0);
-        setCurrentPlayer(players[0]);
 
-        socket.emit("correctionUpdate", {
-          room,
-          questionIndex: questionIndex + 1,
-          playerIndex: 0
-        });
-      } else {
-        // 🔹 Chef émet l'événement pour tous les joueurs
-        socket.emit("correctionFinished", { room });
-        navigate(`/result/${room}`, { state: { players, answersHistory, room, currentSocketId } });
-      }
+    } else if (questionIndex + 1 < answersHistory.length) {
+
+      const nextQuestionIndex = questionIndex + 1;
+
+      setQuestionIndex(nextQuestionIndex);
+      setPlayerIndex(0);
+      setCurrentPlayer(players[0]);
+
+      socket.emit("correctionUpdate", {
+        room,
+        questionIndex: nextQuestionIndex,
+        playerIndex: 0
+      });
+
+    } else {
+      // ✅ Fin totale de la correction → le host prévient le serveur
+      socket.emit("correctionFinished", { room });
     }
   };
+
+  if (!answersHistory.length || !currentPlayer) {
+    return (
+      <div className="container-question-component">
+        <p>Chargement...</p>
+      </div>
+    );
+  }
 
   const currentQuestion = answersHistory[questionIndex];
 
   return (
     <div className="container-question-component">
       <div className="container-correction">
+
         <div className="correction">
           Correction Question : {questionIndex + 1} / {answersHistory.length}
         </div>
 
         <div className="main-correction">
-          <p className="question-text">{currentQuestion.question}</p>
+          <p className="question-text">
+            {currentQuestion.question}
+          </p>
+
           <div className="reponses-correction">
             <p className="reponse-right">
               {currentQuestion.correctAnswer}
             </p>
+
             <p className="reponse-text">
-              {currentPlayer?.username || "Joueur"} :{" "}
-              <strong>{currentQuestion.answers?.[currentPlayer?.id] || "(no response)"}</strong>
+              {currentPlayer.username} :{" "}
+              <strong>
+                {currentQuestion.answers?.[currentPlayer.id] || "(no response)"}
+              </strong>
             </p>
           </div>
         </div>
@@ -103,6 +130,7 @@ function CorrectionPage() {
         ) : (
           <p>Le chef est en train de corriger...</p>
         )}
+
       </div>
     </div>
   );

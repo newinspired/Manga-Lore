@@ -73,7 +73,7 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
 
 
   const isButtonDisabled = isHost && selectedArcs.length === 0;
-  const buttonLabel = isReady ? 'Ready' : 'Start Game';
+  const buttonLabel = isReady ? 'Not ready' : 'Ready';
   const allowedArcs = [
     "EastBlue",
     "Alabasta",

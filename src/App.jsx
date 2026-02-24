@@ -30,7 +30,7 @@ function App() {
         setUserData({
           isLoggedIn: true,
           username: currentUser.displayName,
-          isPremium: false,
+          isPremium: true,
         });
       } else {
         setUserData({

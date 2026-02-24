@@ -85,6 +85,17 @@ function handleSocketEvents(io) {
     socket.on('disconnect', () => {
       handleDisconnect(io, socket, playersInRooms, games);
     });
+
+    socket.on("correctionFinished", ({ room }) => {
+      const game = games[room];
+      if (!game) return;
+
+      io.to(room).emit("gameEnded", {
+        players: game.finalPlayers,
+        answersHistory: game.answersHistory
+      });
+    });
+
   });
 }
 
