@@ -1347,6 +1347,60 @@
         "difficulty": "difficult",
         "question": "À qui appartenait le puissant Haki des Rois ayant stoppé l’attaque de Ryokugyu au pays des Wa ?",
         "answer": "Shanks le Roux"
+    },
+    {
+        "id": 1422,
+        "difficulty": "medium",
+        "question": "Qui a été désignée par Nekomamushi et Inuarashi pour devenir la prochaine souveraine de la principauté de Mokomo ?",
+        "answer": "Carotte"
+    },
+    {
+        "id": 1423,
+        "difficulty": "medium",
+        "question": "Quels sont les deux anciens Grands Corsaires qui se sont alliés à l’empereur Buggy et font désormais partie de la Cross Guild ?",
+        "answer": "Dracule Mihawk et Sir Crocodile"
+    },
+    {
+        "id": 1424,
+        "difficulty": "easy",
+        "question": "Quelle guerrière originaire du pays des Wa a déclaré vouloir rejoindre l’équipage du Chapeau de paille après avoir parcouru le pays ?",
+        "answer": "Yamato"
+    },
+        {
+        "id": 1425,
+        "difficulty": "medium",
+        "question": "Quels sont les deux pirates à l’origine de la création de la Cross Guild, bien que l’un d’eux n’en soit plus officiellement le chef ?",
+        "answer": "Dracule Mihawk et Sir Crocodile"
+    },
+    {
+        "id": 1426,
+        "difficulty": "medium",
+        "question": "De quelle race les Séraphins possèdent-ils les capacités de régénération ?",
+        "answer": "Les Lunaria"
+    },
+    {
+        "id": 1427,
+        "difficulty": "easy",
+        "question": "Quels nouveaux Pacifistas ont été conçus pour ressembler aux anciens Grands Corsaires ?",
+        "answer": "Les Séraphins"
+    },
+    {
+        "id": 1428,
+        "difficulty": "medium",
+        "question": "Par quel empereur des mers Boa Hancock a-t-elle été attaquée après les événements d’Onigashima ?",
+        "answer": "Marshall D. Teach"
+    },
+    {
+        "id": 1429,
+        "difficulty": "easy",
+        "question": "Quel colonel de la Marine a été enlevé par l’équipage de l’empereur Barbe Noire ?",
+        "answer": "Coby"
+    },
+    {
+        "id": 1430,
+        "difficulty": "medium",
+        "question": "Selon les journaux du monde entier, qui aurait assassiné Nefertari Cobra lors de la Rêverie ?",
+        "answer": "Sabo"
     }
 
 ]  

@@ -10,21 +10,6 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
   const navigate = useNavigate();
   const { room } = useParams();
 
-  useEffect(() => {
-    onPlayerListUpdate((updatedPlayers) => {
-      setPlayers(updatedPlayers);
-    });
-
-    socket.on('startGame', () => {
-      navigate(`/game/${roomCode}`);
-    });
-
-    return () => {
-      offPlayerListUpdate();
-      socket.off('startGame');
-    };
-  }, [navigate, roomCode]);
-
   // Écouter les choix d’arcs en temps réel (pour les non-hosts)
   useEffect(() => {
     const handleArcsUpdate = (updatedArcs) => {
@@ -85,12 +70,11 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
 
   return (
     <div className='container-ready-button'>
-      <div className='waiting-room'>
+      <div>
         <h2>
-          WAITING ROOM : <span className='couleur-pseudo'>{roomCode}</span>
+          Question sur tout le lore de one piece 
         </h2>
       </div>
-
       <div className="arc-selection">
         <div className='choose-arc'>
           <h3>

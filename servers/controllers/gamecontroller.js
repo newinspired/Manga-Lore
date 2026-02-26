@@ -135,6 +135,13 @@ function clearGameTimer(game) {
 // ----------------------------------------------------------
 function handleJoinRoom(io, socket, { roomId, username, avatar, playerId }, playersInRooms, games) {
   if (!playersInRooms[roomId]) playersInRooms[roomId] = [];
+  const alreadyExists = playersInRooms[roomId].find(
+      p => p.socketId === socket.id
+    );
+
+    if (alreadyExists) {
+      return;
+    } 
 
   // Si le joueur (playerId) existe déjà dans la room → mise à jour du socketId
   let existingPlayer = playersInRooms[roomId].find(p => p.playerId && playerId && p.playerId === playerId);
@@ -328,7 +335,7 @@ function sendNextQuestion(io, roomCode, games) {
     return;
   }
 
-  const QUESTION_TIME_SECONDS = 20;
+  const QUESTION_TIME_SECONDS = 2;
   let timeLeft = QUESTION_TIME_SECONDS;
 
   io.to(roomCode).emit('newQuestion', { question, timeLeft });

@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import '../styles/login-page.scss';
 import '../styles/modal-avatar.scss';
 import { useState, useEffect, useRef } from 'react';
@@ -6,6 +6,7 @@ import socket from '../socket';
 import ModalAvatar from '../components/modal-avatar.jsx';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
+import { playerId } from "../socket";
 
 import luffy from '../assets/avatars-color/luffy6.jpg';
 import zoro from '../assets/avatars-color/zoro.jpg';
@@ -43,6 +44,8 @@ function LoginPage({ userData }) {
   const [showRules, setShowRules] = useState(false);
   const [showDescription, setShowDescription] = useState(false);
 
+  const location = useLocation();
+
   const handleBuyPremium = () => {
     if (!userData?.isLoggedIn) {
       localStorage.setItem("redirectAfterLogin", "/checkout");
@@ -56,41 +59,35 @@ function LoginPage({ userData }) {
     if (trimmedInput === '') return;
 
     const code = Math.random().toString(36).substring(2, 8).toUpperCase();
-    setRoomInput(code);
-
-    const avatarObj = avatarOptions.find(a => a.name === selectedAvatar);
 
     localStorage.setItem('username', trimmedInput);
     localStorage.setItem('roomCode', code);
     localStorage.setItem('avatar', selectedAvatar);
 
-    socket.emit('createRoom', code, trimmedInput, selectedAvatar);
-
-    navigate(`/salon/${code}`, {
-      state: {
-        username: trimmedInput,
-        avatar: avatarObj.name,
-      },
+    socket.emit('createRoom', {
+      roomId: code,
+      username: trimmedInput,
+      avatar: selectedAvatar,
+      playerId
     });
+
+    console.log("JOIN DEBUG:", {
+      socketId: socket.id,
+      playerId,
+      roomId: code
+    });
+
+    navigate(`/salon/${code}`);
   };
 
   const handleSubmit = () => {
     if (!isFormValid) return;
 
-    const avatarObj = avatarOptions.find(a => a.name === selectedAvatar);
-
     localStorage.setItem('username', trimmedInput);
     localStorage.setItem('roomCode', trimmedRoom);
     localStorage.setItem('avatar', selectedAvatar);
 
-    socket.emit('createRoom', trimmedRoom, trimmedInput, selectedAvatar);
-
-    navigate(`/salon/${trimmedRoom}`, {
-      state: {
-        username: trimmedInput,
-        avatar: avatarObj.name,
-      },
-    });
+    navigate(`/salon/${trimmedRoom}`);
   };
 
   useEffect(() => {

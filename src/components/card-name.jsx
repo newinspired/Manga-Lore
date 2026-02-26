@@ -30,7 +30,9 @@ function CardName({ currentSocketId, players: externalPlayers, showResults = fal
   return (
     <div className="container-card-name">
       {players.map((player, index) => {
-        const isCurrentUser = player.id === currentSocketId;
+        const isCurrentUser =
+          player.playerId === localStorage.getItem("playerId") ||
+          player.socketId === currentSocketId;
         const username = player.username || `Joueur ${index + 1}`;
         const avatar = avatarMap[player.avatar] || avatarMap['Luffy'];
         const score = typeof player.score === 'number' ? player.score : 0;
