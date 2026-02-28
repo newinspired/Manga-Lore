@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "question": "Citez les membres officiels de l’équipage du Chapeau de Paille",
+    "answers": [
+      {
+        "variants": ["Monkey D Luffy","Luffy"]
+      },
+      {
+        "variants": ["Zoro","Roronoa Zoro"]
+      },
+      {
+        "variants": ["Nami"]
+      },
+      {
+        "variants": ["Usopp","Ussop","God Usopp"]
+      },
+      {
+        "variants": ["Sanji","Vinsmoke Sanji"]
+      },
+      {
+        "variants": ["Chopper","Tony Tony Chopper","Tony Chopper"]
+      },
+      {
+        "variants": ["Robin","Nico Robin"]
+      },
+      {
+        "variants": ["Franky","Cutty Flam"]
+      },
+      {
+        "variants": ["Brook","Soul King"]
+      },
+      {
+        "variants": ["Jinbe","Jimbei"]
+      }
+    ]
+  }
+]

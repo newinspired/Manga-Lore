@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from 'react';
 import CardName from '../components/card-name.jsx';
 import WaitingRoom from '../components/waiting-room.jsx';
 import WaitingRoomGuess from '../components/waiting-room-guess.jsx';
+import WaitingRoomRanked from '../components/waiting-room-ranked.jsx';
 import socket from '../socket';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
@@ -16,6 +17,9 @@ function SalonPage({ userData }) {
   const { room } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
+
+  const [showRules, setShowRules] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
 
   const { username: locationUsername, avatar: locationAvatar } = location.state || {};
 
@@ -138,31 +142,30 @@ function SalonPage({ userData }) {
 
               <button
                 className="mode-button"
-                onClick={() => setSelectedMode("classic")}
+                onClick={() => setSelectedMode("AllTheLore")}
               >
-                Classic question
+                All the One Piece lore !
               </button>
 
               <button
                 className="mode-button"
-                onClick={() => setSelectedMode("guess")}
+                onClick={() => setSelectedMode("PutInOrder")}
               >
-                Find them all
+                " Put in Order "
               </button>
 
               <div className="separate"></div>
 
               <button
                 className="mode-button"
-                onClick={() => setSelectedMode("mode3")}
+                onClick={() => setSelectedMode("ranked")}
               >
-                Ranked
+                Ranked - Name Them All
               </button>
-
             </div>
           )}
 
-          {selectedMode === "classic" && (
+          {selectedMode === "AllTheLore" && (
             <WaitingRoom
               roomCode={room}
               username={locationUsername}
@@ -174,7 +177,7 @@ function SalonPage({ userData }) {
             />
           )}
 
-          {selectedMode === "guess" && (
+          {selectedMode === "PutInOrder" && (
             <WaitingRoomGuess
               roomCode={room}
               username={locationUsername}
@@ -185,12 +188,21 @@ function SalonPage({ userData }) {
             />
           )}
 
+          {selectedMode === "ranked" && (
+            <WaitingRoomRanked
+              roomCode={room}
+              username={locationUsername}
+              isHost={isHost}
+              selectedArcs={selectedArcs}
+              setSelectedArcs={setSelectedArcs}
+              isPremiumUser={isPremiumUser}
+            />
+          )}
         </div>
 
         <div className="container-bonne-chance">
           <CardName players={players} currentSocketId={socket.id} />
         </div>
-
       </div>
 
       <Footer />

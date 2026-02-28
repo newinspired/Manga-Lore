@@ -10,6 +10,11 @@ const {
   handleCorrectionEvents,
 } = require('./controllers/gamecontroller');
 
+const {
+  handleRankedReady,
+  handleRankedAnswer
+} = require('./controllers/gamerankedcontroller');
+
 function handleSocketEvents(io) {
 
   const playersInRooms = {};
@@ -55,10 +60,6 @@ function handleSocketEvents(io) {
       console.log("📌 Rooms actuelles :", Object.keys(playersInRooms));
     });
 
-
-    // =====================================================
-    // 🟢 JOIN ROOM (uniquement si elle existe)
-    // =====================================================
     socket.on("joinRoom", ({ roomId, username, avatar, playerId }) => {
 
       console.log("JOIN ROOM:", roomId);
@@ -78,10 +79,23 @@ function handleSocketEvents(io) {
       }, playersInRooms, games);
     });
 
+    socket.on('playerReady', (roomCode, isReady, mode) => {
+      if (mode === "ranked") {
+        handleRankedReady(io, socket, roomCode, isReady, playersInRooms, games);
+      } else {
+        handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games);
+      }
+    });
+
+    socket.on("rankedAnswer", ({ roomCode, input }) => {
+      handleRankedAnswer(io, socket, roomCode, input, playersInRooms, games);
+    });
+
 
     // =====================================================
     // 🔐 AUTHENTIFICATION FIREBASE
     // =====================================================
+
     socket.on('authenticate', async ({ token, username, avatar }) => {
       try {
 
@@ -96,9 +110,14 @@ function handleSocketEvents(io) {
             username: username || decoded.name || 'Pirate',
             avatar: avatar || null,
             premium: false,
+            rankedScore: 0
           });
-
           console.log('👤 User Mongo créé');
+        } else {
+          // ✅ Mise à jour si nécessaire
+          user.username = username || user.username;
+          user.avatar = avatar || user.avatar;
+          await user.save();
         }
 
         socket.user = user;
@@ -118,10 +137,6 @@ function handleSocketEvents(io) {
     // =====================================================
     // 🎮 GAME EVENTS
     // =====================================================
-
-    socket.on('playerReady', (roomCode, isReady) => {
-      handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games);
-    });
 
     socket.on('selectedArcs', (roomId, arcs) => {
       handleSelectedArcs(io, roomId, arcs, games);

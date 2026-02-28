@@ -41,9 +41,6 @@ function LoginPage({ userData }) {
   const trimmedRoom = roomInput.trim();
   const isFormValid = trimmedInput !== '' && trimmedRoom !== '';
 
-  const [showRules, setShowRules] = useState(false);
-  const [showDescription, setShowDescription] = useState(false);
-
   const location = useLocation();
 
   const handleBuyPremium = () => {
@@ -94,11 +91,11 @@ function LoginPage({ userData }) {
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         setShowRoomInput(false);
-        setRoomInput('');
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -209,27 +206,6 @@ function LoginPage({ userData }) {
                   </button>
                 </div>
                 </>
-              )}
-            </div>
-          </div>
-
-          <div className="info-collapses">
-            {/* Collapse pour les règles du jeu */}
-            <div className="collapse">
-              <button
-                className="collapse-header"
-                onClick={() =>
-                  setShowRules((prev) => !prev)
-                }
-              >
-                Game Rules
-              </button>
-              {showRules && (
-                <div className="collapse-content">
-                  <p>
-                    The game consists of 15 questions, increasing in difficulty. Once you’ve completed them, you’ll correct your own answers and discover your final score at the end.
-                  </p>
-                </div>
               )}
             </div>
           </div>

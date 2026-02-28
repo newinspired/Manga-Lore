@@ -10,16 +10,7 @@ const socket = io("http://localhost:3001", {
   timeout: 20000,
 });
 
-
-export const playerId = (() => {
-  let id = localStorage.getItem("playerId");
-  if (!id) {
-    id = crypto.randomUUID();
-    localStorage.setItem("playerId", id);
-  }
-  return id;
-})();
-
+export let playerId = null;
 
 export function joinRoom({ roomId, username, avatar }, callback) {
   socket.emit(
@@ -44,9 +35,8 @@ export function rejoinRoom({ roomCode, username, avatar }) {
   });
 }
 
-
-export function sendPlayerReady(roomCode, isReady) {
-  socket.emit("playerReady", roomCode, isReady);
+export function sendPlayerReady(roomCode, isReady, mode = "classic") {
+  socket.emit("playerReady", roomCode, isReady, mode);
 }
 
 
@@ -77,6 +67,8 @@ export async function authenticateSocketIfNeeded() {
   }
 
   const token = await user.getIdToken();
+
+  playerId = user.uid;   // ✅ IMPORTANT
 
   socket.emit("authenticate", {
     token,
