@@ -76,3 +76,6 @@ server.listen(3001, () => {
   console.log('✅ Serveur lancé sur http://localhost:3001');
 });
 
+const rankedRoutes = require("./routes/ranked");
+app.use("/api/ranked", rankedRoutes);
+

@@ -12,6 +12,8 @@ import Checkout from "./pages/Checkout";
 import Register from "./pages/register";
 import Success from "./pages/Success";
 import FindThemAll from "./pages/Find-them-all";
+import RankedGame from "./pages-ranked/RankedGame";
+import RankedResult from "./pages-ranked/RankedResult";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -58,7 +60,10 @@ function App() {
       <Route path="/correction/:room" element={<CorrectionPage user={user} />} />
       <Route path="/result/:room" element={<ResultPage user={user} />} />
 
-      <Route path="/findthemAll/:room" element={<FindThemAll user={user} />} />
+      <Route path="/ranked/:room" element={<RankedGame />} />
+      <Route path="/ranked/:room/result" element={<RankedResult />} />
+
+
 
     </Routes>
   );

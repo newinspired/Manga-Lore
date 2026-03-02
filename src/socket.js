@@ -72,9 +72,11 @@ export async function authenticateSocketIfNeeded() {
 
   socket.emit("authenticate", {
     token,
-    username: user.displayName,
+    username: user.displayName || localStorage.getItem("username"),
     avatar: user.photoURL,
   });
+
+  localStorage.setItem("firebaseUid", user.uid);
 }
 
 export function onAuthenticated(callback) {

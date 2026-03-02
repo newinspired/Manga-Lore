@@ -4,10 +4,15 @@ import CardName from '../components/card-name.jsx';
 import WaitingRoom from '../components/waiting-room.jsx';
 import WaitingRoomGuess from '../components/waiting-room-guess.jsx';
 import WaitingRoomRanked from '../components/waiting-room-ranked.jsx';
+import RankedGame from "../pages-ranked/RankedGame.jsx";
+import RankedResult from "../pages-ranked/RankedResult.jsx";
 import socket from '../socket';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
 import { joinRoom } from "../socket";
+import { useNavigate } from "react-router-dom";
+import socket from "../socket";
+
 
 import '../styles/card-name.scss';
 import '../styles/salon-page.scss';
@@ -56,6 +61,20 @@ function SalonPage({ userData }) {
       navigate("/", { state: { redirectTo: `/salon/${room}` } });
     }
   }, [room, navigate]);
+
+
+    return () => socket.off("rankedNewQuestion");
+  }, []);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    socket.on("rankedNewQuestion", () => {
+      navigate(`/ranked/${roomCode}`);
+    });
+
+    return () => socket.off("rankedNewQuestion");
+  }, [roomCode]);
 
   // ✅ USE EFFECT UNIQUE ET PROPRE POUR CARDNAME + JOIN
   useEffect(() => {
@@ -204,6 +223,16 @@ function SalonPage({ userData }) {
           <CardName players={players} currentSocketId={socket.id} />
         </div>
       </div>
+      
+        {rankedScores && (
+          <RankedResult
+            scores={rankedScores}
+            onBack={() => {
+              setRankedScores(null);
+              setRankedGameStarted(false);
+            }}
+          />
+        )}
 
       <Footer />
     </div>
