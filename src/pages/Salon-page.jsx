@@ -10,14 +10,12 @@ import socket from '../socket';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
 import { joinRoom } from "../socket";
-import { useNavigate } from "react-router-dom";
-import socket from "../socket";
 
 
 import '../styles/card-name.scss';
 import '../styles/salon-page.scss';
 
-function SalonPage({ userData }) {
+function SalonPage({ userData, firebaseUid }) {
 
   const { room } = useParams();
   const location = useLocation();
@@ -36,6 +34,7 @@ function SalonPage({ userData }) {
   const hasJoinedRef = useRef(false);
 
   const isPremiumUser = userData?.isPremium;
+  
 
   const allArcs = [
     { label: 'East Blue', value: 'EastBlue', isPremium: false },
@@ -63,18 +62,7 @@ function SalonPage({ userData }) {
   }, [room, navigate]);
 
 
-    return () => socket.off("rankedNewQuestion");
-  }, []);
 
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    socket.on("rankedNewQuestion", () => {
-      navigate(`/ranked/${roomCode}`);
-    });
-
-    return () => socket.off("rankedNewQuestion");
-  }, [roomCode]);
 
   // ✅ USE EFFECT UNIQUE ET PROPRE POUR CARDNAME + JOIN
   useEffect(() => {
@@ -102,7 +90,8 @@ function SalonPage({ userData }) {
         joinRoom({
           roomId: storedRoomCode,
           username: storedUsername,
-          avatar: storedAvatar
+          avatar: storedAvatar,
+          playerId: firebaseUid
         });
 
         // 🔥 Demande explicitement les joueurs actuels
@@ -130,6 +119,10 @@ function SalonPage({ userData }) {
     socket.on("arcsUpdated", handleArcsUpdate);
     return () => socket.off("arcsUpdated", handleArcsUpdate);
   }, []);
+
+  useEffect(() => {
+    console.log("IS HOST UPDATED:", isHost);
+  }, [isHost]);
 
   return (
     <div className="container">
@@ -223,16 +216,6 @@ function SalonPage({ userData }) {
           <CardName players={players} currentSocketId={socket.id} />
         </div>
       </div>
-      
-        {rankedScores && (
-          <RankedResult
-            scores={rankedScores}
-            onBack={() => {
-              setRankedScores(null);
-              setRankedGameStarted(false);
-            }}
-          />
-        )}
 
       <Footer />
     </div>

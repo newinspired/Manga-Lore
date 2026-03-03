@@ -1,13 +1,5 @@
-// GameController.js (option B — version finalisée, optimisée)
-// ----------------------------------------------------------
-// NOTES :
-// - Indexation 0-based.
-// - Pas de question fantôme : les questions affichées dans le jeu
-//   correspondent exactement à celles utilisées en autocorrection.
-// - applyCorrection utilise answersHistory pour lire la difficulté
-//   (cohérence front/back).
-// - Loading time configurable via `loadingTimeMs`.
-// ----------------------------------------------------------
+
+
 
 const fs = require('fs');
 const path = require('path');
@@ -22,9 +14,7 @@ module.exports = {
   endGame,
 };
 
-// ----------------------------------------------------------
-// NOTE : Charge les questions depuis les fichiers JSON des arcs
-// ----------------------------------------------------------
+
 function loadQuestionsFromArcs(arcs) {
   let allQuestions = [];
   for (const arc of arcs) {
@@ -39,9 +29,7 @@ function loadQuestionsFromArcs(arcs) {
   return shuffleArray(allQuestions);
 }
 
-// ----------------------------------------------------------
-// NOTE : Mélange Fisher-Yates (immutabilité préservée)
-// ----------------------------------------------------------
+
 function shuffleArray(array) {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {
@@ -51,25 +39,22 @@ function shuffleArray(array) {
   return newArray;
 }
 
-// ----------------------------------------------------------
-// NOTE : Gestion des événements de correction (hôte)
-// - applyCorrection : applique points en lisant l'entry dans answersHistory
-// - correctionUpdate : envoie les indices de correction (questionIndex, playerIndex)
-// ----------------------------------------------------------
+
 function handleCorrectionEvents(io, socket, playersInRooms, games) {
   socket.on("applyCorrection", ({ room, playerId, questionIndex, isCorrect }) => {
     const players = playersInRooms[room];
     const game = games[room];
     if (!players || !game) return;
 
-    // host must be the one with isHost true AND matching current socket id
     const host = players.find(p => p.isHost);
     if (!host || host.socketId !== socket.id) return;
 
-    const player = players.find(p => p.playerId === playerId);
+    const player = players.find(p =>
+      (p.playerId && p.playerId === playerId) ||
+      (!p.playerId && p.socketId === playerId)
+    );
     if (!player) return;
 
-    // questionIndex refers to answersHistory
     const historyEntry = game.answersHistory[questionIndex];
     if (!historyEntry) {
       console.warn(`[applyCorrection] historyEntry introuvable pour room=${room}, questionIndex=${questionIndex}`);
@@ -119,9 +104,7 @@ function handleCorrectionEvents(io, socket, playersInRooms, games) {
   });
 }
 
-// ----------------------------------------------------------
-// NOTE : Nettoie le timer côté serveur pour la partie donnée
-// ----------------------------------------------------------
+
 function clearGameTimer(game) {
   if (game && game.timerInterval) {
     clearInterval(game.timerInterval);
@@ -129,69 +112,86 @@ function clearGameTimer(game) {
   }
 }
 
-// ----------------------------------------------------------
-// NOTE : Un joueur rejoint une salle ; le premier devient host
-//       + prise en charge du playerId (persistant côté client)
-// ----------------------------------------------------------
-function handleJoinRoom(io, socket, { roomId, username, avatar, playerId }, playersInRooms, games) {
-  if (!playersInRooms[roomId]) playersInRooms[roomId] = [];
-  const alreadyExists = playersInRooms[roomId].find(
-      p => p.socketId === socket.id
-    );
 
-    if (alreadyExists) {
-      return;
-    } 
+function handleJoinRoom(
+  io,
+  socket,
+  { roomId, username, avatar, playerId },
+  playersInRooms,
+  games
+) {
 
-  // Si le joueur (playerId) existe déjà dans la room → mise à jour du socketId
-  let existingPlayer = playersInRooms[roomId].find(p => p.playerId && playerId && p.playerId === playerId);
+  if (!playersInRooms[roomId]) {
+    playersInRooms[roomId] = [];
+  }
+
+  const players = playersInRooms[roomId];
+
+  // 🔒 Empêche double join du même socket
+  const alreadyExists = players.find(p => p.socketId === socket.id);
+  if (alreadyExists) return;
+
+  // 🔥 Recherche joueur existant
+  let existingPlayer = players.find(p => {
+    // Cas 1 : joueur connecté Firebase
+    if (playerId && p.playerId) {
+      return p.playerId === playerId;
+    }
+
+    // Cas 2 : joueur invité (match par username)
+    if (!playerId && !p.playerId) {
+      return p.username === username;
+    }
+
+    return false;
+  });
 
   if (existingPlayer) {
+    // 🔁 Reconnexion
     existingPlayer.socketId = socket.id;
-    // join socket to room and emit status
+
     socket.join(roomId);
-    socket.emit('hostStatus', existingPlayer.isHost);
-    io.to(roomId).emit('playerList', playersInRooms[roomId]);
+
+    socket.emit("hostStatus", existingPlayer.isHost);
+    io.to(roomId).emit("playerList", players);
+
     return;
   }
 
-  // Nouveau joueur : host si la room est vide
-  const isHost = playersInRooms[roomId].length === 0;
+  // 🆕 Nouveau joueur
+  const isHost = players.length === 0;
 
-  const player = {
-    playerId: playerId || null,           // identifiant persistant (optionnel)
-    socketId: socket.id,                  // socket courant
-    username: username || `Joueur ${playersInRooms[roomId].length + 1}`,
-    avatar: avatar || 'luffy',
+  const newPlayer = {
+    playerId: playerId || null,
+    socketId: socket.id,
+    username: username || `Joueur ${players.length + 1}`,
+    avatar: avatar || "luffy",
     isReady: false,
     isHost,
     score: 0
   };
 
-  playersInRooms[roomId].push(player);
+  players.push(newPlayer);
 
   socket.join(roomId);
-  io.to(roomId).emit('playerList', playersInRooms[roomId]);
-  socket.emit('hostStatus', isHost);
 
+  socket.emit("hostStatus", isHost);
+  io.to(roomId).emit("playerList", players);
+
+  // 📦 Permet de récupérer les résultats finaux
   socket.on("getFinalPlayers", () => {
     if (!games[roomId]) return;
     socket.emit("finalPlayers", games[roomId].finalPlayers || []);
   });
 }
 
-// ----------------------------------------------------------
-// NOTE : Mise à jour des arcs sélectionnés pour une room
-// ----------------------------------------------------------
+
 function handleSelectedArcs(io, roomId, arcs, games) {
   if (!games[roomId]) games[roomId] = {};
   games[roomId].selectedArcs = arcs;
   io.to(roomId).emit('arcsUpdated', arcs);
 }
 
-// ----------------------------------------------------------
-// NOTE : Un joueur se marque prêt -> si tous prêts : démarrage de la partie
-// ----------------------------------------------------------
 function handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games) {
   const players = playersInRooms[roomCode];
   if (!players) return;
@@ -238,9 +238,7 @@ function handlePlayerReady(io, socket, roomCode, isReady, playersInRooms, games)
   }, loadingTimeMs);
 }
 
-// ----------------------------------------------------------
-// NOTE : Réception d'une réponse d'un joueur (stockage temporaire)
-// ----------------------------------------------------------
+
 function handlePlayerAnswer(socket, roomCode, answer, playersInRooms, games) {
   const game = games[roomCode];
   if (!game || !game.inProgress) return;
@@ -254,55 +252,50 @@ function handlePlayerAnswer(socket, roomCode, answer, playersInRooms, games) {
   game.answers[playerKey] = answer;
 }
 
-// ----------------------------------------------------------
-// NOTE : Gère la déconnexion d'un joueur
-// - transfert d'hôte si nécessaire
-// - suppression de la partie si la room est vide
-// ----------------------------------------------------------
+
 function handleDisconnect(io, socket, playersInRooms, games = {}) {
+
   for (const roomId in playersInRooms) {
+
     const players = playersInRooms[roomId];
     const idx = players.findIndex(p => p.socketId === socket.id);
-    if (idx !== -1) {
-      const wasHost = players[idx].isHost;
 
-      // On ne supprime plus forcément le joueur si on veut garder persistent id.
-      // Ici on marque socketId null et on conserve player entry (pour reconnexion rapide).
-      // Si tu préfères supprimer la ligne, remplace ce bloc par players.splice(idx,1).
-      players[idx].socketId = null;
+    if (idx === -1) continue; // 🔒 Protection anti crash
 
-      // Si le host s'est véritablement déconnecté et il n'y a plus d'autres sockets
-      // connectés dans la room, on conserve l'entrée pour reconnexion.
-      // Si tu veux transférer immédiatement l'hôte au prochain joueur connecté :
-      if (wasHost) {
-        // trouve un autre joueur avec socketId non-null pour transférer host
-        const next = players.find(p => p.socketId !== null);
-        if (next) {
-          // transfer host
-          next.isHost = true;
-          // clear old host flag
-          players[idx].isHost = false;
-          io.to(next.socketId).emit('hostStatus', true);
-        }
+    const wasHost = players[idx].isHost;
+    const isGuest = !players[idx].playerId;
+
+    if (isGuest) {
+      players.splice(idx, 1); // 👻 invité → suppression totale
+    } else {
+      players[idx].socketId = null; // 🔐 utilisateur connecté → garder slot
+    }
+
+    if (wasHost) {
+      const next = players.find(p => p.socketId !== null);
+      if (next) {
+        next.isHost = true;
+        io.to(next.socketId).emit('hostStatus', true);
       }
+    }
 
-      io.to(roomId).emit('playerList', players);
+    io.to(roomId).emit('playerList', players);
 
-      // nettoyage : si aucun joueur n'a de socketId (room vide), supprimer la room data
-      const anyConnected = players.some(p => p.socketId !== null);
-      if (!anyConnected && games[roomId]) {
+    // 🧹 Nettoyage si room vide
+    const anyConnected = players.some(p => p.socketId !== null);
+    if (!anyConnected) {
+      if (games[roomId]) {
         clearGameTimer(games[roomId]);
         delete games[roomId];
       }
-
-      break;
+      delete playersInRooms[roomId];
     }
+
+    break;
   }
 }
 
-// ----------------------------------------------------------
-// NOTE : Envoi de la prochaine question au front
-// ----------------------------------------------------------
+
 function sendNextQuestion(io, roomCode, games) {
   const game = games[roomCode];
   if (!game || !game.inProgress) return;
@@ -352,10 +345,7 @@ function sendNextQuestion(io, roomCode, games) {
   }, 1000);
 }
 
-// ----------------------------------------------------------
-// NOTE : Fin du jeu -> on pousse la dernière question (si nécessaire),
-// construit finalPlayers et émet 'gameEnded' avec answersHistory.
-// ----------------------------------------------------------
+
 function endGame(io, roomCode, games) {
   const game = games[roomCode];
   if (!game) return;

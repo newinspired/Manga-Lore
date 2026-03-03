@@ -19,9 +19,7 @@ function handleSocketEvents(io) {
 
   const playersInRooms = {};
   const games = {};
-
   
-
   io.on('connection', (socket) => {
 
     socket.on("getPlayersInRoom", (roomId) => {

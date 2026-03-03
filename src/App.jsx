@@ -14,6 +14,7 @@ import Success from "./pages/Success";
 import FindThemAll from "./pages/Find-them-all";
 import RankedGame from "./pages-ranked/RankedGame";
 import RankedResult from "./pages-ranked/RankedResult";
+import { authenticateSocketIfNeeded } from "./socket";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -25,10 +26,12 @@ function App() {
   });
 
   useEffect(() => {
-  const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+  const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       setUser(currentUser);
 
       if (currentUser) {
+        await authenticateSocketIfNeeded();
+
         setUserData({
           isLoggedIn: true,
           username: currentUser.displayName,
@@ -55,9 +58,15 @@ function App() {
       <Route path="/success" element={<Success />} />
 
       <Route path="/" element={<LoginPage userData={userData} />} />
-      <Route path="/salon/:room" element={<SalonPage userData={userData} />} />
+      <Route
+        path="/salon/:room"
+        element={<SalonPage userData={userData} firebaseUid={user?.uid} />}
+      />
       <Route path="/game/:room" element={<GamePage user={user} />} />
-      <Route path="/correction/:room" element={<CorrectionPage user={user} />} />
+      <Route
+        path="/correction/:room"
+        element={<CorrectionPage user={user} />}
+      />
       <Route path="/result/:room" element={<ResultPage user={user} />} />
 
       <Route path="/ranked/:room" element={<RankedGame />} />

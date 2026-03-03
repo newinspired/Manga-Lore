@@ -1,8 +1,12 @@
-import "../styles/waiting-room.scss";
+import "../styles/waiting-room-ranked.scss";
 import { useState, useEffect } from "react";
 import { sendPlayerReady } from "../socket";
+import { useNavigate } from "react-router-dom";
+import socket from "../socket";
 
 const WaitingRoomRanked = ({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs, isPremiumUser }) => {
+
+    const navigate = useNavigate();
 
     const [isReady, setIsReady] = useState(false);
 
@@ -23,7 +27,6 @@ const WaitingRoomRanked = ({ roomCode, username, isHost, allArcs, selectedArcs, 
 
     useEffect(() => {
     if (!firebaseUid) return;
-
     fetch(`http://localhost:3001/api/ranked/leaderboard/${firebaseUid}`)
         .then(res => res.json())
         .then(data => {
@@ -32,7 +35,15 @@ const WaitingRoomRanked = ({ roomCode, username, isHost, allArcs, selectedArcs, 
         setMyScore(data.me?.rankedScore || 0);
         });
     }, [firebaseUid]);
-    
+
+    useEffect(() => {
+    socket.on("rankedNewQuestion", () => {
+        navigate(`/ranked/${roomCode}`);
+    });
+
+    return () => socket.off("rankedNewQuestion");
+    }, [roomCode]);
+            
   return (
     <div className="waiting-room-ranked">
         <table className="leaderboard-table">

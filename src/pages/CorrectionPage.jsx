@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import socket from '../socket';
 import { playerId } from "../socket";
 
-function CorrectionPage() {
+function CorrectionPage({ user }) {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -18,7 +18,7 @@ function CorrectionPage() {
   useEffect(() => {
     if (!room) return;
 
-    const me = players.find(p => p.id === playerId);
+    const me = players.find(p => p.id === user?.uid);
     if (me?.isHost) setIsHost(true);
 
     socket.on("correctionUpdate", ({ questionIndex, playerIndex }) => {

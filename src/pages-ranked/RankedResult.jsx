@@ -1,8 +1,6 @@
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
-
-
-const RankedResult = ({ scores, onBack }) => {
+const RankedResult = () => {
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -15,7 +13,6 @@ const RankedResult = ({ scores, onBack }) => {
 
   return (
     <div className="ranked-result">
-
       <h2>🏆 Final Results</h2>
 
       <table>

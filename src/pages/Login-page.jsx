@@ -7,6 +7,7 @@ import ModalAvatar from '../components/modal-avatar.jsx';
 import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
 import { playerId } from "../socket";
+import { authenticateSocketIfNeeded } from "../socket";
 
 import luffy from '../assets/avatars-color/luffy6.jpg';
 import zoro from '../assets/avatars-color/zoro.jpg';
@@ -53,6 +54,10 @@ function LoginPage({ userData }) {
   };
 
   const handleCreateGame = () => {
+    if (!playerId) {
+      console.log("Firebase UID pas encore prêt");
+      return;
+    }
     if (trimmedInput === '') return;
 
     const code = Math.random().toString(36).substring(2, 8).toUpperCase();
@@ -115,7 +120,7 @@ function LoginPage({ userData }) {
       socket.off('connect_error');
     };
   }, []);
-
+  
   return (
     <div className="login-page">
       <Header userData={userData} />

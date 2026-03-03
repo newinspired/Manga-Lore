@@ -64,6 +64,13 @@ app.get('/api/my-rank/:username', async (req, res) => {
   }
 });
 
+const cors = require("cors");
+
+app.use(cors({
+  origin: "http://localhost:5173",
+  credentials: true
+}));
+
 // ===============================
 // 🔌 Socket.io
 // ===============================

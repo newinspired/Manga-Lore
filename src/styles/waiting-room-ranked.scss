@@ -1,0 +1,39 @@
+
+$mainfont: 'Fraunces', serif;
+
+
+.ready-button {
+    display: flex;
+    gap : 3vw;
+
+    button {
+    all: unset;
+    display: inline-block;
+    text-align: center;
+    background-color: #bfbfbf;
+    border-radius: 25px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $mainfont;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+    }
+
+    .back-to-mode {
+
+        a {
+        all :unset;
+        }
+    } 
+}
+    

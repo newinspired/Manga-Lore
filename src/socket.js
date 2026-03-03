@@ -10,7 +10,7 @@ const socket = io("http://localhost:3001", {
   timeout: 20000,
 });
 
-export let playerId = null;
+export let playerId = localStorage.getItem("firebaseUid") || null;
 
 export function joinRoom({ roomId, username, avatar }, callback) {
   socket.emit(
