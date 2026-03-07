@@ -4,7 +4,7 @@ import { sendPlayerReady } from "../socket";
 import { useNavigate } from "react-router-dom";
 import socket from "../socket";
 
-const WaitingRoomRanked = ({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs, isPremiumUser }) => {
+const WaitingRoomRanked = ({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs, isPremiumUser, onBackToMode }) => {
 
     const navigate = useNavigate();
 
@@ -82,10 +82,10 @@ const WaitingRoomRanked = ({ roomCode, username, isHost, allArcs, selectedArcs, 
             >
             {buttonLabel}
             </button>
-            <button className='back-to-mode'
-                onClick={() => window.location.href = `/salon/${roomCode}`}
-            >
-                Back to mode selection
+            <button
+                className="back-to-mode"
+                onClick={onBackToMode}
+                >Back to mode selection
             </button>
         </div>
     </div>

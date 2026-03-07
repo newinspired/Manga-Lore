@@ -19,6 +19,8 @@ function handleSocketEvents(io) {
 
   const playersInRooms = {};
   const games = {};
+  const roomVotes = {};
+  const roomReady = {};
   
   io.on('connection', (socket) => {
 
@@ -47,6 +49,8 @@ function handleSocketEvents(io) {
       }
 
       playersInRooms[roomId] = [];
+      roomVotes[roomId] = {};
+      roomReady[roomId] = {};
 
       handleJoinRoom(io, socket, {
         roomId,
@@ -75,6 +79,66 @@ function handleSocketEvents(io) {
         avatar,
         playerId
       }, playersInRooms, games);
+    });
+
+    socket.on("voteMode", ({ roomId, mode }) => {
+      if (!roomVotes[roomId]) return;
+
+      roomVotes[roomId][socket.id] = mode;
+
+      const votes = Object.values(roomVotes[roomId]);
+
+      const counts = {
+        AllTheLore: 0,
+        PutInOrder: 0,
+        ranked: 0
+      };
+
+      votes.forEach(v => {
+        if (counts[v] !== undefined) {
+          counts[v]++;
+        }
+      });
+
+      io.to(roomId).emit("votesUpdated", counts);
+    });
+
+    socket.on("voteReady", ({ roomId, ready }) => {
+      if (!roomReady[roomId]) return;
+
+      roomReady[roomId][socket.id] = ready;
+
+      const readyCount = Object.values(roomReady[roomId]).filter(r => r).length;
+      const totalPlayers = playersInRooms[roomId]?.length || 0;
+
+      io.to(roomId).emit("readyUpdate", {
+        ready: readyCount,
+        total: totalPlayers
+      });
+
+      if (readyCount === totalPlayers && totalPlayers > 0) {
+
+        const votes = roomVotes[roomId];
+
+        const counts = {
+          AllTheLore: 0,
+          PutInOrder: 0,
+          ranked: 0
+        };
+
+        Object.values(votes).forEach(v => {
+          if (counts[v] !== undefined) {
+            counts[v]++;
+          }
+        });
+
+        const winner = Object.entries(counts)
+          .sort((a,b)=>b[1]-a[1])[0][0];
+
+        io.to(roomId).emit("modeChosen", winner);
+
+      }
+
     });
 
     socket.on('playerReady', (roomCode, isReady, mode) => {
@@ -162,6 +226,13 @@ function handleSocketEvents(io) {
     // =====================================================
     socket.on('disconnect', () => {
       handleDisconnect(io, socket, playersInRooms, games);
+      for (const roomId in roomVotes) {
+        delete roomVotes[roomId][socket.id];
+      }
+
+      for (const roomId in roomReady) {
+        delete roomReady[roomId][socket.id];
+      }
     });
 
   });

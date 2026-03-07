@@ -2,7 +2,7 @@ import "../styles/waiting-room.scss";
 import { useState } from "react";
 import { sendPlayerReady } from "../socket";
 
-const WaitingRoomGuess = ({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs, isPremiumUser }) => {
+const WaitingRoomGuess = ({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs, isPremiumUser, onBackToMode }) => {
 
     const [isReady, setIsReady] = useState(false);
 
@@ -25,10 +25,10 @@ const WaitingRoomGuess = ({ roomCode, username, isHost, allArcs, selectedArcs, s
             >
             {buttonLabel}
             </button>
-            <button className='back-to-mode'
-                onClick={() => window.location.href = `/salon/${roomCode}`}
-            >
-                Back to mode selection
+            <button
+                className="back-to-mode"
+                onClick={onBackToMode}
+                >Back to mode selection
             </button>
         </div>
     </div>

@@ -1175,26 +1175,9 @@
         "question": "Qui a vaincu Queen la Pandémie sur Onigashima ?",
         "answer": "Sanji"
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
     {
         "id": 1396,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Comment se nomme la plus importante organisation de renseignement au monde, antagoniste mineure lors des événements d’Onigashima ?",
         "answer": "CP-0 (Aigis Zero)"
     },
@@ -1202,29 +1185,29 @@
         "id": 1397,
         "difficulty": "medium",
         "question": "À qui Trafalgar D. Water Law doit-il sa technique « Silent », permettant de créer une zone où aucun son ne se propage ?",
-        "answer": "Corazon"
+        "answer": "Don Quichotte Rossinante - Corazon"
     },
     {
         "id": 1398,
-        "difficulty": "medium",
-        "question": "Par quels pirates l’impératrice Big Mom a-t-elle été vaincue dans l’espace de concert d’Onigashima ?",
+        "difficulty": "easy",
+        "question": "Par quels capitaines pirates l’impératrice Big Mom a-t-elle été vaincue dans l’espace de concert d’Onigashima ?",
         "answer": "Eustass Kid et Trafalgar D. Law"
     },
     {
         "id": 1399,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Qui est le premier à avoir ressenti que Luffy était bel et bien Joy Boy ?",
         "answer": "Zunesha"
     },
     {
         "id": 1400,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quel guerrier légendaire donne son nom au véritable fruit du démon de Monkey D. Luffy ?",
         "answer": "Nika"
     },
     {
         "id": 1401,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "À quelle divinité fait référence le véritable fruit du démon de Luffy, le Hito Hito no Mi, modèle Nika ?",
         "answer": "Le dieu du soleil"
     },
@@ -1236,7 +1219,7 @@
     },
     {
         "id": 1403,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Comment se nomme la forme éveillée du véritable fruit du démon de Monkey D. Luffy ?",
         "answer": "Gear Five"
     },
@@ -1248,7 +1231,7 @@
     },
     {
         "id": 1405,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Après la défaite de Big Mom et Kaido à Onigashima, quel événement a provoqué une violente éruption volcanique et un puissant séisme ?",
         "answer": "La chute de Kaido et Big Mom dans le magma"
     },
@@ -1260,25 +1243,25 @@
     },
     {
         "id": 1407,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "question": "Dans quelle région du pays des Wa le shogun réside-t-il ?",
         "answer": "La capitale des Fleurs"
     },
     {
         "id": 1408,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel ancien commandant de division de Barbe Blanche a perdu la vie lors de l’assaut d’Onigashima ?",
         "answer": "Izo"
     },
     {
         "id": 1409,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel membre des Neuf Fourreaux Rouges a combattu aux côtés de l’Alliance Ninja-Pirate-Mink-Samouraï et a tragiquement perdu la vie ?",
         "answer": "Ashura Doji"
     },
     {
         "id": 1410,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Après les événements d’Onigashima, quelles sommes ont atteint les primes des trois capitaines pirates Monkey D. Luffy, Eustass Kid et Trafalgar D. Law ?",
         "answer": "3 milliards de berrys"
     },
@@ -1290,9 +1273,9 @@
     },
     {
         "id": 1412,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quels sont les deux nouveaux pirates ayant remplacé Kaido et Big Mom au poste d’empereur des mers ?",
-        "answer": "Monkey D. Luffy et Buggy"
+        "answer": "Monkey D. Luffy et Baggy le Clown"
     },
     {
         "id": 1413,
@@ -1308,7 +1291,7 @@
     },
     {
         "id": 1415,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "question": "Qui est le second de Shanks le Roux ?",
         "answer": "Ben Beckman"
     },
@@ -1320,7 +1303,7 @@
     },
     {
         "id": 1417,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "question": "Quel personnage porte l’épithète « Empereur des Flammes » ?",
         "answer": "Sabo"
     },
@@ -1332,32 +1315,32 @@
     },
     {
         "id": 1419,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Combien de Road Ponéglyphes l’équipage du Chapeau de paille possède-t-il après les événements de Wano ?",
         "answer": "3 sur 4"
     },
     {
         "id": 1420,
-        "difficulty": "medium",
-        "question": "À qui Shanks le Roux s’adresse-t-il lorsqu’il déclare que la nouvelle ère est en train d’arriver ?",
+        "difficulty": "difficult",
+        "question": "À qui Shanks le Roux s’adresse-t-il lorsqu’il déclare : \"Cette nouvelle ère t'effraie-t-elle tant ?!\" ?",
         "answer": "Ryokugyu"
     },
     {
         "id": 1421,
-        "difficulty": "difficult",
-        "question": "À qui appartenait le puissant Haki des Rois ayant stoppé l’attaque de Ryokugyu au pays des Wa ?",
+        "difficulty": "medium",
+        "question": "À qui appartenait le puissant Haki des Rois ayant stoppé les agissements de l'amiral Ryokugyu au pays des Wa ?",
         "answer": "Shanks le Roux"
     },
     {
         "id": 1422,
-        "difficulty": "medium",
-        "question": "Qui a été désignée par Nekomamushi et Inuarashi pour devenir la prochaine souveraine de la principauté de Mokomo ?",
-        "answer": "Carotte"
+        "difficulty": "difficult",
+        "question": "Qui a été désignée par Duc Caborage et Maître Chavipère pour devenir la prochaine souveraine de la principauté de Mokomo ?",
+        "answer": "Carott"
     },
     {
         "id": 1423,
         "difficulty": "medium",
-        "question": "Quels sont les deux anciens Grands Corsaires qui se sont alliés à l’empereur Buggy et font désormais partie de la Cross Guild ?",
+        "question": "Quels sont les deux anciens Grands Corsaires qui se sont alliés à l’empereur Baggy et font désormais partie de la Cross Guild ?",
         "answer": "Dracule Mihawk et Sir Crocodile"
     },
     {
@@ -1366,35 +1349,35 @@
         "question": "Quelle guerrière originaire du pays des Wa a déclaré vouloir rejoindre l’équipage du Chapeau de paille après avoir parcouru le pays ?",
         "answer": "Yamato"
     },
-        {
+    {
         "id": 1425,
         "difficulty": "medium",
-        "question": "Quels sont les deux pirates à l’origine de la création de la Cross Guild, bien que l’un d’eux n’en soit plus officiellement le chef ?",
+        "question": "Quels sont les deux pirates à l’origine de la création de la Cross Guild, bien qu'ils n’en soient plus officiellement le chef ?",
         "answer": "Dracule Mihawk et Sir Crocodile"
     },
     {
         "id": 1426,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "De quelle race les Séraphins possèdent-ils les capacités de régénération ?",
         "answer": "Les Lunaria"
     },
     {
         "id": 1427,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "question": "Quels nouveaux Pacifistas ont été conçus pour ressembler aux anciens Grands Corsaires ?",
         "answer": "Les Séraphins"
     },
     {
         "id": 1428,
         "difficulty": "medium",
-        "question": "Par quel empereur des mers Boa Hancock a-t-elle été attaquée après les événements d’Onigashima ?",
+        "question": "Par quel empereur des mers Boa Hancock a-t-elle été attaquée peu de temps après les événements d’Onigashima ?",
         "answer": "Marshall D. Teach"
     },
     {
         "id": 1429,
         "difficulty": "easy",
         "question": "Quel colonel de la Marine a été enlevé par l’équipage de l’empereur Barbe Noire ?",
-        "answer": "Coby"
+        "answer": "Kobby"
     },
     {
         "id": 1430,

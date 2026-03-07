@@ -1,11 +1,10 @@
 // src/components/waiting-room.jsx
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import socket, { sendPlayerReady, onPlayerListUpdate, offPlayerListUpdate, sendSelectedArcs } from '../socket';
+import socket, { sendPlayerReady, sendSelectedArcs } from '../socket';
 import '../styles/waiting-room.scss';
 
-function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs, isPremiumUser }) {
-  const [players, setPlayers] = useState([]);
+function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSelectedArcs, isPremiumUser, onBackToMode }) {
   const [isReady, setIsReady] = useState(false);
   const navigate = useNavigate();
   const { room } = useParams();
@@ -23,39 +22,28 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
     };
   }, [setSelectedArcs]);
 
+  useEffect(() => {
+    const handleStartGame = () => {
+      navigate(`/game/${roomCode}`);
+    };
+
+    socket.on("startGame", handleStartGame);
+
+    return () => {
+      socket.off("startGame", handleStartGame);
+    };
+  }, [navigate, roomCode]);
+
   const handleReadyClick = () => {
     const newReadyState = !isReady;
     setIsReady(newReadyState);
 
     if (isHost) {
-      // envoie via helper
       sendSelectedArcs(roomCode, selectedArcs);
     }
 
     sendPlayerReady(roomCode, newReadyState);
   };
-
-  useEffect(() => {
-    onPlayerListUpdate((updatedPlayers) => {
-      setPlayers(updatedPlayers);
-
-      console.log("---- LISTE DES JOUEURS (WaitingRoom) ----");
-      updatedPlayers.forEach(p => {
-        console.log(`"${p.username}" : ${p.isHost ? "host" : "not host"}`);
-      });
-      console.log("-------------------------------------------");
-    });
-
-    socket.on('startGame', () => {
-      navigate(`/game/${roomCode}`);
-    });
-
-    return () => {
-      offPlayerListUpdate();
-      socket.off('startGame');
-    };
-  }, [navigate, roomCode]);
-
 
   const isButtonDisabled = isHost && selectedArcs.length === 0;
   const buttonLabel = isReady ? 'Not ready' : 'Ready';
@@ -72,68 +60,115 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
     <div className='container-ready-button'>
       <div>
         <h2>
-          Question sur tout le lore de one piece 
+          Select arcs you want to be tested on !
         </h2>
       </div>
       <div className="arc-selection">
-        <div className='choose-arc'>
-          <h3>
-            {isHost
-              ? "Select arcs you want to be tested on !"
-              : "The head of the salon selects the bows !"}
-          </h3>
-        </div>
-        <div className="arc-buttons">
-          {allArcs.map(({ label, value, isPremium }) => {
-            const isLocked = isPremium && !isPremiumUser;
-            return (
-              <button
-                key={value}
-                className={`arc-button ${value.toLowerCase()} ${selectedArcs.includes(value) ? "selected" : ""}`}
-                disabled={!isHost || isLocked}
-                onClick={() => {
-                  if (!isHost) return;
 
-                  const newSelection = selectedArcs.includes(value)
-                    ? selectedArcs.filter((a) => a !== value)
-                    : [...selectedArcs, value];
+  <div className='choose-arc'>
+    <h3>
+      {isHost
+        ? "Select arcs you want to be tested on !"
+        : "The head of the salon selects the bows !"}
+    </h3>
+  </div>
 
-                  setSelectedArcs(newSelection);
-                  sendSelectedArcs(roomCode, newSelection);
-                }}
-              >
-                {label}
-              </button>
-            );
-          })}
-        </div>
+  {isHost ? (
+    <>
+      <div className="arc-buttons">
+        {allArcs.map(({ label, value, isPremium }) => {
+          const isLocked = isPremium && !isPremiumUser;
+          return (
+            <button
+              key={value}
+              className={`arc-button ${value.toLowerCase()} ${
+                selectedArcs.includes(value) ? "selected" : ""
+              }`}
+              disabled={isLocked}
+              onClick={() => {
+                const newSelection = selectedArcs.includes(value)
+                  ? selectedArcs.filter((a) => a !== value)
+                  : [...selectedArcs, value];
 
-        <div className='select-all'>
-          <button
-            className="arc-button all"
-            disabled={!isHost}
-            onClick={() => {
-              if (!isHost) return;
-
-              const selectableArcs = isPremiumUser
-                ? allArcs.map(arc => arc.value) // 🔥 tous les arcs
-                : allArcs
-                    .filter(arc => !arc.isPremium) // seulement gratuits
-                    .map(arc => arc.value);
-
-              if (selectedArcs.length === selectableArcs.length) {
-                setSelectedArcs([]);
-                sendSelectedArcs(roomCode, []);
-              } else {
-                setSelectedArcs(selectableArcs);
-                sendSelectedArcs(roomCode, selectableArcs);
-              }
-            }}
-          >
-            {selectedArcs.length === allArcs.length ? 'Deselect All' : 'Select All'}
-          </button>
-        </div>
+                setSelectedArcs(newSelection);
+                sendSelectedArcs(roomCode, newSelection);
+              }}
+            >
+              {label}
+            </button>
+          );
+        })}
       </div>
+
+      <div className='select-all'>
+        <button
+          className="arc-button all"
+          onClick={() => {
+
+            const selectableArcs = isPremiumUser
+              ? allArcs.map(arc => arc.value)
+              : allArcs
+                  .filter(arc => !arc.isPremium)
+                  .map(arc => arc.value);
+
+            if (selectedArcs.length === selectableArcs.length) {
+              setSelectedArcs([]);
+              sendSelectedArcs(roomCode, []);
+            } else {
+              setSelectedArcs(selectableArcs);
+              sendSelectedArcs(roomCode, selectableArcs);
+            }
+          }}
+        >
+          {selectedArcs.length === allArcs.length
+            ? 'Deselect All'
+            : 'Select All'}
+        </button>
+      </div>
+    </>
+  ) : (
+    <div className="selected-arcs-display">
+
+      {selectedArcs.length === 0 && (
+        <p>The host has not selected any arcs yet.</p>
+      )}
+
+      {selectedArcs.length > 0 && (
+        <>
+          {selectedArcs.length === allArcs.length && (
+            <p>
+              The host selected all arcs of the game (East Blue → Elbaf).
+            </p>
+          )}
+
+          {selectedArcs.length === allArcs.filter(a => !a.isPremium).length && (
+            <p>
+              The host selected all free arcs.
+            </p>
+          )}
+
+          {selectedArcs.length !== allArcs.length &&
+           selectedArcs.length !== allArcs.filter(a => !a.isPremium).length && (
+            <>
+              <p>Selected arcs:</p>
+              <ul>
+                {selectedArcs.map(value => {
+                  const arc = allArcs.find(a => a.value === value);
+                  return (
+                    <li key={value}>
+                      {arc?.label || value}
+                    </li>
+                  );
+                })}
+              </ul>
+            </>
+          )}
+        </>
+      )}
+    </div>
+  )}
+
+</div>
 
       <div className='ready-button'>
         <button
@@ -143,10 +178,10 @@ function WaitingRoom({ roomCode, username, isHost, allArcs, selectedArcs, setSel
         >
           {buttonLabel}
         </button>
-        <button className='back-to-mode'
-            onClick={() => window.location.href = `/salon/${roomCode}`}
-          >
-            Back to mode selection
+        <button
+          className="back-to-mode"
+          onClick={onBackToMode}
+          >Back to mode selection
         </button>
       </div>
     </div>

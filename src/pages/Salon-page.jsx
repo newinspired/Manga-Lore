@@ -15,7 +15,7 @@ import { joinRoom } from "../socket";
 import '../styles/card-name.scss';
 import '../styles/salon-page.scss';
 
-function SalonPage({ userData, firebaseUid }) {
+function SalonPage({ userData, firebaseUid, handleReadyClick, isButtonDisabled, buttonLabel }) {
 
   const { room } = useParams();
   const location = useLocation();
@@ -34,6 +34,18 @@ function SalonPage({ userData, firebaseUid }) {
   const hasJoinedRef = useRef(false);
 
   const isPremiumUser = userData?.isPremium;
+  const [votes, setVotes] = useState({
+    AllTheLore: 0,
+    PutInOrder: 0,
+    ranked: 0
+  });
+
+  const [myVote, setMyVote] = useState(null);
+
+  const [readyPlayers, setReadyPlayers] = useState(0);
+  const [totalPlayers, setTotalPlayers] = useState(0);
+
+  const [isReady, setIsReady] = useState(false);
   
 
   const allArcs = [
@@ -61,10 +73,10 @@ function SalonPage({ userData, firebaseUid }) {
     }
   }, [room, navigate]);
 
+  const handleBackToMode = () => {
+    setSelectedMode(null);
+  };
 
-
-
-  // ✅ USE EFFECT UNIQUE ET PROPRE POUR CARDNAME + JOIN
   useEffect(() => {
     const storedUsername = localStorage.getItem("username") || locationUsername;
     const storedAvatar = localStorage.getItem("avatar") || locationAvatar;
@@ -78,6 +90,19 @@ function SalonPage({ userData, firebaseUid }) {
     const handleHostStatus = (flag) => {
       setIsHost(flag);
     };
+
+    socket.on("votesUpdated", (counts) => {
+      setVotes(counts);
+    });
+
+    socket.on("readyUpdate", ({ ready, total }) => {
+      setReadyPlayers(ready);
+      setTotalPlayers(total);
+    });
+
+    socket.on("modeChosen", (mode) => {
+      setSelectedMode(mode);
+    });
 
     // 🔥 1️⃣ On attache les listeners AVANT de join
     socket.on("playerList", handlePlayerList);
@@ -109,6 +134,9 @@ function SalonPage({ userData, firebaseUid }) {
       socket.off("playerList", handlePlayerList);
       socket.off("hostStatus", handleHostStatus);
       socket.off("connect", handleJoin);
+      socket.off("votesUpdated");
+      socket.off("readyUpdate");
+      socket.off("modeChosen");
     };
 
   }, [room]);
@@ -120,6 +148,30 @@ function SalonPage({ userData, firebaseUid }) {
     return () => socket.off("arcsUpdated", handleArcsUpdate);
   }, []);
 
+  const handleVote = (mode) => {
+    if (myVote === mode) return;
+
+    setMyVote(mode);
+
+    socket.emit("voteMode", {
+      roomId: room,
+      mode
+    });
+
+  };
+
+  const handleVoteReady = () => {
+    const newReady = !isReady;
+
+    setIsReady(newReady);
+
+    socket.emit("voteReady", {
+      roomId: room,
+      ready: newReady
+    });
+
+  };
+
   useEffect(() => {
     console.log("IS HOST UPDATED:", isHost);
   }, [isHost]);
@@ -129,52 +181,51 @@ function SalonPage({ userData, firebaseUid }) {
       <Header userData={userData} />
 
       <div className="container-salon">
-
         <div className="container-waiting">
-
           {!selectedMode && (
             <div className="mode-selection">
-
               <div className='waiting-room'>
                 <h2>
                   WAITING ROOM : <span className='couleur-pseudo'>{room}</span>
                 </h2>
-
-                <button
-                  onClick={() => {
-                    navigator.clipboard.writeText(window.location.href);
-                    alert("Invitation link copied!");
-                  }}
-                >
-                  Copy invitation link
-                </button>
               </div>
-
-              <h2>Select a Game Mode</h2>
+              <h2>Select the Game Mode</h2>
+              <p>Please vote for the game mode you want to play</p>
+              <p>Wait all your friends if you are not playing alone</p>
 
               <button
-                className="mode-button"
-                onClick={() => setSelectedMode("AllTheLore")}
+                className={`mode-button ${myVote === "AllTheLore" ? "selected" : ""}`}
+                onClick={() => handleVote("AllTheLore")}
               >
-                All the One Piece lore !
+                All the One Piece lore ({votes.AllTheLore})
               </button>
 
               <button
-                className="mode-button"
-                onClick={() => setSelectedMode("PutInOrder")}
+                className={`mode-button ${myVote === "PutInOrder" ? "selected" : ""}`}
+                onClick={() => handleVote("PutInOrder")}
               >
-                " Put in Order "
+                Put in Order ({votes.PutInOrder})
               </button>
 
               <div className="separate"></div>
 
               <button
-                className="mode-button"
-                onClick={() => setSelectedMode("ranked")}
+                className={`mode-button ${myVote === "ranked" ? "selected" : ""}`}
+                onClick={() => handleVote("ranked")}
               >
-                Ranked - Name Them All
+                Ranked - Name Them All ({votes.ranked})
               </button>
+
+              <button
+                className="ready-button"
+                disabled={!myVote}
+                onClick={handleVoteReady}
+              >
+                {isReady ? "Not ready" : "Ready"} ({readyPlayers}/{totalPlayers})
+              </button>
+
             </div>
+            
           )}
 
           {selectedMode === "AllTheLore" && (
@@ -186,6 +237,7 @@ function SalonPage({ userData, firebaseUid }) {
               selectedArcs={selectedArcs}
               setSelectedArcs={setSelectedArcs}
               isPremiumUser={isPremiumUser}
+              onBackToMode={handleBackToMode}
             />
           )}
 
@@ -197,6 +249,7 @@ function SalonPage({ userData, firebaseUid }) {
               selectedArcs={selectedArcs}
               setSelectedArcs={setSelectedArcs}
               isPremiumUser={isPremiumUser}
+              onBackToMode={handleBackToMode}
             />
           )}
 
@@ -208,6 +261,7 @@ function SalonPage({ userData, firebaseUid }) {
               selectedArcs={selectedArcs}
               setSelectedArcs={setSelectedArcs}
               isPremiumUser={isPremiumUser}
+              onBackToMode={handleBackToMode}
             />
           )}
         </div>
