@@ -8,7 +8,7 @@
   {
     "id": 102,
     "difficulty": "difficult",
-    "question": "Quel est le nom du village attaqué par Kuro et ses pirates ?",
+    "question": "Quel est le nom du village attaqué par Kuro et ses pirates dans East Blue ?",
     "answer": "Syrup"
   },
   {
@@ -140,7 +140,7 @@
   {
     "id": 124,
     "difficulty": "easy",
-    "question": "Quel personnage passait son temps à troubler la tranquillité de son village avant de rejoindre l'équipage du Chapeau de paille ?",
+    "question": "Quel personnage passait son temps à mentir aux habitants du village de Syrup avant de rejoindre l'équipage du Chapeau de paille ?",
     "answer": "Usopp"
   },
   {
@@ -188,7 +188,7 @@
     {
     "id": 132,
     "difficulty": "medium",
-    "question": "Qui a été tuée par Arlong pour avoir défendu ses filles ?",
+    "question": "Qui a été tuée par Arlong pour avoir défendu ses filles dans East Blue ?",
     "answer": "Bell-mère"
   },
   {
@@ -200,7 +200,7 @@
   {
     "id": 134,
     "difficulty": "difficult",
-    "question": "Quel est le shérif du village de Cocoyashi ?",
+    "question": "Comment se nomme le shérif du village de Cocoyashi ?",
     "answer": "Genzo"
   },
   {
@@ -260,13 +260,13 @@
   {
     "id": 144,
     "difficulty": "difficult",
-    "question": "Comment se nomme le lion de compagnie de Morge ?",
+    "question": "Comment se nommait le lion de compagnie de Morge dans East Blue ?",
     "answer": "Richie"
   },
   {
     "id": 145,
     "difficulty": "easy",
-    "question": "Zoro est animé par un objectif personnel. Lequel ?",
+    "question": "Quel est l'objectif ultime et personnel de Roronoa Zoro ?",
     "answer": "Devenir le meilleur épéiste du monde"
   },
   {
@@ -290,7 +290,7 @@
   {
     "id": 149,
     "difficulty": "medium",
-    "question": "À qui Luffy prête-t-il son chapeau de paille avant l’affrontement contre Arlong ?",
+    "question": "À qui Luffy prête-t-il son chapeau de paille avant son affrontement contre Arlong ?",
     "answer": "Nami"
   },
   {

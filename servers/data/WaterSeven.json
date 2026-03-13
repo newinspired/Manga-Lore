@@ -50,7 +50,7 @@
     {
         "id": 409,
         "difficulty": "difficult",
-        "question": "Quel charpentier de la Galley-La Company, spécialiste des cordages, n’appartient pas au CP9 ?",
+        "question": "Quel charpentier de la Galley-La Company, spécialiste des cordages, n’appartenait pas au CP9 ?",
         "answer": "Pauly"
     },
     {
@@ -98,7 +98,7 @@
     {
         "id": 417,
         "difficulty": "medium",
-        "question": "Qui prononce la phrase \"Si tu devais te montrer hésitant, en qui devrions-nous croire ?\" après la victoire de Luffy contre Usopp ?",
+        "question": "Qui prononce la phrase \"Si tu devais te montrer hésitant, en qui devrions-nous croire ?\" après la victoire de Luffy contre Usopp à Water Seven ?",
         "answer": "Zoro"
     },
     {
@@ -110,7 +110,7 @@
     {
         "id": 419,
         "difficulty": "easy",
-        "question": "Qui a déclaré : \" J’ai en moi une part de ténèbres dont vous ignorez tout et qui, un jour, risque de vous mener à votre perte \" ?",
+        "question": "Qui a déclaré à Water Seven : \" J’ai en moi une part de ténèbres dont vous ignorez tout et qui, un jour, risque de vous mener à votre perte \" ?",
         "answer": "Nico Robin"
     },
     {
@@ -123,12 +123,12 @@
         "id": 421,
         "difficulty": "medium",
         "question": "Que représente l’arme antique Pluton ?",
-        "answer": "Le nom d’un navire de guerre"
+        "answer": "Le nom d’un navire de guerre capable de détruire des îles entières"
     },
     {
         "id": 422,
         "difficulty": "easy",
-        "question": "Vers quelle île se dirige l’équipage du Chapeau de Paille après avoir quitté Water Seven ?",
+        "question": "Vers quelle île s'est dirigé l’équipage du Chapeau de Paille après avoir quitté Water Seven ?",
         "answer": "Enies Lobby"
     },
     {
@@ -158,13 +158,13 @@
     {
         "id": 427,
         "difficulty": "difficult",
-        "question": "Quelle secrétaire d’Icebarg se révèle être une agente du CP9 ?",
+        "question": "Quelle secrétaire d’Icebarg s'est révèlée être une agente du CP9 ?",
         "answer": "Kalifa"
     },
     {
         "id": 428,
         "difficulty": "difficult",
-        "question": "Quel barman de Water Seven est en réalité un agent du CP9 ayant mangé le Fruit de la Porte ?",
+        "question": "Quel barman de Water Seven était en réalité un agent du CP9 ayant mangé le Fruit de la Porte ?",
         "answer": "Blueno"
     },
     {
@@ -422,7 +422,7 @@
     {
         "id": 471,
         "difficulty": "easy",
-        "question": "Quel membre de sa famille rend visite à Luffy après les événements d’Enies Lobby, accompagné de Kobby et Hermep ?",
+        "question": "Quel membre de la famille de Luffy lui rend visite après les événements d’Enies Lobby, accompagné de Kobby et Hermep ?",
         "answer": "Monkey D. Garp"
     },
     {
@@ -464,14 +464,14 @@
     {
         "id": 478,
         "difficulty": "medium",
-        "question": "Contre quel grand pirate, Shanks le roux a t il scindé les nuages en deux après Enies Lobby ?",                    
+        "question": "Contre quel grand pirate, Shanks le roux a-t-il scindé les nuages en deux après les événements d'Enies Lobby ?",                    
         "answer": "Barbe Blanche (Edward Newgate)"
     },
     {
         "id": 479,
         "difficulty": "medium",
         "question": "Quel est le montant de la prime de Monkey D. Luffy après les événements d'Enies Lobby ?",
-        "answer": "300 millions de Berries"
+        "answer": "300,000,000 de Berries"
     },
     {
         "id": 480,

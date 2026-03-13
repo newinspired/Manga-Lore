@@ -104,7 +104,7 @@
     {
         "id": 518,
         "difficulty": "medium",
-        "question": "Qui utilise l’attaque appelée \"Negative Hollow\" ?",
+        "question": "Qui utilise l’attaque appelée \"Negative Hollow\" à Thriller Bark ?",
         "answer": "Perona"
     },
     {
@@ -116,7 +116,7 @@
     {
         "id": 520,
         "difficulty": "medium",
-        "question": "Pour quelle raison Usopp était-il insensible aux attaques de Perona ?",
+        "question": "Pour quelle raison Usopp était-il insensible aux attaques de Perona sur Thriller Bark ?",
         "answer": "Parce qu’il était déjà naturellement négatif et dépressif"
     },
     {
@@ -153,7 +153,7 @@
         "id": 526,
         "difficulty": "difficult",
         "question": "Quel empereur a autrefois massacré Gecko Moria et son armée au Pays des Wa ?",
-        "answer": "Kaido"
+        "answer": "Kaido aux cent bêtes"
     },
     {
         "id": 527,
@@ -176,7 +176,7 @@
     {
         "id": 530,
         "difficulty": "easy",
-        "question": "Quel personnage supporte héroïquement toute la douleur de Luffy lorsqu’elle lui est transférée par Bartholomew Kuma ?",
+        "question": "Quel personnage supporte héroïquement toute la douleur de Luffy lorsqu’elle lui est transférée par Bartholomew Kuma sur Thriller Bark ?",
         "answer": "Roronoa Zoro"
     },
     {
@@ -218,10 +218,9 @@
     {
         "id": 537,
         "difficulty": "medium",
-        "question": "Quel continent a atteint l'équipage du chapeau de paille après l’arc de Thriller Bark ?",
+        "question": "Quel continent l'équipage du chapeau de paille a-t-il atteint après l’arc de Thriller Bark ?",
         "answer": "Red Line"
     },
-
     {
         "id": 538,
         "difficulty": "medium",
@@ -267,7 +266,7 @@
     {
         "id": 545,
         "difficulty": "easy",
-        "question": "Quel pirate détient la prime la plus élevée parmi les Supernova présents à Sabaody ?",
+        "question": "Quel pirate détient la prime la plus élevée parmi les Supernova présents à l'arc Sabaody ?",
         "answer": "Eustass Kidd"
     },
     {
@@ -321,25 +320,25 @@
     {
         "id": 554,
         "difficulty": "easy",
-        "question": "Quel puissant Haki utilise Silvers Rayleigh dans la salle de vente pour neutraliser toute l’assistance ?",
+        "question": "Quel puissant Haki utilise Silvers Rayleigh dans la salle de vente aux enchères de l'archipel des Sabaody afin de neutraliser toute l’assistance ?",
         "answer": "Le Haki des Rois"
     },
     {
         "id": 555,
         "difficulty": "easy",
-        "question": "Comment appelle-t-on les onze pirates dont la prime dépasse 100 millions et qui apparaissent à Sabaody ?",
+        "question": "Comment appelle-t-on les onze \"nouveaux\" pirates dont la prime dépasse 100 millions et qui apparaissent à l'arc Sabaody ?",
         "answer": "Les Supernova"
     },
     {
         "id": 556,
         "difficulty": "medium",
-        "question": "Comment la Marine a t elle réussi à mettre la main sur Gol D Roger ?",
+        "question": "Comment la Marine a-t-elle réussi à mettre la main sur Gol D. Roger ?",
         "answer": "Il s'est rendu de son plein gré"
     },
     {
         "id": 557,
         "difficulty": "easy",
-        "question": "Quel grand corsaire débarque à Sabaody et fait se téléporter tout l'équipage du chapeau de paille ?",
+        "question": "Quel grand corsaire avait débarqué sur l'archipel des Sabaody et fait se téléporter tout l'équipage du chapeau de paille ?",
         "answer": "Bartholomew Kuma"
     },
     {

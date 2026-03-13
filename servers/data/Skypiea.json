@@ -14,7 +14,7 @@
     {
         "id": 303,
         "difficulty": "easy",
-        "question": "Quel pirate appelé \"La hyène\" se moque des rêves de Luffy avant de se faire battre à Mock Town ?",
+        "question": "Quel pirate appelé \"La hyène\" se moquait des rêves de Luffy avant de se faire battre à Mock Town ?",
         "answer": "Bellamy"
     },
     {
@@ -69,7 +69,7 @@
         "id": 312,
         "difficulty": "medium",
         "question": "Citez trois membres de l’équipage de Barbe Noire rencontrés à Jaya.",
-        "answer": "Barbe Noire, Van Auger, Laffitte, Jesus Burgess et Doc Q"
+        "answer": "Barbe Noire, Van Augur, Laffitte, Jesus Burgess et Doc Q"
     },
     {
         "id": 313,
@@ -134,7 +134,7 @@
     {
         "id": 323,
         "difficulty": "difficult",
-        "question": "Quel est le chef des Guerriers Shandia qui se bat pour reprendre Upper Yard ?",
+        "question": "Qui est le chef des Guerriers Shandia qui se bat pour reprendre Upper Yard ?",
         "answer": "Wiper"
     }, 
     {
@@ -266,7 +266,7 @@
     {
         "id": 345,
         "difficulty": "easy",
-        "question": "Comment Aokiji parvient-il à voyager d’île en île en traversant les océans ?",
+        "question": "Comment Aokiji parvient à voyager seul d’île en île en traversant les océans ?",
         "answer": "En gelant la mer avec ses pouvoirs de glace"
     }
 

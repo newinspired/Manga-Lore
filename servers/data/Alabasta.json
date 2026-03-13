@@ -20,13 +20,13 @@
   {
     "id": 204,
     "difficulty": "easy",
-    "question": "Quel est le nom de l'organisation criminelle dirigée par Crocodile dans Alabasta ?",
+    "question": "Quel est le nom de l'organisation criminelle dirigée par Crocodile à Alabasta ?",
     "answer": "Baroque Works"
   },
   {
     "id": 205,
     "difficulty": "difficult",
-    "question": "Quelle est la capitale d'Alabasta où s'est déroulé la bataille finale contre Crocodile ?",
+    "question": "Comment se nomme la capitale d'Alabasta où s'est déroulée la bataille finale contre Crocodile ?",
     "answer": "Alubarna"
   },
   {
@@ -39,7 +39,7 @@
   {
     "id": 207,
     "difficulty": "easy",
-    "question": "Qui est le premier Grand Corsaire officiellement présenté dans le Manga ?",
+    "question": "Qui est le premier Grand Corsaire officiellement présenté dans le manga ?",
     "answer": "Sir Crocodile"
   },
   {
@@ -172,7 +172,7 @@
     "id": 229,
     "difficulty": "medium",
     "question": "Quel ancien membre de Baroque Works peut, grâce à son Fruit du Démon, copier l'apparence des personnes qu'il a touchées ?",
-    "answer" : "Mister 2 / Bon Clay"
+    "answer" : "Mister 2 - Bon Clay"
   },
   { 
     "id": 230,
@@ -310,7 +310,7 @@
     "id": 252,
     "difficulty": "difficult",
     "question": "Dans quel bâtiment Crocodile avait-il caché la bombe destinée à anéantir Alabasta ?",
-    "answer": "Dans le clocher de la capitale Alubarna"
+    "answer": "Dans le clocher de la capitale d'Alubarna"
   },
   {
     "id": 253,
@@ -351,14 +351,14 @@
   {
     "id": 259,
     "difficulty": "easy",
-    "question": "Quel est le Fruit du Démon de Nico Robin ?",
+    "question": "Quel est le pouvoir du Fruit du Démon de Nico Robin ?",
     "answer": "Peut faire éclore des parties de son corps (Hana Hana no Mi)"
   },
   {
     "id": 260,
     "difficulty": "medium",
     "question": "Quelle est le montant de la prime de Luffy à la fin de l’arc Alabasta ?",
-    "answer": "100 000 000 de Berries"
+    "answer": "100,000,000 de Berries"
   }
 
 ]

@@ -20,7 +20,7 @@
   {
     "id": 604,
     "difficulty": "medium",
-    "question": "Avec qui Zoro s’est-il retrouvé après s'être fait téléporter par Kuma sur l'île d'Obscuria ?",
+    "question": "Avec qui Zoro s’est-il retrouvé après s'être fait téléporter par Bartholomew Kuma sur l'île d'Obscuria ?",
     "answer": "Perona"
   },
   {
@@ -69,7 +69,7 @@
   {
     "id": 612,
     "difficulty": "difficult",
-    "question": "Comment se nommait le vice-directeur de la prison d’Impel Down lors de l’évasion de Luffy ?",
+    "question": "Comment se nommait le vice-directeur de la prison d’Impel Down durant l'arc de MarineFord ?",
     "answer": "Hannyabal"
   },
   {
@@ -120,7 +120,6 @@
     "question": "Quel est le pouvoir du fruit du démon d'Ivankov ?",
     "answer": "Le fruit des Hormones (Horu Horu no Mi)"
   },
-
   {
     "id": 621,
     "difficulty": "easy",
@@ -181,7 +180,6 @@
     "question": "Qui est le commandant de la 3ème flotte de Barbe Blanche ?",
     "answer": "Joz"
   },
-
   {
     "id": 631,
     "difficulty": "easy",
@@ -236,7 +234,6 @@
     "question": "Quelle pirate se rebelle en sauvant Luffy de la jitte en granite marin de Smoker lors des affrontements de Marineford ?",
     "answer": "Boa Hancock"
   },
-
   {
     "id": 640,
     "difficulty": "difficult",
@@ -297,7 +294,6 @@
     "question": "Quel personnage a dû faire face à un dilemme entre sa famille et son devoir envers la Marine durant la guerre de Marineford ?",
     "answer": "Monkey D. Garp"
   },
-
   {
     "id": 650,
     "difficulty": "easy", 
@@ -313,7 +309,7 @@
   {
     "id": 652,
     "difficulty": "medium",
-    "question": "Quel grand corsaire a été pris pour cible d’un assassinat ordonné par le Gouvernement Mondial et confié à Doflamingo ?",
+    "question": "Quel grand corsaire a été pris pour cible d’un assassinat ordonné par le Gouvernement Mondial et confié à Doflamingo à MarinFord ?",
     "answer": "Gecko Moria"
   },
   {
@@ -358,7 +354,6 @@
     "question": "Quel grand équipage met fin à la bataille de Marineford en sauvant Luffy et les survivants ?",
     "answer": "L’équipage de Shanks le Roux"
   },
-
   {
     "id": 660,
     "difficulty": "medium",
@@ -392,19 +387,19 @@
   {
     "id": 665,
     "difficulty": "medium",
-    "question": "D’où provenait l’ordre donné à Doflamingo d’éliminer Gecko Moria ?",
+    "question": "D’où provenait l’ordre donné à Doflamingo d’éliminer Gecko Moria à MarineFord ?",
     "answer": "Les cinq Doyens (Gorōsei)"
   },
   {
     "id": 666,
     "difficulty": "easy",
-    "question": "Quel pirate récupère Luffy blessé et s’échappe de Marineford avec son équipage et son sous-marin ?",
+    "question": "Quel pirate récupère Luffy blessé à Marinford et s’échappe grâce à son navire/sous-marin ?",
     "answer": "Trafalgar Law"
   },
   {
     "id": 667,
     "difficulty": "difficult",
-    "question": "Comment se nomme la mère adoptive de Luffy et Ace ?",
+    "question": "Comment se nomme la \"mère adoptive\" de Luffy et Ace ?",
     "answer": "Curly Dadan"
   },
   {
@@ -419,7 +414,6 @@
     "question": "Dans quel royaume Luffy, Ace et Sabo ont-ils passé leur enfance ?",
     "answer": "Royaume de Goa"
   },
-
   {
     "id": 670,
     "difficulty": "medium",
@@ -453,13 +447,13 @@
   {
     "id": 675,
     "difficulty": "easy",
-    "question": "Quel est le seul pirate connu encore en vie ayant consommé deux fruits du démon ?",
+    "question": "Quel est le seul pirate connu ayant consommé deux fruits du démon ?",
     "answer": "Marshall D. Teach (Barbe Noire)"
   },
   {
     "id": 676,
     "difficulty": "difficult",
-    "question": "Comment se nomme le Commandant des Forces Armées du Gouvernement Mondial et ancien amiral en chef de la Marine ?",
+    "question": "Comment se nomme le Commandant des Forces Armées du Gouvernement Mondial lors de l'arc Marineford et ancien amiral en chef de la Marine ?",
     "answer": "Kong"
   },
   {
@@ -486,5 +480,4 @@
     "question": "Combien de temps dure l’élipse après la bataille de Marineford ?",
     "answer": "2 ans"
   }
-
 ]

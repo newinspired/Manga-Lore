@@ -1384,6 +1384,12 @@
         "difficulty": "medium",
         "question": "Selon les journaux du monde entier, qui aurait assassiné Nefertari Cobra lors de la Rêverie ?",
         "answer": "Sabo"
+    },
+    {
+        "id": 1431,
+        "difficulty": "easy",
+        "question": "Qui a gravé dans la pierre ce message de Gol D. Roger : \"Ma route m’a conduit ici et je porterai ce texte jusqu’au bout du monde\" ?",
+        "answer": "Oden Kozuki"
     }
 
 ]  

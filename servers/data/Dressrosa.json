@@ -2,7 +2,7 @@
     {
         "id": 801,
         "difficulty": "easy",
-        "question": "Quelle est la première île du Nouveau Monde sur laquelle l’équipage du Chapeau de Paille accoste ?",
+        "question": "Quelle est la première île du Nouveau Monde sur laquelle l’équipage du Chapeau de Paille a accosté ?",
         "answer": "Punk Hazard"
     },
     {
@@ -59,7 +59,6 @@
         "question": "Quel membre de l’équipage du Chapeau de Paille utilise la technique \"Jambe à la Diable\" ?",
         "answer": "Sanji"
     },
-
     {
         "id": 811,
         "difficulty": "easy",
@@ -76,7 +75,7 @@
     {
         "id": 813,
         "difficulty": "easy",
-        "question": "Quel pirate récemment devenu membre des Sept Grands Corsaires se trouve sur Punk Hazard ?",
+        "question": "Quel pirate récemment devenu membre des Sept Grands Corsaires se trouvait sur Punk Hazard ?",
         "answer": "Trafalgar Law"
     },
     {
@@ -118,12 +117,12 @@
     {
         "id": 820,
         "difficulty": "easy",
-        "question": "Quel ancien scientifique du Gouvernement Mondial dirigeait les expériences de Punk Hazard à l’arrivée des Mugiwaras ?",
+        "question": "Quel ancien scientifique du Gouvernement Mondial dirigeait les expériences de Punk Hazard à l’arrivée des Mugiwaras sur l'île ?",
         "answer": "César Clown"
     },
     {
         "id": 821,
-        "difficulty": "easy",
+        "difficulty": "difficult",
         "question": "Quel ancien capitaine d'équipage est devenu le leader de la Patrouille Centaure sur Punk Hazard ?",
         "answer": "Barbe Brune"
     },
@@ -135,13 +134,13 @@
     },
     {
         "id": 823,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Dans quelle zone de Punk Hazard les \"Yéti cool brothers\", Scotch et Rock, opèrent-ils ?",
         "answer": "Dans les monts enneigés, aussi appelés terres de glace"
     }, 
     {
         "id": 824,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "question": "À quel personnage appartient ce rire : \"Sho ho ho ho ho !\" ?",
         "answer": "César Clown"
     },
@@ -153,13 +152,13 @@
     },
     {
         "id": 826,
-        "difficulty": "medium",
-        "question": "Quel gigantesque organisme vivant, composé de gaz toxiques, erre sur l’île de Punk Hazard ?",
+        "difficulty": "difficult",
+        "question": "Quel gigantesque organisme vivant, composé de gaz toxiques, errait sur l’île de Punk Hazard ?",
         "answer": "Le Slime"
     },
     {
         "id": 827,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "question": "Dans quel corps Sanji s’est-il retrouvé sur Punk Hazard à cause du pouvoir de Trafalgar Law ?",
         "answer": "Dans le corps de Nami"
     },
@@ -175,14 +174,12 @@
         "question": "Quel est le nom de la femme harpie alliée à César Clown sur Punk Hazard ?",
         "answer": "Monet la harpie"
     },
-
     {
         "id": 830,
         "difficulty": "difficult",
         "question": "Comment se nomme l’arme chimique créée par César Clown sur Punk Hazard, capable de pétrifier tout ce qu’elle touche ?",
         "answer": "Morte-Terre"
     },
-
     {
         "id": 831,
         "difficulty": "difficult",
@@ -191,20 +188,20 @@
     },
     {
         "id": 832,
-        "difficulty": "medium",
+        "difficulty": "easy",
         "question": "Quel personnage prétendait être le père de Momonosuke sur l’île de Punk Hazard ?",
         "answer": "Kinemon"
     },
     {
         "id": 833,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel vice-amiral de la Marine, apparu sur Punk Hazard, s’avère être un subordonné infiltré travaillant pour Doflamingo ?",
         "answer": "Vergo"
     },
     {
         "id": 834,
         "difficulty": "easy",
-        "question": "Qui se cache derrière le pseudonyme de \"Joker\" utilisé dans le Nouveau Monde ?",
+        "question": "Qui se cachait derrière le pseudonyme de \"Joker\" utilisé dans le Nouveau Monde ?",
         "answer": "Don Quijote Doflamingo"
     },
     {
@@ -282,7 +279,7 @@
     {
         "id": 847,
         "difficulty": "medium",
-        "question": "Quels sont les trois capitaines pirates membres des Supernovas qui  se sont initialement alliés dans le Nouveau Monde afin de vaincre Shanks le Roux ?",
+        "question": "Quels sont les trois capitaines pirates membres des Supernovas qui s'étaient initialement alliés dans le Nouveau Monde afin de vaincre Shanks le Roux ?",
         "answer": "Eustass Kidd, Basil Hawkins et Scratchmen Apoo"
     },
     {
@@ -297,7 +294,6 @@
         "question": "Quel capitaine pirate a vaincu César Clown à la fin de l’arc de Punk Hazard ?",
         "answer": "Monkey D. Luffy"
     },
-
     {
         "id": 850,
         "difficulty": "medium",
@@ -312,8 +308,8 @@
     },
     {
         "id": 852,
-        "difficulty": "medium",
-        "question": "Quel personnage les équipages du Heart et du Chapeau de Paille ont-ils capturé pour faire pression sur Doflamingo ?",
+        "difficulty": "easy",
+        "question": "Quel personnage, les équipages du Heart et du Chapeau de Paille, ont-ils capturé pour faire pression sur Doflamingo ?",
         "answer": "César Clown"
     },
     {
@@ -350,7 +346,7 @@
         "id": 858,
         "difficulty": "easy",
         "question": "Quel amiral de la Marine a été envoyé sur Dressrosa afin de surveiller les agissements de l’équipage du Chapeau de Paille et de Trafalgar Law ?",
-        "answer": "Fujitora"
+        "answer": "Fujitora - Issho"
     },
     {
         "id": 859,
@@ -385,12 +381,12 @@
     {
         "id": 864,
         "difficulty": "easy",
-        "question": "Dans quel prestigieux bâtiment a eu lieu le tournoi visant à remporter le 'Pyro-fruit' que possédait Ace ?",
+        "question": "Dans quel prestigieux bâtiment a eu lieu le tournoi visant à remporter le 'Pyro-fruit' que possédait Ace à Dressrosa?",
         "answer": "Le Colisée de Dressrosa (Corrida Colosseum)"
     },
     {
         "id": 865,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Qui était le 'Héros du Colisée' désigné par Doflamingo lors de l'arc Dressrosa ?",
         "answer": "Mister Diamante"
     },
@@ -409,7 +405,7 @@
     {
         "id": 868,
         "difficulty": "easy",
-        "question": "Quel nom Luffy s'était-il inventé pour participer aux jeux du Colisée sans éveiller de soupçons ?",
+        "question": "Quel nom Luffy s'était-il inventé pour participer aux jeux du Colisée \"sans éveiller de soupçons\" ?",
         "answer": "Lucy"
     },
     {
@@ -433,12 +429,12 @@
     {
         "id": 872,
         "difficulty": "medium",
-        "question": "Quelle gladiatrice a participé au tournoi du Colisée de Dressrosa dans l'objectif de tuer Doflamingo ?",
+        "question": "Quelle gladiatrice avait participé au tournoi du Colisée de Dressrosa dans l'objectif de tuer Doflamingo ?",
         "answer": "Rebecca"
     },
     {
         "id": 873,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Comment se nomme le plus grand gladiateur de l'histoire du Corrida Colosseum, qui possède sa propre statue dans la salle de préparation aux combats ?",
         "answer": "Kyros"
     },
@@ -457,7 +453,7 @@
     {
         "id": 876,
         "difficulty": "easy",
-        "question": "Quel pirate était l'antagoniste principal de l'arc Jaya et qui est devenu par la suite membre de l'équipage de Don Quijote Doflamingo ?",
+        "question": "Quel pirate était l'antagoniste principal de l'arc Jaya et qui est devenu par la suite \"membre de l'équipage\" de Don Quijote Doflamingo ?",
         "answer": "Bellamy \"La Hyène\""
     },
     {
@@ -498,7 +494,7 @@
     },
     {
         "id": 883,
-        "difficulty": "difficult",
+        "difficulty": "medium",
         "question": "Sous quelle forme Kyros a-t-il continué de veiller sur Rebecca, bien qu'elle ne sache pas que c'est son père ?",
         "answer": "En soldat unijambiste (jouet vivant)"
     },
@@ -547,7 +543,7 @@
     {
         "id": 891,
         "difficulty": "easy",
-        "question": "Quel surnom les Tontatta ont-ils donné à Usopp  ?",
+        "question": "Quel surnom les Tontatta ont-ils donné à Usopp à l'arc de Dressrosa ?",
         "answer": "Usoland"
     },
     {
@@ -559,13 +555,13 @@
     {
         "id": 893,
         "difficulty": "difficult",
-        "question": "Quel vice-amiral de la Marine, portant un masque de métal et deux cornes, était présent sur Dressrosa afin de surveiller les agissements des Mugiwara ?",
+        "question": "Quel vice-amiral de la Marine, portant un masque de métal et deux cornes, était présent sur Dressrosa afin de surveiller les agissements des Mugiwaras ?",
         "answer": "Bastille"
     },
     {
         "id": 894,
         "difficulty": "medium",
-        "question": "Quelle humaine, membre de l'armée révolutionnaire aux côtés de Sabo, manie le karaté des Hommes-Poissons ?",
+        "question": "Quelle humaine, membre de l'armée révolutionnaire et présent à l'arc de Dressrosa, manie le karaté des Hommes-Poissons ?",
         "answer": "Koala"
     },
     {
@@ -576,7 +572,7 @@
     },
     {
         "id": 896,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel membre de la Don Quijote Family est le chef de l'unité des Pouvoirs Spéciaux ?",
         "answer": "Trébol"
     },
@@ -589,7 +585,7 @@
     {
         "id": 898,
         "difficulty": "difficult",
-        "question": "Comment se nomme la seconde personnalité que prend Cavendish après s'être endormi ?",
+        "question": "Comment se nomme la seconde personnalité de Cavendish ?",
         "answer": "Hakuba"
     },
     {
@@ -601,7 +597,7 @@
     {
         "id": 900,
         "difficulty": "medium",
-        "question": "Quel est l'objectif de l'amiral Fujitora concernant l'ordre des Sept Grands Corsaires ?",
+        "question": "Quel était l'objectif de l'amiral Fujitora concernant l'ordre des Sept Grands Corsaires ?",
         "answer": "Il veut supprimer l'ordre des Sept Grands Corsaires"
     },
     {
@@ -625,7 +621,7 @@
     {
         "id": 904,
         "difficulty": "difficult",
-        "question": "Quel membre de l'équipage de Doflamingo, ayant l'apparence d'une enfant, peut transformer en jouet tout ce qu'elle touche grâce à son pouvoir ?",
+        "question": "Quel membre de l'équipage de Doflamingo, ayant l'apparence d'une enfant, peut transformer en jouet tout ce qu'elle touche ?",
         "answer": "Sugar"
     },
     {
@@ -643,7 +639,7 @@
     {
         "id": 907,
         "difficulty": "difficult",
-        "question": "Quelle est la capacité ultime du fruit du Bistouri (Ope Ope no Mi), appelée la Chirurgie de Jouvence ?",
+        "question": "Quelle est la capacité ultime du fruit du Bistouri (Ope Ope no Mi), appelée la Chirurgie de Jouvence, que nous a expliqué Doflamingo à Dressrosa ?",
         "answer": "Elle permet d’offrir la vie éternelle au prix de la vie de celui qui réalise l’opération."
     },
     {
@@ -661,7 +657,7 @@
     {
         "id": 910,
         "difficulty": "easy",
-        "question": "Comment tous les habitants de Dressrosa et les combattants transformés en jouets ont-ils retrouvé leur apparence humaine à Dressrosa ?",
+        "question": "Comment tous les habitants et les combattants transformés en jouets ont-ils retrouvé leur apparence humaine à l'arc de Dressrosa ?",
         "answer": "Sugar a perdu connaissance, annulant ainsi son pouvoir de transformation"
     },
     {
@@ -673,7 +669,7 @@
     {
         "id": 912,
         "difficulty": "difficult",
-        "question": "Quel samouraï du Pays de Wano, capable de donner vie à des formes qu’il dessinait excessivement mal, a été capturé par l’équipage de Don Quichotte Doflamingo ?",
+        "question": "Quel samouraï du Pays des Wa, capable de donner vie à des formes qu’il dessinait excessivement mal, a été capturé par l’équipage de Don Quichotte Doflamingo ?",
         "answer": "Kanjuro l’Orageux"
     }, 
     {
@@ -696,7 +692,7 @@
     },
     {
         "id": 916,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Comment se nomme la princesse du royaume Tontatta ?",
         "answer": "La Princesse Manshelly"
     },
@@ -720,14 +716,14 @@
     },
     {
         "id": 920,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Qui a vaincu Diamante dans le champ de tournesols sur Dressrosa ?",
         "answer": "Kyros"
     },
     {
         "id": 921,
         "difficulty": "medium",
-        "question": "Qui a protégé Rebecca durant l’affrontement entre Kyros et Diamante afin de ne pas gêner son père ?",
+        "question": "Qui a protégé Rebecca durant l’affrontement entre Kyros et Diamante afin qu'elle ne gêne pas son père sur Dressrosa ?",
         "answer": "Nico Robin"
     },
     {
@@ -738,7 +734,7 @@
     },
     {
         "id": 923,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel sabreur affirme que n’importe quelle lame peut devenir une lame noire si son utilisateur la maîtrise parfaitement ?",
         "answer": "Dracule Mihawk"
     },
@@ -757,13 +753,13 @@
     {
         "id": 926,
         "difficulty": "easy",
-        "question": "Doflamingo nous apprend à Dressrosa que \"les pouvoirs des démons peuvent atteindre un stade supérieur\", à quoi fait-il référence ?",
+        "question": "Doflamingo nous apprend à Dressrosa que \"les pouvoirs des fruits du démon peuvent atteindre un stade supérieur\", à quoi fait-il référence ?",
         "answer": "L'Éveil des Fruits du Démon"
     },
     {
         "id": 927,
         "difficulty": "easy",
-        "question": "Quelle était la seule manière d'arrêter la progression de la \"Cage à oiseaux\" à l'arc de Dressrosa ?",
+        "question": "Quelle était la seule manière d'arrêter complètement la progression de la \"Cage à oiseaux\" à l'arc de Dressrosa ?",
         "answer": "Vaincre Don Quijote Doflamingo"
     },
     {
@@ -810,7 +806,7 @@
     },
     {
         "id": 935,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Pourquoi Rebecca demande-t-elle à Viola de devenir princesse de Dressrosa à sa place ?",
         "answer": "Parce qu’elle veut simplement vivre avec son père Kyros."
     },
@@ -818,17 +814,17 @@
         "id": 936,
         "difficulty": "medium",
         "question": "Pourquoi l’amiral Fujitora laisse-t-il Luffy s’échapper de Dressrosa alors qu’il devait capturer sa tête ?",
-        "answer": "Parce qu’il est impressionné par la droiture de Luffy" 
+        "answer": "Il est impressionné par la droiture de Luffy/ il a sauvé le royaume de Dressrosa" 
     },
     {
         "id": 937,
         "difficulty": "medium",
-        "question": "Quel pirate, fervent admirateur de l’équipage du Chapeau de Paille, leur prête allégeance après les événements de Dressrosa ?",
+        "question": "Quel pirate étant le plus grand admirateur de l’équipage du Chapeau de Paille, leur prête allégeance après les événements de Dressrosa ?",
         "answer": "Bartolomeo"
     },
     {
         "id": 938,
-        "difficulty": "medium",
+        "difficulty": "difficult",
         "question": "Quel pirate, capitaine de l’équipage des géants, prête allégeance à l’équipage du Chapeau de Paille après les événements de Dressrosa ?",
         "answer": "Hajrudin"
     },
@@ -844,6 +840,4 @@
         "question": "Dans quelle prison Doflamingo a-t-il été incarcéré après avoir été renversé du trône de Dressrosa ?",
         "answer": "Impel Down"
     }
-
-
 ]

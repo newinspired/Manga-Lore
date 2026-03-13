@@ -8,7 +8,7 @@
     {
         "id": 702,
         "difficulty": "medium",
-        "question": "Quel grand pirate contrôlait l'île des Hommes-Poissons avant les événements de Marineford ?",
+        "question": "Quel grand pirate contrôlait l'île des Hommes-Poissons avant l'élipse/les événements de Marineford ?",
         "answer": "Barbe Blanche"
     },
     {
@@ -20,7 +20,7 @@
     {
         "id": 704,
         "difficulty": "medium",
-        "question": "Alors que les Mugiwaras se noyaient en s'approchant de l'île des Hommes-Poissons, qui les a secourus ?",
+        "question": "Alors que les Mugiwaras se noyaient en s'approchant de l'île des Hommes-Poissons, qui les ont secourus ?",
         "answer": "Les sirènes"
     },
     {
@@ -92,8 +92,8 @@
     {
         "id": 716,
         "difficulty": "medium",
-        "question": "Quelle prophétie Madame Shirley a-t-elle faite concernant Luffy ?",
-        "answer": "Que Luffy anéantirait l'île des Hommes-Poissons"
+        "question": "Quelle prophétie Madame Shirley a-t-elle faite concernant Luffy à l'arc des Hommes-Poissons ?",
+        "answer": "Luffy \"anéantirait\" l'île des Hommes-Poissons"
     },
     {
         "id": 717,
@@ -134,7 +134,7 @@
     {
         "id": 723,
         "difficulty": "medium",
-        "question": "Quelle jeune fille humaine s’est retrouvée à bord du navire des Pirates du Soleil en suppliant qu’on ne la tue pas ?",
+        "question": "Quelle jeune fille humaine s’est retrouvée à bord du navire des Pirates du Soleil, 14 ans avant notre ère, suppliant qu’on ne la tue pas ?",
         "answer": "Koala"
     },
     {
@@ -164,13 +164,13 @@
     {
         "id": 728,
         "difficulty": "medium",
-        "question": "Pour quelle raison le \"navire du serment\" Noah, s’était-il dirigé vers l’île des Hommes-Poissons ?",
+        "question": "Pour quelle raison le \"navire du serment\" Noah, s’était-il dirigé vers l’île des Hommes-Poissons à l'arc de ce même nom ?",
         "answer": "Vander Decken IX l’a dirigé en direction de Shirahoshi"
     },
     {
         "id": 729,
         "difficulty": "difficult",
-        "question": "Quel monstre marin à forme humaine était sous les ordres de Vander Decken IX ?",
+        "question": "Quel monstre marin à forme humaine était sous les ordres de Vander Decken IX à l'arc des Hommes-Poissons ?",
         "answer": "Wadatsumi"
     },
     {
@@ -182,7 +182,7 @@
     {
         "id": 731,
         "difficulty": "difficult",
-        "question": "Où Nami s’est-elle retrouvé durant les deux années de séparation de l’équipage ?",
+        "question": "Où Nami s’est-elle retrouvé durant les deux années de l'élipse post Marineford ?",
         "answer": "Sur une île céleste artificielle (Weatheria)"
     },
     {
@@ -236,7 +236,7 @@
     {
         "id": 740,
         "difficulty": "easy",
-        "question": "Quels sont les deux amiraux qui se sont affrontés pour le poste d’amiral en chef de la Marine ?",
+        "question": "Quels sont les deux amiraux qui se sont affrontés pour le poste d’amiral en chef de la Marine sur Punk Hazard ?",
         "answer": "Aokiji et Akainu"
     },
     {
@@ -248,13 +248,13 @@
     {
         "id": 742,
         "difficulty": "easy",
-        "question": "Qui a remporté le combat de Punk Hazard et est devenu le nouvel amiral en chef ?",
+        "question": "Qui a remporté le combat de Punk Hazard contre Aokiji et est devenu le nouvel amiral en chef ?",
         "answer": "Akainu"
     },
     {
         "id": 743,
         "difficulty": "difficult",
-        "question": "Quel intrus a surpris la conversation entre Robin et Neptune à propos de l’arme antique Poséidon ?",
+        "question": "Quel intrus a surpris la conversation entre Robin et Neptune à propos de l’arme antique Poséidon à l'arc des Hommes-poissons ?",
         "answer": "Caribou"
     },
     {
@@ -266,7 +266,7 @@
     {
         "id": 745,
         "difficulty": "medium",
-        "question": "Qui est devenu le second capitaine des Pirates du Soleil après Fisher Tiger ?",
+        "question": "Qui est devenu le deuxième capitaine des Pirates du Soleil après Fisher Tiger ?",
         "answer": "Jinbe"
     },
     {
@@ -291,7 +291,7 @@
         "id": 749,
         "difficulty": "medium",
         "question": "Quel est le montant de la prime de Monkey D. Luffy après les événements de Marineford ?",
-        "answer": "400.000.000 de Berries"
+        "answer": "400,000,000 de Berries"
     },
     {
         "id": 750,
