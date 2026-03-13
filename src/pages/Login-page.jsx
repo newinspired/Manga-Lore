@@ -9,13 +9,13 @@ import Header from '../components/header.jsx';
 import { playerId } from "../socket";
 import { authenticateSocketIfNeeded } from "../socket";
 
-import luffy from '../assets/avatars-color/luffy6.jpg';
-import zoro from '../assets/avatars-color/zoro.jpg';
-import sanji from '../assets/avatars-color/sanji2.jpg';
+import luffy from '../assets/avatars-color/luffy-good.jpg';
+import zoro from '../assets/avatars-color/zoro-good.jpg';
+import sanji from '../assets/avatars-color/sanji-good.jpg';
 
-import chopper from '../assets/avatars-color/chopper2.jpg';
-import nami from '../assets/avatars-color/nami2.jpg';
-import robin from '../assets/avatars-color/robin3.jpg';
+import chopper from '../assets/avatars-color/chopper-good.jpg';
+import nami from '../assets/avatars-color/nami-good.jpg';
+import robin from '../assets/avatars-color/robin-good.jpg';
 
 
 
@@ -25,8 +25,9 @@ function LoginPage({ userData }) {
   const avatarOptions = [
     { name: 'luffy', src: luffy },
     { name: 'zoro', src: zoro },
-    { name: 'sanji', src: sanji },
     { name: 'nami', src: nami },
+
+    { name: 'sanji', src: sanji },
     { name: 'chopper', src: chopper },
     { name: 'robin', src: robin },
   
@@ -125,14 +126,6 @@ function LoginPage({ userData }) {
     <div className="login-page">
       <Header userData={userData} />
       <div className="login-wrapper">
-        {showAvatarModal ? (
-          <ModalAvatar
-            avatarOptions={avatarOptions}
-            selectedAvatar={selectedAvatar}
-            onSelect={setSelectedAvatar}
-            onClose={() => setShowAvatarModal(false)}
-          />
-        ) : (
           <div className='content-description'>
             <div className="free-content">
               <h3>Play for free !</h3>
@@ -141,7 +134,6 @@ function LoginPage({ userData }) {
                 <p>- 400 questions covering the journey from East Blue to Marineford !</p>
             </div>
           </div>
-        )}
   
         <div className="modal-login" ref={modalRef}>
           <div className='section-one-piece-game-title'>
@@ -214,6 +206,14 @@ function LoginPage({ userData }) {
               )}
             </div>
           </div>
+          <ModalAvatar
+            avatarOptions={avatarOptions}
+            selectedAvatar={selectedAvatar}
+            onSelect={(avatar) => {
+              setSelectedAvatar(avatar);
+              setShowAvatarModal(false);
+            }}
+          />
         </div>
 
         <div className='paying-container'>

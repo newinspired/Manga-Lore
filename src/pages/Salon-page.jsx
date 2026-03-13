@@ -189,39 +189,49 @@ function SalonPage({ userData, firebaseUid, handleReadyClick, isButtonDisabled, 
                   WAITING ROOM : <span className='couleur-pseudo'>{room}</span>
                 </h2>
               </div>
-              <h2>Select the Game Mode</h2>
-              <p>Please vote for the game mode you want to play</p>
-              <p>Wait all your friends if you are not playing alone</p>
+              <div>
+                <p>Please vote for the game mode you want to play</p>
+                <p>Wait all your friends if you are not playing alone</p>
+              </div>
 
               <button
                 className={`mode-button ${myVote === "AllTheLore" ? "selected" : ""}`}
                 onClick={() => handleVote("AllTheLore")}
               >
-                All the One Piece lore ({votes.AllTheLore})
+                <span className="mode-label">All the One Piece lore</span>
+                <span className="mode-votes">{votes.AllTheLore}</span>
               </button>
 
               <button
                 className={`mode-button ${myVote === "PutInOrder" ? "selected" : ""}`}
                 onClick={() => handleVote("PutInOrder")}
               >
-                Put in Order ({votes.PutInOrder})
+                <span className="mode-label">Put in Order</span>
+                <span className="mode-votes">{votes.PutInOrder}</span>
               </button>
-
-              <div className="separate"></div>
 
               <button
                 className={`mode-button ${myVote === "ranked" ? "selected" : ""}`}
                 onClick={() => handleVote("ranked")}
               >
-                Ranked - Name Them All ({votes.ranked})
+                <span className="mode-label">Ranked - Name Them All</span>
+                <span className="mode-votes">{votes.ranked}</span>
               </button>
 
+              <div className="separate"></div>
+
               <button
-                className="ready-button"
+                className="mode-button ready-button"
                 disabled={!myVote}
                 onClick={handleVoteReady}
               >
-                {isReady ? "Not ready" : "Ready"} ({readyPlayers}/{totalPlayers})
+                <span className="mode-label">
+                  {isReady ? "Not ready" : "Ready"}
+                </span>
+
+                <span className="mode-votes">
+                  {readyPlayers}/{totalPlayers}
+                </span>
               </button>
 
             </div>

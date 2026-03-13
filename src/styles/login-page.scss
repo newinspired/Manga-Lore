@@ -59,18 +59,18 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $button-color;
       padding: 10px 0px;
       font-family: $mainfont;
       width : 400px;
       border-radius: 5px;
       z-index: 1;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      color : $maincolorfont;
 
       h3{
         font-family: $mainfont;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 26px;
       }
     }
 
@@ -343,3 +343,5 @@ body {
     }
   }
 }
+
+
