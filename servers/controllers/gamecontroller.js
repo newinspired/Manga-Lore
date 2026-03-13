@@ -264,6 +264,7 @@ function handleDisconnect(io, socket, playersInRooms, games = {}) {
 
     const wasHost = players[idx].isHost;
     const isGuest = !players[idx].playerId;
+    const leftUsername = players[idx].username;
 
     if (isGuest) {
       players.splice(idx, 1); // 👻 invité → suppression totale
@@ -278,6 +279,10 @@ function handleDisconnect(io, socket, playersInRooms, games = {}) {
         io.to(next.socketId).emit('hostStatus', true);
       }
     }
+
+    io.to(roomId).emit("playerLeft", {
+      username: leftUsername
+    });
 
     io.to(roomId).emit('playerList', players);
 
@@ -328,7 +333,7 @@ function sendNextQuestion(io, roomCode, games) {
     return;
   }
 
-  const QUESTION_TIME_SECONDS = 20;
+  const QUESTION_TIME_SECONDS = 2;
   let timeLeft = QUESTION_TIME_SECONDS;
 
   io.to(roomCode).emit('newQuestion', { question, timeLeft });

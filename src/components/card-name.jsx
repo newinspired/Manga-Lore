@@ -68,7 +68,9 @@ function CardName({ currentSocketId, players: externalPlayers, showResults = fal
 
             {/* Score à droite */}
             {showResults && (
-              <div className="player-score">{score.toLocaleString('fr-FR')} Knowledge points</div>
+              <div className="player-score">
+                {score.toLocaleString('en-US')} Berries
+              </div>
             )}
           </div>
         );

@@ -30,6 +30,7 @@ function SalonPage({ userData, firebaseUid, handleReadyClick, isButtonDisabled, 
   const [players, setPlayers] = useState([]);
   const [selectedArcs, setSelectedArcs] = useState([]);
   const [selectedMode, setSelectedMode] = useState(null);
+  const [showRoomCode, setShowRoomCode] = useState(false);
 
   const hasJoinedRef = useRef(false);
 
@@ -63,6 +64,28 @@ function SalonPage({ userData, firebaseUid, handleReadyClick, isButtonDisabled, 
     { label: 'Erbaf', value: 'Elbaf', isPremium: true },
   ];
 
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      localStorage.removeItem("roomCode");
+      socket.disconnect();
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
+  useEffect(() => {
+    const storedRoom = localStorage.getItem("roomCode");
+
+    if (!storedRoom || storedRoom !== room) {
+      navigate("/");
+    }
+  }, [room]);
+
+
   // 🔒 Sécurité : si pas username ou avatar → retour login
   useEffect(() => {
     const storedUsername = localStorage.getItem("username");
@@ -84,7 +107,11 @@ function SalonPage({ userData, firebaseUid, handleReadyClick, isButtonDisabled, 
 
     const handlePlayerList = (updatedPlayers) => {
       console.log("PLAYER LIST RECEIVED:", updatedPlayers);
+
+      const connectedPlayers = updatedPlayers.filter(p => p.socketId !== null);
+
       setPlayers(updatedPlayers);
+      setTotalPlayers(connectedPlayers.length);
     };
 
     const handleHostStatus = (flag) => {
@@ -185,8 +212,18 @@ function SalonPage({ userData, firebaseUid, handleReadyClick, isButtonDisabled, 
           {!selectedMode && (
             <div className="mode-selection">
               <div className='waiting-room'>
-                <h2>
-                  WAITING ROOM : <span className='couleur-pseudo'>{room}</span>
+                <h2 className="room-title">
+                  WAITING ROOM :
+                  <span className="room-code">
+                    {showRoomCode ? room : "•".repeat(room.length)}
+                  </span>
+
+                  <span
+                    className="toggle-room"
+                    onClick={() => setShowRoomCode(prev => !prev)}
+                  >
+                    👁
+                  </span>
                 </h2>
               </div>
               <div>
@@ -202,12 +239,27 @@ function SalonPage({ userData, firebaseUid, handleReadyClick, isButtonDisabled, 
                 <span className="mode-votes">{votes.AllTheLore}</span>
               </button>
 
+              {/*
               <button
                 className={`mode-button ${myVote === "PutInOrder" ? "selected" : ""}`}
                 onClick={() => handleVote("PutInOrder")}
               >
                 <span className="mode-label">Put in Order</span>
                 <span className="mode-votes">{votes.PutInOrder}</span>
+              </button>
+              */}
+
+              <button
+                className="mode-button disabled"
+                disabled
+              >
+                <span className="mode-label">
+                  Put in Order (Coming soon)
+                </span>
+
+                <span className="mode-votes">
+                  –
+                </span>
               </button>
 
               <button
